@@ -1,0 +1,74 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  z-index: 9;
+  transition: background-color 0.3s, padding 0.3s;
+}
+
+header .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 40px;
+}
+header .logo {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: top 0.3s;
+}
+header .logo a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header ul {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+.HeaderForPC_graphic-logo__3C7QW {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.HeaderForPC_letter-logo__1cvY3 {
+  width: 10em;
+  transition: width 0.3s;
+}
+
+/* Styles when the header is scrolled */
+header.scrolled {
+  background-color: #181818;
+}
+
+header.scrolled .logo {
+  top: -60px;
+}
+
+header.scrolled .HeaderForPC_graphic-logo__3C7QW {
+  opacity: 0;
+}
+
+header.scrolled .HeaderForPC_letter-logo__1cvY3 {
+  width: 8em;
+  height: auto;
+}

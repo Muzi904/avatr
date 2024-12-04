@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0069b1;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="75.14" y="101.53" width="3" height="3" transform="translate(-41.25 52.13) rotate(-30)"/>
+  <rect class="cls-1" x="82.07" y="97.53" width="3" height="3" transform="translate(-38.32 55.06) rotate(-30)"/>
+  <polygon class="cls-1" points="68.65 105.91 65.5 107.72 65.5 92.4 62.5 92.4 62.5 107.72 59.36 105.91 56.76 104.41 55.26 107 57.86 108.5 64 112.05 70.15 108.5 71.76 107.57 70.26 104.98 68.65 105.91"/>
+  <rect class="cls-1" x="88.99" y="93.53" width="3" height="3" transform="translate(-35.39 57.99) rotate(-30)"/>
+  <polygon class="cls-1" points="102.61 80.93 102.61 84.56 89.35 76.9 87.85 79.5 101.12 87.16 97.97 88.98 95.37 90.48 96.87 93.07 99.47 91.57 105.61 88.03 105.61 80.93 105.61 79.07 102.61 79.07 102.61 80.93"/>
+  <rect class="cls-1" x="102.61" y="63.07" width="3" height="3"/>
+  <rect class="cls-1" x="102.61" y="71.07" width="3" height="3"/>
+  <rect class="cls-1" x="102.61" y="55.07" width="3" height="3"/>
+  <rect class="cls-1" x="89.98" y="32.04" width="3" height="3" transform="translate(16.7 96) rotate(-60.01)"/>
+  <rect class="cls-1" x="76.12" y="24.04" width="3" height="3" transform="translate(16.69 80) rotate(-60.01)"/>
+  <rect class="cls-1" x="83.05" y="28.04" width="3" height="3" transform="translate(16.69 87.99) rotate(-60)"/>
+  <rect class="cls-1" x="42.94" y="27.48" width="3" height="3" transform="translate(-8.53 26.1) rotate(-30)"/>
+  <rect class="cls-1" x="36.01" y="31.47" width="3" height="3" transform="translate(-11.46 23.17) rotate(-29.99)"/>
+  <polygon class="cls-1" points="59.36 22.09 62.5 20.28 62.5 35.6 65.5 35.6 65.5 20.28 68.65 22.09 68.65 22.09 71.24 23.59 72.74 20.99 70.15 19.49 69.4 20.79 70.15 19.49 64 15.95 57.86 19.49 56.24 20.43 57.74 23.02 59.36 22.09"/>
+  <rect class="cls-1" x="49.86" y="23.47" width="3" height="3" transform="translate(-5.61 29.02) rotate(-29.99)"/>
+  <rect class="cls-1" x="22.39" y="69.93" width="3" height="3"/>
+  <rect class="cls-1" x="22.39" y="61.93" width="3" height="3"/>
+  <rect class="cls-1" x="22.39" y="53.93" width="3" height="3"/>
+  <rect class="cls-1" x="48.88" y="100.96" width="3" height="3" transform="translate(-63.54 94.85) rotate(-60)"/>
+  <rect class="cls-1" x="41.95" y="96.96" width="3" height="3" transform="translate(-63.54 86.85) rotate(-60)"/>
+  <rect class="cls-1" x="35.02" y="92.96" width="3" height="3" transform="translate(-63.54 78.85) rotate(-60)"/>
+  <path class="cls-1" d="m41.98,51.29v25.43l22.02,12.71,22.02-12.71v-25.43l-22.02-12.71-22.02,12.71Zm40.26,21.51l-1.5,2.6.78.45-16.02,9.25v-18.5l.78.45,1.5-2.6-.78-.45,16.02-9.25v18.5l-.78-.45Zm-36.48,0l-.78.45v-18.5l16.02,9.25-.78.45,1.5,2.6.78-.45v18.5l-16.02-9.25.78-.45-1.5-2.6Zm19.74-11.4v-.9h-3v.9l-16.02-9.25,16.02-9.25v.9h3v-.9l16.02,9.25-16.02,9.25Z"/>
+  <rect class="cls-1" x="62.5" y="48.71" width="3" height="6.88"/>
+  <rect class="cls-1" x="72.76" y="66.49" width="3" height="6.88" transform="translate(-23.42 99.27) rotate(-60)"/>
+  <rect class="cls-1" x="50.3" y="68.42" width="6.88" height="3" transform="translate(-27.76 36.24) rotate(-30)"/>
+  <polygon class="cls-1" points="30.03 39.02 32.63 37.52 31.13 34.93 28.53 36.43 22.39 39.97 22.39 47.07 22.39 48.93 25.39 48.93 25.39 47.07 25.39 43.44 38.65 51.1 40.15 48.5 26.89 40.84 30.03 39.02"/>
+  <polygon class="cls-1" points="25.39 84.56 25.39 80.93 25.39 77.93 22.39 77.93 22.39 80.93 22.39 88.03 28.53 91.57 30.14 92.5 31.64 89.91 30.03 88.98 26.89 87.16 40.15 79.5 38.65 76.9 25.39 84.56"/>
+  <polygon class="cls-1" points="99.47 36.43 97.86 35.49 96.36 38.09 97.97 39.02 101.12 40.84 87.85 48.5 89.35 51.1 102.61 43.44 102.61 47.07 102.61 50.07 105.61 50.07 105.61 47.07 105.61 39.97 99.47 36.43"/>
+</svg>
