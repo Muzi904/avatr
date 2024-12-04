@@ -36,7 +36,7 @@
         </div>
         <ul>
             <li>
-                <a href="#">About</a>
+                <a href="#">About us</a>
             </li>
             <li><a href="#">Design</a></li>
             <li><a href="#">Tech </a></li>

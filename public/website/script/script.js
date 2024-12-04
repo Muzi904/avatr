@@ -130,39 +130,51 @@ document.querySelectorAll(".tab-btn-color").forEach((tabBtn) => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    var colorVariants = document.querySelectorAll(".colors button");
+    // Function to handle color variant switching for a specific container
+    function handleColorVariants(containerClass) {
+        var container = document.querySelector(`.${containerClass}`);
+        if (!container) return;
 
-    colorVariants.forEach((button) => {
-        button.addEventListener("mouseover", function () {
-            var targetId = this.getAttribute("data-target");
+        var buttons = container.querySelectorAll(".colors button");
 
-            // Hide all figure elements (images)
-            document.querySelectorAll(".images figure").forEach((figure) => {
-                figure.classList.add("d-none");
+        buttons.forEach((button) => {
+            button.addEventListener("mouseover", function () {
+                var targetId = this.getAttribute("data-target");
+
+                // Hide all figure elements (images) within this container
+                container
+                    .querySelectorAll(".images figure")
+                    .forEach((figure) => {
+                        figure.classList.add("d-none");
+                    });
+
+                // Hide all text elements (color names) within this container
+                container.querySelectorAll("[id$='-text']").forEach((text) => {
+                    text.classList.add("d-none");
+                });
+
+                // Show the selected image
+                var targetFigure = container.querySelector(`#${targetId}`);
+                if (targetFigure) {
+                    targetFigure.classList.remove("d-none");
+                }
+
+                // Show the selected text
+                var targetText = container.querySelector(`#${targetId}-text`);
+                if (targetText) {
+                    targetText.classList.remove("d-none");
+                }
+
+                // Remove 'active' class from all buttons in this container, then add to the hovered button
+                buttons.forEach((btn) => btn.classList.remove("active"));
+                this.classList.add("active");
             });
-
-            // Hide all text elements (color names)
-            document.querySelectorAll("[id$='-text']").forEach((text) => {
-                text.classList.add("d-none");
-            });
-
-            // Show the selected image
-            var targetFigure = document.getElementById(targetId);
-            if (targetFigure) {
-                targetFigure.classList.remove("d-none");
-            }
-
-            // Show the selected text
-            var targetText = document.getElementById(`${targetId}-text`);
-            if (targetText) {
-                targetText.classList.remove("d-none");
-            }
-
-            // Remove 'active' class from all buttons, then add to the hovered button
-            colorVariants.forEach((btn) => btn.classList.remove("active"));
-            this.classList.add("active");
         });
-    });
+    }
+
+    // Initialize for each container
+    handleColorVariants("avatr11");
+    handleColorVariants("avatr12");
 });
 
 const swiperQuiz = new Swiper(".animeslide", {
