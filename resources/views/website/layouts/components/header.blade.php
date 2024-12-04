@@ -4,10 +4,10 @@
     <div class="container-fluid">
         <ul>
             <li>
-                <a href="#">Avatr11</a>
+                <a href="#">Avatr 11</a>
             </li>
             <li>
-                <a href="#">Avatr12</a>
+                <a href="#">Avatr 12</a>
             </li>
         </ul>
         <div class="logo">
