@@ -1,3 +1,6 @@
+:root {
+  --child-height: 240px;
+}
 header {
   position: fixed;
   top: 0;
@@ -48,6 +51,7 @@ header ul li a {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
   font-family: 'AVATRFont-Regular';
+  position: relative;
 }
 .HeaderForPC_graphic-logo__3C7QW {
   opacity: 1;
@@ -60,19 +64,71 @@ header ul li a {
 }
 
 /* Styles when the header is scrolled */
+header:hover,
 header.scrolled {
   background-color: #181818;
 }
 
+header:hover .logo,
 header.scrolled .logo {
   top: -67px;
 }
-
+header:hover .HeaderForPC_graphic-logo__3C7QW,
 header.scrolled .HeaderForPC_graphic-logo__3C7QW {
   opacity: 0;
 }
 
+header:hover .HeaderForPC_letter-logo__1cvY3,
 header.scrolled .HeaderForPC_letter-logo__1cvY3 {
   width: 8em;
   height: auto;
 }
+
+header ul li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #b4d719;
+  bottom: 0;
+  top: 23px;
+  transition: width 0.3s ease;
+}
+
+header ul li a:hover {
+  color: #fff;
+}
+
+header ul li a:hover::before {
+  width: 100%;
+}
+/* 
+header .dropdown {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 64px;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.75);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+  height: 264px;
+}
+.dropdown .main-container {
+  width: calc(100vw - 160px);
+  max-width: 100%;
+  padding: 30px 0;
+}
+.dropdown .columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.dropdown .column {
+  flex: 1;
+}
+.dropdown .column {
+  flex: 1;
+} */

@@ -10,4 +10,4 @@ Auth::routes();
 
 
 Route::get('/', [PageController::class, 'home'])->name('home');
-Route::get('/about', [PageController::class, 'about'])->name('about');
+Route::get('/avatr11', [PageController::class, 'avatr11'])->name('avatr11');

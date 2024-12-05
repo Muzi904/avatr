@@ -8,6 +8,12 @@
 .w-100px {
   width: 100px;
 }
+.mt-100 {
+  margin-top: 100px;
+}
+.text-dark {
+  color: #181818 !important;
+}
 @font-face {
   font-family: 'AVATRFont-Light';
   src: url('../fonts/AVATRFont-Light_EN.woff2') format('woff2'),
@@ -30,7 +36,7 @@
   font-family: 'AVATRFont-Bold';
   src: url('../fonts/AVATRFont-Bold_EN.woff2') format('woff2'),
     url('../fonts/AVATRFont-Bold.woff') format('woff');
-  font-weight: bold;
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
@@ -87,6 +93,22 @@
   left: 50px;
   z-index: 1;
 }
+.creative-fullpage--slider .swiper-slide .slider-inner .swiper-content p {
+  font-size: 14px;
+  color: #fff;
+  line-height: 20px;
+  margin-top: 24px;
+  text-align: left;
+  font-family: 'AVATRFont-Light';
+  margin-top: 0;
+}
+.creative-fullpage--slider .swiper-slide .slider-inner .swiper-content p span {
+  font-size: 20px;
+  position: relative;
+  top: 1px;
+  font-family: 'AVATRFont-Regular';
+  font-weight: bold;
+}
 .creative-fullpage--slider .swiper-slide .slider-inner::after {
   content: '';
   position: absolute;
@@ -108,7 +130,6 @@
   margin-top: 50px;
   color: #fff;
   font-size: 8vw;
-  font-family: 'Inter', sans-serif;
   font-weight: 900;
   line-height: 1.1;
   text-transform: uppercase;
@@ -879,6 +900,7 @@
 footer {
   padding: 50px 0 0;
   border-bottom: 1px solid #7e7e7e;
+  background: #fbfbfb;
 }
 footer p {
   font-size: 12px;
@@ -907,6 +929,7 @@ footer ul li a {
 .footer-bottom {
   display: flex;
   justify-content: space-between;
+  background: #fbfbfb;
 }
 .footer-bottom ul:nth-child(2) {
   display: flex;
@@ -934,4 +957,360 @@ footer ul li a {
   padding: 15px 0;
   margin-bottom: 0;
   font-family: 'AVATRFont-Regular';
+}
+
+.section-one {
+  position: relative;
+}
+.section-one h2 {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 56px;
+  color: #181818;
+  text-align: center;
+  line-height: 84px;
+  font-family: 'AVATRFont-Regular';
+  width: 100%;
+}
+.section-two .text {
+  text-align: center;
+}
+.section-two .text h2 {
+  font-family: 'AVATRFont-Light';
+  font-size: 42px;
+  color: #181818;
+  line-height: 42px;
+  font-weight: 200;
+}
+.section-two .text h6 {
+  font-family: 'AVATRFont-Light';
+  font-size: 20px;
+  color: #181818;
+  line-height: 24px;
+  font-weight: 200;
+  margin-top: 10px;
+}
+.scrolltabs .tabs-container {
+  max-width: 100%;
+  margin: auto;
+}
+
+.scrolltabs .tabs {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap; /* Prevents tabs from wrapping */
+  width: 100%;
+  max-width: calc(100% - 160px);
+  margin-inline: auto;
+  margin: 32px auto 0;
+}
+.scrolltabs .tabs::-webkit-scrollbar {
+  height: 0; /* Height of the horizontal scrollbar */
+}
+
+.scrolltabs .tab {
+  flex: 0 0 auto; /* Prevents shrinking of the tabs */
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+  transition: background-color 0.3s;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0 50px 14px;
+  cursor: pointer;
+  width: 33.3%;
+  font-family: 'AVATRFont-Light';
+}
+
+.scrolltabs .tab.active {
+  background-color: #fff;
+  border-bottom: 2px solid #181818;
+  color: #181818;
+  font-weight: 600;
+}
+
+.scrolltabs .tab-content {
+  border-top: none;
+}
+
+.scrolltabs .content {
+  display: none;
+}
+.scrolltabs .content-text {
+  width: 100%;
+  padding: 0 80px;
+  margin-top: 24px;
+  min-height: var(--min-height);
+  text-align: center;
+  font-family: 'AVATRFont-Light';
+  min-height: 160px;
+}
+
+.scrolltabs .content.active {
+  display: block;
+}
+.car-page .heading,
+.section-three .heading {
+  display: flex;
+  gap: 20px;
+}
+.car-page .heading h1,
+.section-three .heading h2 {
+  font-family: 'AVATRFont-Light';
+  font-size: 36px;
+  color: #181818;
+  line-height: 42px;
+  font-weight: 200;
+}
+.car-page .heading {
+  justify-content: space-between;
+  padding: 32px 0;
+}
+.car-page ul {
+  display: flex;
+  gap: 36px;
+  padding-left: 0;
+}
+.car-page ul li {
+  text-align: center;
+  max-width: 19 0px;
+}
+.car-page .heading h2 {
+  font-size: 36px;
+  color: #181818;
+  line-height: 38px;
+  font-family: 'AVATRFont-Regular';
+  font-weight: 400;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 5px;
+}
+.car-page .heading span {
+  font-size: 10px;
+  color: #666;
+  line-height: 17px;
+  font-weight: 400;
+  margin-top: -4px;
+}
+.section-three .heading ul {
+  display: flex;
+  padding-left: 0;
+}
+.section-three .heading li {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  gap: 5px;
+  font-family: 'AVATRFont-Regular';
+  padding-left: 10px;
+  position: relative;
+  height: fit-content;
+}
+.section-three .heading li::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  width: 1px;
+  height: 100%;
+  background-color: #181818;
+}
+.section-three .heading li span {
+  font-size: 12px;
+  color: #181818;
+  line-height: 16px;
+  font-weight: 500;
+}
+.section-three .heading li h3 {
+  font-size: 24px;
+  color: #181818;
+  line-height: 32px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.section-three .heading li:last-child {
+  margin-right: 0;
+}
+.section-one .text {
+  text-align: center;
+}
+.section-one .text h1 {
+  font-family: AVATRFont-Light;
+  font-size: 42px;
+  color: #181818;
+  line-height: 42px;
+  font-weight: 200;
+}
+.section-one .text h6 {
+  font-family: AVATRFont-Light;
+  font-size: 20px;
+  color: #181818;
+  line-height: 24px;
+  font-weight: 200;
+  margin-top: 10px;
+}
+.section-one .text h4 {
+  font-family: AVATRFont-Light;
+  font-size: 36px;
+  color: #181818;
+  text-align: center;
+  font-weight: 200;
+  padding: 60px 0 40px;
+}
+.car-page .swiper-button-next,
+.car-page .swiper-button-prev {
+  background: #181818;
+}
+.imgaewthtextbox {
+  position: relative;
+  overflow: hidden;
+}
+.imgaewthtextbox .swiper-wrapper {
+}
+.imgaewthtextbox .imagewithtextcontainer {
+  display: flex;
+}
+.imgaewthtextbox .imagewithtextcontainer .text {
+  width: 100%;
+  padding: 28px 32px;
+  border: 1px solid #979797;
+  position: relative;
+  z-index: 2;
+  display: -moz-box;
+  display: flex;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column;
+}
+.imgaewthtextbox .imagewithtextcontainer .text h3 {
+  font-size: 30px;
+  line-height: 36px;
+  font-family: AVATRFont-Light;
+  font-size: 36px;
+  color: #181818;
+  font-weight: 300;
+}
+.imgaewthtextbox .imagewithtextcontainer .text p {
+  font-family: AVATRFont-Light;
+  font-size: 16px;
+  color: #181818;
+  letter-spacing: 0;
+  line-height: 24px;
+  font-weight: 300;
+}
+.imgaewthtextbox .swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 2px;
+  width: 24px;
+  border-radius: 0;
+}
+.imgaewthtextbox .swiper-pagination-bullet-active {
+  background-color: #181818;
+}
+.swiper-without-arrow h1 {
+  font-family: AVATRFont-Light;
+  font-size: 36px;
+  color: #181818;
+  text-align: center;
+  font-weight: 200;
+  padding: 60px 80px 40px;
+}
+.tab-section2 {
+  background-color: #000;
+  padding-top: 80px;
+}
+.tab-section2 .scrolltabs .tab {
+  color: var(--white-color);
+  background-color: transparent;
+  width: fit-content;
+}
+.tab-section2 .scrolltabs .content-text {
+  color: var(--white-color);
+}
+.tab-section2 .scrolltabs .tab.active {
+  border-color: var(--white-color);
+}
+
+.dark-section-three {
+  background-color: #000;
+}
+.dark-section-three h2 {
+  color: var(--white-color) !important;
+  flex: 1;
+}
+.dark-section-three p {
+  font-family: AVATRFont-Light;
+  font-size: 16px;
+  color: var(--white-color);
+  line-height: 24px;
+  font-weight: 300;
+}
+.dark-section-three ul {
+  flex: 0.4;
+  justify-content: end;
+}
+.dark-section-three ul li {
+  text-align: center;
+}
+.dark-section-three ul li h3 {
+  color: var(--white-color) !important;
+  font-size: 36px !important;
+  line-height: 38px !important;
+  font-weight: 400 !important;
+}
+.dark-section-three ul li span {
+  color: var(--white-color) !important;
+}
+.dark-section-three .heading {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.section-four {
+  position: relative;
+}
+.section-four .icon-main-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 40px 80px;
+}
+.section-four .icon-main-container img {
+  width: 50px;
+}
+.section-four .icon-main-container h3 {
+  font-family: AVATRFont-Light;
+  font-size: 36px;
+  color: #fff;
+  line-height: 42px;
+  font-weight: 200;
+}
+.section-four .icon-main-container h5 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  font-family: AVATRFont-Light;
+}
+.section-four .SoundAlgorithms_HarmonyOS-bgm__2-5eY {
+  display: block;
+  margin: 0 auto;
+  width: 723px !important;
+  max-width: 100%;
+}
+.car-page p {
+  font-family: AVATRFont-Light;
+  font-size: 16px;
+  color: #181818;
+  line-height: 24px;
+  font-weight: 300;
+}
+.sectioncarpage .animeslide-slide .container {
+  bottom: 0;
+  top: auto;
 }

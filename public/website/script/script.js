@@ -1,15 +1,15 @@
 // nabar
-const navbar = document.getElementById("header");
+const header = document.querySelector("header");
 
-// Listen for the scroll event
-window.addEventListener("scroll", function () {
+// Optional: Handle the "scrolled" state
+window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
-        // Adjust the scroll threshold
-        navbar.classList.add("scrolled");
+        header.classList.add("scrolled");
     } else {
-        navbar.classList.remove("scrolled");
+        header.classList.remove("scrolled");
     }
 });
+
 // hero
 $(document).ready(function () {
     var swiper = new Swiper(".swiper-container-h", {
@@ -208,8 +208,45 @@ gsap.timeline({
         end: "bottom 20%", // End when the bottom reaches 20% of the viewport height
         toggleActions: "restart none none reverse", // Adjust behavior when scrolling
         scrub: true, // Syncs the animation with the scroll
-        markers: true, // Show markers for debugging
+        // markers: true, // Show markers for debugging
     },
 }).to(container, {
     scale: 1.3,
+});
+
+// overflow tabs
+document.addEventListener("DOMContentLoaded", () => {
+    const tabContainers = document.querySelectorAll(".tabs-container"); // Select all tab groups
+
+    tabContainers.forEach((container) => {
+        const tabs = container.querySelectorAll(".tabs .tab");
+        const imageContents = container.querySelectorAll(
+            ".tab-content .content:not(.content-text)"
+        ); // Image/video content
+        const textContents = container.querySelectorAll(
+            ".tab-content .content.content-text"
+        ); // Text content
+
+        tabs.forEach((tab) => {
+            tab.addEventListener("click", () => {
+                // Remove active class from all tabs, image contents, and text contents in the current container
+                tabs.forEach((t) => t.classList.remove("active"));
+                imageContents.forEach((c) => c.classList.remove("active"));
+                textContents.forEach((c) => c.classList.remove("active"));
+
+                // Add active class to the clicked tab
+                tab.classList.add("active");
+
+                // Get the target image and text content
+                const imageTarget = container.querySelector(tab.dataset.target);
+                const textTarget = container.querySelector(
+                    tab.dataset.textTarget
+                );
+
+                // Add active class to the corresponding image and text content
+                if (imageTarget) imageTarget.classList.add("active");
+                if (textTarget) textTarget.classList.add("active");
+            });
+        });
+    });
 });
