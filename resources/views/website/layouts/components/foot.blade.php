@@ -63,3 +63,31 @@
         lazy: true, // Enable lazy loading for images
     });
 </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const video = document.getElementById("scrollVideo");
+        // Disable Picture-in-Picture
+        video.disablePictureInPicture = true;
+        // Check if Intersection Observer is supported
+        if ("IntersectionObserver" in window) {
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            video.play(); // Play video when it's in view
+                        } else {
+                            video.pause(); // Pause video when it's out of view
+                        }
+                    });
+                }, {
+                    threshold: 0.5, // Adjust the threshold as needed (50% of the video must be in view)
+                }
+            );
+            observer.observe(video);
+        } else {
+            // Fallback for older browsers
+            console.warn("Intersection Observer is not supported in this browser.");
+        }
+    });
+</script>

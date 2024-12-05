@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="{{ asset('website/css/header.css') }}">
 
 <header id="header">
-    <div class="container-fluid">
+    <div class="container">
         <ul>
             <li>
                 <a href="{{ route('avatr11') }}">Avatr 11</a>

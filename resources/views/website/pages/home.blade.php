@@ -14,22 +14,25 @@
                                     class="HomeBanner_image-slider__9mcEU" loading="lazy">
                             </picture>
                             <div class="swiper-content" data-swiper-parallax="2000">
-                                <div class="title-area">
-                                    <picture>
-                                        <source
-                                            srcset="https://static.avatr.com/pc-website/images/home3.0/mobile/logo-e11_en.png"
-                                            media="(max-width: 768px)"><img
-                                            src="https://static.avatr.com/pc-website/images/home3.0/pc/logo-e11_en.png"
-                                            alt="" class="w-100" loading="lazy">
-                                    </picture>
-                                </div>
-                                <div class="creative-btn--wrap">
-                                    <a class="creative-slide--btn" role="button" href="#0">
-                                        <div class="creative-btn--label">
-                                            <div class="creative-btn__text">Find more</div>
+                                <div class="container">
+                                    <div class="title-area">
+                                        <picture>
+                                            <source
+                                                srcset="https://static.avatr.com/pc-website/images/home3.0/mobile/logo-e11_en.png"
+                                                media="(max-width: 768px)"><img
+                                                src="https://static.avatr.com/pc-website/images/home3.0/pc/logo-e11_en.png"
+                                                alt="" class="w-100" loading="lazy">
+                                        </picture>
+                                    </div>
+                                    <div class="creative-btn--wrap">
+                                        <a class="creative-slide--btn" role="button" href="#0">
+                                            <div class="creative-btn--label">
+                                                <div class="creative-btn__text">Find more</div>
 
-                                        </div>
-                                    </a>
+                                            </div>
+                                        </a>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -599,7 +602,7 @@
     </section>
 
     <section class="app-section" style="background-image: url({{ asset('website/images/home/bgm-pc.jpg') }})">
-        <div class="main-container">
+        <div class="container">
             <div class="column">
                 <h1>Download the AVATR APP</h1>
                 <p>

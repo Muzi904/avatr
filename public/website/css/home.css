@@ -14,6 +14,12 @@
 .text-dark {
   color: #181818 !important;
 }
+li {
+  list-style: none !important;
+}
+.fs-14 {
+  font-size: 14px;
+}
 @font-face {
   font-family: 'AVATRFont-Light';
   src: url('../fonts/AVATRFont-Light_EN.woff2') format('woff2'),
@@ -90,7 +96,7 @@
 .creative-fullpage--slider .swiper-slide .slider-inner .swiper-content {
   position: absolute;
   top: 22%;
-  left: 50px;
+  left: 80px;
   z-index: 1;
 }
 .creative-fullpage--slider .swiper-slide .slider-inner .swiper-content p {
@@ -229,6 +235,7 @@
   align-items: center;
   justify-content: center;
   background: #fbfbfb;
+  border: 1px solid #fbfbfb;
   border-radius: 5px;
   text-decoration: none !important;
   font-family: 'AVATRFont-Regular';
@@ -844,9 +851,9 @@
   overflow: hidden;
   background-size: cover;
 }
-.app-section .main-container {
-  max-width: 1100px;
-  margin-inline: auto;
+.app-section .container {
+  /* max-width: 1100px; */
+  /* margin-inline: auto; */
   display: flex;
   justify-content: space-between;
   padding-top: 90px;
@@ -856,6 +863,8 @@
   color: #000;
   line-height: 40px;
   letter-spacing: 1px;
+  font-family: 'AVATRFont-Regular';
+  margin-bottom: 15px;
 }
 .app-section .column p {
   font-size: 14px;
@@ -1197,7 +1206,7 @@ footer ul li a {
 }
 .imgaewthtextbox .imagewithtextcontainer .text p {
   font-family: AVATRFont-Light;
-  font-size: 16px;
+  font-size: 14px;
   color: #181818;
   letter-spacing: 0;
   line-height: 24px;
@@ -1279,7 +1288,6 @@ footer ul li a {
   right: 0;
   bottom: 0;
   z-index: 2;
-  padding: 40px 80px;
 }
 .section-four .icon-main-container img {
   width: 50px;
@@ -1313,4 +1321,309 @@ footer ul li a {
 .sectioncarpage .animeslide-slide .container {
   bottom: 0;
   top: auto;
+}
+.avatr12bg-section-one {
+  width: 100%;
+  padding-bottom: 90px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+}
+.avatr12bg-section-one h1 {
+  width: 100%;
+  padding: 120px 80px 40px;
+  font-size: 56px;
+  color: #181818;
+  text-align: center;
+  line-height: 84px;
+  font-weight: 400;
+}
+
+.avatr12bg-section-one .heading h1 {
+  font-family: AVATRFont-Light;
+  font-size: 36px;
+  color: #181818;
+  font-weight: 200;
+  padding: 0;
+  line-height: normal;
+  text-align: start;
+}
+.avatr12bg-section-one .heading p {
+  font-size: 16px;
+  color: #181818;
+  line-height: 24px;
+  font-weight: 400;
+}
+.Power_container-ev__2DJyZ {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+  gap: 24px;
+  font-size: 0;
+}
+.Power_container-ev__2DJyZ .Power_content-ev__1jwZS {
+  padding-left: 80px;
+  display: -moz-box;
+  display: flex;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column;
+  -moz-box-pack: center;
+  justify-content: center;
+}
+.Power_container-ev__2DJyZ .Power_ev-title__3e_Z8 {
+  font-size: 36px;
+  color: #181818;
+  font-weight: 600;
+  font-family: AVATRFont-Light;
+}
+.Power_container-ev__2DJyZ .Power_ev-content__2v22O {
+  font-family: AVATRFont-Light;
+  font-size: 16px;
+  color: #181818;
+  line-height: 24px;
+  font-weight: 200;
+  margin-top: 8px;
+}
+.TextOnImg_content__1DDkn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 40px 80px;
+  z-index: 2;
+}
+.TextOnImg_text-title__2_zUz {
+  font-family: AVATRFont-Light;
+  font-size: 36px;
+  color: #fff;
+  font-weight: 200;
+  margin-bottom: 12px;
+  max-width: 50%;
+}
+.TextOnImg_text-desc__Oe_RF {
+  font-family: AVATRFont-Light;
+  font-size: 16px;
+  color: #fff;
+  line-height: 28px;
+  font-weight: 200;
+  max-width: 50%;
+}
+.Luxury_modes-pc-title__2UJ1L.Luxury_modes-pc-title__2UJ1L {
+  margin-top: 80px;
+}
+.Luxury_modes-pc-list__3U7Nn {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 16px;
+  gap: 16px;
+  margin-top: 24px;
+}
+.Luxury_modes-pc-item__1wx6Z {
+  padding: 16px;
+  border: 1px solid #fff;
+  list-style: none;
+}
+.Luxury_modes-pc-item__1wx6Z > p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: normal;
+}
+.Luxury_luxury-vivid__fhe0x {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  grid-gap: 26px;
+  gap: 26px;
+  padding-top: 60px;
+  background-color: #000;
+}
+.Luxury_vivid-content__1itfX {
+  padding-left: 80px;
+  display: -moz-box;
+  display: flex;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column;
+  grid-gap: 12px;
+  gap: 12px;
+  -moz-box-pack: center;
+  justify-content: center;
+}
+.Luxury_luxury-vivid__fhe0x .Luxury_vivid-title__10L3d {
+  font-family: AVATRFont-Light;
+  font-size: 36px;
+  color: #fff;
+  font-weight: 200;
+}
+.Luxury_luxury-vivid__fhe0x .Luxury_vivid-desc__9Wfcd {
+  font-family: AVATRFont-Light;
+  font-size: 16px;
+  color: #fff;
+  line-height: 28px;
+  font-weight: 200;
+}
+.Chassis_chassis-lightspot__3UAes {
+  width: 100%;
+  padding: 0;
+  margin-top: -70px;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 12px;
+  gap: 12px;
+}
+.Chassis_lightspot-item__2m_EA {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid #fff;
+  padding: 36px 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #181818;
+  line-height: 32px;
+  font-weight: 600;
+  list-style: none;
+  font-family: AVATRFont-Light;
+}
+.SwiperPC03_figure-content__3X3yN {
+  display: -moz-box;
+  display: flex;
+  grid-gap: 24px;
+  gap: 24px;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+.SwiperPC03_figure-value__2nGfn {
+  font-size: 34px !important;
+  color: #181818 !important;
+  line-height: 38px !important;
+  font-weight: 600 !important;
+  font-family: AVATRFont-Light;
+  margin-bottom: 0 !important;
+}
+.SwiperPC03_figure-value__2nGfn span {
+  font-size: 12px;
+  line-height: 38px;
+  font-weight: 300;
+  font-family: AVATRFont-Light;
+}
+.SwiperPC03_figure-name__2ERnE {
+  font-size: 10px !important;
+  color: #666 !important;
+  letter-spacing: 0 !important;
+  line-height: 12px !important;
+  font-weight: 400 !important;
+  font-family: AVATRFont-Light;
+  margin-bottom: 0;
+}
+.imagewithtextcontainer .video-container {
+  flex: 0.7;
+}
+.imagewithtextcontainer .text-container {
+  flex: 0.3;
+}
+.imagewithtextcontainer .text-container h3 {
+  font-size: 30px !important;
+  line-height: 36px !important;
+}
+.whitepanigation .imgaewthtextbox .swiper-pagination-bullet-active {
+  background-color: var(--white-color) !important;
+}
+.whitepanigation .imgaewthtextbox .swiper-pagination-bullet {
+  background-color: var(--white-color) !important;
+}
+.Intelligence_intelligence-second-title__2GORS {
+  font-family: AVATRFont-Light;
+  font-size: 36px;
+  color: #181818;
+  line-height: 50px;
+  font-weight: 200;
+  text-align: center;
+}
+.SectionTitle_title__39HkV {
+  font-family: AVATRFont-Light;
+
+  width: 100%;
+  padding: 0 0 40px;
+  font-size: 56px;
+  color: #181818;
+  text-align: center;
+  line-height: 84px;
+  font-weight: 400;
+}
+.SwiperPC01_slider-data__2kCeI {
+  display: -moz-box;
+  display: flex;
+  grid-gap: 36px;
+  gap: 36px;
+}
+.SwiperPC01_data-item__2KGUH {
+  text-align: center;
+}
+.SwiperPC01_item-value__1Clv8 {
+  font-size: 32px !important;
+  color: #181818 !important;
+  line-height: 38px !important;
+  font-weight: 600 !important;
+  font-family: AVATRFont-Light;
+}
+.SwiperPC01_item-name__1EGZZ {
+  font-size: 10px !important;
+  line-height: 17px !important;
+  font-weight: 400;
+  margin-top: -4px !important;
+  font-family: AVATRFont-Light;
+}
+.Intelligence_laser-cabi__1Crj5 {
+  width: 100%;
+  padding: 0;
+  margin-top: 120px;
+  display: -moz-box;
+  display: flex;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column;
+  grid-gap: 60px;
+  gap: 60px;
+}
+.Intelligence_laser-cabi-item__Auu_U {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
+  gap: 60px;
+}
+.Intelligence_laser-cabi-item__Auu_U .Intelligence_item-content__2p9qY {
+  display: -moz-box;
+  display: flex;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column;
+  -moz-box-pack: center;
+  justify-content: center;
+  grid-gap: 12px;
+  gap: 12px;
+}
+
+.Intelligence_laser-cabi-item__Auu_U .Intelligence_item-content__2p9qY p {
+  font-family: AVATRFont-Light;
+  font-size: 14px;
+  color: #181818;
+  line-height: 24px;
+  font-weight: 200;
+}
+.Intelligence_laser-cabi-item__Auu_U .Intelligence_item-title__1-g4u {
+  font-family: AVATRFont-Light;
+  font-size: 36px;
+  color: #181818;
+  line-height: 42px;
+  font-weight: 200;
 }
