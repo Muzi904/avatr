@@ -105,7 +105,7 @@
         <h1>Design goes one step further
         </h1>
         <div class="container">
-            <video id="scrollVideo" class=" w-100 mb-3" playsinline autoplay loop muted
+            <video muted id="scrollVideo" class=" w-100 mb-3" playsinline autoplay loop muted
                 src="{{ asset('website/images/avatr12/video1.mp4') }}"></video>
             <div class="heading">
                 <h1>Future Original Design

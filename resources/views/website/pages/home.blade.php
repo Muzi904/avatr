@@ -8,20 +8,18 @@
                     <div class="swiper-slide">
                         <div class="slider-inner" data-swiper-parallax="100">
                             <picture>
-                                <source srcset="https://static.avatr.com/pc-website/images/reev11/v1/h5/KV-11.jpg"
-                                    media="(max-width: 768px)"><img
-                                    src="https://static.avatr.com/pc-website/images/reev11/v1/pc/KV-11.jpg" alt=""
-                                    class="HomeBanner_image-slider__9mcEU" loading="lazy">
+                                <source srcset="{{ asset('website/images/home/hero1.jpg') }}" media="(max-width: 768px)"><img
+                                    src="{{ asset('website/images/home/hero1.jpg') }}" alt=""
+                                    class="HomeBanner_image-slider__9mcEU w-100" loading="lazy">
                             </picture>
                             <div class="swiper-content" data-swiper-parallax="2000">
                                 <div class="container">
                                     <div class="title-area">
                                         <picture>
-                                            <source
-                                                srcset="https://static.avatr.com/pc-website/images/home3.0/mobile/logo-e11_en.png"
+                                            <source srcset="{{ asset('website/images/home/sub-hero1.png') }}"
                                                 media="(max-width: 768px)"><img
-                                                src="https://static.avatr.com/pc-website/images/home3.0/pc/logo-e11_en.png"
-                                                alt="" class="w-100" loading="lazy">
+                                                src="{{ asset('website/images/home/sub-hero1.png') }}" alt=""
+                                                class="w-100" loading="lazy">
                                         </picture>
                                     </div>
                                     <div class="creative-btn--wrap">
@@ -41,49 +39,17 @@
                     <div class="swiper-slide">
                         <div class="slider-inner" data-swiper-parallax="100">
                             <picture>
-                                <source srcset="https://static.avatr.com/pc-website/images/car12/v1/h5/banner_12.jpg"
-                                    media="(max-width: 768px)"><img
-                                    src="https://static.avatr.com/pc-website/images/car12/v1/pc/banner_12.jpg"
-                                    alt="" class="HomeBanner_image-slider__9mcEU" loading="lazy">
-                            </picture>
-                            <div class="swiper-content" data-swiper-parallax="2000">
-                                <div class="title-area">
-                                    <picture>
-                                        <source
-                                            srcset="https://static.avatr.com/pc-website/images/home3.0/mobile/logo-car12_en.png"
-                                            media="(max-width: 768px)"><img
-                                            src="https://static.avatr.com/pc-website/images/home3.0/pc/logo-car12_en.png"
-                                            alt="" class="HomeBanner_logo-car__1Hxv8" loading="lazy">
-                                    </picture>
-                                </div>
-                                <div class="creative-btn--wrap">
-                                    <a class="creative-slide--btn" role="button" href="#0">
-                                        <div class="creative-btn--label">
-                                            <div class="creative-btn__text">Find more</div>
-
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="slider-inner" data-swiper-parallax="100">
-                            <picture>
-                                <source srcset="https://static.avatr.com/pc-website/images/e07/v3/h5/banner-kv.jpg"
-                                    media="(max-width: 768px)"><img
-                                    src="https://static.avatr.com/pc-website/images/e07/v3/pc/banner-kv.jpg" alt=""
+                                <source srcset="{{ asset('website/images/home/hero2.jpg') }}" media="(max-width: 768px)">
+                                <img src="{{ asset('website/images/home/hero2.jpg') }}" alt=""
                                     class="HomeBanner_image-slider__9mcEU" loading="lazy">
                             </picture>
                             <div class="swiper-content" data-swiper-parallax="2000">
                                 <div class="title-area">
                                     <picture>
-                                        <source
-                                            srcset="https://static.avatr.com/pc-website/images/home3.0/mobile/logo-e07_en.png?v=2"
+                                        <source srcset="{{ asset('website/images/home/sub-hero2.png') }}"
                                             media="(max-width: 768px)"><img
-                                            src="https://static.avatr.com/pc-website/images/home3.0/pc/logo-e07_en.png?v=2"
-                                            alt="" class="HomeBanner_logo-car__1Hxv8" loading="lazy">
+                                            src="{{ asset('website/images/home/sub-hero2.png') }}" alt=""
+                                            class="HomeBanner_logo-car__1Hxv8" loading="lazy">
                                     </picture>
                                 </div>
                                 <div class="creative-btn--wrap">
@@ -101,19 +67,17 @@
                     <div class="swiper-slide">
                         <div class="slider-inner" data-swiper-parallax="100">
                             <picture>
-                                <source srcset="https://static.avatr.com/pc-website/images/home3.0/mobile/banner_012.jpg"
-                                    media="(max-width: 768px)"><img
-                                    src="https://static.avatr.com/pc-website/images/home3.0/pc/banner_012.jpg"
-                                    alt="" class="HomeBanner_image-slider__9mcEU" loading="lazy">
+                                <source srcset="{{ asset('website/images/home/hero3.jpg') }}" media="(max-width: 768px)">
+                                <img src="{{ asset('website/images/home/hero3.jpg') }}" alt=""
+                                    class="HomeBanner_image-slider__9mcEU" loading="lazy">
                             </picture>
                             <div class="swiper-content" data-swiper-parallax="2000">
                                 <div class="title-area">
                                     <picture>
-                                        <source
-                                            srcset="https://static.avatr.com/pc-website/images/home3.0/mobile/logo-car012_en.png"
+                                        <source srcset="{{ asset('website/images/home/sub-hero3.png') }}"
                                             media="(max-width: 768px)"><img
-                                            src="https://static.avatr.com/pc-website/images/home3.0/pc/logo-car012_en.png"
-                                            alt="" class="HomeBanner_logo-car__1Hxv8" loading="lazy">
+                                            src="{{ asset('website/images/home/sub-hero3.png') }}" alt=""
+                                            class="HomeBanner_logo-car__1Hxv8" loading="lazy">
                                     </picture>
                                 </div>
                                 <div class="creative-btn--wrap">
@@ -130,20 +94,44 @@
 
                     <div class="swiper-slide">
                         <div class="slider-inner" data-swiper-parallax="100">
-                            <video autoplay="" playsinline="" muted="" loop="" id="home-tony-video"
-                                webkit-playsinline="true" preload="metadata" class="HomeBanner_video-slider__1YMax"
-                                poster="https://static.avatr.com/pc-website/images/home3.0/pc/Tony-brand.jpg">
-                                <source src="https://static.avatr.com/pc-website/videos/home/brand-short_pc.mp4"
-                                    type="video/mp4">
-                            </video>
+                            <picture>
+                                <source srcset="{{ asset('website/images/home/hero4.jpg') }}" media="(max-width: 768px)">
+                                <img src="{{ asset('website/images/home/hero4.jpg') }}" alt=""
+                                    class="HomeBanner_image-slider__9mcEU" loading="lazy">
+                            </picture>
                             <div class="swiper-content" data-swiper-parallax="2000">
                                 <div class="title-area">
                                     <picture>
-                                        <source
-                                            srcset="https://static.avatr.com/pc-website/images/home3.0/mobile/logo-tony_en.png"
+                                        <source srcset="{{ asset('website/images/home/sub-hero4.png') }}"
                                             media="(max-width: 768px)"><img
-                                            src="https://static.avatr.com/pc-website/images/home3.0/pc/logo-tony_en.png"
-                                            alt="" class="HomeBanner_logo-car__1Hxv8" loading="lazy">
+                                            src="{{ asset('website/images/home/sub-hero4.png') }}" alt=""
+                                            class="HomeBanner_logo-car__1Hxv8" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="creative-btn--wrap">
+                                    <a class="creative-slide--btn" role="button" href="#0">
+                                        <div class="creative-btn--label">
+                                            <div class="creative-btn__text">Find more</div>
+
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slider-inner" data-swiper-parallax="100">
+                            <video muted="" id="scrollVideo" class=" w-100 mb-3" playsinline="" autoplay=""
+                                loop muted src="{{ asset('website/images/home/video1.mp4') }}"
+                                disablepictureinpicture=""></video>
+                            <div class="swiper-content" data-swiper-parallax="2000">
+                                <div class="title-area">
+                                    <picture>
+                                        <source srcset="{{ asset('website/images/home/sub-hero5.png') }}"
+                                            media="(max-width: 768px)"><img
+                                            src="{{ asset('website/images/home/sub-hero5.png') }}" alt=""
+                                            class="HomeBanner_logo-car__1Hxv8" loading="lazy">
                                     </picture>
                                 </div>
                                 <div class="creative-btn--wrap">
@@ -401,24 +389,21 @@
         <div class="bg-image-section">
             <div class="tab-image active" data-image="tab1">
                 <picture>
-                    <source srcset="//static.avatr.com/pc-website/images/home3.0/mobile/brand_01.jpg"
-                        media="(max-width: 768px)"><img src="//static.avatr.com/pc-website/images/home3.0/pc/brand_01.jpg"
-                        alt="" class="w-100" loading="lazy">
+                    <source srcset="{{ asset('website/images/home/img1.jpg') }}" media="(max-width: 768px)"><img
+                        src="{{ asset('website/images/home/img1.jpg') }}" alt="" class="w-100" loading="lazy">
                 </picture>
             </div>
             <div class="tab-image" data-image="tab2">
                 <picture>
-                    <source srcset="//static.avatr.com/pc-website/images/home3.0/mobile/brand_02.jpg?v=2"
-                        media="(max-width: 768px)"><img
-                        src="//static.avatr.com/pc-website/images/home3.0/pc/brand_02.jpg?v=2" alt=""
-                        class="w-100" loading="lazy">
+                    <source srcset="{{ asset('website/images/home/img2.jpg') }}" media="(max-width: 768px)"><img
+                        src="{{ asset('website/images/home/img2.jpg') }}" alt="" class="w-100" loading="lazy">
                 </picture>
             </div>
             <div class="tab-image" data-image="tab3">
                 <picture>
-                    <source srcset="//static.avatr.com/pc-website/images/home3.0/mobile/brand_03.jpg"
-                        media="(max-width: 768px)"><img src="//static.avatr.com/pc-website/images/home3.0/pc/brand_03.jpg"
-                        alt="" class="w-100 AboutEntry_active__EgXyi" loading="lazy">
+                    <source srcset="{{ asset('website/images/home/img3.jpg') }}" media="(max-width: 768px)"><img
+                        src="{{ asset('website/images/home/img3.jpg') }}" alt=""
+                        class="w-100 AboutEntry_active__EgXyi" loading="lazy">
                 </picture>
             </div>
         </div>
@@ -469,13 +454,12 @@
     <section class="design-center position-relative">
         <div class="next-section animated-section">
             <picture>
-                <source
-                    srcset="
-                https://static.avatr.com/pc-website/images/home3.0/mobile/design_center.jpg
+                <source srcset="
+                {{ asset('website/images/home/img4.jpg') }}
               "
                     media="(max-width: 768px)" />
-                <img src="https://static.avatr.com/pc-website/images/home3.0/pc/design_center.jpg" alt=""
-                    class="w-100" loading="lazy" />
+                <img src="  {{ asset('website/images/home/img4.jpg') }}" alt="" class="w-100"
+                    loading="lazy" />
             </picture>
             <div class="design-overlay-text">
                 <p>Munich, Germany</p>

@@ -2,6 +2,9 @@
   --text-color: #181818;
   --white-color: #fff;
 }
+.body {
+  overflow-x: hidden;
+}
 .flex-col {
   flex-direction: column;
 }
