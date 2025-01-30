@@ -359,7 +359,7 @@
                 <source srcset="{{ asset('website/images/avatr12/img3.jpg') }}" media="(max-width: 768px)"><img
                     src="{{ asset('website/images/avatr12/img3.jpg') }}" alt="" class="w-100" loading="lazy">
             </picture>
-            <div class="TextOnImg_content__1DDkn">
+            <div class="container TextOnImg_content__1DDkn">
                 <h3 class="TextOnImg_text-title__2_zUz">
                     <p>The rear cabin floating skylight screen</p>
                 </h3>

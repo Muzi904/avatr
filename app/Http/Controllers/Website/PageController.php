@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
+    public function landing()
+    {
+        return view('website.pages.landing');
+    }
     public function home()
     {
         return view('website.pages.home');

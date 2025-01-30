@@ -12,8 +12,8 @@
                                     src="{{ asset('website/images/home/hero1.jpg') }}" alt=""
                                     class="HomeBanner_image-slider__9mcEU w-100" loading="lazy">
                             </picture>
-                            <div class="swiper-content" data-swiper-parallax="2000">
-                                <div class="container">
+                            <div class="container">
+                                <div class="swiper-content" data-swiper-parallax="2000">
                                     <div class="title-area">
                                         <picture>
                                             <source srcset="{{ asset('website/images/home/sub-hero1.png') }}"
@@ -43,22 +43,24 @@
                                 <img src="{{ asset('website/images/home/hero2.jpg') }}" alt=""
                                     class="HomeBanner_image-slider__9mcEU" loading="lazy">
                             </picture>
-                            <div class="swiper-content" data-swiper-parallax="2000">
-                                <div class="title-area">
-                                    <picture>
-                                        <source srcset="{{ asset('website/images/home/sub-hero2.png') }}"
-                                            media="(max-width: 768px)"><img
-                                            src="{{ asset('website/images/home/sub-hero2.png') }}" alt=""
-                                            class="HomeBanner_logo-car__1Hxv8" loading="lazy">
-                                    </picture>
-                                </div>
-                                <div class="creative-btn--wrap">
-                                    <a class="creative-slide--btn" role="button" href="#0">
-                                        <div class="creative-btn--label">
-                                            <div class="creative-btn__text">Find more</div>
+                            <div class="container">
+                                <div class="swiper-content" data-swiper-parallax="2000">
+                                    <div class="title-area">
+                                        <picture>
+                                            <source srcset="{{ asset('website/images/home/sub-hero2.png') }}"
+                                                media="(max-width: 768px)"><img
+                                                src="{{ asset('website/images/home/sub-hero2.png') }}" alt=""
+                                                class="HomeBanner_logo-car__1Hxv8" loading="lazy">
+                                        </picture>
+                                    </div>
+                                    <div class="creative-btn--wrap">
+                                        <a class="creative-slide--btn" role="button" href="#0">
+                                            <div class="creative-btn--label">
+                                                <div class="creative-btn__text">Find more</div>
 
-                                        </div>
-                                    </a>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -71,22 +73,25 @@
                                 <img src="{{ asset('website/images/home/hero3.jpg') }}" alt=""
                                     class="HomeBanner_image-slider__9mcEU" loading="lazy">
                             </picture>
-                            <div class="swiper-content" data-swiper-parallax="2000">
-                                <div class="title-area">
-                                    <picture>
-                                        <source srcset="{{ asset('website/images/home/sub-hero3.png') }}"
-                                            media="(max-width: 768px)"><img
-                                            src="{{ asset('website/images/home/sub-hero3.png') }}" alt=""
-                                            class="HomeBanner_logo-car__1Hxv8" loading="lazy">
-                                    </picture>
-                                </div>
-                                <div class="creative-btn--wrap">
-                                    <a class="creative-slide--btn" role="button" href="#0">
-                                        <div class="creative-btn--label">
-                                            <div class="creative-btn__text">Find more</div>
+                            <div class="container">
 
-                                        </div>
-                                    </a>
+                                <div class="swiper-content" data-swiper-parallax="2000">
+                                    <div class="title-area">
+                                        <picture>
+                                            <source srcset="{{ asset('website/images/home/sub-hero3.png') }}"
+                                                media="(max-width: 768px)"><img
+                                                src="{{ asset('website/images/home/sub-hero3.png') }}" alt=""
+                                                class="HomeBanner_logo-car__1Hxv8" loading="lazy">
+                                        </picture>
+                                    </div>
+                                    <div class="creative-btn--wrap">
+                                        <a class="creative-slide--btn" role="button" href="#0">
+                                            <div class="creative-btn--label">
+                                                <div class="creative-btn__text">Find more</div>
+
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -99,22 +104,24 @@
                                 <img src="{{ asset('website/images/home/hero4.jpg') }}" alt=""
                                     class="HomeBanner_image-slider__9mcEU" loading="lazy">
                             </picture>
-                            <div class="swiper-content" data-swiper-parallax="2000">
-                                <div class="title-area">
-                                    <picture>
-                                        <source srcset="{{ asset('website/images/home/sub-hero4.png') }}"
-                                            media="(max-width: 768px)"><img
-                                            src="{{ asset('website/images/home/sub-hero4.png') }}" alt=""
-                                            class="HomeBanner_logo-car__1Hxv8" loading="lazy">
-                                    </picture>
-                                </div>
-                                <div class="creative-btn--wrap">
-                                    <a class="creative-slide--btn" role="button" href="#0">
-                                        <div class="creative-btn--label">
-                                            <div class="creative-btn__text">Find more</div>
+                            <div class="container">
+                                <div class="swiper-content" data-swiper-parallax="2000">
+                                    <div class="title-area">
+                                        <picture>
+                                            <source srcset="{{ asset('website/images/home/sub-hero4.png') }}"
+                                                media="(max-width: 768px)"><img
+                                                src="{{ asset('website/images/home/sub-hero4.png') }}" alt=""
+                                                class="HomeBanner_logo-car__1Hxv8" loading="lazy">
+                                        </picture>
+                                    </div>
+                                    <div class="creative-btn--wrap">
+                                        <a class="creative-slide--btn" role="button" href="#0">
+                                            <div class="creative-btn--label">
+                                                <div class="creative-btn__text">Find more</div>
 
-                                        </div>
-                                    </a>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -125,22 +132,24 @@
                             <video muted="" id="scrollVideo" class=" w-100 mb-3" playsinline="" autoplay=""
                                 loop muted src="{{ asset('website/images/home/video1.mp4') }}"
                                 disablepictureinpicture=""></video>
-                            <div class="swiper-content" data-swiper-parallax="2000">
-                                <div class="title-area">
-                                    <picture>
-                                        <source srcset="{{ asset('website/images/home/sub-hero5.png') }}"
-                                            media="(max-width: 768px)"><img
-                                            src="{{ asset('website/images/home/sub-hero5.png') }}" alt=""
-                                            class="HomeBanner_logo-car__1Hxv8" loading="lazy">
-                                    </picture>
-                                </div>
-                                <div class="creative-btn--wrap">
-                                    <a class="creative-slide--btn" role="button" href="#0">
-                                        <div class="creative-btn--label">
-                                            <div class="creative-btn__text">Watch the Video</div>
+                            <div class="container">
+                                <div class="swiper-content" data-swiper-parallax="2000">
+                                    <div class="title-area">
+                                        <picture>
+                                            <source srcset="{{ asset('website/images/home/sub-hero5.png') }}"
+                                                media="(max-width: 768px)"><img
+                                                src="{{ asset('website/images/home/sub-hero5.png') }}" alt=""
+                                                class="HomeBanner_logo-car__1Hxv8" loading="lazy">
+                                        </picture>
+                                    </div>
+                                    <div class="creative-btn--wrap">
+                                        <a class="creative-slide--btn" role="button" href="#0">
+                                            <div class="creative-btn--label">
+                                                <div class="creative-btn__text">Watch the Video</div>
 
-                                        </div>
-                                    </a>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
