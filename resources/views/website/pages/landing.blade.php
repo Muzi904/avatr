@@ -39,7 +39,7 @@
             }
 
             .content-one {
-                top: 182px !important;
+                top: 29% !important;
             }
         }
 
@@ -63,7 +63,7 @@
 
         .content-one {
             position: absolute;
-            top: 29%;
+            top: 34%;
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
