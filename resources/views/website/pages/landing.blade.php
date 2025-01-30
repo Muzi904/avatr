@@ -63,7 +63,7 @@
 
         .content-one {
             position: absolute;
-            top: 34%;
+            top: 29%;
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
