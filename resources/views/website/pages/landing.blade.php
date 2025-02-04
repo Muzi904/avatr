@@ -26,15 +26,21 @@
 
         }
 
-        .main-container video {
+        .main-container img {
             width: 100%;
             height: 100vh;
 
         }
 
+        .main-container video {
+            height: 100vh;
+            width: 100%;
+        }
+
         @media screen and (max-width:768px) {
             .main-container video {
                 height: 100%;
+                width: 100%;
 
             }
 
@@ -54,11 +60,16 @@
             height: 100vh;
             background-color: #000;
             z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center
         }
 
-        .loader video {
-            width: 100%;
+        .loader img {
+            /* width: 100%; */
             height: 100vh;
+            display: flex;
+            margin-inline: auto;
         }
 
         .content-one {
@@ -94,12 +105,24 @@
             text-transform: uppercase;
             border-radius: 5px;
             padding: 5px;
+            position: relative;
 
         }
 
-        .content-one .confirmation a:hover {
+        .content-one .confirmation a::before {
+            /* background-color: #c5ff1f;
+            color: #fff; */
+            content: "";
+            position: absolute;
+            width: 0;
+            bottom: 0;
+            height: 2px;
             background-color: #c5ff1f;
-            color: #fff;
+            transition: width 0.3s ease-in-out
+        }
+
+        .content-one .confirmation a:hover::before {
+            width: 100%;
         }
 
         .content-bottom {
@@ -144,13 +167,19 @@
 
 <body>
     <div class="loader">
-        <video autoplay muted>
+        <img src="{{ asset('website/images/landing/loader.gif') }}" alt="">
+        {{-- <video autoplay muted>
             <source src="{{ asset('website/images/landing/loader.mp4') }}" type="video/mp4">
             Your browser does not support the video tag.
-        </video>
+        </video> --}}
     </div>
     <div class="main-container">
-        <video autoplay muted loop src="{{ asset('website/images/landing/video1.mp4') }}"></video>
+        <video id="background-video" autoplay muted loop playsinline>
+            <source src="{{ asset('website/images/landing/video1.mp4') }}" type="video/mp4">
+        </video>
+
+        {{-- <video id="background-video" autoplay muted loop playsinline
+                src="{{ asset('website/images/landing/video1.mp4') }}"></video> --}}
         <div class="content-one">
             <h4>Please Confirm your Attendance</h4>
             <div class="confirmation">
@@ -168,7 +197,25 @@
     </div>
 
     <script>
-        const loaderVideo = document.querySelector(".loader video");
+        const loader = document.querySelector(".loader");
+        const mainContainer = document.querySelector(".main-container");
+        const mainVideo = document.getElementById("background-video"); // Use getElementById for better performance
+
+        // Ensure the main video is paused initially
+        mainVideo.pause();
+
+        // Hide loader after 3 seconds and play the main video
+        setTimeout(() => {
+            loader.style.display = "none"; // Hide loader
+            mainContainer.style.display = "block"; // Show main content
+
+            // Ensure the video plays
+            mainVideo.play().catch(error => console.log("Autoplay blocked:", error));
+        }, 3000);
+    </script>
+
+    {{-- <script>
+        const loaderVideo = document.querySelector(".loader img");
         const loader = document.querySelector(".loader");
         const mainContainer = document.querySelector(".main-container");
         const mainVideo = document.querySelector(".main-container video");
@@ -182,7 +229,7 @@
                 mainVideo.play();
             }, 300);
         });
-    </script>
+    </script> --}}
 </body>
 
 </html>
