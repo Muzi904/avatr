@@ -185,11 +185,11 @@
                                     src="{{ asset('website/images/home/color-variants/avatr12/img7.jpg') }}"
                                     alt="">
                             </figure>
-                            <figure id="varient16" class="d-none">
+                            {{-- <figure id="varient16" class="d-none">
                                 <img class="w-100 my-50"
                                     src="{{ asset('website/images/home/color-variants/avatr12/img8.jpg') }}"
                                     alt="">
-                            </figure>
+                            </figure> --}}
                         </div>
                         <div class="colors mt-5">
                             <div>
@@ -235,12 +235,12 @@
                                     <p>Matt color-Matte purple</p>
                                 </div>
                             </div>
-                            <div>
+                            {{-- <div>
                                 <button class="varient-btn" data-target="varient16"></button>
                                 <div id="varient16-text" class="text-start d-none">
                                     <p>Dual - Tone(AVATR grey/black)</p>
                                 </div>
-                            </div>
+                            </div> --}}
 
 
                         </div>
@@ -351,7 +351,7 @@
     </section>
 
 
-    <section class="section-one avatr12bg-section-one position-relative pb-0">
+    {{-- <section class="section-one avatr12bg-section-one position-relative pb-0">
         <h1 class="">Design goes one step further
         </h1>
         <div>
@@ -370,7 +370,7 @@
             </div>
         </div>
 
-    </section>
+    </section> --}}
 
 
     <section class="section-three dark-section-three">
@@ -755,7 +755,7 @@
                 <!-- Swiper Wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
-                    <div class="swiper-slide animeslide-slide">
+                    {{-- <div class="swiper-slide animeslide-slide">
                         <div>
                             <video class="w-100" autoplay loop
                                 src="{{ asset('website/images/avatr12/video9.mp4') }}"></video>
@@ -768,7 +768,7 @@
                                 navigation pilot, ensuring seamless intelligent driving and complete comfort throughout the
                                 journey.</p>
                         </div>
-                    </div>
+                    </div> --}}
                     <!-- Slide 2 -->
                     <div class="swiper-slide animeslide-slide">
                         <div>
@@ -884,7 +884,7 @@
     <section>
         <div class="container">
             <ul class="Intelligence_laser-cabi__1Crj5">
-                <li class="Intelligence_laser-cabi-item__Auu_U">
+                {{-- <li class="Intelligence_laser-cabi-item__Auu_U">
                     <picture>
                         <source srcset="{{ asset('website/images/avatr12/img18.jpg') }}" media="(max-width: 768px)"><img
                             src="{{ asset('website/images/avatr12/img18.jpg') }}" alt=""
@@ -896,7 +896,7 @@
                             view, achieving centimeter-level range accuracy, and bringing civil aviation-grade safety
                             experience.</p>
                     </div>
-                </li>
+                </li> --}}
                 <li class="Intelligence_laser-cabi-item__Auu_U">
                     <picture>
                         <source srcset="{{ asset('website/images/avatr12/img19.jpg') }}" media="(max-width: 768px)"><img
@@ -904,12 +904,14 @@
                             class=" w-100 Intelligence_item-img__UKMA8" loading="lazy">
                     </picture>
                     <div class="Intelligence_item-content__2p9qY">
-                        <h4 class="Intelligence_item-title__1-g4u">Huawei HarmonyOS 4 Smart Cabin</h4>
+                        <h4 class="Intelligence_item-title__1-g4u"> Intuitive AVATR Operating System Smart Cabin
+                        </h4>
                         <p>The zero-layer design achieves minimal interaction, making it visible at a glance and reachable
-                            with a touch. It has a large number of frequently used and updated apps, as well as a super
-                            desktop that is always available. It not only supports intelligent voice, but also enables quick
-                            response to multiple commands, seamless flow of cellphone touch transmission, and car and home
-                            interconnection that can be controlled at any time.</p>
+                            with a touch. It has many frequently used and updated apps and a super desktop that is always
+                            available. It supports intelligent voice and enables quick response to multiple commands,
+                            seamless flow of cellphone touch transmission, and car and home interconnection that can be
+                            controlled at any time.
+                        </p>
                     </div>
                 </li>
             </ul>

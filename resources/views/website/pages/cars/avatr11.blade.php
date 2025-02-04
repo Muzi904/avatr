@@ -11,26 +11,29 @@
                                 <source srcset="{{ asset('website/images/avatr11/hero1.jpg') }}" media="(max-width: 768px)">
                                 <img src="{{ asset('website/images/avatr11/hero1.jpg') }}" alt="" loading="lazy">
                             </picture>
-                            <div class="swiper-content" data-swiper-parallax="2000">
-                                <div class="title-area">
-                                    <picture>
-                                        <source
-                                            srcset="https://static.avatr.com/pc-website/images/home3.0/mobile/logo-e11_en.png"
-                                            media="(max-width: 768px)"><img
-                                            src="https://static.avatr.com/pc-website/images/home3.0/pc/logo-e11_en.png"
-                                            alt="" class="w-100" loading="lazy">
-                                    </picture>
-                                </div>
-                                <p class="BannerRc_price__1iIoT">MSRP：<span>￥<!-- -->279,900<!-- --> </span> </p>
-                                <div class="creative-btn--wrap">
-                                    <a class="creative-slide--btn" role="button" href="#0">
-                                        <div class="creative-btn--label">
-                                            <div class="creative-btn__text">Find more</div>
+                            <div class="container">
+                                <div class="swiper-content" data-swiper-parallax="2000">
+                                    <div class="title-area">
+                                        <picture>
+                                            <source
+                                                srcset="https://static.avatr.com/pc-website/images/home3.0/mobile/logo-e11_en.png"
+                                                media="(max-width: 768px)"><img
+                                                src="https://static.avatr.com/pc-website/images/home3.0/pc/logo-e11_en.png"
+                                                alt="" class="w-100" loading="lazy">
+                                        </picture>
+                                    </div>
+                                    <p class="BannerRc_price__1iIoT">MSRP：<span>￥<!-- -->279,900<!-- --> </span> </p>
+                                    <div class="creative-btn--wrap">
+                                        <a class="creative-slide--btn" role="button" href="#0">
+                                            <div class="creative-btn--label">
+                                                <div class="creative-btn__text">Find more</div>
 
-                                        </div>
-                                    </a>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
@@ -42,26 +45,29 @@
                                     src="https://static.avatr.com/pc-website/images/svp11/v1/pc/KV-SVP11.jpg?v=2"
                                     alt="" class="BannerRc_head-image__327K8" loading="lazy">
                             </picture>
-                            <div class="swiper-content" data-swiper-parallax="2000">
-                                <div class="title-area">
-                                    <picture>
-                                        <source
-                                            srcset="https://static.avatr.com/pc-website/images/home3.0/mobile/logo-car12_en.png"
-                                            media="(max-width: 768px)"><img
-                                            src="https://static.avatr.com/pc-website/images/home3.0/pc/logo-car12_en.png"
-                                            alt="" class="HomeBanner_logo-car__1Hxv8" loading="lazy">
-                                    </picture>
-                                </div>
-                                <p class="BannerRc_price__1iIoT">MSRP：<span>￥<!-- -->429,900<!-- --> </span></p>
-                                <div class="creative-btn--wrap">
-                                    <a class="creative-slide--btn" role="button" href="#0">
-                                        <div class="creative-btn--label">
-                                            <div class="creative-btn__text">Find more</div>
+                            <div class="container">
+                                <div class="swiper-content" data-swiper-parallax="2000">
+                                    <div class="title-area">
+                                        <picture>
+                                            <source
+                                                srcset="https://static.avatr.com/pc-website/images/home3.0/mobile/logo-car12_en.png"
+                                                media="(max-width: 768px)"><img
+                                                src="https://static.avatr.com/pc-website/images/home3.0/pc/logo-car12_en.png"
+                                                alt="" class="HomeBanner_logo-car__1Hxv8" loading="lazy">
+                                        </picture>
+                                    </div>
+                                    <p class="BannerRc_price__1iIoT">MSRP：<span>￥<!-- -->429,900<!-- --> </span></p>
+                                    <div class="creative-btn--wrap">
+                                        <a class="creative-slide--btn" role="button" href="#0">
+                                            <div class="creative-btn--label">
+                                                <div class="creative-btn__text">Find more</div>
 
-                                        </div>
-                                    </a>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
@@ -140,8 +146,8 @@
                         fascia</button>
                     <button class="tab" data-target="#tab2-img" data-text-target="#tab2-text">Body with the golden
                         ratio</button>
-                    <button class="tab" data-target="#tab3-img" data-text-target="#tab3-text">The interactive HALO
-                        Screen</button>
+                    {{-- <button class="tab" data-target="#tab3-img" data-text-target="#tab3-text">The interactive HALO
+                        Screen</button> --}}
                     <button class="tab" data-target="#tab4-img" data-text-target="#tab4-text">Vertical fluid-type rear
                         quarter win</button>
                     <button class="tab" data-target="#tab5-img" data-text-target="#tab5-text">22-inch large
@@ -157,9 +163,9 @@
                     <div id="tab2-text" class="content content-text">The seamlessly integrated body contour achieves an
                         exceptionally
                         pure athletic form.</div>
-                    <div id="tab3-text" class="content content-text">More flexible scene expressions, allowing you to play
+                    {{-- <div id="tab3-text" class="content content-text">More flexible scene expressions, allowing you to play
                         with
-                        creativity and showcase your personality.</div>
+                        creativity and showcase your personality.</div> --}}
                     <div id="tab4-text" class="content content-text">The highly dynamic rear lines and fluidly sculpted
                         rear quarter
                         window design create a distinct sense of layering and unique identity. The sail-style active rear
@@ -224,10 +230,10 @@
                             <img class="w-100 my-50"
                                 src="{{ asset('website/images/home/color-variants/avartr11/img6.jpg') }}" alt="">
                         </figure>
-                        <figure id="varient7" class="d-none">
+                        {{-- <figure id="varient7" class="d-none">
                             <img class="w-100 my-50"
                                 src="{{ asset('website/images/home/color-variants/avartr11/img7.jpg') }}" alt="">
-                        </figure>
+                        </figure> --}}
                     </div>
                     <div class="colors mt-5">
                         <div>
@@ -267,12 +273,12 @@
                                 <p>Matte Grey</p>
                             </div>
                         </div>
-                        <div>
+                        {{-- <div>
                             <button class="varient-btn" data-target="varient7"></button>
                             <div id="varient7-text" class="text-start d-none">
                                 <p>Dual - Tone(AVATR grey/black)</p>
                             </div>
-                        </div>
+                        </div> --}}
 
 
                     </div>
@@ -283,7 +289,7 @@
 
     </section>
 
-    <section class="section-one mt-100">
+    {{-- <section class="section-one mt-100">
         <picture>
             <source srcset="{{ asset('website/images/avatr11/mob-img7.jpg') }}" media="(max-width: 768px)"><img
                 class="w-100" src="{{ asset('website/images/avatr11/img7.jpg') }}" alt=""
@@ -301,7 +307,7 @@
             </div>
         </div>
 
-    </section>
+    </section> --}}
 
     <section>
         <div class="container">
@@ -687,12 +693,15 @@
                 <img class="SoundAlgorithms_HarmonyOS-bgm__2-5eY w-100"
                     src="{{ asset('website/images/avatr11/img18.jpg') }}" alt="" loading="lazy">
             </picture>
-            <div class="icon-main-container">
+            <div class="container icon-main-container">
                 <h3 class="mb-4 text-center">
-                    Equipped with the Harmony Cabin based on HarmonyOS 4
+                    Intuitive AVATR Operating System Smart Cabin
                 </h3>
-                <p class="text-center text-white">HarmonyOS: Connecting to a more wonderful Life
-
+                <p class="text-center text-white">The zero-layer design achieves minimal interaction, making it visible at
+                    a glance and reachable with a touch. It has many frequently used and updated apps and a super desktop
+                    that is always available. It supports intelligent voice and enables quick response to multiple commands,
+                    seamless flow of cellphone touch transmission, and car and home interconnection that can be controlled
+                    at any time.
                 </p>
 
             </div>
@@ -747,18 +756,18 @@
         <h2>
             Smart driving, worry-free Journey.
         </h2>
-        <div class="container">
+        {{-- <div class="container">
             <div class="text">
                 <h1>HUAWEI QianKun Intelligent Driving ADS 3.0 </h1>
                 <h6>The special/only one with HUAWEI 3 laser Radar.
                 </h6>
             </div>
-        </div>
+        </div> --}}
 
     </section>
 
 
-    <section>
+    {{-- <section>
         <div class="container">
             <div class="swiper car-page">
                 <!-- Swiper Wrapper -->
@@ -819,5 +828,5 @@
 
         </div>
 
-    </section>
+    </section> --}}
 @endsection

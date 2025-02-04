@@ -48,7 +48,7 @@
 
             </div> --}}
             <li>
-                <a href="#">Avatr 12</a>
+                <a href="{{ route('avatr12') }}">Avatr 12</a>
             </li>
         </ul>
         <div class="logo">
