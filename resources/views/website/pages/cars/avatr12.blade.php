@@ -105,7 +105,7 @@
         <h1>Design goes one step further
         </h1>
         <div class="container">
-            <video muted id="scrollVideo" class=" w-100 mb-3" playsinline autoplay loop muted
+            <video id="scrollVideo" class=" w-100 mb-3" playsinline autoplay loop muted
                 src="{{ asset('website/images/avatr12/video1.mp4') }}"></video>
             <div class="heading">
                 <h1>Future Original Design
@@ -261,8 +261,10 @@
                     <!-- Slide 1 -->
                     <div class="swiper-slide animeslide-slide">
                         <div>
-                            <video class="w-100" autoplay loop
-                                src="{{ asset('website/images/avatr12/video2.mp4') }}"></video>
+                            <video class="w-100" autoplay loop muted playsinline>
+                                <source src="{{ asset('website/images/avatr12/video2.mp4') }}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
 
                         <div class="heading d-block">
@@ -303,8 +305,10 @@
                     <!-- Slide 3 -->
                     <div class="swiper-slide animeslide-slide">
                         <div>
-                            <video class="w-100" autoplay loop
-                                src="{{ asset('website/images/avatr12/video3.mp4') }}"></video>
+                            <video class="w-100" autoplay loop muted playsinline>
+                                <source src="{{ asset('website/images/avatr12/video3.mp4') }}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                         <div class="heading d-block">
                             <h1>Extremely Worriless</h1>
@@ -665,8 +669,10 @@
                     <div class="swiper-slide">
                         <div class="imagewithtextcontainer">
                             <div class="video-container">
-                                <video class="w-100 d-flex" src="{{ asset('website/images/avatr12/video5.mp4') }}"
-                                    autoplay loop></video>
+                                <video class="w-100 d-flex" autoplay loop muted playsinline>
+                                    <source src="{{ asset('website/images/avatr12/video5.mp4') }}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                             <div class="text text-container">
                                 <div>
@@ -699,8 +705,10 @@
                     <div class="swiper-slide">
                         <div class="imagewithtextcontainer">
                             <div class="video-container">
-                                <video class="w-100 d-flex" src="{{ asset('website/images/avatr12/video6.mp4') }}"
-                                    autoplay loop></video>
+                                <video class="w-100 d-flex" autoplay loop muted playsinline>
+                                    <source src="{{ asset('website/images/avatr12/video6.mp4') }}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                             <div class="text text-container">
                                 <div>
@@ -714,8 +722,10 @@
                     <div class="swiper-slide">
                         <div class="imagewithtextcontainer">
                             <div class="video-container">
-                                <video class="w-100 d-flex" src="{{ asset('website/images/avatr12/video7.mp4') }}"
-                                    autoplay loop></video>
+                                <video class="w-100 d-flex" autoplay loop muted playsinline>
+                                    <source src="{{ asset('website/images/avatr12/video7.mp4') }}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                             <div class="text text-container">
                                 <h3>Comfortable parking</h3>
@@ -728,8 +738,10 @@
                     <div class="swiper-slide">
                         <div class="imagewithtextcontainer">
                             <div class="video-container">
-                                <video class="w-100 d-flex" src="{{ asset('website/images/avatr12/video8.mp4') }}"
-                                    autoplay loop></video>
+                                <video class="w-100 d-flex" autoplay loop muted playsinline>
+                                    <source src="{{ asset('website/images/avatr12/video8.mp4') }}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                             <div class="text text-container">
                                 <h3>Welcome mode</h3>
@@ -968,8 +980,10 @@
                     <div class="swiper-slide">
                         <div class="imagewithtextcontainer">
                             <div class="video-container">
-                                <video class="w-100 d-flex" src="{{ asset('website/images/avatr12/video10.mp4') }}"
-                                    autoplay loop></video>
+                                <video class="w-100" autoplay loop muted playsinline>
+                                    <source src="{{ asset('website/images/avatr12/video10.mp4') }}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                             <div class="text text-container">
                                 <div>

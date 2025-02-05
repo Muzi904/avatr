@@ -68,7 +68,7 @@
 </footer>
 <div class="copyright">
     <div class="container">
-        <p>© 2024 AVATR Co., Ltd.
+        <p>© {{ date('Y') }} AVATR Co., Ltd.
         </p>
     </div>
 </div>

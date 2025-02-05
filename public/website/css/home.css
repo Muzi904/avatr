@@ -1072,6 +1072,9 @@ footer ul li a {
 .scrolltabs .content.active {
   display: block;
 }
+.section-three {
+  padding-bottom: 120px;
+}
 .car-page .heading,
 .section-three .heading {
   display: flex;

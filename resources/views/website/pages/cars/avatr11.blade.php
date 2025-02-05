@@ -129,9 +129,9 @@
                     <div id="tab2-img" class="content">
                         <img class="w-100" src="{{ asset('website/images/avatr11/img3.jpg') }}" alt="">
                     </div>
-                    <div id="tab3-img" class="content">
-                        <img class="w-100" src="{{ asset('website/images/avatr11/img4.jpg') }}" alt="">
-                    </div>
+                    <!--<div id="tab3-img" class="content">-->
+                    <!--    <img class="w-100" src="{{ asset('website/images/avatr11/img41.jpg') }}" alt="">-->
+                    <!--</div>-->
                     <div id="tab4-img" class="content">
                         <img class="w-100" src="{{ asset('website/images/avatr11/img5.jpg') }}" alt="">
                     </div>
@@ -146,8 +146,8 @@
                         fascia</button>
                     <button class="tab" data-target="#tab2-img" data-text-target="#tab2-text">Body with the golden
                         ratio</button>
-                    {{-- <button class="tab" data-target="#tab3-img" data-text-target="#tab3-text">The interactive HALO
-                        Screen</button> --}}
+                    <!--<button class="tab" data-target="#tab3-img" data-text-target="#tab3-text">The interactive HALO-->
+                    <!--    Screen</button> -->
                     <button class="tab" data-target="#tab4-img" data-text-target="#tab4-text">Vertical fluid-type rear
                         quarter win</button>
                     <button class="tab" data-target="#tab5-img" data-text-target="#tab5-text">22-inch large
@@ -163,9 +163,9 @@
                     <div id="tab2-text" class="content content-text">The seamlessly integrated body contour achieves an
                         exceptionally
                         pure athletic form.</div>
-                    {{-- <div id="tab3-text" class="content content-text">More flexible scene expressions, allowing you to play
-                        with
-                        creativity and showcase your personality.</div> --}}
+                    <!--<div id="tab3-text" class="content content-text">More flexible scene expressions, allowing you to play-->
+                    <!--    with-->
+                    <!--    creativity and showcase your personality.</div> -->
                     <div id="tab4-text" class="content content-text">The highly dynamic rear lines and fluidly sculpted
                         rear quarter
                         window design create a distinct sense of layering and unique identity. The sail-style active rear
@@ -425,8 +425,8 @@
                     <div class="swiper-slide">
                         <div class="imagewithtextcontainer">
                             <div>
-                                <video class="w-100 d-flex" src="{{ asset('website/images/avatr11/video1.mp4') }}"
-                                    autoplay loop></video>
+                                <video class="w-100 d-flex" mute autoplay loop
+                                    src="{{ asset('website/images/avatr11/video1.mp4') }}" autoplay loop></video>
                             </div>
                             <div class="text">
                                 <h3>HUAWEI DriveONE iTRACK</h3>
@@ -485,8 +485,10 @@
                 <!-- Tabs Content (Images) -->
                 <div class="tab-content">
                     <div id="tab5-img" class="content active">
-                        <video class="w-100" autoplay loop
-                            src="{{ asset('website/images/avatr11/video2.mp4') }}"></video>
+                        <video class="w-100" autoplay loop muted playsinline>
+                            <source src="{{ asset('website/images/avatr11/video2.mp4') }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                     <div id="tab6-img" class="content">
                         <img class="w-100" src="{{ asset('website/images/avatr11/img15.jpg') }}" alt="">
@@ -613,7 +615,10 @@
 
     <section class="section-three dark-section-three">
         <div class="container">
-            <video class="w-100" src="{{ asset('website/images/avatr11/video3.mp4') }}"></video>
+            <video class="w-100" autoplay loop muted playsinline>
+                <source src="{{ asset('website/images/avatr11/video3.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
             <div class="heading">
                 <div style="flex: 0.7">
                     <h2>Meridian<sup>™</sup> High-end Sound System</h2>
@@ -715,10 +720,16 @@
                 <!-- Tabs Content (Images) -->
                 <div class="tab-content">
                     <div id="tab11-img" class="content active">
-                        <video class="w-100" src="{{ asset('website/images/avatr11/video4.mp4') }}"></video>
+                        <video class="w-100" autoplay loop muted playsinline>
+                            <source src="{{ asset('website/images/avatr11/video4.mp4') }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                     <div id="tab12-img" class="content">
-                        <video class="w-100" src="{{ asset('website/images/avatr11/video5.mp4') }}"></video>
+                        <video class="w-100" autoplay loop muted playsinline>
+                            <source src="{{ asset('website/images/avatr11/video5.mp4') }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
 
                 </div>
