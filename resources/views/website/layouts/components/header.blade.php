@@ -78,7 +78,7 @@
         </div>
         <ul>
             <li>
-                <a href="#">About us</a>
+                <a href="{{ route('about') }}">About us</a>
             </li>
             <li><a href="#">Design</a></li>
             <li><a href="#">Tech </a></li>

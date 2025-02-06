@@ -23,7 +23,7 @@
                                         </picture>
                                     </div>
                                     <div class="creative-btn--wrap">
-                                        <a class="creative-slide--btn" role="button" href="#0">
+                                        <a class="creative-slide--btn" role="button" href="{{ route('avatr11') }}">
                                             <div class="creative-btn--label">
                                                 <div class="creative-btn__text">Find more</div>
 
@@ -54,7 +54,7 @@
                                         </picture>
                                     </div>
                                     <div class="creative-btn--wrap">
-                                        <a class="creative-slide--btn" role="button" href="#0">
+                                        <a class="creative-slide--btn" role="button" href="{{ route('avatr12') }}">
                                             <div class="creative-btn--label">
                                                 <div class="creative-btn__text">Find more</div>
 
@@ -66,7 +66,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide">
+                    {{-- <div class="swiper-slide">
                         <div class="slider-inner" data-swiper-parallax="100">
                             <picture>
                                 <source srcset="{{ asset('website/images/home/hero3.jpg') }}" media="(max-width: 768px)">
@@ -125,12 +125,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
                     <div class="swiper-slide">
                         <div class="slider-inner" data-swiper-parallax="100">
-                            <video muted="" id="scrollVideo" class=" w-100 mb-3" playsinline="" autoplay=""
-                                loop muted src="{{ asset('website/images/home/video1.mp4') }}"
+                            <video muted="" id="scrollVideo" class=" w-100 mb-3" playsinline="" autoplay="" loop
+                                muted src="{{ asset('website/images/home/video1.mp4') }}"
                                 disablepictureinpicture=""></video>
                             <div class="container">
                                 <div class="swiper-content" data-swiper-parallax="2000">
@@ -178,7 +178,7 @@
                     <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal">
                         <span class="swiper-pagination-progressbar-fill"></span>
                     </div>
-                    <h5 class="slide-range three">04</h5>
+                    <h5 class="slide-range three">03</h5>
                 </div>
             </div>
         </div>
@@ -227,11 +227,11 @@
                                             src="{{ asset('website/images/home/color-variants/avartr11/img6.jpg') }}"
                                             alt="">
                                     </figure>
-                                    <figure id="varient7" class="d-none">
+                                    {{-- <figure id="varient7" class="d-none">
                                         <img class="w-100 my-50"
                                             src="{{ asset('website/images/home/color-variants/avartr11/img7.jpg') }}"
                                             alt="">
-                                    </figure>
+                                    </figure> --}}
                                 </div>
                                 <div class="colors">
                                     <div>
@@ -271,18 +271,19 @@
                                             <p>Matte Grey</p>
                                         </div>
                                     </div>
-                                    <div>
+                                    {{-- <div>
                                         <button class="varient-btn" data-target="varient7"></button>
                                         <div id="varient7-text" class="text-start d-none">
                                             <p>Dual - Tone(AVATR grey/black)</p>
                                         </div>
-                                    </div>
+                                    </div> --}}
 
 
                                 </div>
                             </div>
 
                         </div>
+                        <a href="{{ route('avatr11') }}" class="btn">Know more about AVATR 11</a>
 
                     </div>
                     <div id="tab2" class="tab-panel-color">
@@ -324,11 +325,11 @@
                                             src="{{ asset('website/images/home/color-variants/avatr12/img7.jpg') }}"
                                             alt="">
                                     </figure>
-                                    <figure id="varient16" class="d-none">
+                                    {{-- <figure id="varient16" class="d-none">
                                         <img class="w-100 my-50"
                                             src="{{ asset('website/images/home/color-variants/avatr12/img8.jpg') }}"
                                             alt="">
-                                    </figure>
+                                    </figure> --}}
                                 </div>
                                 <div class="colors">
                                     <div>
@@ -374,22 +375,24 @@
                                             <p>Matt color-Matte purple</p>
                                         </div>
                                     </div>
-                                    <div>
+                                    {{-- <div>
                                         <button class="varient-btn" data-target="varient16"></button>
                                         <div id="varient16-text" class="text-start d-none">
                                             <p>Dual - Tone(AVATR grey/black)</p>
                                         </div>
-                                    </div>
+                                    </div> --}}
 
 
                                 </div>
                             </div>
 
                         </div>
+
+                        <a href="{{ route('avatr12') }}" class="btn">Know more about AVATR 12</a>
+
                     </div>
                 </div>
             </div>
-            <button class="btn">Know more about AVATR 11</button>
 
         </div>
     </section>

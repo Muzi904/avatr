@@ -23,4 +23,8 @@ class PageController extends Controller
     {
         return view('website.pages.cars.avatr12');
     }
+    public function about()
+    {
+        return view('website.pages.about');
+    }
 }
