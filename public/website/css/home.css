@@ -1646,9 +1646,7 @@ footer ul li a {
 
 ::-webkit-scrollbar-track {
   background: #ffffff;
-  /* border-radius: 6px; */
 }
-
 ::-webkit-scrollbar-thumb {
   background: #c0c0c0;
   border-radius: 6px;
