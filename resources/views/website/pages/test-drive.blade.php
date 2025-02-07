@@ -59,7 +59,7 @@
                         </div>
                         <div class="grid-rows">
                             <div class="form-input">
-                                <textarea name="" id="" cols="30" rows="2"></textarea>
+                                <textarea name="" id="" cols="30" rows="2" placeholder="Enter Message"></textarea>
                             </div>
                         </div>
                         <button class="btn">Submit Now</button>
