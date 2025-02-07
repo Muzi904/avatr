@@ -1638,3 +1638,21 @@ footer ul li a {
   line-height: 42px;
   font-weight: 200;
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  /* border-radius: 6px; */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d2d2d2;
+  border-radius: 6px;
+}
+html {
+  scroll-behavior: smooth;
+}

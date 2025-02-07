@@ -1,8 +1,20 @@
 <script src="{{ asset('website/script/bootstrap-miin.js') }}"></script>
 <script src="{{ asset('website/script/swiper.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollSmoother.min.js"></script>
 
+<script>
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
+    ScrollTrigger.normalizeScroll(true)
+
+    // create the smooth scroller FIRST!
+    let smoother = ScrollSmoother.create({
+        smooth: 5,
+        effects: true,
+        normalizeScroll: true
+    });
+</script>
 
 <script>
     const progressCircle = document.querySelector(".autoplay-progress svg");

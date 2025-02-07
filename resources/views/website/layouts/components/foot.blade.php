@@ -3,7 +3,7 @@
 <script src="{{ asset('website/script/jquery-min.js') }}"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-{{-- <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script> --}}
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollSmoother.min.js"></script>
 <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 
 <script src="{{ asset('website/script/swiper.js') }}"></script>
@@ -12,6 +12,18 @@
 <script src="{{ asset('website/script/navbar.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
+<script>
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+    ScrollTrigger.normalizeScroll(true)
+
+    // create the smooth scroller FIRST!
+    let smoother = ScrollSmoother.create({
+        smooth: 5,
+        effects: true,
+        normalizeScroll: true
+    });
+</script>
 
 <script>
     @if (Session::has('success'))
