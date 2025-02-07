@@ -80,7 +80,7 @@
             <li>
                 <a href="{{ route('about') }}">About us</a>
             </li>
-            <li><a href="{{ route('contact') }}">Conatct</a></li>
+            <li><a href="{{ route('contact') }}">Contact</a></li>
             <li><a href="{{ route('test.drive') }}">Test drive</a></li>
             <li><a href="{{ route('models') }}">Models</a></li>
         </ul>

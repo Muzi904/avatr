@@ -61,6 +61,7 @@
   margin-bottom: 20px;
   padding: 13px;
   border-bottom: 1px solid #e4e4e4;
+  color: #636363;
 }
 .contact-form .column .grid-rows textarea:focus,
 .contact-form .column .grid-rows input:focus {

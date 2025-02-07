@@ -72,23 +72,31 @@
 </script>
 
 <script>
-    if (document.querySelector(".testDrive").swiper) {
-        document.querySelector(".testDrive").swiper.destroy();
-    }
+    document.addEventListener("DOMContentLoaded", function() {
+        const radioInputs = document.querySelectorAll(".radio-input");
+        const forms = document.querySelectorAll(".testdriveForm");
 
-    let testDriveSwiper = new Swiper(".testDrive", {
-        loop: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
+        function updateFormDisplay(selectedTarget) {
+            forms.forEach(form => {
+                if (form.id === selectedTarget) {
+                    form.style.display = "grid";
+                } else {
+                    form.style.display = "none";
+                }
+            });
+        }
+
+        radioInputs.forEach(radio => {
+            radio.addEventListener("change", function() {
+                const selectedTarget = this.closest("label").dataset.target;
+                updateFormDisplay(selectedTarget);
+            });
+        });
+
+        // Set default visibility based on the initially checked radio
+        const checkedRadio = document.querySelector(".radio-input:checked");
+        if (checkedRadio) {
+            updateFormDisplay(checkedRadio.closest("label").dataset.target);
+        }
     });
 </script>
