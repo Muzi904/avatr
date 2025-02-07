@@ -80,9 +80,9 @@
                             </div>
                             <div class="form-input">
                                 <select name="" id="">
-                                    <option value="" disabled selected>Select a car</option>
-                                    <option value="">Avatr11</option>
-                                    <option value="">Avatr12</option>
+                                    <option value="" disabled selected>Select a showroom</option>
+                                    <option value="">Showroom1</option>
+                                    <option value="">Showroom2</option>
                                 </select>
                             </div>
                         </div>
@@ -96,7 +96,7 @@
                         </div>
                         <div class="grid-rows">
                             <div class="form-input">
-                                <textarea name="" id="" cols="30" rows="2"></textarea>
+                                <textarea name="" id="" cols="30" rows="2" placeholder="Enter Message"></textarea>
                             </div>
                         </div>
                         <button class="btn">Submit Now</button>
