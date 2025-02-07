@@ -28,10 +28,10 @@
             <li>
                 <a href="{{ route('about') }}">About us</a>
             </li>
-            <li><a href="#">Design</a></li>
-            <li><a href="#">Tech </a></li>
-            <li><a href="#">News</a>
-            </li>
+            <li><a href="{{ route('contact') }}">Conatct</a></li>
+            <li><a href="{{ route('test.drive') }}">Test drive</a></li>
+            <li><a href="{{ route('models') }}">Models</a></li>
+
         </ul>
     </div>
 </header>

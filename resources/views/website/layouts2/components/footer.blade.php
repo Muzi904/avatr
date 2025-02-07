@@ -1,7 +1,7 @@
 <footer>
     <div class="container mb-3">
 
-        <div class="d-flex flex-col">
+        <div class="">
             <div class="logo mb-3">
                 <a href="#">
                     <img class="w-100px" src="{{ asset('website/images/home/footer-logo.png') }}" alt="">

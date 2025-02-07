@@ -70,3 +70,25 @@
         ease: "power4.out"
     });
 </script>
+
+<script>
+    if (document.querySelector(".testDrive").swiper) {
+        document.querySelector(".testDrive").swiper.destroy();
+    }
+
+    let testDriveSwiper = new Swiper(".testDrive", {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>

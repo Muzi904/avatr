@@ -132,3 +132,59 @@
   font-family: AVATRFont-Light;
   line-height: 28px;
 }
+.textDrive-container {
+  display: grid;
+  grid-template-columns: minmax(320px, 1.5fr) minmax(200px, 0.8fr);
+  height: 100vh;
+}
+.textDrive-container .textDrive-swiper img {
+  height: 100vh;
+  object-fit: cover;
+}
+.textDrive-container .textDrive-swiper .swiper-pagination-bullet {
+  height: 3px;
+  width: 30px;
+  border-radius: 1px;
+  background-color: #fff;
+}
+.textDrive-container .testDrive-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.textDrive-container .testDrive-form-container .testDrive-form {
+  padding: 30px;
+}
+.textDrive-container .testDrive-form-container .testDrive-form h2 {
+  font-family: 'AVATRFont-Regular';
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.textDrive-container .testDrive-form-container .testDrive-form .form-input {
+  border-bottom: 1px solid #e4e4e4;
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+.textDrive-container .testDrive-form-container .testDrive-form label {
+  display: inline-block;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: normal;
+  width: 85px;
+  font-family: 'AVATRFont-Regular';
+}
+.textDrive-container .testDrive-form-container .testDrive-form input {
+  display: inline-block;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: normal;
+  font-family: 'AVATRFont-Regular';
+  border: 0;
+  outline: 0;
+}
+.textDrive-container .testDrive-form-container .testDrive-form .btn {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  margin-top: 30px;
+}

@@ -27,4 +27,16 @@ class PageController extends Controller
     {
         return view('website.pages.about');
     }
+    public function contact()
+    {
+        return view('website.pages.contact');
+    }
+    public function testDrive()
+    {
+        return view('website.pages.test-drive');
+    }
+    public function models()
+    {
+        return view('website.pages.models');
+    }
 }

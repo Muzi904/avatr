@@ -73,6 +73,7 @@
                 <source srcset="{{ asset('website/images/about/mob-img4.png') }}" media="(max-width: 768px)">
                 <img src="{{ asset('website/images/about/img4.png') }}" alt="" class="w-100" loading="lazy">
             </picture>
+
         </div>
     </section>
 
