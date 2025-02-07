@@ -4,7 +4,6 @@
     <section class="textDrive-container">
         <div class="container">
             <h2>BOOK A TEST DRIVE</h2>
-
             <div class="testDrive-section">
                 <div class="testdriveCars">
                     <label data-target="avatr11">
@@ -43,9 +42,9 @@
                             </div>
                             <div class="form-input">
                                 <select name="" id="">
-                                    <option value="" disabled selected>Select a car</option>
-                                    <option value="">Avatr11</option>
-                                    <option value="">Avatr12</option>
+                                    <option value="" disabled selected>Select a showroom</option>
+                                    <option value="">Showroom1</option>
+                                    <option value="">Showroom2</option>
                                 </select>
                             </div>
                         </div>

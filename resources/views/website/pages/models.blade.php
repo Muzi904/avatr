@@ -125,10 +125,7 @@
     <div class="swiper-container main-slider loading">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <figure class="slide-bgimg"
-                    style="
-            background-image: url(website/images/home/hero1.jpg);
-          ">
+                <figure class="slide-bgimg" style="background-image: url(website/images/home/hero1.jpg);">
                     <img src="{{ asset('website/images/home/hero1.jpg') }}" class="entity-img" />
                 </figure>
                 <div class="content-models">
@@ -136,10 +133,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <figure class="slide-bgimg"
-                    style="
-            background-image: url(website/images/home/hero2.jpg);
-          ">
+                <figure class="slide-bgimg" style="background-image: url(website/images/home/hero2.jpg);">
                     <imgc src="{{ asset('website/images/home/hero2.jpg') }}" class="entity-img" />
                 </figure>
                 <div class="content-models">
