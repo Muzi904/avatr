@@ -40,17 +40,9 @@ Route::middleware(['auth'])->group(function () {
 
     // all enquiry
     Route::get('/enquiry', [EnquiryController::class, 'index'])->name('admin.enquiry.index');
-    // enquiry sales
-    Route::get('/enquiry/sales-enquiry', [EnquiryController::class, 'salesEnquiry'])->name('admin.sales.enquiry.index');
-    // enquiry customer support
-    Route::get('/enquiry/customer-support', [EnquiryController::class, 'CustomerSupport'])->name('admin.customer.support.enquiry.index');
-    // enquiry feedback
-    Route::get('/enquiry/feedback', [EnquiryController::class, 'feedback'])->name('admin.feedback.enquiry.index');
-    // submit a request
-    Route::get('/enquiry/submit-a-request', [EnquiryController::class, 'submitRequest'])->name('admin.submit.request.enquiry.index');
 
+    Route::get('/enquiry/clear-session', [EnquiryController::class, 'clearSession'])->name('admin.enquiry.clear.session');
 
-    Route::get('/webinar/enquiry/{id}', [EnquiryController::class, 'show'])->name('admin.webinar.enquiry.show');
 
     Route::get('/enquiry/export', [EnquiryController::class, 'export'])->name('admin.enquiry.export');
 });

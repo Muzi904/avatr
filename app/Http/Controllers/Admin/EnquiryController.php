@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Enquiry;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 use Yajra\DataTables\DataTables;
 use Illuminate\Support\Str;
 
@@ -13,64 +14,44 @@ class EnquiryController extends Controller
 {
     public function index(Request $request)
     {
-        $heading = 'All Enquiries';
-        $section = 'All';
-        $types = ['Sales Enquiry', 'Customer Support', 'Request', 'Feedback'];
-
+        $filters = $request->all();
         if ($request->ajax()) {
             $data = Enquiry::query();
             if ($request->from_date) {
-                $data = $data->whereRaw("STR_TO_DATE(added_on, '%Y-%m-%d') >= ?", [$request->from_date]);
+                $data = $data->whereDate('enquiries.created_at', '>=', $request->from_date);
+                Session::put('from_date', $request->from_date);
             }
             if ($request->to_date) {
-                $data = $data->whereRaw("STR_TO_DATE(added_on, '%Y-%m-%d') <= ?", [$request->to_date]);
+                $data = $data->whereDate('enquiries.created_at', '<=', $request->to_date);
+                Session::put('to_date', $request->to_date);
             }
-            if ($request->enq_type) {
-                $data = $data->where("enq_type", $request->enq_type);
+            if ($request->is_confirmed) {
+                $data = $data->where('is_confirmed', 'LIKE', '%' . $request->is_confirmed . '%');
+                Session::put('is_confirmed', $request->is_confirmed);
             }
-
-            $data = $data->orderBy('added_on', 'desc');
+            $data = $data->orderBy('id', 'desc');
             return DataTables::of($data)
-                ->addColumn('checkbox', '<input class="form-check-input m-0 align-middle" type="checkbox" aria - label = "Select invoice" >')
                 ->addIndexColumn()
-                ->editColumn('enq_type', function ($data) {
-                    if ($data->enq_type == 'Request') {
-                        return $data->request_type;
-                    } else {
-                        return $data->enq_type;
-                    }
-                })
-                ->editColumn('enq_email', function ($data) {
-                    if ($data->enq_type == 'Request') {
-                        return $data->req_email;
-                    } else {
-                        return $data->enq_email;
-                    }
-                })
-                ->editColumn('enq_message', function ($data) {
-                    return Str::limit($data->enq_message, 40);
-                })
-                ->editColumn('enq_products', function ($data) {
-                    return str_replace(',', '<br />', $data->enq_products);
-                })
-                ->addColumn('added_on', function ($data) {
-                    $date = Carbon::parse($data->added_on)->format('d-m-Y');
-                    $time = Carbon::parse($data->added_on)->format('h:i A');
-
-                    return $date . ' <br/>' . $time;
+                ->addColumn('created_at', function ($data) {
+                    return  Carbon::parse($data->created_at)->format('d-m-Y h:i A');
                 })
                 ->addColumn('action', null)
-                ->rawColumns(['checkbox', 'enq_type', 'enq_message', 'enq_products', 'added_on', 'action'])
+                ->rawColumns(['created_at', 'action'])
                 ->make(true);
         }
 
-        return view('admin.pages.enquiries.index', compact('types', 'heading', 'section'));
+        return view('admin.pages.enquiries.index', compact('filters'));
     }
 
-    public function show($id)
+    public function clearSession()
     {
-        $enquiry = Enquiry::find($id);
-
-        return view('admin.pages.enquiries.show', compact('enquiry'));
+        Session::forget('from_date');
+        Session::forget('to_date');
+        Session::forget('is_confirmed');
     }
+
+    // public function export(Request $request)
+    // {
+    //     return Excel::download(new EnquiryExport($request), date('Y_m_d_H_i_s') . '_enquiries.xlsx');
+    // }
 }
