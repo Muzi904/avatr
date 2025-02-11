@@ -1,127 +1,191 @@
 <!doctype html>
-<html lang="en">
+
+<html lang="en" class="light-style layout-wide customizer-hide" dir="ltr" data-theme="theme-default"
+    data-assets-path="../assets/" data-template="vertical-menu-template-free" data-style="light">
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>LOGIN | CMS</title>
-    <link rel="icon" type="image/*" href="{{ asset('static/ncc-logo.png') }}" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <!-- CSS files -->
-    <link href="./dist/css/tabler.min.css?1684106062" rel="stylesheet" />
-    <link href="./dist/css/tabler-flags.min.css?1684106062" rel="stylesheet" />
-    <link href="./dist/css/tabler-payments.min.css?1684106062" rel="stylesheet" />
-    <link href="./dist/css/tabler-vendors.min.css?1684106062" rel="stylesheet" />
-    <link href="./dist/css/demo.min.css?1684106062" rel="stylesheet" />
-    <style>
-        @import url('https://rsms.me/inter/inter.css');
+    <title>AVATR Admin | Login</title>
 
-        :root {
-            --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
-        }
+    <meta name="description" content="" />
 
-        body {
-            font-feature-settings: "cv03", "cv04", "cv11";
-        }
-    </style>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ asset('admin/img/favicon/favicon.ico') }}" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="{{ asset('admin/vendor/fonts/boxicons.css') }}" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="{{ asset('admin/vendor/css/core.css') }}" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="{{ asset('admin/vendor/css/theme-default.css') }}"
+        class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="{{ asset('admin/css/demo.css') }}" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="{{ asset('admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />
+
+    <!-- Page CSS -->
+    <!-- Page -->
+    <link rel="stylesheet" href="{{ asset('admin/vendor/css/pages/page-auth.css') }}" />
+
+    <!-- Helpers -->
+    <script src="{{ asset('admin/vendor/js/helpers.js') }}"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="{{ asset('admin/js/config.js') }}"></script>
 </head>
 
-<body class=" d-flex flex-column">
-    <script src="./dist/js/demo-theme.min.js?1684106062"></script>
-    <div class="page page-center">
-        <div class="container container-normal py-4">
-            <div class="row align-items-center g-4">
-                <div class="col-lg">
-                    <div class="container-tight">
-                        <div class="text-center mb-4">
-                            <a href="." class="navbar-brand navbar-brand-autodark">
-                                {{-- <img src="{{ asset('static/ncc-logo.png') }}" height="36" alt=""> --}}
+<body>
+    <!-- Content -->
+
+    <div class="container-xxl">
+        <div class="authentication-wrapper authentication-basic container-p-y">
+            <div class="authentication-inner">
+                <!-- Register -->
+                <div class="card px-sm-6 px-0">
+                    <div class="card-body">
+                        <!-- Logo -->
+                        <div class="app-brand justify-content-center">
+                            <a href="index.html" class="app-brand-link gap-2">
+                                <span class="app-brand-logo demo">
+                                    <svg width="25" viewBox="0 0 25 42" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs>
+                                            <path
+                                                d="M13.7918663,0.358365126 L3.39788168,7.44174259 C0.566865006,9.69408886 -0.379795268,12.4788597 0.557900856,15.7960551 C0.68998853,16.2305145 1.09562888,17.7872135 3.12357076,19.2293357 C3.8146334,19.7207684 5.32369333,20.3834223 7.65075054,21.2172976 L7.59773219,21.2525164 L2.63468769,24.5493413 C0.445452254,26.3002124 0.0884951797,28.5083815 1.56381646,31.1738486 C2.83770406,32.8170431 5.20850219,33.2640127 7.09180128,32.5391577 C8.347334,32.0559211 11.4559176,30.0011079 16.4175519,26.3747182 C18.0338572,24.4997857 18.6973423,22.4544883 18.4080071,20.2388261 C17.963753,17.5346866 16.1776345,15.5799961 13.0496516,14.3747546 L10.9194936,13.4715819 L18.6192054,7.984237 L13.7918663,0.358365126 Z"
+                                                id="path-1"></path>
+                                            <path
+                                                d="M5.47320593,6.00457225 C4.05321814,8.216144 4.36334763,10.0722806 6.40359441,11.5729822 C8.61520715,12.571656 10.0999176,13.2171421 10.8577257,13.5094407 L15.5088241,14.433041 L18.6192054,7.984237 C15.5364148,3.11535317 13.9273018,0.573395879 13.7918663,0.358365126 C13.5790555,0.511491653 10.8061687,2.3935607 5.47320593,6.00457225 Z"
+                                                id="path-3"></path>
+                                            <path
+                                                d="M7.50063644,21.2294429 L12.3234468,23.3159332 C14.1688022,24.7579751 14.397098,26.4880487 13.008334,28.506154 C11.6195701,30.5242593 10.3099883,31.790241 9.07958868,32.3040991 C5.78142938,33.4346997 4.13234973,34 4.13234973,34 C4.13234973,34 2.75489982,33.0538207 2.37032616e-14,31.1614621 C-0.55822714,27.8186216 -0.55822714,26.0572515 -4.05231404e-15,25.8773518 C0.83734071,25.6075023 2.77988457,22.8248993 3.3049379,22.52991 C3.65497346,22.3332504 5.05353963,21.8997614 7.50063644,21.2294429 Z"
+                                                id="path-4"></path>
+                                            <path
+                                                d="M20.6,7.13333333 L25.6,13.8 C26.2627417,14.6836556 26.0836556,15.9372583 25.2,16.6 C24.8538077,16.8596443 24.4327404,17 24,17 L14,17 C12.8954305,17 12,16.1045695 12,15 C12,14.5672596 12.1403557,14.1461923 12.4,13.8 L17.4,7.13333333 C18.0627417,6.24967773 19.3163444,6.07059163 20.2,6.73333333 C20.3516113,6.84704183 20.4862915,6.981722 20.6,7.13333333 Z"
+                                                id="path-5"></path>
+                                        </defs>
+                                        <g id="g-app-brand" stroke="none" stroke-width="1" fill="none"
+                                            fill-rule="evenodd">
+                                            <g id="Brand-Logo" transform="translate(-27.000000, -15.000000)">
+                                                <g id="Icon" transform="translate(27.000000, 15.000000)">
+                                                    <g id="Mask" transform="translate(0.000000, 8.000000)">
+                                                        <mask id="mask-2" fill="white">
+                                                            <use xlink:href="#path-1"></use>
+                                                        </mask>
+                                                        <use fill="#696cff" xlink:href="#path-1"></use>
+                                                        <g id="Path-3" mask="url(#mask-2)">
+                                                            <use fill="#696cff" xlink:href="#path-3"></use>
+                                                            <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-3">
+                                                            </use>
+                                                        </g>
+                                                        <g id="Path-4" mask="url(#mask-2)">
+                                                            <use fill="#696cff" xlink:href="#path-4"></use>
+                                                            <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-4">
+                                                            </use>
+                                                        </g>
+                                                    </g>
+                                                    <g id="Triangle"
+                                                        transform="translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) ">
+                                                        <use fill="#696cff" xlink:href="#path-5"></use>
+                                                        <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-5">
+                                                        </use>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="app-brand-text demo text-heading fw-bold">AVATR</span>
                             </a>
                         </div>
-                        <div class="card card-md">
-                            <div class="card-body">
-                                <h2 class="h2 text-center mb-4">Login to your account</h2>
-                                <form action="{{ route('login') }}" method="POST" autocomplete="off" novalidate>
-                                    @csrf
-                                    <div class="mb-3">
-                                        <label class="form-label">Email address</label>
-                                        <input id="email" type="email"
-                                            class="form-control @error('email') is-invalid @enderror" name="email"
-                                            @if (isset($_COOKIE['email'])) value="{{ $_COOKIE['email'] }}" @endif
-                                            required autocomplete="email" autofocus>
+                        <!-- /Logo -->
+                        {{-- <h4 class="mb-1">Welcome to sneat! 👋</h4>
+                        <p class="mb-6">Please sign-in to your account and start the adventure</p> --}}
 
-                                        @error('email')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror
-                                    </div>
-                                    <div class="mb-2">
-                                        <label class="form-label">
-                                            Password
-                                            @if (Route::has('password.request'))
-                                                <span class="form-label-description">
-                                                    <a href="{{ route('password.request') }}">I
-                                                        forgot password</a>
-                                                </span>
-                                            @endif
-                                        </label>
-                                        <div class="input-group input-group-flat">
-                                            <input id="password" type="password"
-                                                class="form-control @error('password') is-invalid @enderror"
-                                                name="password" required autocomplete="current-password"
-                                                @if (isset($_COOKIE['password'])) value="{{ $_COOKIE['password'] }}" @endif>
-                                            @error('password')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                            @enderror
-                                            <span class="input-group-text">
-                                                <a href="#" class="link-secondary" title="Show password"
-                                                    data-bs-toggle="tooltip"><!-- Download SVG icon from http://tabler-icons.io/i/eye -->
-                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon"
-                                                        width="24" height="24" viewBox="0 0 24 24"
-                                                        stroke-width="2" stroke="currentColor" fill="none"
-                                                        stroke-linecap="round" stroke-linejoin="round">
-                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                                        <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                                                        <path
-                                                            d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
-                                                    </svg>
-                                                </a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="mb-2">
-                                        <label class="form-check">
-                                            <input type="checkbox" class="form-check-input" name="remember"
-                                                id="remember" {{ isset($_COOKIE['email']) ? 'checked' : '' }} />
-                                            <span class="form-check-label">Remember me on this device</span>
-                                        </label>
-                                    </div>
-                                    <div class="form-footer">
-                                        <button type="submit" class="btn btn-primary w-100">Log in</button>
-                                    </div>
-                                </form>
+                        <form id="formAuthentication" class="mb-6"action="{{ route('login') }}" method="POST">
+                            @csrf
+                            <div class="mb-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="text" class="form-control" id="email" name="email"
+                                    placeholder="Enter your email" autofocus required
+                                    @if (isset($_COOKIE['email'])) value="{{ $_COOKIE['email'] }}" @endif />
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
+                            <div class="mb-6 form-password-toggle">
+                                <label class="form-label" for="password">Password</label>
+                                <div class="input-group input-group-merge">
+                                    <input type="password" id="password" class="form-control" name="password"
+                                        placeholder=""
+                                        @if (isset($_COOKIE['password'])) value="{{ $_COOKIE['password'] }}" @endif
+                                        aria-describedby="password" />
+                                    <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                                    @error('password')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="mb-8">
+                                <div class="d-flex justify-content-between mt-8">
+                                    <div class="form-check mb-0 ms-2">
+                                        <input class="form-check-input" type="checkbox" id="remember"
+                                            name="remember" {{ isset($_COOKIE['email']) ? 'checked' : '' }} />
+                                        <label class="form-check-label" for="remember"> Remember Me </label>
+                                    </div>
+                                    {{-- <a href="auth-forgot-password-basic.html">
+                                        <span>Forgot Password?</span>
+                                    </a> --}}
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <button class="btn btn-primary d-grid w-100" type="submit">Login</button>
+                            </div>
+                        </form>
 
-
-                        </div>
 
                     </div>
                 </div>
-                <div class="col-lg d-none d-lg-block">
-                    <img src="./static/illustrations/undraw_secure_login_pdn4.svg" height="300"
-                        class="d-block mx-auto" alt="">
-                </div>
+                <!-- /Register -->
             </div>
         </div>
     </div>
-    <!-- Libs JS -->
-    <!-- Tabler Core -->
-    <script src="./dist/js/tabler.min.js?1684106062" defer></script>
-    <script src="./dist/js/demo.min.js?1684106062" defer></script>
+
+    <!-- / Content -->
+
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="{{ asset('admin/vendor/libs/jquery/jquery.js') }}"></script>
+    <script src="{{ asset('admin/vendor/libs/popper/popper.js') }}"></script>
+    <script src="{{ asset('admin/vendor/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.js') }}"></script>
+    <script src="{{ asset('admin/vendor/js/menu.js') }}"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+
+    <!-- Main JS -->
+    <script src="{{ asset('admin/js/main.js') }}"></script>
+
+    <!-- Page JS -->
+
+    <!-- Place this tag before closing body tag for github widget button. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 
 </html>
