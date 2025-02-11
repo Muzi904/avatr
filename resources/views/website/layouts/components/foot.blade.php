@@ -1,10 +1,10 @@
 <script src="{{ asset('website/script/bootstrap-miin.js') }}"></script>
 <!-- jQuery -->
-<script src="{{ asset('website/script/jquery-min.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollSmoother.min.js"></script>
-<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
 <script src="{{ asset('website/script/swiper.js') }}"></script>
 
@@ -22,6 +22,46 @@
         smooth: 5,
         effects: true,
         normalizeScroll: true
+    });
+</script>
+
+<script>
+    const menu = document.querySelector('.mobile-menu');
+    const links = menu.querySelectorAll('li');
+    const burger = document.querySelector('#burger');
+
+    let tl = gsap.timeline({
+        paused: true
+    });
+
+    tl.fromTo(menu, {
+        x: '-100%', // Start completely off-screen to the left
+        opacity: 0
+    }, {
+        x: '0%', // Slide in fully
+        opacity: 1,
+        duration: 0.7,
+        height: '89vh',
+        zIndex: 99,
+        ease: 'expo.inOut',
+    }).from(links, {
+        duration: 0.5,
+        opacity: 0,
+        x: -20, // Staggered appearance from left
+        stagger: 0.1,
+        ease: 'expo.inOut',
+    }, "-=0.3");
+
+    // Toggle menu on click
+    let menuOpen = false;
+
+    burger.addEventListener('click', () => {
+        if (!menuOpen) {
+            tl.play();
+        } else {
+            tl.reverse();
+        }
+        menuOpen = !menuOpen;
     });
 </script>
 

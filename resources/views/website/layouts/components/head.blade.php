@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
     <link rel="stylesheet" href="{{ asset('website/css/swiper.css') }}">
     <link rel="stylesheet" href="{{ asset('website/css/style1.css') }}">
+    <link rel="stylesheet" href="{{ asset('website/css/responsive.css') }}">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet">
 

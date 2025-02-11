@@ -1,0 +1,52 @@
+@media screen and (max-width: 991px) {
+  .humburger {
+    display: block;
+    cursor: pointer;
+  }
+  header ul {
+    display: none !important;
+  }
+  .HeaderForPC_graphic-logo__3C7QW {
+    display: none;
+  }
+  header .logo {
+    top: 0 !important;
+  }
+  .HeaderForPC_letter-logo__1cvY3 {
+    width: 7rem !important;
+    height: 2rem !important;
+  }
+  header:hover {
+    background-color: transparent !important;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    width: 100%;
+    top: 98%;
+    left: -61px;
+    z-index: -1;
+    background-color: #000000;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  .mobile-menu li {
+    margin: 1rem 0;
+  }
+  .mobile-menu li a {
+    color: #ffffff;
+  }
+
+  .humburger {
+    cursor: pointer;
+    z-index: 1000;
+    position: relative;
+  }
+}
