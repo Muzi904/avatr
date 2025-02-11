@@ -2,51 +2,17 @@
 
 <header id="header">
     <div class="container">
+        <div class="humburger" id="burger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                <path fill="#fff"
+                    d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z" />
+            </svg>
+        </div>
+
         <ul>
             <li>
                 <a href="{{ route('avatr11') }}">Avatr 11</a>
             </li>
-            {{-- <div class="dropdown">
-                <div class="main-container">
-                    <a class="car-name" target="_blank" href="/en/11"><span>The Futuristic
-                            Luxury SUV</span><svg xmlns="http://www.w3.org/2000/svg" width="6" height="12.8"
-                            viewBox="0 0 13 26">
-                            <path fill="#000" fill-rule="evenodd"
-                                d="M.198 2.044V.198l11.645 11.928a1.254 1.254 0 0 1 0 1.748L.198 25.802v-1.847c0-.846.328-1.658.914-2.258l7.878-8.07a.903.903 0 0 0 0-1.255L1.112 4.303a3.236 3.236 0 0 1-.914-2.259">
-                            </path>
-                        </svg></a>
-                    <div class="columns">
-                        <div class="column">
-                            <div>
-                                <div>
-                                    <p>KUNLUN REEV</p>
-                                    <p>Powertrain</p>
-                                </div>
-                                <div>
-                                    <p>800V SiC EV</p>
-                                    <p>Architecture</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <img class="w-100" src="{{ asset('website/images/avatr11/dropdown-img1.png') }}"
-                                alt="">
-                        </div>
-                        <div class="column">
-                            <div>
-                                <div>
-                                    <p>Meridian Premium</p>
-                                    <p>Audio System</p>
-                                </div>
-                                <div>
-                                    <p>HUAWEI ADS 3.0 </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div> --}}
             <li>
                 <a href="{{ route('avatr12') }}">Avatr 12</a>
             </li>
@@ -83,6 +49,15 @@
             <li><a href="{{ route('contact') }}">Contact</a></li>
             <li><a href="{{ route('test.drive') }}">Test drive</a></li>
             <li><a href="{{ route('models') }}">Models</a></li>
+        </ul>
+
+        <ul class="mobile-menu">
+            <li><a class="navlink" href="{{ route('avatr11') }}">Avatr 11</a></li>
+            <li><a class="navlink" href="{{ route('avatr12') }}">Avatr 12</a></li>
+            <li><a class="navlink" href="{{ route('about') }}">About us</a></li>
+            <li><a class="navlink" href="{{ route('contact') }}">Contact</a></li>
+            <li><a class="navlink" href="{{ route('test.drive') }}">Test drive</a></li>
+            <li><a class="navlink" href="{{ route('models') }}">Models</a></li>
         </ul>
     </div>
 </header>

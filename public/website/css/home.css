@@ -1654,3 +1654,9 @@ footer ul li a {
 html {
   scroll-behavior: smooth;
 }
+.humburger {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+}
