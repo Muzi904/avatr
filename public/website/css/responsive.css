@@ -63,7 +63,7 @@
   }
   .swiper-slide .slider-inner .swiper-content .title-area img {
     height: auto;
-    width: 100% !important;
+    width: 75% !important;
   }
   .creative-fullpage--slider .swiper-slide .slider-inner .swiper-content {
     text-align: start;
