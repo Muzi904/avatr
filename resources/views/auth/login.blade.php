@@ -13,7 +13,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('admin/img/favicon/favicon.ico') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('website/images/favicon3.png') }}" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,7 +56,7 @@
                         <!-- Logo -->
                         <div class="app-brand justify-content-center">
                             <a href="index.html" class="app-brand-link gap-2">
-                                <span class="app-brand-logo demo">
+                                {{-- <span class="app-brand-logo demo">
                                     <svg width="25" viewBox="0 0 25 42" version="1.1"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <defs>
@@ -103,7 +103,7 @@
                                             </g>
                                         </g>
                                     </svg>
-                                </span>
+                                </span> --}}
                                 <span class="app-brand-text demo text-heading fw-bold">AVATR</span>
                             </a>
                         </div>
@@ -142,8 +142,8 @@
                             <div class="mb-8">
                                 <div class="d-flex justify-content-between mt-8">
                                     <div class="form-check mb-0 ms-2">
-                                        <input class="form-check-input" type="checkbox" id="remember"
-                                            name="remember" {{ isset($_COOKIE['email']) ? 'checked' : '' }} />
+                                        <input class="form-check-input" type="checkbox" id="remember" name="remember"
+                                            {{ isset($_COOKIE['email']) ? 'checked' : '' }} />
                                         <label class="form-check-label" for="remember"> Remember Me </label>
                                     </div>
                                     {{-- <a href="auth-forgot-password-basic.html">
