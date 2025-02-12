@@ -336,16 +336,6 @@
             <h3 class="Power_ev-title__3e_Z8">Full-stack 800V SiC EV platform</h3>
             <p class="Power_ev-content__2v22O">The advanced SiC technology equipped with CATL’s 94.5-degree ternary lithium
                 customized battery empower you to journey with unrivaled freedom and range.</p>
-            <ul class="Power_ev-data__3Whx0">
-                <li class="Power_data-item__1gp7B">
-                    <p class="Power_type__15UCj"></p>
-                    <p class="Power_data__2xjCB"></p>
-                </li>
-                <li class="Power_data-item__1gp7B">
-                    <p class="Power_type__15UCj"></p>
-                    <p class="Power_data__2xjCB"></p>
-                </li>
-            </ul>
         </div>
         <picture>
             <source srcset="{{ asset('website/images/avatr12/img2.jpg') }}" media="(max-width: 768px)"><img
@@ -432,17 +422,17 @@
                         <h5>Horizon
                         </h5>
                     </div>
-                    <div class="col-md-4 d-flex align-items-center gap-3">
+                    <div class="col-md-4 d-flex align-items-center gap-3 mb-3 mb-md-0">
                         <img src="{{ asset('website/images/avatr11/icon4.png') }}" alt="">
                         <h5>Perfect Balance
                         </h5>
                     </div>
-                    <div class="col-md-4 d-flex align-items-center gap-3">
+                    <div class="col-md-4 d-flex align-items-center gap-3 mb-3 mb-md-0">
                         <img src="{{ asset('website/images/avatr11/icon5.png') }}" alt="">
                         <h5>True time
                         </h5>
                     </div>
-                    <div class="col-md-4 d-flex align-items-center gap-3">
+                    <div class="col-md-4 d-flex align-items-center gap-3 mb-3 mb-md-0">
                         <img src="{{ asset('website/images/avatr11/icon6.png') }}" alt="">
                         <h5>Intelli-Q
                         </h5>
@@ -575,8 +565,8 @@
             </picture>
             <div class="TextOnImg_content__1DDkn">
                 <h3 class="TextOnImg_text-title__2_zUz">
-                    <p>Dual zero-gravity astronautical seats
-                    </p>
+                    Dual zero-gravity astronautical seats
+
                 </h3>
                 <p class="TextOnImg_text-desc__Oe_RF">16-way electric adjustment, ventilation, heating, massage are all
                     available. The zero-pressure lying position puts the heart and knees at the same level, and the muscles
