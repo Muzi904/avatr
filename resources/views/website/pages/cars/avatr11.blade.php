@@ -652,7 +652,7 @@
             <source srcset="{{ asset('website/images/avatr11/img17.jpg') }}" media="(max-width: 768px)">
             <img class="w-100" src="{{ asset('website/images/avatr11/img17.jpg') }}" alt="" loading="lazy">
         </picture>
-        <div class="icon-main-container">
+        <div class="icon-main-container container">
             <h3 class="mb-4">
                 Exclusive 6 sound effect algorithms
             </h3>
@@ -672,17 +672,17 @@
                     <h5>Horizon
                     </h5>
                 </div>
-                <div class="col-md-4 d-flex align-items-center gap-3">
+                <div class="col-md-4 d-flex align-items-center gap-3 mb-3 mb-md-0">
                     <img src="{{ asset('website/images/avatr11/icon4.png') }}" alt="">
                     <h5>Perfect Balance
                     </h5>
                 </div>
-                <div class="col-md-4 d-flex align-items-center gap-3">
+                <div class="col-md-4 d-flex align-items-center gap-3 mb-3 mb-md-0">
                     <img src="{{ asset('website/images/avatr11/icon5.png') }}" alt="">
                     <h5>True time
                     </h5>
                 </div>
-                <div class="col-md-4 d-flex align-items-center gap-3">
+                <div class="col-md-4 d-flex align-items-center gap-3 mb-3 mb-md-0">
                     <img src="{{ asset('website/images/avatr11/icon6.png') }}" alt="">
                     <h5>Intelli-Q
                     </h5>
@@ -760,7 +760,7 @@
 
     <section class="section-one mt-100">
         <picture>
-            <source srcset="{{ asset('website/images/avatr11/mob-img19.jpg') }}" media="(max-width: 768px)"><img
+            <source srcset="{{ asset('website/images/avatr11/img19.jpg') }}" media="(max-width: 768px)"><img
                 class="w-100" src="{{ asset('website/images/avatr11/img19.jpg') }}" alt=""
                 class="FirstTitle_section-bgm__2JYhD" loading="lazy">
         </picture>

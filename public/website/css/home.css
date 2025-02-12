@@ -737,6 +737,7 @@ li {
   -webkit-transform: translate(-50%, 100%);
   -moz-transform: translate(-50%, 100%);
   transform: translate(-50%, 100%);
+  font-family: AVATRFont-Light;
 }
 .animeslide-slide {
   color: #fff;
@@ -749,6 +750,16 @@ li {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+.animeslide-slide a h1,
+.animeslide-slide a h4 {
+  font-family: 'AVATRFont-Regular';
+}
+.animeslide-slide a h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+.animeslide-slide a h1 {
+  font-size: calc(1.375rem + 1.5vw);
 }
 .find-more {
   flex-direction: row !important;
@@ -1365,6 +1376,7 @@ footer ul li a {
   color: #181818;
   line-height: 24px;
   font-weight: 400;
+  font-family: AVATRFont-Light;
 }
 .Power_container-ev__2DJyZ {
   width: 100%;

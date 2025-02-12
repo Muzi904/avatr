@@ -13,12 +13,26 @@
             -webkit-backface-visibility: hidden;
         }
 
+
+
         .swiper-container {
             width: 80%;
             height: 100vh;
             float: left;
             transition: opacity 0.6s ease, transform 0.3s ease;
             margin-bottom: 40px
+        }
+
+        @media screen and (max-width:991px) {
+            .swiper-container {
+                height: 80vh;
+                margin-bottom: 0
+            }
+
+            .swiper-container.nav-slider {
+                height: 20vh;
+                margin-bottom: 35px
+            }
         }
 
         .swiper-container.nav-slider {
@@ -254,7 +268,7 @@
             slideToClickedSlide: true,
             direction: "vertical",
             breakpoints: {
-                768: {
+                991: {
                     direction: "horizontal",
                 },
             },
