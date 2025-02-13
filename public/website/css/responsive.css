@@ -268,6 +268,17 @@
   .contact-form .column .grid-rows {
     gap: 0;
   }
+  .showroom-list .card {
+    flex-direction: column !important;
+    gap: 30px;
+    align-items: start !important;
+  }
+  .showroom-list .card .content {
+    padding-top: 0;
+  }
+  .showroom-list .card .content h2 {
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .section-padding {
@@ -350,20 +361,11 @@
   .scrolltabs .tabs {
     white-space: inherit;
   }
-  .showroom-list .card {
-    flex-direction: column !important;
-    gap: 30px;
-    align-items: start !important;
-  }
+
   .showroom-list {
     padding: 35px 0;
   }
-  .showroom-list .card .content {
-    padding-top: 0;
-  }
-  .showroom-list .card .content h2 {
-    margin-bottom: 0;
-  }
+
   .grid-row {
     gap: 1.5rem !important;
   }
