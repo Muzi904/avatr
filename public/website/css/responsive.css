@@ -192,7 +192,7 @@
   }
   .swiper-without-arrow h1 {
     padding-block: 35px;
-    padding-inline: 0;
+    padding-inline: 15px;
   }
   .tab-section2 {
     padding-top: 40px;
@@ -260,6 +260,9 @@
   .Intelligence_laser-cabi__1Crj5 {
     margin-top: 35px;
   }
+  .contact-form .column .grid-rows {
+    gap: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .section-padding {
@@ -317,7 +320,7 @@
     padding-bottom: 15px;
   }
   .contact-form .grid-rows {
-    padding: 15px;
+    gap: 0 !important;
   }
   .contact-form {
     padding-bottom: 35px;
@@ -335,6 +338,12 @@
   }
   .scrolltabs .tabs {
     justify-content: start;
+  }
+  .contact-form .column .grid-rows {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .scrolltabs .tabs {
+    white-space: inherit;
   }
 }
 
@@ -369,7 +378,7 @@
     font-size: 14px;
   }
   .scrolltabs .tab {
-    width: fit-content;
+    width: 70% !important;
   }
   .scrolltabs .content-text {
     min-height: auto;

@@ -553,6 +553,7 @@ li {
   color: var(--white-color);
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 5px;
   font-size: 16px;
   color: #fff;
@@ -943,6 +944,7 @@ footer ul {
   flex-wrap: wrap;
   padding: 0;
   margin-bottom: 0;
+  flex: 0.8;
 }
 footer ul li {
   list-style: none;
@@ -963,6 +965,7 @@ footer ul li a {
 .footer-bottom ul:nth-child(2) {
   display: flex;
   align-items: center;
+  flex: 0.2;
 }
 .footer-bottom ul:nth-child(2) li {
   width: 28px;

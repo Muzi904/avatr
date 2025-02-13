@@ -5,8 +5,18 @@
 .contact-adress {
   padding: 60px 0;
 }
-.contact-adress {
-  padding: 60px 0;
+.contact-adress .heading {
+  text-align: center;
+max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: 50px;
+}
+.contact-adress .heading h1 {
+  font-family: AVATRFont-Regular;
+}
+.contact-adress .heading h6 {
+  font-family: AVATRFont-Regular;
+  line-height: 1.6;
 }
 .grid-rows {
   display: grid;
@@ -51,7 +61,7 @@ h3 {
   font-size: 32px;
 }
 .contact-form .column .grid-rows {
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   padding: 0;
   gap: 1.5rem;
 }
