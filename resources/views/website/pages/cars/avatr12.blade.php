@@ -601,7 +601,7 @@
                 </div>
 
                 <!-- Tabs (Text) -->
-                <div class="tabs justify-content-center">
+                <div class="tabs ">
                     <button class="tab active" data-target="#tab11-img" data-text-target="#tab11-text">Ultra-luxurious
                         cabin soft furnishings</button>
                     <button class="tab" data-target="#tab12-img" data-text-target="#tab12-text">AVATR's GentleTech
