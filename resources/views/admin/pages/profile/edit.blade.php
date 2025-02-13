@@ -54,7 +54,7 @@
                                                 <img src="{{ asset('uploads/users/profile_photo/' . $userDetails->profile_photo) }}"
                                                     width="100" height="100" alt="" id="imgPreview">
                                             @else
-                                                <img src="{{ asset('static/networklogo.svg') }}" alt=""
+                                                <img src="{{ asset('website/images/favicon3.png') }}" alt=""
                                                     class="avatar avatar-sm" id="imgPreview2">
                                             @endif
                                         </span>
