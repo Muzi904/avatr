@@ -610,7 +610,7 @@
 
                 <!-- Tabs Text Content -->
                 <div class="tab-content">
-                    <div id="tab11-text" class="content content-text active">original Nappa leather steering wheel and
+                    <div id="tab11-text" class="content content-text active">Original Nappa leather steering wheel and
                         seats, ultra-soft touch suede-like exquisite ceiling, and pure natural European selected real wood
                         of the center console. The beauty of details is subtle and stylish.</div>
                     <div id="tab12-text" class="content content-text">AVATR's GentleTech design concept is unique because
