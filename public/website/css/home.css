@@ -355,7 +355,7 @@ li {
   background: #ffffff;
 }
 .swiper-container-h .swiper-button-next::after {
-  content: '\f061';
+  content: '';
   font-family: var(--fa-style-family, 'Font Awesome 6 Free');
   font-weight: var(--fa-style, 900);
   background: none;
@@ -363,7 +363,7 @@ li {
   font-size: 60px;
 }
 .swiper-container-h .swiper-button-prev::after {
-  content: '\f060';
+  content: '';
   font-family: var(--fa-style-family, 'Font Awesome 6 Free');
   font-weight: var(--fa-style, 900);
   background: none;
@@ -1034,6 +1034,7 @@ footer ul li a {
   max-width: calc(100% - 160px);
   margin-inline: auto;
   margin: 32px auto 0;
+  justify-content: center;
 }
 .scrolltabs .tabs::-webkit-scrollbar {
   height: 0; /* Height of the horizontal scrollbar */
