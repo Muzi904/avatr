@@ -345,15 +345,15 @@
     justify-content: start;
   }
   .contact-form .column .grid-rows {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
   }
   .scrolltabs .tabs {
     white-space: inherit;
   }
   .showroom-list .card {
-    flex-direction: column;
+    flex-direction: column !important;
     gap: 30px;
-    align-items: start;
+    align-items: start !important;
   }
   .showroom-list {
     padding: 35px 0;
