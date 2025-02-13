@@ -356,7 +356,8 @@
     justify-content: start;
   }
   .contact-form .column .grid-rows {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    display: flex;
+    flex-direction: column;
   }
   .scrolltabs .tabs {
     white-space: inherit;
