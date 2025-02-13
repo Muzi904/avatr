@@ -1034,7 +1034,7 @@ footer ul li a {
   max-width: calc(100% - 160px);
   margin-inline: auto;
   margin: 32px auto 0;
-  justify-content: center3;
+  justify-content: center;
 }
 .scrolltabs .tabs::-webkit-scrollbar {
   height: 0; /* Height of the horizontal scrollbar */
