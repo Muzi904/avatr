@@ -63,17 +63,7 @@
     });
 </script>
 
-<script>
-    const dateInput = document.getElementById("dateInput");
 
-    dateInput.addEventListener("focus", function() {
-        this.setAttribute("placeholder", "YYYY-MM-DD");
-    });
-
-    dateInput.addEventListener("blur", function() {
-        this.removeAttribute("placeholder");
-    });
-</script>
 
 <script>
     const progressCircle = document.querySelector(".autoplay-progress svg");

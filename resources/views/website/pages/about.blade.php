@@ -6,30 +6,39 @@
             <div class="swiper-grid">
                 <div class="content-section">
                     <div class="content" data-target="slide1">
-                        <h2 class="animate-text">Powering
+                        <h2 class="animate-text">Intelligent Innovation</h2>
+                        <p class="animate-text">AVATR vehicles are designed with advanced computing
+                            power, high-voltage fast-charging capability, and a user-friendly intelligent ecosystem. </p>
+                        {{-- <h2 class="animate-text">Powering
                             Your Human
                             Powers</h2>
                         <p class="animate-text">AVATR is inspired by the ancient Sanskrit word "avatar", meaning embodiment.
                             At AVATR, the word is interpreted in a more profound way, that is, to enable each user to create
                             another self in an intelligent parallel world, becoming "your most emotional intelligent
                             companion". AVATR will enable you to harness your powerful self, by advancing with you
-                            relentlessly and fearlessly for the pursuit of love.</p>
+                            relentlessly and fearlessly for the pursuit of love.</p> --}}
                     </div>
                     <div class="content" data-target="slide2">
-                        <h2 class="animate-text">From the
+                        <h2 class="animate-text">Seamless Connectivity </h2>
+                        <p class="animate-text">Integrated with Huawei’s smart vehicle solutions, AVATR
+                            ensures a seamless and intuitive driving experience</p>
+                        {{-- <h2 class="animate-text">From the
                             Heart</h2>
                         <p class="animate-text">With Regards, We appreciate your free and unstrained spirit, while chasing
-                            after your passion, your everlasting love, to enrich your life</p>
+                            after your passion, your everlasting love, to enrich your life</p> --}}
                     </div>
                     <div class="content" data-target="slide3">
-                        <h2 class="animate-text">Every Facet
+                        <h2 class="animate-text">Sustainable Future </h2>
+                        <p class="animate-text">Backed by CATL’s cutting-edge battery technology, AVATR
+                            supports a sustainable and eco-friendly driving future. </p>
+                        {{-- <h2 class="animate-text">Every Facet
                             Represents You</h2>
                         <p class="animate-text">The AVATR brand identity is a multi-faceted polyhedron made up of lines and
                             surfaces. The convergence of lines symbolizes its indomitable spirit. The multi-surface splicing
                             reflects your abundant and graceful lifestyle where self-appreciation comes first. With
                             forward-looking design and accessible technology, we are dedicated to creating an intelligent
                             life for you beyond travel, to make you feel more abundant and graceful in your free and
-                            unstrained life.</p>
+                            unstrained life.</p> --}}
                     </div>
 
                 </div>
@@ -84,18 +93,15 @@
         </picture>
         <div class="About_text__O8ybE">
             <h3>AVATR Technology</h3>
-            <p>Founded in 2018, AVATR Technology commits to exploring future-oriented humanized
-                mobility technologies and creating a warm and intelligent user experience. AVATR, inspired by ‘avatar’, aims
-                to enable each and every user to create another self in an intelligent parallel world, becoming “your most
-                emotional intelligent companion”.</p>
-            <p>As an explorer in the new track of smart electric vehicles (SEV), AVATR Technology
-                is committed to building an international high-end SEV brand. Supported by Changan Automobile, Huawei, and
-                CATL in vehicle R&amp;D and intelligent manufacturing, intelligent vehicle solutions, and intelligent energy
-                ecology, AVATR Technology is making the most of the jointly built, featuring an all new SEV architecture
-                with "a new architecture, strong computing power, and high-voltage charging capability". Based on the new
-                cooperation model, AVATR Technology mastered the SEV industries' core competency which achieved complete
-                autonomy in China domestically. The company is headquartered in Chongqing, China, with branches in Shanghai,
-                China and Munich, Germany.</p>
+            <p> Elaf Motors, the sole distributor of Changan vehicles in Qatar, is expanding its footprint
+                in the electric vehicle (EV) industry with the launch of AVATR in the region. AVATR
+                Technology, a premium high-end smart electric vehicle (SEV) brand, is supported by industry
+                leaders CHANGAN Automobile, Huawei, and CATL. With a commitment to pioneering future
+                oriented mobility solutions, AVATR is set to redefine the EV landscape in Qatar. </p>
+            <p>Elaf Motors brings years of expertise in the automotive sector, ensuring a seamless introduction
+                of AVATR vehicles to the local market. With a strong focus on customer service, business
+                efficiency, and innovation, we aim to make AVATR a leading name in Qatar’s growing EV
+                industry.</p>
         </div>
     </section>
 
@@ -106,7 +112,9 @@
         </picture>
         <div class="About_text__O8ybF">
             <h3>Mission</h3>
-            <p>Offering Unique and Futuristic Mobility Experiences and Lifestyle
+            <p> Offering unique and futuristic mobility experiences and lifestyles, AVATR is dedicated
+                to revolutionizing smart electric mobility. We strive to enhance the driving experience through
+                cutting-edge technology, intelligent solutions, and sustainable energy practices.
             </p>
         </div>
     </section>
@@ -119,7 +127,9 @@
         <div class="About_text__O8ybF">
             <h3>Vision
             </h3>
-            <p>Become a global leading high-end SEV company in 2030 through futuristic design and warm and caring technology
+            <p>By 2030, AVATR aims to become a globally leading high-end SEV brand, combining
+                futuristic design with warm and intelligent technology. Our vision is to empower individuals to
+                enhance and expand the life they pursue, creating a seamless and connected driving experience.
             </p>
         </div>
     </section>

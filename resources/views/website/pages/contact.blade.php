@@ -10,6 +10,11 @@
 
     <section class="contact-adress">
         <div class="container">
+            <div class="heading">
+                <h1>Conatct US</h1>
+                <h6>For inquiries and showroom details, please reach out to Elaf Motors. Experience the
+                    future of mobility with AVATR Qatar.</h6>
+            </div>
             <div class="grid-rows">
                 <div class="column">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
