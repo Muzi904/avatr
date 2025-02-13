@@ -69,8 +69,7 @@
     const progressCircle = document.querySelector(".autoplay-progress svg");
     const progressContent = document.querySelector(".autoplay-progress span");
 
-    const swiper = new Swiper('.mySwiper', {
-        allowTouchMove: false,
+    const swiper = new Swiper(".mySwiper", {
         loop: true,
         autoplay: {
             delay: 5000,
@@ -92,11 +91,12 @@
                     progressContent.textContent = `${Math.ceil(time / 1000)}s`;
                 }
             },
-            slideChangeTransitionStart: function() {
-                const activeIndex = swiper.realIndex; // Get the correct active slide index
-                const activeSlideId = swiper.slides[activeIndex].id; // Get the ID of the active slide
+            slideChangeTransitionStart: function(swiper) {
+                const activeIndex = swiper.realIndex; // Get correct index
+                const activeSlide = swiper.slides[swiper.activeIndex];
+                const activeSlideId = activeSlide.getAttribute("id"); // Get ID of the current active slide
 
-                // Immediately hide all content before showing the new one
+                // Hide all content first
                 gsap.set(".content", {
                     opacity: 0,
                     y: 70,
