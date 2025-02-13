@@ -10,7 +10,10 @@
     padding: 0 15px;
   }
   .About_text__O8ybF {
-    top: -350px;
+    position: relative;
+    top: 0;
+    background: #000000;
+    padding: 15px;
   }
   .About_text__O8ybE {
     position: relative;

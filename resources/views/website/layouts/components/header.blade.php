@@ -46,18 +46,20 @@
             <li>
                 <a href="{{ route('about') }}">About us</a>
             </li>
-            <li><a href="{{ route('contact') }}">Contact</a></li>
-            <li><a href="{{ route('test.drive') }}">Test drive</a></li>
             <li><a href="{{ route('models') }}">Models</a></li>
+            <li><a href="{{ route('showrooms') }}">Showrooms</a></li>
+            <li><a href="{{ route('test.drive') }}">Test drive</a></li>
+            <li><a href="{{ route('contact') }}">Contact</a></li>
         </ul>
 
         <ul class="mobile-menu">
             <li><a class="navlink" href="{{ route('avatr11') }}">Avatr 11</a></li>
             <li><a class="navlink" href="{{ route('avatr12') }}">Avatr 12</a></li>
             <li><a class="navlink" href="{{ route('about') }}">About us</a></li>
-            <li><a class="navlink" href="{{ route('contact') }}">Contact</a></li>
-            <li><a class="navlink" href="{{ route('test.drive') }}">Test drive</a></li>
             <li><a class="navlink" href="{{ route('models') }}">Models</a></li>
+            <li><a class="navlink" href="{{ route('showrooms') }}">Showrooms</a></li>
+            <li><a class="navlink" href="{{ route('test.drive') }}">Test drive</a></li>
+            <li><a class="navlink" href="{{ route('contact') }}">Contact</a></li>
         </ul>
     </div>
 </header>

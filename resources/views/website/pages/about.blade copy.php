@@ -9,21 +9,36 @@
                         <h2 class="animate-text">Intelligent Innovation</h2>
                         <p class="animate-text">AVATR vehicles are designed with advanced computing
                             power, high-voltage fast-charging capability, and a user-friendly intelligent ecosystem. </p>
+                        {{-- <h2 class="animate-text">Powering
+                            Your Human
+                            Powers</h2>
+                        <p class="animate-text">AVATR is inspired by the ancient Sanskrit word "avatar", meaning embodiment.
+                            At AVATR, the word is interpreted in a more profound way, that is, to enable each user to create
+                            another self in an intelligent parallel world, becoming "your most emotional intelligent
+                            companion". AVATR will enable you to harness your powerful self, by advancing with you
+                            relentlessly and fearlessly for the pursuit of love.</p> --}}
                     </div>
                     <div class="content" data-target="slide2">
                         <h2 class="animate-text">Seamless Connectivity </h2>
                         <p class="animate-text">Integrated with Huawei’s smart vehicle solutions, AVATR
                             ensures a seamless and intuitive driving experience</p>
+                        {{-- <h2 class="animate-text">From the
+                            Heart</h2>
+                        <p class="animate-text">With Regards, We appreciate your free and unstrained spirit, while chasing
+                            after your passion, your everlasting love, to enrich your life</p> --}}
                     </div>
                     <div class="content" data-target="slide3">
                         <h2 class="animate-text">Sustainable Future </h2>
                         <p class="animate-text">Backed by CATL’s cutting-edge battery technology, AVATR
                             supports a sustainable and eco-friendly driving future. </p>
-                    </div>
-                    <div class="content" data-target="slide4">
-                        <h2 class="animate-text">Luxury & Performance </h2>
-                        <p class="animate-text">AVATR vehicles offer a perfect blend of premium luxury,
-                            futuristic design, and high-performance engineering. </p>
+                        {{-- <h2 class="animate-text">Every Facet
+                            Represents You</h2>
+                        <p class="animate-text">The AVATR brand identity is a multi-faceted polyhedron made up of lines and
+                            surfaces. The convergence of lines symbolizes its indomitable spirit. The multi-surface splicing
+                            reflects your abundant and graceful lifestyle where self-appreciation comes first. With
+                            forward-looking design and accessible technology, we are dedicated to creating an intelligent
+                            life for you beyond travel, to make you feel more abundant and graceful in your free and
+                            unstrained life.</p> --}}
                     </div>
 
                 </div>
@@ -42,9 +57,6 @@
                         <!-- Slide 3 -->
                         <div class="swiper-slide" id="slide3">
                             <img class="w-100" src="{{ asset('website/images/about/img3.jpg') }}" alt="">
-                        </div>
-                        <div class="swiper-slide" id="slide4">
-                            <img class="w-100" src="{{ asset('website/images/about/img2.jpg') }}" alt="">
                         </div>
                     </div>
                     <div class="swiper-button-prev"></div>
