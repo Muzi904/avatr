@@ -49,13 +49,29 @@
             </ul>
             <ul>
                 <li>
-                    <a href="#">
-                        <img src="{{ asset('website/images/linkedin.png') }}" alt="">
+                    <a href="https://www.facebook.com/profile.php?id=61569575369852">
+                        <img src="{{ asset('website/images/facebook.png') }}" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://www.instagram.com/avatr.qatar/ ">
                         <img src="{{ asset('website/images/instagram.png') }}" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/AvatrQatar">
+                        <img src="{{ asset('website/images/twitter.png') }}" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://snapchat.com/t/0XJZBlKa">
+                        <img src="{{ asset('website/images/snapchat.png') }}" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@avatr_qatar?_t=ZS-8tsOHUEvF0j&_r=1">
+                        <img src="{{ asset('website/images/tiktok.png') }}" alt="">
                     </a>
                 </li>
             </ul>

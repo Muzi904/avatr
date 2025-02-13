@@ -41,7 +41,6 @@
         x: '0%', // Slide in fully
         opacity: 1,
         duration: 0.7,
-        height: '89vh',
         zIndex: 99,
         ease: 'expo.inOut',
     }).from(links, {
@@ -60,8 +59,16 @@
             tl.play();
         } else {
             tl.reverse();
+
         }
         menuOpen = !menuOpen;
+    });
+
+    document.addEventListener('click', (event) => {
+        if (menuOpen && !menu.contains(event.target) && !burger.contains(event.target)) {
+            tl.reverse();
+            menuOpen = false;
+        }
     });
 </script>
 

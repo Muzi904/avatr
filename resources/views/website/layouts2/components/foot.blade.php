@@ -17,6 +17,55 @@
 </script>
 
 <script>
+    const menu = document.querySelector('.mobile-menu');
+    const links = menu.querySelectorAll('li');
+    const burger = document.querySelector('#burger');
+
+    let tl = gsap.timeline({
+        paused: true
+    });
+
+    tl.fromTo(menu, {
+        x: '-100%', // Start completely off-screen to the left
+        opacity: 0
+    }, {
+        x: '0%', // Slide in fully
+        opacity: 1,
+        duration: 0.7,
+        zIndex: 99,
+        ease: 'expo.inOut',
+    }).from(links, {
+        duration: 0.5,
+        opacity: 0,
+        x: -20, // Staggered appearance from left
+        stagger: 0.1,
+        ease: 'expo.inOut',
+    }, "-=0.3");
+
+    // Toggle menu on click
+    let menuOpen = false;
+
+    burger.addEventListener('click', () => {
+        if (!menuOpen) {
+            tl.play();
+        } else {
+            tl.reverse();
+
+        }
+        menuOpen = !menuOpen;
+    });
+
+    document.addEventListener('click', (event) => {
+        if (menuOpen && !menu.contains(event.target) && !burger.contains(event.target)) {
+            tl.reverse();
+            menuOpen = false;
+        }
+    });
+</script>
+
+
+
+<script>
     const progressCircle = document.querySelector(".autoplay-progress svg");
     const progressContent = document.querySelector(".autoplay-progress span");
 

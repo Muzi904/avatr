@@ -1,0 +1,45 @@
+@media screen and (max-width: 991px) {
+  header:hover {
+    background-color: #000000d9 !important;
+  }
+  .DesignConcept_container__FeFfB {
+    padding: 64px 0 40px;
+  }
+  .About_text__O8ybF,
+  .About_text__O8ybE {
+    padding: 0 15px;
+  }
+  .About_text__O8ybF {
+    top: -350px;
+  }
+  .About_text__O8ybE {
+    position: relative;
+    background-color: #000;
+    padding-block: 15px;
+    max-width: fit-content;
+  }
+}
+@media screen and (max-width: 768px) {
+  .About_text__O8ybF {
+    top: -500px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .swiper-grid {
+    gap: 15px;
+  }
+  .swiper-grid .content-section .content {
+    margin-top: 30px;
+  }
+  .swiper-grid .swiper-button-next,
+  .swiper-grid .content-section .swiper-button-next,
+  .swiper-button-prev {
+    top: 92%;
+  }
+  .About_text__O8ybF {
+    top: -200px;
+  }
+  .contact-form .grid-rows {
+    padding: 15px;
+  }
+}

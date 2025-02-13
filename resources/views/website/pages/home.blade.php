@@ -398,6 +398,22 @@
     </section>
 
     <section class="about-section ">
+        <div class="overlay-container d-lg-none">
+            <div class="text">
+                <h3>AVATR</h3>
+                <h1>EMOTIONAL INTELLIGENCE, MOTION IN DELIGHT </h1>
+                <a href="#">About us
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="0.8em" viewBox="0 0 13 26"
+                        class="AboutEntry_more-icon__PNw5c">
+                        <path fill="#fff" fill-rule="evenodd"
+                            d="M.198 2.044V.198l11.645 11.928a1.254 1.254 0 0 1 0 1.748L.198 25.802v-1.847c0-.846.328-1.658.914-2.258l7.878-8.07a.903.903 0 0 0 0-1.255L1.112 4.303a3.236 3.236 0 0 1-.914-2.259">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+
+
+        </div>
         <div class="bg-image-section">
             <div class="tab-image active" data-image="tab1">
                 <picture>
@@ -421,7 +437,7 @@
         </div>
 
         <div class="overlay-container">
-            <div class="text">
+            <div class="text d-none d-lg-block">
                 <h3>AVATR</h3>
                 <h1>EMOTIONAL INTELLIGENCE, MOTION IN DELIGHT </h1>
                 <a href="#">About us
@@ -488,7 +504,7 @@
         </div>
     </section>
 
-    <section class="section-padding">
+    <section class="section-padding px-0">
         <div class="container">
             <div class="swiper animeslide swiper-container">
                 <!-- Additional required wrapper -->

@@ -3,6 +3,12 @@
 
 <header id="header">
     <div class="container">
+        <div class="humburger" id="burger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                <path fill="#fff"
+                    d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z" />
+            </svg>
+        </div>
         <ul>
             <li>
                 <a href="{{ route('avatr11') }}">Avatr 11</a>
@@ -32,6 +38,15 @@
             <li><a href="{{ route('test.drive') }}">Test drive</a></li>
             <li><a href="{{ route('models') }}">Models</a></li>
 
+        </ul>
+
+        <ul class="mobile-menu">
+            <li><a class="navlink" href="{{ route('avatr11') }}">Avatr 11</a></li>
+            <li><a class="navlink" href="{{ route('avatr12') }}">Avatr 12</a></li>
+            <li><a class="navlink" href="{{ route('about') }}">About us</a></li>
+            <li><a class="navlink" href="{{ route('contact') }}">Contact</a></li>
+            <li><a class="navlink" href="{{ route('test.drive') }}">Test drive</a></li>
+            <li><a class="navlink" href="{{ route('models') }}">Models</a></li>
         </ul>
     </div>
 </header>
