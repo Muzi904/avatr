@@ -154,7 +154,8 @@
     font-size: 14px;
   }
   .scrolltabs .content-text,
-  p {
+  p,
+  a {
     font-size: 14px !important;
   }
   .about-section .tab-btn {
@@ -378,7 +379,7 @@
   }
 
   .grid-row {
-    gap: 1.5rem !important;
+    gap: 1rem !important;
   }
 }
 
