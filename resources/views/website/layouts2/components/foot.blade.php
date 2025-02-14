@@ -16,6 +16,7 @@
     });
 </script>
 
+
 <script>
     const menu = document.querySelector('.mobile-menu');
     const links = menu.querySelectorAll('li');
