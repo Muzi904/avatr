@@ -136,3 +136,11 @@ h3 {
   color: #484b54;
   margin-bottom: 0;
 }
+
+.showroom-list .card .content a {
+  color: #484b54;
+  text-decoration: none;
+  font-family: 'AVATRFont-Regular';
+  display: flex;
+  gap: 3px;
+}
