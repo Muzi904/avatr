@@ -50,10 +50,10 @@
                         </div>
                         <div class="grid-rows">
                             <div class="form-input">
-                                <input type="date" placeholder="Preferred date">
+                                <input type="date" value="2000-01-01">
                             </div>
                             <div class="form-input">
-                                <input type="time" placeholder="Preferred time">
+                                <input type="time" value="13:30" />
                             </div>
                         </div>
                         <div class="grid-rows">

@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="{{ asset('website/css/header.css') }}">
 <link rel="stylesheet" href="{{ asset('website/css/main-header.css') }}">
 
-<header id="header">
+<header class="fixed-header" id="header">
     <div class="container">
         <div class="humburger" id="burger">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">

@@ -1,7 +1,9 @@
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
   header:hover {
     background-color: #000000d9 !important;
   }
+}
+@media screen and (max-width: 991px) {
   .DesignConcept_container__FeFfB {
     padding: 64px 0 40px;
   }

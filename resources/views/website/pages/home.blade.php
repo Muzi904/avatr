@@ -402,7 +402,7 @@
             <div class="text">
                 <h3>AVATR</h3>
                 <h1>EMOTIONAL INTELLIGENCE, MOTION IN DELIGHT </h1>
-                <a href="#">About us
+                <a href="{{ route('about') }}">About us
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="0.8em" viewBox="0 0 13 26"
                         class="AboutEntry_more-icon__PNw5c">
                         <path fill="#fff" fill-rule="evenodd"
@@ -440,7 +440,7 @@
             <div class="text d-none d-lg-block">
                 <h3>AVATR</h3>
                 <h1>EMOTIONAL INTELLIGENCE, MOTION IN DELIGHT </h1>
-                <a href="#">About us
+                <a href="{{ route('about') }}">About us
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="0.8em" viewBox="0 0 13 26"
                         class="AboutEntry_more-icon__PNw5c">
                         <path fill="#fff" fill-rule="evenodd"
@@ -464,15 +464,21 @@
                 </div>
                 <div class="tab-content">
                     <div id="tab3" class="tab-panel active">
-                        <p>AVATR established in 2018, specialized in exploring futuristic humanized travel solution, to
-                            offering emotional intelligent travel solutions for the customers</p>
+                        <p>Elaf Motors, the sole distributor of Changan vehicles in Qatar, is expanding its footprint
+                            in the electric vehicle (EV) industry with the launch of AVATR in the region. AVATR
+                            Technology, a premium high-end smart electric vehicle (SEV) brand, is supported by industry
+                            leaders CHANGAN Automobile, Huawei, and CATL.</p>
                     </div>
                     <div id="tab4" class="tab-panel">
-                        <p>Offering Unique and Futuristic Mobility Experiences and Lifestyle</p>
+                        <p> Offering unique and futuristic mobility experiences and lifestyles, AVATR is dedicated
+                            to revolutionizing smart electric mobility. We strive to enhance the driving experience through
+                            cutting-edge technology, intelligent solutions, and sustainable energy practices. </p>
                     </div>
                     <div id="tab5" class="tab-panel">
-                        <p>Become a global leading high-end SEV company in 2030 through futuristic design and warm and
-                            caring technology</p>
+                        <p> By 2030, AVATR aims to become a globally leading high-end SEV brand, combining
+                            futuristic design with warm and intelligent technology. Our vision is to empower individuals to
+                            enhance and expand the life they pursue, creating a seamless and connected driving experience.
+                        </p>
                     </div>
                 </div>
             </div>
