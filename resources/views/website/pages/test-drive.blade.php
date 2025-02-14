@@ -88,10 +88,10 @@
                         </div>
                         <div class="grid-rows">
                             <div class="form-input">
-                                <input type="date">
+                                <input type="date" id="date-input">
                             </div>
                             <div class="form-input">
-                                <input type="time">
+                                <input type="time" id="time-input">
                             </div>
                         </div>
                         <div class="grid-rows">

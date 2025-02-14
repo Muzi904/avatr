@@ -1,3 +1,9 @@
+input[type='date'],
+input[type='time'] {
+  appearance: auto; /* Ensures visibility */
+  display: block; /* Ensures proper rendering */
+  width: 100%; /* Ensures full width */
+}
 .home-Banner-hero img {
   height: 500px;
   object-fit: cover;
