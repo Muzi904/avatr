@@ -21,7 +21,7 @@
                                                 class="w-100 mb-3" loading="lazy">
                                         </picture>
                                     </div>
-                                    
+
                                     <div class="creative-btn--wrap">
                                         <a class="creative-slide--btn bg-transparent text-white" role="button"
                                             href="#0">
@@ -54,7 +54,7 @@
                                                 class="w-100 mb-3" loading="lazy">
                                         </picture>
                                     </div>
-                                    
+
                                     <div class="creative-btn--wrap">
                                         <a class="creative-slide--btn bg-transparent text-white" role="button"
                                             href="#0">
@@ -563,7 +563,7 @@
                 <source srcset="{{ asset('website/images/avatr12/img9.jpg') }}" media="(max-width: 768px)"><img
                     src="{{ asset('website/images/avatr12/img9.jpg') }}" alt="" class="w-100" loading="lazy">
             </picture>
-            <div class="TextOnImg_content__1DDkn">
+            <div class="TextOnImg_content__1DDkn container">
                 <h3 class="TextOnImg_text-title__2_zUz">
                     Dual zero-gravity astronautical seats
 
@@ -649,7 +649,7 @@
 
     </section>
 
-    <section class="swiper-without-arrow whitepanigation section-padding pt-0">
+    <section class="swiper-without-arrow whitepanigation section-padding">
         <h1>Full-stack 800V SiC EV platform
         </h1>
         <div class="container">
@@ -921,7 +921,7 @@
     </section>
 
     <section class="swiper-without-arrow  section-padding ">
-        <h2 class="SectionTitle_title__39HkV fw-bold pb-0">Safety Goes One Step Further</h2>
+        <h2 class="SectionTitle_title__39HkV mb-3 mb-md-0">Safety Goes One Step Further</h2>
         <h1>CAS 3.0 360° Collision Avoidance System
         </h1>
         <div class="container">

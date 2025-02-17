@@ -337,6 +337,7 @@ li {
   line-height: 0;
   position: absolute;
   font-size: 20px;
+  font-family: 'AVATRFont-Regular';
 }
 .swiper-container-h .slider-pagination-area .slide-range.one {
   left: -50px;
@@ -565,11 +566,11 @@ li {
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
-.find-more-btn{
-      font-family: 'AVATRFont-Regular';
+.find-more-btn {
+  font-family: 'AVATRFont-Regular';
 }
 .about-section .tab-btn {
-      font-family: 'AVATRFont-Regular';
+  font-family: 'AVATRFont-Regular';
   padding: 15px 24px;
   border: 0;
   border-bottom: 2px solid var(--white-color);
@@ -998,6 +999,7 @@ footer ul li a {
 
 .section-one {
   position: relative;
+  padding-bottom: 70px;
 }
 .section-one h2 {
   position: absolute;
@@ -1042,7 +1044,7 @@ footer ul li a {
   max-width: calc(100% - 160px);
   margin-inline: auto;
   margin: 32px auto 0;
-  justify-content: center;
+  justify-content: start;
 }
 .scrolltabs .tabs::-webkit-scrollbar {
   height: 0; /* Height of the horizontal scrollbar */
@@ -1078,6 +1080,10 @@ footer ul li a {
 
 .scrolltabs .content {
   display: none;
+}
+.scrolltabs .content img {
+  height: 600px;
+  object-fit: cover;
 }
 .scrolltabs .content-text {
   width: 100%;
@@ -1259,7 +1265,7 @@ footer ul li a {
   color: #181818;
   text-align: center;
   font-weight: 200;
-  padding: 60px 80px 40px;
+  padding-bottom: 40px;
 }
 .tab-section2 {
   background-color: #000;
@@ -1369,6 +1375,7 @@ footer ul li a {
   text-align: center;
   line-height: 84px;
   font-weight: 400;
+  font-family: 'AVATRFont-Regular';
 }
 
 .avatr12bg-section-one .heading h1 {
@@ -1579,12 +1586,11 @@ footer ul li a {
   line-height: 50px;
   font-weight: 200;
   text-align: center;
+  margin-bottom: 25px;
 }
 .SectionTitle_title__39HkV {
   font-family: AVATRFont-Light;
-
   width: 100%;
-  padding: 0 0 40px;
   font-size: 56px;
   color: #181818;
   text-align: center;
