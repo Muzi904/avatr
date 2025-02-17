@@ -37,7 +37,25 @@
             width: 100%;
         }
 
-        @media screen and (max-width:768px) {
+        @media (min-width: 320px) and (max-width: 400px) {
+
+            .main-container video {
+                height: 100%;
+                width: 100%;
+            }
+
+            .content-one {
+                top: 145px !important;
+            }
+
+            .content-one .location {
+                margin-top: 13px;
+                margin-bottom: 18px;
+            }
+        }
+
+        @media (min-width: 400px) and (max-width: 650px) {
+
             .main-container video {
                 height: 100%;
                 width: 100%;
@@ -45,9 +63,10 @@
             }
 
             .content-one {
-                top: 19% !important;
+                top: 182px !important;
             }
         }
+
 
         .loader {
             position: absolute;
@@ -88,7 +107,7 @@
             font-family: 'AVATRFont-Light';
             font-weight: 400;
             margin-top: 16px;
-            margin-bottom: 45px;
+            margin-bottom: 24px;
         }
 
         .content-one h4 {
