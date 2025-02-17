@@ -37,7 +37,7 @@
             width: 100%;
         }
 
-        @media (min-width: 300px) {
+        @media (min-width: 300px)and (max-width: 375px) {
             .main-container video {
                 height: 100%;
                 width: 100%;
