@@ -74,7 +74,7 @@
 
         .content-one {
             position: absolute;
-            top: 34%;
+            top: 27%;
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
@@ -82,11 +82,23 @@
             width: 100%;
         }
 
+        .content-one .location {
+            font-size: 8px;
+        }
+
         .content-one h4 {
             color: #fff;
             font-family: 'AVATRFont-Light';
             font-weight: 400;
             font-size: 28px;
+            text-transform: uppercase
+        }
+
+        .content-one span {
+            color: #fff;
+            font-family: 'AVATRFont-Light';
+            font-weight: 400;
+            font-size: 12px;
             text-transform: uppercase
         }
 
@@ -180,18 +192,45 @@
 
         {{-- <video id="background-video" autoplay muted loop playsinline
                 src="{{ asset('website/images/landing/video1.mp4') }}"></video> --}}
-        <div class="content-one">
-            <h4>Please Confirm your Attendance</h4>
-            <div class="confirmation">
-                <a href="#">Yes</a>
-                <a href="#">No</a>
+        @if (session('page') == 'thank-you-confirm')
+            <div class="content-one">
+                <span>Thank you for your confirmation. <br> We look forward to hosting you at the launch
+                    ceremony.</span>
             </div>
-        </div>
+        @elseif (session('page') == 'thank-you-not-confirm')
+            <div class="content-one">
+                <span>We're sorry that you are unable to attend this once-in-a-lifetime opportunity. <br> If you change
+                    your
+                    mind, please feel free to contact us on our WhatsApp at +974 50273024 </span>
+            </div>
+        @else
+            <form action="{{ route('submit-invitation') }}" method="post" id="submit-invitation">
+                @csrf
+                <div class="content-one">
+                    <div>
+                        <span>YOU HAVE BEEN EXCLUSIVELY SELECTED TO WITNESS THE BRAND LAUNCH OF AVATR IN QATAR. WE
+                            REQUEST THE
+                            HONOR OF YOUR PRESENCE.</span>
+                        <br>
+                        <span class="location">The Chedi Hotel, Katara | 22d February | 7PM
+                        </span>
+                    </div>
+                    <h4>Please Confirm your Attendance</h4>
+                    <div class="confirmation">
+                        <input type="hidden" name="confirm" id="confirm">
+                        <input type="hidden" name="email" id="email">
+                        <input type="hidden" name="name" id="name">
+                        <a href="#" id="confirm_yes">Yes</a>
+                        <a href="#" id="confirm_no">No</a>
+                    </div>
+                </div>
+            </form>
+        @endif
         <div class="content-bottom">
             <p>Explore AVATR</p>
             <div class="cars">
-                <a href="#">AVATR 11</a>
-                <a href="#">AVATR 12</a>
+                <a href="{{ route('avatr11') }}">AVATR 11</a>
+                <a href="{{ route('avatr12') }}">AVATR 12</a>
             </div>
         </div>
     </div>
@@ -230,6 +269,29 @@
             }, 300);
         });
     </script> --}}
+
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Set the email value in the hidden input
+        document.getElementById('email').value = getQueryParam('email');
+        document.getElementById('name').value = getQueryParam('name');
+
+        document.getElementById('confirm_yes').addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent default action of the link
+            document.getElementById('confirm').value = 'Confirmed'; // Set the value to "Confirmed"
+            document.getElementById('submit-invitation').submit(); // Submit the form
+        });
+
+        document.getElementById('confirm_no').addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent default action of the link
+            document.getElementById('confirm').value = 'Not Confirmed'; // Set the value to "Not Confirmed"
+            document.getElementById('submit-invitation').submit(); // Submit the form
+        });
+    </script>
 </body>
 
 </html>

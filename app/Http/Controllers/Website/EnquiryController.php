@@ -11,20 +11,20 @@ class EnquiryController extends Controller
 {
     static function get_next_refkey()
     {
-        $lastRefNo = Enquiry::select('enq_refno')->where('enq_refno', 'like', 'NW-%')->orderBy('id', 'desc')->latest()->first();
+        $lastRefNo = Enquiry::select('enq_no')->where('enq_no', 'like', 'AE-%')->orderBy('id', 'desc')->latest()->first();
         if (!empty($lastRefNo)) {
-            $refNo = explode('-', $lastRefNo->enq_refno);
+            $refNo = explode('-', $lastRefNo->enq_no);
             $lastElement = array_slice($refNo, -1);
             $id = array_pop($lastElement);
 
             if ($id) {
                 $id = $id + 1;
-                return 'NW-' . date('ym') . '-' . $id;
+                return 'AE-' . date('ym') . '-' . $id;
             } else {
-                return 'NW-' . date('ym') . '-1';
+                return 'AE-' . date('ym') . '-1';
             }
         } else {
-            return 'NW-' . date('ym') . '-1';
+            return 'AE-' . date('ym') . '-1';
         }
     }
 
@@ -55,6 +55,26 @@ class EnquiryController extends Controller
     //         return back()->with('error', 'Something went wrong. Please try again later.');
     //     }
     // }
+
+    public function submitInvitations(Request $request)
+    {
+        if ($request->email) {
+            $enquiry = new Enquiry();
+            $enquiry->type = 'invitation';
+            $enquiry->enq_no = $this->get_next_refkey();
+            $enquiry->name = $request->name;
+            $enquiry->email = $request->email;
+            $enquiry->is_confirmed = $request->confirm;
+            $enquiry->save();
+            if ($request->confirm == 'Confirmed') {
+                return back()->with('page', 'thank-you-confirm');
+            } else {
+                return back()->with('page', 'thank-you-not-confirm');
+            }
+        } else {
+            return redirect()->route('home');
+        }
+    }
 
     public function testDrive(Request $request)
     {

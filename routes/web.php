@@ -20,4 +20,6 @@ Route::get('/models', [PageController::class, 'models'])->name(name: 'models');
 Route::get('/showrooms', action: [PageController::class, 'showrooms'])->name(name: 'showrooms');
 
 
+Route::post('/submit-invitations', [EnquiryController::class, 'submitInvitations'])->name('submit-invitation');
+
 Route::post('/test-drive-submit', [EnquiryController::class, 'testDrive'])->name('test.drive.submit');
