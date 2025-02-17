@@ -1,3 +1,6 @@
+@media screen and (max-width: 400px) {
+  
+}
 @media screen and (max-width: 1400px) {
   .footer-bottom {
     flex-direction: column;
@@ -64,6 +67,9 @@
   }
   .about-section .tab-panel p {
     padding-inline: 15px;
+  }
+  .scrolltabs .tabs {
+    justify-content: start !important;
   }
 }
 @media screen and (max-width: 991px) {
@@ -179,6 +185,7 @@
   }
   .scrolltabs .tabs {
     max-width: 100%;
+    margin-top: 15px;
   }
   .scrolltabs .tab {
     width: 50%;
@@ -293,6 +300,9 @@
   .about-section .overlay-container {
     padding: 0 0 35px 0;
   }
+  .scrolltabs .content img {
+    height: 400px;
+  }
 }
 @media screen and (max-width: 768px) {
   .section-padding {
@@ -365,6 +375,7 @@
   .Intelligence_intelligence-second-title__2GORS {
     line-height: 30px;
     margin-bottom: 15px;
+    padding-inline: 15px;
   }
   .scrolltabs .tabs {
     justify-content: start;
@@ -384,9 +395,16 @@
   .grid-row {
     gap: 1rem !important;
   }
+  .section-three .heading h2,
+  .car-page .heading h1 {
+    line-height: 1.2;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .scrolltabs .tabs {
+    justify-content: start !important;
+  }
   .app-section .qrcode-section {
     display: block;
   }
