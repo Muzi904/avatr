@@ -19,7 +19,7 @@
                             <th>#</th>
                             <th>Enq.No</th>
                             <th>Name</th>
-                            <th>Phone Number</th>
+                            <th>Email</th>
                             <th>Status</th>
                             <th>Enq. Date</th>
                         </tr>

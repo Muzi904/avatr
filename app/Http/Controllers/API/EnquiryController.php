@@ -29,6 +29,7 @@ class EnquiryController extends Controller
     public function addEnquiry(Request $request)
     {
         $enquiry = new Enquiry();
+        $enquiry->type = 'invitation';
         $enquiry->enq_no = $this->get_next_refkey();
         $enquiry->name = $request->name;
         $enquiry->phone_number = $request->phone_number;

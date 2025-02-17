@@ -28,31 +28,36 @@ class EnquiryController extends Controller
         }
     }
 
-    public function store(Request $request)
+    // public function store(Request $request)
+    // {
+    //     try {
+    //         $refNo = $this->get_next_refkey();
+
+    //         $enquiry = new Enquiry();
+    //         // $enquiry->category = $request->enq_type;
+    //         $enquiry->enq_type = $request->enq_type;
+    //         $enquiry->enq_refno = $refNo;
+    //         // $enquiry->page_slug = $slug;
+    //         // $enquiry->custom_ref = $request-> ;
+    //         $enquiry->request_type = $request->request_type ? $request->request_type : '';
+    //         // $enquiry->enq_products = $menu->label;
+    //         $enquiry->enq_name = $request->name;
+    //         $enquiry->enq_mobile     = $request->phone;
+    //         $enquiry->enq_email = $request->email;
+    //         $enquiry->is_active = 'Y';
+
+    //         $enquiry->added_on = Carbon::now()->format('Y-m-d H:i:s');
+    //         $enquiry->save();
+
+    //         return back()->with('success', 'Thanks for your interest. Our team will contact you soon.');
+    //     } catch (\Throwable $th) {
+    //         // dd($th);
+    //         return back()->with('error', 'Something went wrong. Please try again later.');
+    //     }
+    // }
+
+    public function testDrive(Request $request)
     {
-        try {
-            $refNo = $this->get_next_refkey();
-
-            $enquiry = new Enquiry();
-            // $enquiry->category = $request->enq_type;
-            $enquiry->enq_type = $request->enq_type;
-            $enquiry->enq_refno = $refNo;
-            // $enquiry->page_slug = $slug;
-            // $enquiry->custom_ref = $request-> ;
-            $enquiry->request_type = $request->request_type ? $request->request_type : '';
-            // $enquiry->enq_products = $menu->label;
-            $enquiry->enq_name = $request->name;
-            $enquiry->enq_mobile     = $request->phone;
-            $enquiry->enq_email = $request->email;
-            $enquiry->is_active = 'Y';
-
-            $enquiry->added_on = Carbon::now()->format('Y-m-d H:i:s');
-            $enquiry->save();
-
-            return back()->with('success', 'Thanks for your interest. Our team will contact you soon.');
-        } catch (\Throwable $th) {
-            // dd($th);
-            return back()->with('error', 'Something went wrong. Please try again later.');
-        }
+        // 
     }
 }

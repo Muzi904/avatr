@@ -18,3 +18,6 @@ Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/test-drive', [PageController::class, 'testDrive'])->name('test.drive');
 Route::get('/models', [PageController::class, 'models'])->name(name: 'models');
 Route::get('/showrooms', action: [PageController::class, 'showrooms'])->name(name: 'showrooms');
+
+
+Route::post('/test-drive-submit', [EnquiryController::class, 'testDrive'])->name('test.drive.submit');
