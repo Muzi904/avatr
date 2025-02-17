@@ -11,7 +11,7 @@
     <section class="contact-adress">
         <div class="container">
             <div class="heading">
-                <h1>Conatct US</h1>
+                <h1>Contact US</h1>
                 <h6>For inquiries and showroom details, please reach out to Elaf Motors. Experience the
                     future of mobility with AVATR Qatar.</h6>
             </div>
@@ -25,8 +25,9 @@
                         </g>
                     </svg>
                     <h3>Quick Contact</h3>
-                    <p>Changan Showroom, Al Aziziyah,
-                        Salwa Road, Doha, Qatar</p>
+                    <p>AMTC Building, Al Rayyan Road
+(opposite Hamad Hospital)
+Doha, Qatar</p>
                 </div>
                 <div class="column">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 256 256">
@@ -63,28 +64,22 @@
                     <form action="">
                         <div class="grid-rows">
                             <div class="form-input">
-                                <input type="text" name="" placeholder="Enter your name">
+                                <input type="text" name="fullname" placeholder="Enter your name">
                             </div>
                             <div class="form-input">
-                                <input type="text" name="" placeholder="Enter your place">
+                                <input type="email" name="email" placeholder="Enter your email">
                             </div>
                         </div>
                         <div class="grid-rows">
+                            
                             <div class="form-input">
-                                <input type="text" name="" placeholder="Enter your email">
+                                <input type="text" name="phone" placeholder="Enter your phone">
                             </div>
                             <div class="form-input">
-                                <input type="text" name="" placeholder="Enter your phone">
-                            </div>
-                        </div>
-                        <div class="grid-rows">
-                            <div class="form-input">
-                                <input type="text" name="" placeholder="Enter your country">
-                            </div>
-                            <div class="form-input">
-                                <input type="text" name="" placeholder="Enter your city">
+                                <input type="text" name="subject" placeholder="Subject">
                             </div>
                         </div>
+                        
                         <div class="grid-rows">
                             <div class="form-input">
                                 <textarea name="" id="" rows="4" cols="10" placeholder="Enter your message"></textarea>

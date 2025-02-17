@@ -21,12 +21,12 @@
                                                 class="w-100 mb-3" loading="lazy">
                                         </picture>
                                     </div>
-                                    <p class="BannerRc_price__1iIoT">MSRP：<span>￥<!-- -->269,900<!-- --> </span> </p>
+                                    
                                     <div class="creative-btn--wrap">
                                         <a class="creative-slide--btn bg-transparent text-white" role="button"
                                             href="#0">
                                             <div class="creative-btn--label text-white">
-                                                <div class="creative-btn__text">View details</div>
+                                                <div class="creative-btn__text">Get a Quote</div>
 
                                             </div>
                                         </a>
@@ -54,12 +54,12 @@
                                                 class="w-100 mb-3" loading="lazy">
                                         </picture>
                                     </div>
-                                    <p class="BannerRc_price__1iIoT">MSRP：<span>￥<!-- -->429,900<!-- --> </span></p>
+                                    
                                     <div class="creative-btn--wrap">
                                         <a class="creative-slide--btn bg-transparent text-white" role="button"
                                             href="#0">
                                             <div class="creative-btn--label text-white">
-                                                <div class="creative-btn__text">View details</div>
+                                                <div class="creative-btn__text">Get a Quote</div>
 
                                             </div>
                                         </a>

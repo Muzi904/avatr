@@ -80,7 +80,7 @@
                 src="{{ asset('website/images/about/img5.jpg') }}" alt="" class="w-100" loading="lazy">
         </picture>
         <div class="About_text__O8ybE">
-            <h3>AVATR Technology</h3>
+            <h3>About Us</h3>
             <p> Elaf Motors, the sole distributor of Changan vehicles in Qatar, is expanding its footprint
                 in the electric vehicle (EV) industry with the launch of AVATR in the region. AVATR
                 Technology, a premium high-end smart electric vehicle (SEV) brand, is supported by industry

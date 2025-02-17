@@ -22,11 +22,11 @@
                                                 alt="" class="w-100" loading="lazy">
                                         </picture>
                                     </div>
-                                    <p class="BannerRc_price__1iIoT">MSRP：<span>￥<!-- -->279,900<!-- --> </span> </p>
+                                    
                                     <div class="creative-btn--wrap">
                                         <a class="creative-slide--btn" role="button" href="#0">
                                             <div class="creative-btn--label">
-                                                <div class="creative-btn__text">Find more</div>
+                                                <div class="creative-btn__text">Get a Quote</div>
 
                                             </div>
                                         </a>
@@ -56,11 +56,11 @@
                                                 alt="" class="HomeBanner_logo-car__1Hxv8" loading="lazy">
                                         </picture>
                                     </div>
-                                    <p class="BannerRc_price__1iIoT">MSRP：<span>￥<!-- -->429,900<!-- --> </span></p>
+                                    
                                     <div class="creative-btn--wrap">
                                         <a class="creative-slide--btn" role="button" href="#0">
                                             <div class="creative-btn--label">
-                                                <div class="creative-btn__text">Find more</div>
+                                                <div class="creative-btn__text">Get a Quote</div>
 
                                             </div>
                                         </a>

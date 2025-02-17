@@ -15,7 +15,7 @@
         </div>
 
         <div class="footer-bottom">
-            <ul>
+            <ul style="display:none;">
                 <li>
                     <a href="#">
                         Legal

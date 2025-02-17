@@ -40,17 +40,11 @@
                             <div class="form-input">
                                 <input type="text" placeholder="Phone no">
                             </div>
-                            <div class="form-input">
-                                <select name="" id="">
-                                    <option value="" disabled selected>Select a showroom</option>
-                                    <option value="">Showroom1</option>
-                                    <option value="">Showroom2</option>
-                                </select>
-                            </div>
+                            
                         </div>
                         <div class="grid-rows">
                             <div class="form-input">
-                                <input type="date" value="2000-01-01">
+                                <input type="date" value="2025-02-16">
                             </div>
                             <div class="form-input">
                                 <input type="time" value="13:30" />
@@ -78,13 +72,7 @@
                             <div class="form-input">
                                 <input type="text" placeholder="Phone no">
                             </div>
-                            <div class="form-input">
-                                <select name="" id="">
-                                    <option value="" disabled selected>Select a showroom</option>
-                                    <option value="">Showroom1</option>
-                                    <option value="">Showroom2</option>
-                                </select>
-                            </div>
+                            
                         </div>
                         <div class="grid-rows">
                             <div class="form-input">

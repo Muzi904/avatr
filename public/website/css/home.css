@@ -503,6 +503,7 @@ li {
   border: 1px solid var(--text-color);
   margin-inline: auto;
   margin-top: 72px;
+  font-family: 'AVATRFont-Regular';
 }
 
 .about-section {
@@ -564,7 +565,11 @@ li {
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
+.find-more-btn{
+      font-family: 'AVATRFont-Regular';
+}
 .about-section .tab-btn {
+      font-family: 'AVATRFont-Regular';
   padding: 15px 24px;
   border: 0;
   border-bottom: 2px solid var(--white-color);
