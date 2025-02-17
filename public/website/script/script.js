@@ -173,8 +173,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Initialize for each container
-    handleColorVariants("avatr11");
-    handleColorVariants("avatr12");
+    // handleColorVariants("avatr11");
+    // handleColorVariants("avatr12");
 });
 
 const swiperQuiz = new Swiper(".animeslide", {
