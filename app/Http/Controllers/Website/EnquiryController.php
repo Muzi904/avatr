@@ -11,48 +11,73 @@ class EnquiryController extends Controller
 {
     static function get_next_refkey()
     {
-        $lastRefNo = Enquiry::select('enq_refno')->where('enq_refno', 'like', 'NW-%')->orderBy('id', 'desc')->latest()->first();
+        $lastRefNo = Enquiry::select('enq_no')->where('enq_no', 'like', 'AE-%')->orderBy('id', 'desc')->latest()->first();
         if (!empty($lastRefNo)) {
-            $refNo = explode('-', $lastRefNo->enq_refno);
+            $refNo = explode('-', $lastRefNo->enq_no);
             $lastElement = array_slice($refNo, -1);
             $id = array_pop($lastElement);
 
             if ($id) {
                 $id = $id + 1;
-                return 'NW-' . date('ym') . '-' . $id;
+                return 'AE-' . date('ym') . '-' . $id;
             } else {
-                return 'NW-' . date('ym') . '-1';
+                return 'AE-' . date('ym') . '-1';
             }
         } else {
-            return 'NW-' . date('ym') . '-1';
+            return 'AE-' . date('ym') . '-1';
         }
     }
 
-    public function store(Request $request)
+    // public function store(Request $request)
+    // {
+    //     try {
+    //         $refNo = $this->get_next_refkey();
+
+    //         $enquiry = new Enquiry();
+    //         // $enquiry->category = $request->enq_type;
+    //         $enquiry->enq_type = $request->enq_type;
+    //         $enquiry->enq_refno = $refNo;
+    //         // $enquiry->page_slug = $slug;
+    //         // $enquiry->custom_ref = $request-> ;
+    //         $enquiry->request_type = $request->request_type ? $request->request_type : '';
+    //         // $enquiry->enq_products = $menu->label;
+    //         $enquiry->enq_name = $request->name;
+    //         $enquiry->enq_mobile     = $request->phone;
+    //         $enquiry->enq_email = $request->email;
+    //         $enquiry->is_active = 'Y';
+
+    //         $enquiry->added_on = Carbon::now()->format('Y-m-d H:i:s');
+    //         $enquiry->save();
+
+    //         return back()->with('success', 'Thanks for your interest. Our team will contact you soon.');
+    //     } catch (\Throwable $th) {
+    //         // dd($th);
+    //         return back()->with('error', 'Something went wrong. Please try again later.');
+    //     }
+    // }
+
+    public function submitInvitations(Request $request)
     {
-        try {
-            $refNo = $this->get_next_refkey();
-
+        if ($request->email) {
             $enquiry = new Enquiry();
-            // $enquiry->category = $request->enq_type;
-            $enquiry->enq_type = $request->enq_type;
-            $enquiry->enq_refno = $refNo;
-            // $enquiry->page_slug = $slug;
-            // $enquiry->custom_ref = $request-> ;
-            $enquiry->request_type = $request->request_type ? $request->request_type : '';
-            // $enquiry->enq_products = $menu->label;
-            $enquiry->enq_name = $request->name;
-            $enquiry->enq_mobile     = $request->phone;
-            $enquiry->enq_email = $request->email;
-            $enquiry->is_active = 'Y';
-
-            $enquiry->added_on = Carbon::now()->format('Y-m-d H:i:s');
+            $enquiry->type = 'invitation';
+            $enquiry->enq_no = $this->get_next_refkey();
+            $enquiry->name = $request->name;
+            $enquiry->email = $request->email;
+            $enquiry->is_confirmed = $request->confirm;
             $enquiry->save();
-
-            return back()->with('success', 'Thanks for your interest. Our team will contact you soon.');
-        } catch (\Throwable $th) {
-            // dd($th);
-            return back()->with('error', 'Something went wrong. Please try again later.');
+            if ($request->confirm == 'Confirmed') {
+                return back()->with('page', 'thank-you-confirm');
+            } else {
+                return back()->with('page', 'thank-you-not-confirm');
+            }
+        } else {
+            return redirect()->route('home');
         }
+    }
+
+    public function testDrive(Request $request)
+    {
+        // 
     }
 }

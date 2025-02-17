@@ -50,8 +50,8 @@
                     name: 'name'
                 },
                 {
-                    data: 'phone_number',
-                    name: 'phone_number'
+                    data: 'email',
+                    name: 'email'
                 },
                 {
                     data: 'is_confirmed',
