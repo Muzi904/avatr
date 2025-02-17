@@ -418,20 +418,20 @@
             <div class="tab-image active" data-image="tab1">
                 <picture>
                     <source srcset="{{ asset('website/images/home/img1.jpg') }}" media="(max-width: 768px)"><img
-                        src="{{ asset('website/images/home/img1.jpg') }}" alt="" class="w-100" loading="lazy">
+                        src="{{ asset('website/images/home/img1.jpg') }}" alt="" class="w-100">
                 </picture>
             </div>
             <div class="tab-image" data-image="tab2">
                 <picture>
                     <source srcset="{{ asset('website/images/home/img2.jpg') }}" media="(max-width: 768px)"><img
-                        src="{{ asset('website/images/home/img2.jpg') }}" alt="" class="w-100" loading="lazy">
+                        src="{{ asset('website/images/home/img2.jpg') }}" alt="" class="w-100">
                 </picture>
             </div>
             <div class="tab-image" data-image="tab3">
                 <picture>
                     <source srcset="{{ asset('website/images/home/img3.jpg') }}" media="(max-width: 768px)"><img
                         src="{{ asset('website/images/home/img3.jpg') }}" alt=""
-                        class="w-100 AboutEntry_active__EgXyi" loading="lazy">
+                        class="w-100 AboutEntry_active__EgXyi">
                 </picture>
             </div>
         </div>
@@ -500,8 +500,8 @@
                 <p>AVATR global design center</p>
                 <p>From the design frontier, with
                     global vision</p>
-                <p><span class="find-more-btn">Find More</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="0.8em"
-                        viewBox="0 0 13 26" class="DesignCenter_more-icon__1n05g">
+                <p><span class="find-more-btn">Find More</span><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                        height="0.8em" viewBox="0 0 13 26" class="DesignCenter_more-icon__1n05g">
                         <path fill="#fff" fill-rule="evenodd"
                             d="M.198 2.044V.198l11.645 11.928a1.254 1.254 0 0 1 0 1.748L.198 25.802v-1.847c0-.846.328-1.658.914-2.258l7.878-8.07a.903.903 0 0 0 0-1.255L1.112 4.303a3.236 3.236 0 0 1-.914-2.259">
                         </path>
@@ -619,7 +619,8 @@
 
     </section>
 
-    <section class="app-section" style="display:none;background-image: url({{ asset('website/images/home/bgm-pc.jpg') }})" >
+    <section class="app-section"
+        style="display:none;background-image: url({{ asset('website/images/home/bgm-pc.jpg') }})">
         <div class="container">
             <div class="column">
                 <h1>Download the AVATR APP</h1>
