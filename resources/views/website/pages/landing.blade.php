@@ -74,12 +74,16 @@
 
         .content-one {
             position: absolute;
-            top: 34%;
+            top: 27%;
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
             max-width: 274px;
             width: 100%;
+        }
+
+        .content-one .location {
+            font-size: 8px;
         }
 
         .content-one h4 {
@@ -203,6 +207,14 @@
             <form action="{{ route('submit-invitation') }}" method="post" id="submit-invitation">
                 @csrf
                 <div class="content-one">
+                    <div>
+                        <span>YOU HAVE BEEN EXCLUSIVELY SELECTED TO WITNESS THE BRAND LAUNCH OF AVATR IN QATAR. WE
+                            REQUEST THE
+                            HONOR OF YOUR PRESENCE.</span>
+                        <br>
+                        <span class="location">The Chedi Hotel, Katara | 22d February | 7PM
+                        </span>
+                    </div>
                     <h4>Please Confirm your Attendance</h4>
                     <div class="confirmation">
                         <input type="hidden" name="confirm" id="confirm">
