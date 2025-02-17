@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+Route::get('/register', function () {
+    return redirect()->route('login');
+});
 
 Route::get('/invitation', [PageController::class, 'landing'])->name('landing');
 Route::get('/', [PageController::class, 'home'])->name('home');
@@ -23,3 +26,4 @@ Route::get('/showrooms', action: [PageController::class, 'showrooms'])->name(nam
 Route::post('/submit-invitations', [EnquiryController::class, 'submitInvitations'])->name('submit-invitation');
 
 Route::post('/test-drive-submit', [EnquiryController::class, 'testDrive'])->name('test.drive.submit');
+Route::post('/contact-submit', [EnquiryController::class, 'contact'])->name('contact.submit');

@@ -9,7 +9,7 @@
             <div class="card-header  d-flex">
                 <div class="justify-content-end">
                     <button type="button" class="btn btn-primary m-2" id="searchModal">Search </button>
-                    <button type="submit" class="btn btn-info m-2" form="export-form">Export</button>
+                    {{-- <button type="submit" class="btn btn-info m-2" form="export-form">Export</button> --}}
                 </div>
             </div>
             <div class="table-responsive text-nowrap">
@@ -20,6 +20,7 @@
                             <th>Enq.No</th>
                             <th>Name</th>
                             <th>Email</th>
+                            <th>Phone Number</th>
                             <th>Status</th>
                             <th>Enq. Date</th>
                         </tr>

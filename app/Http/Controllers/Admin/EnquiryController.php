@@ -16,7 +16,7 @@ class EnquiryController extends Controller
     {
         $filters = $request->all();
         if ($request->ajax()) {
-            $data = Enquiry::query();
+            $data = Enquiry::where('type', 'invitation');
             if ($request->from_date) {
                 $data = $data->whereDate('enquiries.created_at', '>=', $request->from_date);
                 Session::put('from_date', $request->from_date);

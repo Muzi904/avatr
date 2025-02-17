@@ -26,8 +26,8 @@
                     </svg>
                     <h3>Quick Contact</h3>
                     <p>AMTC Building, Al Rayyan Road
-(opposite Hamad Hospital)
-Doha, Qatar</p>
+                        (opposite Hamad Hospital)
+                        Doha, Qatar</p>
                 </div>
                 <div class="column">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 256 256">
@@ -59,35 +59,46 @@ Doha, Qatar</p>
     <section class="contact-form">
         <div class="container">
             <div class="grid-rows">
+                {{-- @if (session('page') == 'thank-you') --}}
                 <div class="column">
-                    <h3>Make an Enquiry</h3>
-                    <form action="">
-                        <div class="grid-rows">
-                            <div class="form-input">
-                                <input type="text" name="fullname" placeholder="Enter your name">
-                            </div>
-                            <div class="form-input">
-                                <input type="email" name="email" placeholder="Enter your email">
-                            </div>
+                    @if (session('page') == 'thank-you')
+                        <div class="thank-you-msg">
+                            <img src="{{ asset('website/images/thankyou.png') }}" alt="">
+                            <h3>Thanks for your Interest</h3>
+                            <p>
+                                We have received your message. We will get back to you shortly.
+                            </p>
                         </div>
-                        <div class="grid-rows">
-                            
-                            <div class="form-input">
-                                <input type="text" name="phone" placeholder="Enter your phone">
+                    @else
+                        <h3>Make an Enquiry</h3>
+                        <form action="{{ route('contact.submit') }}" method="POST">
+                            @csrf
+                            <div class="grid-rows">
+                                <div class="form-input">
+                                    <input type="text" name="name" placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-input">
+                                    <input type="email" name="email" placeholder="Enter your email" required>
+                                </div>
                             </div>
-                            <div class="form-input">
-                                <input type="text" name="subject" placeholder="Subject">
-                            </div>
-                        </div>
-                        
-                        <div class="grid-rows">
-                            <div class="form-input">
-                                <textarea name="" id="" rows="4" cols="10" placeholder="Enter your message"></textarea>
-                            </div>
-                        </div>
-                        <button class="btn">Submit</button>
-                    </form>
+                            <div class="grid-rows">
 
+                                <div class="form-input">
+                                    <input type="text" name="phone" placeholder="Enter your phone" required>
+                                </div>
+                                <div class="form-input">
+                                    <input type="text" name="subject" placeholder="Subject">
+                                </div>
+                            </div>
+
+                            <div class="grid-rows">
+                                <div class="form-input">
+                                    <textarea name="message" id="" rows="4" cols="10" placeholder="Enter your message"></textarea>
+                                </div>
+                            </div>
+                            <button class="btn">Submit</button>
+                        </form>
+                    @endif
                 </div>
                 <div class="column">
                     <div style="width: 100%"><iframe width="100%" height="500" frameborder="0" scrolling="no"
