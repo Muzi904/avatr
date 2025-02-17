@@ -233,6 +233,55 @@
             color: #b4d719;
             display: none;
         }
+
+        .invitation-form {
+            max-width: 260px;
+            margin-inline: auto;
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+
+        }
+
+        .invitation-form .form-input {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 0;
+            margin-bottom: 15px
+        }
+
+
+        .invitation-form .form-input label {
+            font-family: 'AVATRFont-Light';
+            color: #c5ff1f;
+            font-size: 14px
+        }
+
+        .invitation-form .form-control {
+            width: 100%;
+            background-color: transparent;
+            border: 1px solid #c5ff1f;
+            padding: 5px;
+            color: #b4d719
+        }
+
+        .invitation-form .form-control:focus {
+            outline: none
+        }
+
+        .invitation-form .btn {
+            padding: 5px 20px;
+            height: 27px;
+            border-radius: 2px;
+            border: 0;
+            font-size: 12px;
+            margin-left: auto;
+            font-family: 'AVATRFont-Regular';
+
+        }
     </style>
 </head>
 
@@ -282,21 +331,20 @@
             <div class="content-one form-section" id="form-section">
                 <form action="{{ route('submit-invitation') }}" method="post" id="submit-invitation">
                     @csrf
-                    <div class="">
+                    <div class="invitation-form">
                         <div class="form-input">
                             <label for="name">Name</label>
-                            <br>
                             <input type="text" name="name" class="form-control" placeholder="Enter your name"
                                 required>
                         </div>
                         <div class="form-input">
                             <label for="phone">Phone Number</label>
-                            <br>
                             <input type="text" name="phone" class="form-control"
                                 placeholder="Enter your phone number" required>
                         </div>
+                        <button class="btn" type="submit">Confirm</button>
+
                     </div>
-                    <button class="btn" type="submit">Confirm</button>
                 </form>
             </div>
         @endif
