@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+Route::get('/register', function () {
+    return redirect()->route('login');
+});
 
 Route::get('/invitation', [PageController::class, 'landing'])->name('landing');
 Route::get('/', [PageController::class, 'home'])->name('home');
