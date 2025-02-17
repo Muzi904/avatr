@@ -9,5 +9,6 @@
     <link rel="stylesheet" href="{{ asset('website/css/custom.css') }}">
     <link rel="stylesheet" href="{{ asset('website/css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('website/css/responsive2.css') }}">
+    <link rel="stylesheet" href="path-to-the-file/splide.min.css">
 
 </head>

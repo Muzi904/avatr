@@ -144,3 +144,12 @@ h3 {
   display: flex;
   gap: 3px;
 }
+.thank-you-msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.thank-you-msg p {
+  text-align: center;
+}

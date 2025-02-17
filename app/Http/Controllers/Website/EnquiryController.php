@@ -58,22 +58,15 @@ class EnquiryController extends Controller
 
     public function submitInvitations(Request $request)
     {
-        if ($request->email) {
-            $enquiry = new Enquiry();
-            $enquiry->type = 'invitation';
-            $enquiry->enq_no = $this->get_next_refkey();
-            $enquiry->name = $request->name;
-            $enquiry->email = $request->email;
-            $enquiry->is_confirmed = $request->confirm;
-            $enquiry->save();
-            if ($request->confirm == 'Confirmed') {
-                return back()->with('page', 'thank-you-confirm');
-            } else {
-                return back()->with('page', 'thank-you-not-confirm');
-            }
-        } else {
-            return redirect()->route('home');
-        }
+        $enquiry = new Enquiry();
+        $enquiry->type = 'invitation';
+        $enquiry->enq_no = $this->get_next_refkey();
+        $enquiry->name = $request->name;
+        $enquiry->phone_number = $request->country_code . $request->phone;
+        $enquiry->is_confirmed = 'Confirmed';
+        $enquiry->save();
+
+        return back()->with('page', 'thank-you-confirm');
     }
 
     public function testDrive(Request $request)
