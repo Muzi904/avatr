@@ -20,6 +20,7 @@
                             <th>Enq.No</th>
                             <th>Name</th>
                             <th>Email</th>
+                            <th>Phone Number</th>
                             <th>Status</th>
                             <th>Enq. Date</th>
                         </tr>

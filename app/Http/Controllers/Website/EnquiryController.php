@@ -83,10 +83,26 @@ class EnquiryController extends Controller
         $enquiry->type = 'test-drive';
         $enquiry->enq_no = $this->get_next_refkey();
         $enquiry->name = $request->name;
+        $enquiry->email = $request->email;
         $enquiry->model = $request->engine;
         $enquiry->phone_number = $request->phone;
         $enquiry->date = Carbon::parse($request->date)->format('Y-m-d');
         $enquiry->time = Carbon::parse($request->time)->format('H:i:s');
+        $enquiry->message = $request->message;
+        $enquiry->save();
+
+        return back()->with('page', 'thank-you');
+    }
+
+    public function contact(Request $request)
+    {
+        $enquiry = new Enquiry();
+        $enquiry->type = 'contact';
+        $enquiry->enq_no = $this->get_next_refkey();
+        $enquiry->name = $request->name;
+        $enquiry->email = $request->email;
+        $enquiry->phone_number = $request->phone;
+        $enquiry->subject = $request->subject;
         $enquiry->message = $request->message;
         $enquiry->save();
 

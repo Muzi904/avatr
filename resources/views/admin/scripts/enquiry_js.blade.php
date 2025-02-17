@@ -54,6 +54,10 @@
                     name: 'email'
                 },
                 {
+                    data: 'phone_number',
+                    name: 'phone_number'
+                },
+                {
                     data: 'is_confirmed',
                     name: 'is_confirmed'
                 },
