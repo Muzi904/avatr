@@ -138,6 +138,9 @@
   .dark-section-three ul li h3 {
     font-size: 24px !important;
   }
+  .Intelligence_laser-cabi-item__Auu_U .Intelligence_item-title__1-g4u {
+    line-height: 1.2;
+  }
   .app-section .column p {
     font-size: 12px;
   }
@@ -201,7 +204,7 @@
     font-size: 16px;
   }
   .swiper-without-arrow h1 {
-    padding-block: 35px;
+    padding-bottom: 35px;
     padding-inline: 15px;
   }
   .tab-section2 {

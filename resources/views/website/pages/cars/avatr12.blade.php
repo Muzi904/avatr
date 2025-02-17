@@ -649,7 +649,7 @@
 
     </section>
 
-    <section class="swiper-without-arrow whitepanigation section-padding pt-0">
+    <section class="swiper-without-arrow whitepanigation section-padding">
         <h1>Full-stack 800V SiC EV platform
         </h1>
         <div class="container">
@@ -921,7 +921,7 @@
     </section>
 
     <section class="swiper-without-arrow  section-padding ">
-        <h2 class="SectionTitle_title__39HkV fw-bold pb-0">Safety Goes One Step Further</h2>
+        <h2 class="SectionTitle_title__39HkV mb-3 mb-md-0">Safety Goes One Step Further</h2>
         <h1>CAS 3.0 360° Collision Avoidance System
         </h1>
         <div class="container">
