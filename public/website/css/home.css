@@ -565,11 +565,11 @@ li {
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
-.find-more-btn{
-      font-family: 'AVATRFont-Regular';
+.find-more-btn {
+  font-family: 'AVATRFont-Regular';
 }
 .about-section .tab-btn {
-      font-family: 'AVATRFont-Regular';
+  font-family: 'AVATRFont-Regular';
   padding: 15px 24px;
   border: 0;
   border-bottom: 2px solid var(--white-color);
@@ -998,6 +998,7 @@ footer ul li a {
 
 .section-one {
   position: relative;
+  padding-bottom: 70px;
 }
 .section-one h2 {
   position: absolute;
@@ -1042,7 +1043,7 @@ footer ul li a {
   max-width: calc(100% - 160px);
   margin-inline: auto;
   margin: 32px auto 0;
-  justify-content: center;
+  justify-content: start;
 }
 .scrolltabs .tabs::-webkit-scrollbar {
   height: 0; /* Height of the horizontal scrollbar */
@@ -1078,6 +1079,10 @@ footer ul li a {
 
 .scrolltabs .content {
   display: none;
+}
+.scrolltabs .content img {
+  height: 600px;
+  object-fit: cover;
 }
 .scrolltabs .content-text {
   width: 100%;
