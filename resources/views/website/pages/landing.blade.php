@@ -222,6 +222,11 @@
             text-decoration-color: #c5ff1f;
             text-decoration-thickness: 1px;
         }
+
+        .thank-you-message,
+        .error-msg {
+            top: 230px !important;
+        }
     </style>
 </head>
 
@@ -241,12 +246,12 @@
         {{-- <video id="background-video" autoplay muted loop playsinline
                 src="{{ asset('website/images/landing/video1.mp4') }}"></video> --}}
         @if (session('page') == 'thank-you-confirm')
-            <div class="content-one">
+            <div class="content-one thank-you-message">
                 <span>Thank you for your confirmation. <br> We look forward to hosting you at the launch
                     ceremony.</span>
             </div>
         @elseif (session('page') == 'thank-you-not-confirm')
-            <div class="content-one">
+            <div class="content-one error-msg">
                 <span>We're sorry that you are unable to attend this once-in-a-lifetime opportunity. <br> If you change
                     your
                     mind, please feel free to contact us on our WhatsApp at +974 50273024 </span>
