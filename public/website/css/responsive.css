@@ -1,5 +1,4 @@
 @media screen and (max-width: 400px) {
-  
 }
 @media screen and (max-width: 1400px) {
   .footer-bottom {
@@ -73,6 +72,9 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .thank-you-msg h3 {
+    text-align: center;
+  }
   .home-Banner-hero img {
     height: 300px;
   }
