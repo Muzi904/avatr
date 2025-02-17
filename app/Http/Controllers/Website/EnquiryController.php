@@ -63,7 +63,7 @@ class EnquiryController extends Controller
             $enquiry->type = 'invitation';
             $enquiry->enq_no = $this->get_next_refkey();
             $enquiry->name = $request->name;
-            $enquiry->email = $request->email;
+            $enquiry->phone_number = $request->phone;
             $enquiry->is_confirmed = $request->confirm;
             $enquiry->save();
             if ($request->confirm == 'Confirmed') {

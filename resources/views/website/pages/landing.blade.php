@@ -7,6 +7,7 @@
     <title>AVATR</title>
     <link rel="icon" type="image/png" href="{{ asset('website/images/favicon3.png') }}">
     <link rel="stylesheet" href="{{ asset('website/css/home.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <style>
         * {
@@ -227,6 +228,11 @@
         .error-msg {
             top: 230px !important;
         }
+
+        .form-section {
+            color: #b4d719;
+            display: none;
+        }
     </style>
 </head>
 
@@ -257,27 +263,42 @@
                     mind, please feel free to contact us on our WhatsApp at +974 50273024 </span>
             </div>
         @else
-            <form action="{{ route('submit-invitation') }}" method="post" id="submit-invitation">
-                @csrf
-                <div class="content-one">
-                    <div>
-                        <span>YOU HAVE BEEN EXCLUSIVELY SELECTED TO WITNESS THE BRAND LAUNCH OF AVATR IN QATAR. WE
-                            REQUEST THE
-                            HONOR OF YOUR PRESENCE.</span>
-                        <br>
-                        <p class="location">The Chedi Hotel, Katara | 22<sup>nd</sup> February | 7PM
-                        </p>
-                    </div>
-                    <h4>Please Confirm <br> your Attendance</h4>
-                    <div class="confirmation">
-                        <input type="hidden" name="confirm" id="confirm">
-                        <input type="hidden" name="email" id="email">
-                        <input type="hidden" name="name" id="name">
-                        <a href="#" id="confirm_yes">Yes</a>
-                        <a href="#" id="confirm_no">No</a>
-                    </div>
+            <div class="content-one" id="confirm-section">
+                <div>
+                    <span>YOU HAVE BEEN EXCLUSIVELY SELECTED TO WITNESS THE BRAND LAUNCH OF AVATR IN QATAR. WE
+                        REQUEST THE
+                        HONOR OF YOUR PRESENCE.</span>
+                    <br>
+                    <p class="location">The Chedi Hotel, Katara | 22<sup>nd</sup> February | 7PM
+                    </p>
                 </div>
-            </form>
+                <h4>Please Confirm <br> your Attendance</h4>
+                <div class="confirmation">
+
+                    <a href="#" id="confirm_yes">Yes</a>
+                    <a href="#">No</a>
+                </div>
+            </div>
+            <div class="content-one form-section" id="form-section">
+                <form action="{{ route('submit-invitation') }}" method="post" id="submit-invitation">
+                    @csrf
+                    <div class="">
+                        <div class="form-input">
+                            <label for="name">Name</label>
+                            <br>
+                            <input type="text" name="name" class="form-control" placeholder="Enter your name"
+                                required>
+                        </div>
+                        <div class="form-input">
+                            <label for="phone">Phone Number</label>
+                            <br>
+                            <input type="text" name="phone" class="form-control"
+                                placeholder="Enter your phone number" required>
+                        </div>
+                    </div>
+                    <button class="btn" type="submit">Confirm</button>
+                </form>
+            </div>
         @endif
         <div class="content-bottom">
             <p>Explore AVATR</p>
@@ -324,26 +345,22 @@
     </script> --}}
 
     <script>
-        function getQueryParam(param) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(param);
-        }
-
-        // Set the email value in the hidden input
-        document.getElementById('email').value = getQueryParam('email');
-        document.getElementById('name').value = getQueryParam('name');
-
         document.getElementById('confirm_yes').addEventListener('click', function(e) {
-            e.preventDefault(); // Prevent default action of the link
-            document.getElementById('confirm').value = 'Confirmed'; // Set the value to "Confirmed"
-            document.getElementById('submit-invitation').submit(); // Submit the form
+            e.preventDefault();
+
+            // Hide the confirmation section
+            document.getElementById('confirm-section').style.display = 'none';
+
+            // Show the form section
+            document.getElementById('form-section').style.display = 'block';
         });
 
-        document.getElementById('confirm_no').addEventListener('click', function(e) {
-            e.preventDefault(); // Prevent default action of the link
-            document.getElementById('confirm').value = 'Not Confirmed'; // Set the value to "Not Confirmed"
-            document.getElementById('submit-invitation').submit(); // Submit the form
-        });
+
+        // document.getElementById('confirm_no').addEventListener('click', function(e) {
+        //     e.preventDefault(); // Prevent default action of the link
+        //     document.getElementById('confirm').value = 'Not Confirmed'; // Set the value to "Not Confirmed"
+        //     document.getElementById('submit-invitation').submit(); // Submit the form
+        // });
     </script>
 </body>
 
