@@ -45,7 +45,7 @@
             }
 
             .content-one {
-                top: 29% !important;
+                top: 19% !important;
             }
         }
 
