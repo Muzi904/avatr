@@ -78,25 +78,31 @@
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
-            max-width: 274px;
+            max-width: 334px;
             width: 100%;
         }
 
         .content-one .location {
-            font-size: 8px;
+            font-size: 12px;
+            color: #fff;
+            font-family: 'AVATRFont-Light';
+            font-weight: 400;
+            margin-top: 16px;
+            margin-bottom: 45px;
         }
 
         .content-one h4 {
             color: #fff;
-            font-family: 'AVATRFont-Light';
+            font-family: 'AVATRFont-Regular';
             font-weight: 400;
             font-size: 28px;
-            text-transform: uppercase
+            text-transform: uppercase;
+
         }
 
         .content-one span {
             color: #fff;
-            font-family: 'AVATRFont-Light';
+            font-family: 'AVATRFont-Regular';
             font-weight: 400;
             font-size: 12px;
             text-transform: uppercase
@@ -109,7 +115,7 @@
         }
 
         .content-one .confirmation a {
-            font-size: 62px;
+            font-size: 52px;
             font-family: 'AVATRFont-Regular';
             text-decoration: none;
             line-height: 1;
@@ -212,10 +218,10 @@
                             REQUEST THE
                             HONOR OF YOUR PRESENCE.</span>
                         <br>
-                        <span class="location">The Chedi Hotel, Katara | 22d February | 7PM
-                        </span>
+                        <p class="location">The Chedi Hotel, Katara | 22<sup>nd</sup> February | 7PM
+                        </p>
                     </div>
-                    <h4>Please Confirm your Attendance</h4>
+                    <h4>Please Confirm <br> your Attendance</h4>
                     <div class="confirmation">
                         <input type="hidden" name="confirm" id="confirm">
                         <input type="hidden" name="email" id="email">
