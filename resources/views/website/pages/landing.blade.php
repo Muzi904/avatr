@@ -37,7 +37,30 @@
             width: 100%;
         }
 
-        @media (min-width: 320px) and (max-width: 400px) {
+        @media (min-width: 300px) {
+            .main-container video {
+                height: 100%;
+                width: 100%;
+            }
+
+            .content-one {
+                top: 24% !important;
+            }
+
+            .content-one .location {
+                margin-block: 10px !important;
+            }
+
+            .content-one h4 {
+                font-size: 24px;
+            }
+
+            .content-one .confirmation a {
+                font-size: 50px !important;
+            }
+        }
+
+        @media (min-width: 375px) and (max-width: 400px) {
 
             .main-container video {
                 height: 100%;
