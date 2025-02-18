@@ -70,7 +70,7 @@
             }
 
             .content-one {
-                top: 145px !important;
+                top: 155px !important;
             }
 
             .content-one .location {
