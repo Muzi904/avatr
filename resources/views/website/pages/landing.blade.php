@@ -151,7 +151,6 @@
             font-size: 12px;
             text-transform: uppercase;
             margin-top: 16px;
-            display: flex;
         }
 
         .content-one .confirmation {
