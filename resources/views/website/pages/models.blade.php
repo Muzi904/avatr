@@ -7,11 +7,28 @@
         }
 
         .models-designs-varients #main-slider .splide__list {
-            height: 60vh !important;
+            /* height: 60vh !important; */
         }
 
         .models-designs-varients #main-slider .splide__list .splide__slide {
-            margin: auto !important;
+            /* height: 100% !important; */
+        }
+
+        .models-designs-varients #thumbnail-slider .splide__list .splide__slide,
+        .models-designs-varients #main-slider .splide__list .splide__slide {
+            /* margin: auto !important; */
+            position: relative;
+
+        }
+
+        .models-designs-varients #thumbnail-slider .splide__list .splide__slide .wheel {
+            position: absolute;
+            bottom: -13%;
+        }
+
+        .models-designs-varients #main-slider .splide__list .splide__slide .wheel {
+            position: absolute;
+            bottom: -28%;
         }
 
         .models-designs-varients .right-section {
@@ -19,7 +36,7 @@
             flex-direction: column;
             gap: 35px;
             /* position: sticky;
-                                                    top: 0; */
+                                                                                                                                                                                                                                                                                                                                                                                top: 0; */
         }
 
         .models-designs-varients .right-section img {
@@ -35,10 +52,6 @@
         .models-designs-varients .right-section .accordion-item {
             background-color: #fbfbfb;
             border: 0;
-        }
-
-        .models-designs-varients .right-section .accordion-item:last-child {
-            margin-bottom: 35px
         }
 
         .models-designs-varients .right-section .accordion-item-header {
@@ -174,15 +187,39 @@
                     <div id="main-slider" class="splide" aria-label="Main Slider">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide"><img class="w-100"
-                                        src="{{ asset('website/images/avatr11/dropdown-img1.png') }}" alt="Slide 1">
+                                <li class="splide__slide">
+                                    <img class="w-100 body"
+                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/glossy-grey/car1.webp') }}"
+                                        alt="Slide 1">
+                                    <img class="w-100 wheel"
+                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-A/wheel1.webp') }}"
+                                        alt="Slide 1">
+                                </li>
+                                <li class="splide__slide">
+                                    <img class="w-100 body"
+                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/glossy-grey/car2.webp') }}"
+                                        alt="Slide 2">
+                                    <img class="w-100 wheel"
+                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-A/wheel2.webp') }}"
+                                        alt="Slide 2">
+                                </li>
+                                <li class="splide__slide">
+                                    <img class="w-100 body"
+                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/glossy-grey/car3.webp') }}"
+                                        alt="Slide 3">
+                                    <img class="w-100 wheel"
+                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-A/wheel3.webp') }}"
+                                        alt="Slide 3">
                                 </li>
                                 <li class="splide__slide"><img class="w-100"
-                                        src="{{ asset('website/images/avatr11/hero1.jpg') }}" alt="Slide 2"></li>
+                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/interior/red/interior1.webp') }}"
+                                        alt="Slide 4"></li>
                                 <li class="splide__slide"><img class="w-100"
-                                        src="{{ asset('website/images/avatr11/hero2.jpg') }}" alt="Slide 3"></li>
+                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/interior/red/interior2.webp') }}"
+                                        alt="Slide 5"></li>
                                 <li class="splide__slide"><img class="w-100"
-                                        src="{{ asset('website/images/avatr11/hero2.jpg') }}" alt="Slide 3"></li>
+                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/interior/red/interior3.webp') }}"
+                                        alt="Slide 6"></li>
                             </ul>
                         </div>
                     </div>
@@ -190,15 +227,39 @@
                     <div id="thumbnail-slider" class="splide" aria-label="Thumbnail Slider">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide"><img class="w-100"
-                                        src="{{ asset('website/images/avatr11/dropdown-img1.png') }}" alt="Thumbnail 1">
+                                <li class="splide__slide">
+                                    <img class="w-100 body"
+                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/glossy-grey/car1.webp') }}"
+                                        alt="thumbnail 1">
+                                    <img class="w-100 wheel"
+                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-A/wheel1.webp') }}"
+                                        alt="thumbnail 1">
+                                </li>
+                                <li class="splide__slide">
+                                    <img class="w-100 body"
+                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/glossy-grey/car2.webp') }}"
+                                        alt="Thumbnail 2">
+                                    <img class="w-100 wheel"
+                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-A/wheel2.webp') }}"
+                                        alt="Thumbnail 2">
+                                </li>
+                                <li class="splide__slide">
+                                    <img class="w-100 body"
+                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/glossy-grey/car3.webp') }}"
+                                        alt="Thumbnail 3">
+                                    <img class="w-100 wheel"
+                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-A/wheel3.webp') }}"
+                                        alt="Thumbnail 3">
                                 </li>
                                 <li class="splide__slide"><img class="w-100"
-                                        src="{{ asset('website/images/avatr11/hero1.jpg') }}" alt="Thumbnail 2"></li>
+                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/interior/red/interior1.webp') }}"
+                                        alt="Thumbnail 4"></li>
                                 <li class="splide__slide"><img class="w-100"
-                                        src="{{ asset('website/images/avatr11/hero2.jpg') }}" alt="Thumbnail 3"></li>
+                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/interior/red/interior2.webp') }}"
+                                        alt="Thumbnail 4"></li>
                                 <li class="splide__slide"><img class="w-100"
-                                        src="{{ asset('website/images/avatr11/hero2.jpg') }}" alt="Thumbnail 3"></li>
+                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/interior/red/interior3.webp') }}"
+                                        alt="Thumbnail 4"></li>
                             </ul>
                         </div>
                     </div>
@@ -238,7 +299,7 @@
                                         <div class="interior-colors">
                                             <div>
                                                 <button class="varient-btn active">
-                                                    <img src="{{ asset('website/images/home/color-variants/avartr11/color-img2.png') }}"
+                                                    <img src="{{ asset('website/images/home/color-variants/avartr11/color-img4.png') }}"
                                                         alt="">
                                                 </button>
                                                 <div id="varient10-text" class="text-center">
@@ -247,7 +308,7 @@
                                             </div>
                                             <div>
                                                 <button class="varient-btn">
-                                                    <img src="{{ asset('website/images/home/color-variants/avartr11/color-img3.png') }}"
+                                                    <img src="{{ asset('website/images/home/color-variants/avartr11/color-img5.png') }}"
                                                         alt="">
                                                 </button>
                                                 <div id="varient11-text" class="text-center">
@@ -256,7 +317,7 @@
                                             </div>
                                             <div>
                                                 <button class="varient-btn">
-                                                    <img src="{{ asset('website/images/home/color-variants/avartr11/color-img4.png') }}"
+                                                    <img src="{{ asset('website/images/home/color-variants/avartr11/color-img2.png') }}"
                                                         alt="">
                                                 </button>
                                                 <div id="varient12-text" class="text-center">
@@ -265,7 +326,7 @@
                                             </div>
                                             <div>
                                                 <button class="varient-btn">
-                                                    <img src="{{ asset('website/images/home/color-variants/avartr11/color-img5.png') }}"
+                                                    <img src="{{ asset('website/images/home/color-variants/avartr11/color-img1.png') }}"
                                                         alt="">
                                                 </button>
                                                 <div id="varient13-text" class="text-center">
@@ -275,7 +336,7 @@
 
                                             <div>
                                                 <button class="varient-btn">
-                                                    <img src="{{ asset('website/images/home/color-variants/avartr11/color-img6.png') }}"
+                                                    <img src="{{ asset('website/images/home/color-variants/avartr11/color-img3.png') }}"
                                                         alt="">
                                                 </button>
                                                 <div id="varient14-text" class="text-center">
@@ -284,7 +345,7 @@
                                             </div>
                                             <div>
                                                 <button class="varient-btn">
-                                                    <img src="{{ asset('website/images/home/color-variants/avartr11/color-img7.png') }}"
+                                                    <img src="{{ asset('website/images/home/color-variants/avartr11/color-img6.png') }}"
                                                         alt="">
                                                 </button>
                                                 <div id="varient15-text" class="text-center">
@@ -410,7 +471,7 @@
             document.addEventListener('DOMContentLoaded', function() {
                 var main = new Splide('#main-slider', {
                     type: 'fade',
-                    heightRatio: 0.4,
+                    heightRatio: 0.5,
                     pagination: false,
                     arrows: false,
                     cover: true,
@@ -418,11 +479,12 @@
 
                 var thumbnails = new Splide('#thumbnail-slider', {
                     rewind: true,
-                    fixedWidth: '25%',
-                    fixedHeight: 74,
+                    // fixedWidth: '25%',
+                    // fixedHeight: 95,
+                    heightRatio: 0.15,
                     isNavigation: true,
                     gap: 7,
-                    focus: 'start',
+                    focus: 'center',
                     pagination: false,
                     cover: true,
                     perPage: 4,
@@ -433,7 +495,7 @@
                     breakpoints: {
                         640: {
                             fixedWidth: '25%',
-                            fixedHeight: 38,
+                            fixedHeight: 50,
                             perPage: 4,
                         },
                     },
