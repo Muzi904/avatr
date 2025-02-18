@@ -22,13 +22,41 @@
                 <div class="text-truncate" data-i18n="Email">Dashboard</div>
             </a>
         </li>
-        <li class="menu-item">
-            <a href="{{ route('admin.enquiry.index') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-copy"></i>
-                <div class="text-truncate" data-i18n="Email">Enquiries</div>
+        <li class="menu-item open" style="">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-layout"></i>
+                <div class="text-truncate" data-i18n="Layouts">Enquiries</div>
             </a>
-        </li>
 
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="{{ route('admin.invitation.index') }}" class="menu-link">
+                        <div class="text-truncate">Invitation</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{ route('admin.test-drive.index') }}" class="menu-link">
+                        <div class="text-truncate">Test Drive</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{ route('admin.request.quote.index') }}" class="menu-link">
+                        <div class="text-truncate">Request A Quote</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{ route('admin.contact.index') }}" class="menu-link">
+                        <div class="text-truncate">Contacts</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{ route('admin.enquiry.index') }}" class="menu-link">
+                        <div class="text-truncate">All Enquiries</div>
+                    </a>
+                </li>
+
+            </ul>
+        </li>
 
     </ul>
 </aside>
