@@ -58,11 +58,10 @@
                                     <input type="hidden" name="country_code" id="country_code">
                                     <input type="text" id="country" placeholder="Phone No" name="phone" required>
                                 </div>
-                                <div class="form-input">
+                                {{-- <div class="form-input">
                                     <input type="date" id="date-input" name="date" required>
-                                </div>
-                            </div>
-                            <div class="grid-rows">
+                                </div> --}}
+
 
                                 <div class="form-input">
                                     <select class="form-select " name="language">
@@ -141,6 +140,8 @@
                                         <option value="Xhosa">Xhosa</option>
                                     </select>
                                 </div>
+                            </div>
+                            <div class="grid-rows">
                                 <div class="form-input">
                                     <select class="form-select" name="nationality">
                                         <option value="">Select Nationality</option>
@@ -339,8 +340,7 @@
                                         <option value="zimbabwean">Zimbabwean</option>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="grid-rows">
+
                                 <div class="form-input">
                                     <textarea name="message" id="" cols="30" rows="2" placeholder="Enter Message" name=""></textarea>
                                 </div>
