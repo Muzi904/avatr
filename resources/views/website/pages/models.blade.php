@@ -16,6 +16,12 @@
             width: 400px;
         }
 
+        .models-designs-varients .right-section .accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+        }
+
         .models-designs-varients .right-section .accordion-item {
             background-color: #fbfbfb;
             border: 0;
@@ -51,7 +57,7 @@
             max-height: 100%;
             overflow: hidden;
             transition: max-height 0.2s ease-out;
-            padding: 0.5rem 3rem 0.5rem 1rem;
+            padding: 1rem;
         }
 
         .models-designs-varients .right-section .accordion-item-body-content .drivetrain-fields {
@@ -141,6 +147,68 @@
                                             <button class="active">Luxury – RWD</button>
                                             <button>Performance – AWD</button>
                                             <button>Premium – AWD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header active">
+                                    Exterior
+                                </div><!-- /.accordion-item-header -->
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+                                        <div class="interior-colors">
+                                            <div>
+                                                <button class="varient-btn active" data-target="varient9"></button>
+                                                <div id="varient9-text" class="text-start">
+                                                    <p>Misty purple</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button class="varient-btn" data-target="varient10"></button>
+                                                <div id="varient10-text" class="text-start d-none">
+                                                    <p>Glossy white</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button class="varient-btn" data-target="varient11"></button>
+                                                <div id="varient11-text" class="text-start d-none">
+                                                    <p>Glossy grey</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button class="varient-btn" data-target="varient12"></button>
+                                                <div id="varient12-text" class="text-start d-none">
+                                                    <p>Glossy black</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button class="varient-btn" data-target="varient13"></button>
+                                                <div id="varient13-text" class="text-start d-none">
+                                                    <p>Slate blue</p>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <button class="varient-btn" data-target="varient14"></button>
+                                                <div id="varient14-text" class="text-start d-none">
+                                                    <p>Liquid caramel</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button class="varient-btn" data-target="varient15"></button>
+                                                <div id="varient15-text" class="text-start d-none">
+                                                    <p>Matt color-Matte purple</p>
+                                                </div>
+                                            </div>
+                                            {{-- <div>
+                                                <button class="varient-btn" data-target="varient16"></button>
+                                                <div id="varient16-text" class="text-start d-none">
+                                                    <p>Dual - Tone(AVATR grey/black)</p>
+                                                </div>
+                                            </div> --}}
+
+
                                         </div>
                                     </div>
                                 </div>
