@@ -51,11 +51,35 @@
             max-height: 100%;
             overflow: hidden;
             transition: max-height 0.2s ease-out;
+            padding: 0.5rem 3rem 0.5rem 1rem;
         }
 
-        .models-designs-varients .right-section .accordion-item-body-content {
-            padding: 1rem;
-            line-height: 1.5rem;
+        .models-designs-varients .right-section .accordion-item-body-content .drivetrain-fields {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em
+        }
+
+        .models-designs-varients .right-section .accordion-item-body-content .drivetrain-fields button {
+            border: 0;
+            background: transparent;
+            position: relative;
+        }
+
+        .models-designs-varients .right-section .accordion-item-body-content .drivetrain-fields button::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: #b4d719;
+            bottom: 0;
+            top: 23px;
+            transition: width 0.3s ease;
+        }
+
+        .models-designs-varients .right-section .accordion-item-body-content .drivetrain-fields button.active::before {
+            width: 100%
         }
     </style>
 
@@ -109,17 +133,18 @@
                         <div class="accordion">
                             <div class="accordion-item">
                                 <div class="accordion-item-header active">
-                                    What is Web Development?
+                                    Trim
                                 </div><!-- /.accordion-item-header -->
                                 <div class="accordion-item-body">
                                     <div class="accordion-item-body-content">
-                                        Web Development broadly refers to the tasks associated with developing functional
-                                        websites and applications for the Internet. The web development process includes web
-                                        design, web content development, client-side/server-side scripting and network
-                                        security configuration, among other tasks.
+                                        <div class="drivetrain-fields">
+                                            <button class="active">Luxury – RWD</button>
+                                            <button>Performance – AWD</button>
+                                            <button>Premium – AWD</button>
+                                        </div>
                                     </div>
-                                </div><!-- /.accordion-item-body -->
-                            </div><!-- /.accordion-item -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

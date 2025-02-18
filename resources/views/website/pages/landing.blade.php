@@ -287,7 +287,7 @@
             font-size: 12px;
             margin-left: auto;
             font-family: 'AVATRFont-Regular';
-
+            color: #000;
         }
 
         .iti__country-list {

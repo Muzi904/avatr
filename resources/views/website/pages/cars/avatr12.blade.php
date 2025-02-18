@@ -258,31 +258,7 @@
             <div class="swiper car-page">
                 <!-- Swiper Wrapper -->
                 <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide animeslide-slide">
-                        <div>
-                            <video class="w-100" autoplay loop muted playsinline>
-                                <source src="{{ asset('website/images/avatr12/video2.mp4') }}" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
 
-                        <div class="heading d-block">
-                            <h1>Extremely Quiet</h1>
-                            <p class="mb-0">The world's first electronic oil pump: completes the pre-lubrication process
-                                before starting
-                                the range extender to ensure a lower starting friction coefficient.</p>
-                            <p class="mb-0">Unique piston active control technology: reduces the starting amplitude by
-                                90% and the
-                                starting cylinder pressure by 62.5%, achieving an almost silent and smooth start of the
-                                range extender. The starting noise is as low as 1 decibel, as quiet as ever.</p>
-                            <p class="mb-0">Intelligent fuel and electricity strategy: One journey, one policy. Based on
-                                on-board
-                                navigation, intelligently planning the fuel and electricity strategy, which saves fuel and
-                                electricity.</p>
-                        </div>
-                    </div>
-                    <!-- Slide 2 -->
                     <div class="swiper-slide animeslide-slide">
                         <div>
                             <picture>

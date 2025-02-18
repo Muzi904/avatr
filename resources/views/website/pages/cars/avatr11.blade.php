@@ -22,7 +22,7 @@
                                                 alt="" class="w-100" loading="lazy">
                                         </picture>
                                     </div>
-                                    
+
                                     <div class="creative-btn--wrap">
                                         <a class="creative-slide--btn" role="button" href="#0">
                                             <div class="creative-btn--label">
@@ -56,7 +56,7 @@
                                                 alt="" class="HomeBanner_logo-car__1Hxv8" loading="lazy">
                                         </picture>
                                     </div>
-                                    
+
                                     <div class="creative-btn--wrap">
                                         <a class="creative-slide--btn" role="button" href="#0">
                                             <div class="creative-btn--label">
@@ -251,7 +251,7 @@
                         <div>
                             <button class="varient-btn" data-target="varient3"></button>
                             <div id="varient3-text" class="text-start d-none">
-                                <p>Glossy White</p>
+                                <p>Mate White</p>
                             </div>
                         </div>
                         <div>
@@ -758,7 +758,8 @@
 
     </section>
 
-    <section class="section-one mt-100">
+    <section class="section-one mt-100">Glossy White
+
         <picture>
             <source srcset="{{ asset('website/images/avatr11/img19.jpg') }}" media="(max-width: 768px)"><img
                 class="w-100" src="{{ asset('website/images/avatr11/img19.jpg') }}" alt=""
