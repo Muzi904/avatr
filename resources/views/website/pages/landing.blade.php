@@ -70,7 +70,7 @@
             }
 
             .content-one {
-                top: 145px !important;
+                top: 155px !important;
             }
 
             .content-one .location {
@@ -285,8 +285,12 @@
             border: 0;
             font-size: 12px;
             margin-left: auto;
-            font-family: 'AVATRFont-Regular';
+            font-family: 'AVATRFont-Light';
             color: #000;
+        }
+
+        .iti {
+            width: 100% !important;
         }
 
         .iti__country-list {
