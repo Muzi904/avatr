@@ -49,17 +49,17 @@
                             </div>
                             <div class="grid-rows">
                                 <div class="form-input">
-                                    <input type="text" placeholder="Phone no" name="phone" required>
+                                    <input type="text" placeholder="Phone No" name="phone" required>
                                 </div>
-
-                            </div>
-                            <div class="grid-rows">
                                 <div class="form-input">
                                     <input type="date" id="date-input" name="data" required>
                                 </div>
-                                <div class="form-input">
+                            </div>
+                            <div class="grid-rows">
+
+                                {{-- <div class="form-input">
                                     <input type="time" id="time-input" name="time" required />
-                                </div>
+                                </div> --}}
                             </div>
                             <div class="grid-rows">
                                 <div class="form-input">

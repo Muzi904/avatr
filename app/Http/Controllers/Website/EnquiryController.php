@@ -79,8 +79,8 @@ class EnquiryController extends Controller
         $enquiry->email = $request->email;
         $enquiry->model = $request->engine;
         $enquiry->phone_number = $request->phone;
-        $enquiry->date = Carbon::parse($request->date)->format('Y-m-d');
-        $enquiry->time = Carbon::parse($request->time)->format('H:i:s');
+        $enquiry->date = $request->date ? Carbon::parse($request->date)->format('Y-m-d') : '';
+        // $enquiry->time = $request->time ? Carbon::parse($request->time)->format('H:i:s') : '';
         $enquiry->message = $request->message;
         $enquiry->save();
 
