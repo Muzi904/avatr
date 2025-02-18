@@ -249,7 +249,7 @@
                                     <div>
                                         <button class="varient-btn" data-target="varient3"></button>
                                         <div id="varient3-text" class="text-start d-none">
-                                            <p>Glossy White</p>
+                                            <p>Mate White</p>
                                         </div>
                                     </div>
                                     <div>
