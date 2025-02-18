@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVATR</title>
+    <title>Exclusive Invitation - AVATR Qatar Events</title>
+    <meta name="description"
+        content="Join exclusive AVATR Qatar events and experience the luxury of intelligent electric vehicles. Discover the future of AI mobility." />
+    <meta name="keywords" content="AVATR Event, AVATR Qatar Invitation, Smart EV Launch, AI Mobility Events">
     <link rel="icon" type="image/png" href="{{ asset('website/images/favicon3.png') }}">
     <link rel="stylesheet" href="{{ asset('website/css/home.css') }}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

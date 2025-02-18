@@ -37,6 +37,7 @@
             <!--<li><a href="{{ route('models') }}">Models</a></li>-->
             <!--<li><a href="{{ route('showrooms') }}">Showrooms</a></li>-->
             <li><a href="{{ route('test.drive') }}">Test drive</a></li>
+            <li><a href="{{ route('request.quote') }}">Request A Quote</a></li>
             <li><a href="{{ route('contact') }}">Contact</a></li>
 
         </ul>
@@ -48,6 +49,7 @@
             <!--<li><a class="navlink" href="{{ route('models') }}">Models</a></li>-->
             <!--<li><a class="navlink" href="{{ route('showrooms') }}">Showrooms</a></li>-->
             <li><a class="navlink" href="{{ route('test.drive') }}">Test drive</a></li>
+            <li><a class="navlink" href="{{ route('request.quote') }}">Request A Quote</a></li>
             <li><a class="navlink" href="{{ route('contact') }}">Contact</a></li>
         </ul>
     </div>

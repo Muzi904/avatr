@@ -4,6 +4,7 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollSmoother.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 
 <script>
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
@@ -163,4 +164,40 @@
             updateFormDisplay(checkedRadio.closest("label").dataset.target);
         }
     });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var input = document.querySelector("#country");
+        var iti = window.intlTelInput(input, {
+            initialCountry: "qa",
+            preferredCountries: ["qa", "ae", "in", "us", "gb"],
+            separateDialCode: true,
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+        });
+        document.querySelector("#country_code").value = '974';
+        // Update the hidden input with the country code whenever the country changes
+        input.addEventListener("countrychange", function() {
+            var countryCode = iti.getSelectedCountryData().dialCode;
+            document.querySelector("#country_code").value = countryCode;
+        });
+
+    });
+</script>
+
+<script>
+    // Function to remove '?#form-section' from the URL
+    function cleanUpUrl() {
+        const currentUrl = window.location.href;
+
+        // Check and remove '?#form-section' if it exists
+        const updatedUrl = currentUrl.replace(/\?\#form-section$/, '');
+
+        // Update the URL without reloading the page
+        if (currentUrl !== updatedUrl) {
+            window.history.replaceState(null, '', updatedUrl);
+        }
+    }
+
+    // Call the function when the page loads
+    window.onload = cleanUpUrl;
 </script>

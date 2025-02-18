@@ -21,9 +21,11 @@ Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/test-drive', [PageController::class, 'testDrive'])->name('test.drive');
 Route::get('/car-details', [PageController::class, 'models'])->name(name: 'models');
 Route::get('/showrooms', action: [PageController::class, 'showrooms'])->name(name: 'showrooms');
+Route::get('/request-a-quote', [PageController::class, 'requestQuote'])->name('request.quote');
 
 
 Route::post('/submit-invitations', [EnquiryController::class, 'submitInvitations'])->name('submit-invitation');
 
 Route::post('/test-drive-submit', [EnquiryController::class, 'testDrive'])->name('test.drive.submit');
+Route::post('/request-a-quote-submit', [EnquiryController::class, 'requestQuoteDrive'])->name('request.quote.submit');
 Route::post('/contact-submit', [EnquiryController::class, 'contact'])->name('contact.submit');
