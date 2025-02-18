@@ -39,8 +39,12 @@ class PageController extends Controller
     {
         return view('website.pages.models');
     }
-public function showrooms()
+    public function showrooms()
     {
         return view('website.pages.showrooms');
+    }
+    public function requestQuote()
+    {
+        return view('website.pages.request-quote');
     }
 }
