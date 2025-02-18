@@ -255,3 +255,21 @@
 
     });
 </script>
+
+<script>
+    // Function to remove '?#form-section' from the URL
+    function cleanUpUrl() {
+        const currentUrl = window.location.href;
+
+        // Check and remove '?#form-section' if it exists
+        const updatedUrl = currentUrl.replace(/\?\#form-section$/, '');
+
+        // Update the URL without reloading the page
+        if (currentUrl !== updatedUrl) {
+            window.history.replaceState(null, '', updatedUrl);
+        }
+    }
+
+    // Call the function when the page loads
+    window.onload = cleanUpUrl;
+</script>

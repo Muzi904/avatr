@@ -12,6 +12,7 @@
             @if (session('page') == 'thank-you')
                 <div class="container mt-5 mb-5">
                     <div class="heading">
+                        <img src="{{ asset('website/images/thankyou.png') }}" alt="">
                         <h4> Thanks For your Interests</h4>
                     </div>
 
