@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="{{ asset('website/images/favicon3.png') }}">
     <link rel="stylesheet" href="{{ asset('website/css/home.css') }}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
 
     <style>
         * {
@@ -224,9 +225,13 @@
             text-decoration-thickness: 1px;
         }
 
-        .thank-you-message,
+        .thank-you-message {
+            top: 230px !important;
+        }
+
         .error-msg {
             top: 230px !important;
+            display: none;
         }
 
         .form-section {
@@ -282,6 +287,11 @@
             font-family: 'AVATRFont-Regular';
 
         }
+
+        .iti__country-list {
+            background-color: #000 !important;
+            width: 260px !important;
+        }
     </style>
 </head>
 
@@ -300,17 +310,18 @@
 
         {{-- <video id="background-video" autoplay muted loop playsinline
                 src="{{ asset('website/images/landing/video1.mp4') }}"></video> --}}
+        <div class="content-one error-msg" id="error-msg">
+            <span>We're sorry that you are unable to attend this once-in-a-lifetime opportunity. <br> If you change
+                your
+                mind, please feel free to contact us on our WhatsApp at +974 50273024 </span>
+        </div>
+
         @if (session('page') == 'thank-you-confirm')
             <div class="content-one thank-you-message">
                 <span>Thank you for your confirmation. <br> We look forward to hosting you at the launch
                     ceremony.</span>
             </div>
-        @elseif (session('page') == 'thank-you-not-confirm')
-            <div class="content-one error-msg">
-                <span>We're sorry that you are unable to attend this once-in-a-lifetime opportunity. <br> If you change
-                    your
-                    mind, please feel free to contact us on our WhatsApp at +974 50273024 </span>
-            </div>
+            {{-- @elseif (session('page') == 'thank-you-not-confirm') --}}
         @else
             <div class="content-one" id="confirm-section">
                 <div>
@@ -325,7 +336,7 @@
                 <div class="confirmation">
 
                     <a href="#" id="confirm_yes">Yes</a>
-                    <a href="#">No</a>
+                    <a href="#" id="confirm_no">No</a>
                 </div>
             </div>
             <div class="content-one form-section" id="form-section">
@@ -339,10 +350,11 @@
                         </div>
                         <div class="form-input">
                             <label for="phone">Phone Number</label>
-                            <input type="text" name="phone" class="form-control"
+                            <input type="hidden" name="country_code" id="country_code">
+                            <input type="text" id="country" name="phone" class="form-control"
                                 placeholder="Enter your phone number" required>
                         </div>
-                        <button class="btn" type="submit">Confirm</button>
+                        <button class="btn" type="submit" style="cursor: pointer">Confirm</button>
 
                     </div>
                 </form>
@@ -356,6 +368,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 
     <script>
         const loader = document.querySelector(".loader");
@@ -403,12 +416,35 @@
             document.getElementById('form-section').style.display = 'block';
         });
 
-
+        document.getElementById('confirm_no').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('confirm-section').style.display = 'none';
+            document.getElementById('error-msg').style.display = 'block';
+        });
         // document.getElementById('confirm_no').addEventListener('click', function(e) {
         //     e.preventDefault(); // Prevent default action of the link
         //     document.getElementById('confirm').value = 'Not Confirmed'; // Set the value to "Not Confirmed"
         //     document.getElementById('submit-invitation').submit(); // Submit the form
         // });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var input = document.querySelector("#country");
+            var iti = window.intlTelInput(input, {
+                initialCountry: "qa",
+                preferredCountries: ["qa", "ae", "in", "us", "gb"],
+                separateDialCode: true,
+                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+            });
+            document.querySelector("#country_code").value = '974';
+            // Update the hidden input with the country code whenever the country changes
+            input.addEventListener("countrychange", function() {
+                var countryCode = iti.getSelectedCountryData().dialCode;
+                document.querySelector("#country_code").value = countryCode;
+            });
+
+        });
     </script>
 </body>
 
