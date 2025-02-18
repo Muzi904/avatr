@@ -287,7 +287,7 @@
             font-size: 12px;
             margin-left: auto;
             font-family: 'AVATRFont-Regular';
-
+            color: #000;
         }
 
         .iti__country-list {
@@ -315,7 +315,7 @@
         <div class="content-one error-msg" id="error-msg">
             <span>We're sorry that you are unable to attend this once-in-a-lifetime opportunity. <br> If you change
                 your
-                mind, please feel free to contact us on our WhatsApp at +974 50273024 </span>
+                mind, please feel free to contact us on our WhatsApp at <br> +974 50273024 </span>
         </div>
 
         @if (session('page') == 'thank-you-confirm')
