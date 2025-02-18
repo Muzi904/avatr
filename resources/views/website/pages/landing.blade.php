@@ -131,15 +131,15 @@
             color: #fff;
             font-family: 'AVATRFont-Light';
             font-weight: 400;
-            margin-top: 16px;
-            margin-bottom: 24px;
+            margin-top: 0;
+            margin-bottom: 15px;
         }
 
         .content-one h4 {
             color: #fff;
             font-family: 'AVATRFont-Regular';
             font-weight: 400;
-            font-size: 28px;
+            font-size: 24px;
             text-transform: uppercase;
 
         }
@@ -149,17 +149,19 @@
             font-family: 'AVATRFont-Regular';
             font-weight: 400;
             font-size: 12px;
-            text-transform: uppercase
+            text-transform: uppercase;
+            margin-top: 16px;
+            display: flex;
         }
 
         .content-one .confirmation {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
         }
 
         .content-one .confirmation a {
-            font-size: 52px;
+            font-size: 44px;
             font-family: 'AVATRFont-Regular';
             text-decoration: none;
             line-height: 1;
