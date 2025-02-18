@@ -1,9 +1,9 @@
 <script type="text/javascript">
     $(function() {
-        var url = "{{ route('admin.enquiry.index') }}";
+        var url = "{{ route('admin.invitation.index') }}";
 
         var filters = @json($filters);
-        var table = $('.enquiry-table').DataTable({
+        var table = $('.invitation-table').DataTable({
             ajax: {
                 url: url,
                 data: function(d) {
@@ -25,14 +25,14 @@
                         $('#to_date_export').val($('#to_date').val());
                     }
 
-                    if (filters['is_confirmed']) {
-                        d.is_confirmed = filters['is_confirmed'];
-                        $('#is_confirmed').val(filters['is_confirmed']);
-                        $('#is_confirmed_export').val(filters['is_confirmed']);
-                    } else {
-                        d.is_confirmed = $('#is_confirmed').val();
-                        $('#is_confirmed_export').val($('#is_confirmed').val());
-                    }
+                    // if (filters['is_confirmed']) {
+                    //     d.is_confirmed = filters['is_confirmed'];
+                    //     $('#is_confirmed').val(filters['is_confirmed']);
+                    //     $('#is_confirmed_export').val(filters['is_confirmed']);
+                    // } else {
+                    //     d.is_confirmed = $('#is_confirmed').val();
+                    //     $('#is_confirmed_export').val($('#is_confirmed').val());
+                    // }
                 },
             },
             columns: [{
@@ -46,25 +46,21 @@
                     name: 'enq_no'
                 },
                 {
-                    data: 'type',
-                    name: 'type'
-                },
-                {
                     data: 'name',
                     name: 'name'
                 },
-                {
-                    data: 'email',
-                    name: 'email'
-                },
+                // {
+                //     data: 'email',
+                //     name: 'email'
+                // },
                 {
                     data: 'phone_number',
                     name: 'phone_number'
                 },
-                {
-                    data: 'is_confirmed',
-                    name: 'is_confirmed'
-                },
+                // {
+                //     data: 'is_confirmed',
+                //     name: 'is_confirmed'
+                // },
                 {
                     data: 'created_at',
                     name: 'created_at'

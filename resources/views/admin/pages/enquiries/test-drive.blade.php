@@ -5,7 +5,7 @@
 
         <!-- Responsive Table -->
         <div class="card p-5">
-            <h3 class="card-title">ENQUIRIES</h3>
+            <h3 class="card-title">TEST DRIVE</h3>
             <div class="card-header  d-flex">
                 <div class="justify-content-end">
                     <button type="button" class="btn btn-primary m-2" id="searchModal">Search </button>
@@ -13,16 +13,16 @@
                 </div>
             </div>
             <div class="table-responsive text-nowrap">
-                <table class="table datatable enquiry-table w-100">
+                <table class="table datatable test-drive-table w-100">
                     <thead>
                         <tr class="text-nowrap">
                             <th>#</th>
                             <th>Enq.No</th>
-                            <th>Type</th>
                             <th>Name</th>
                             <th>Email</th>
                             <th>Phone Number</th>
-                            <th>Status</th>
+                            <th>Model</th>
+                            <th>Date</th>
                             <th>Enq. Date</th>
                         </tr>
                     </thead>
@@ -90,9 +90,9 @@
 
     <input type="hidden" name="from_date" id="from_date_export">
     <input type="hidden" name="to_date" id="to_date_export">
-    <input type="hidden" name="is_confirmed" id="is_confirmed_export">
+    {{-- <input type="hidden" name="is_confirmed" id="is_confirmed_export"> --}}
     {{-- </form> --}}
 @endsection
 @push('scripts')
-    @include('admin.scripts.enquiry_js')
+    @include('admin.scripts.test_drive_js')
 @endpush
