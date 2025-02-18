@@ -2,6 +2,8 @@
 <script src="{{ asset('website/script/swiper.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollSmoother.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
 
 <script>
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
