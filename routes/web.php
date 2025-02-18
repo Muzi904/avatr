@@ -19,7 +19,7 @@ Route::get('/avatr12', [PageController::class, 'avatr12'])->name('avatr12');
 Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/test-drive', [PageController::class, 'testDrive'])->name('test.drive');
-Route::get('/models', [PageController::class, 'models'])->name(name: 'models');
+Route::get('/car-details', [PageController::class, 'models'])->name(name: 'models');
 Route::get('/showrooms', action: [PageController::class, 'showrooms'])->name(name: 'showrooms');
 
 
