@@ -131,8 +131,7 @@
             color: #fff;
             font-family: 'AVATRFont-Light';
             font-weight: 400;
-            margin-top: 0;
-            margin-bottom: 15px;
+            margin-block: 15px;
         }
 
         .content-one h4 {
@@ -239,7 +238,7 @@
 
         .error-msg a {
             color: #fff;
-            text-decoration: none
+            text-decoration: none;
         }
 
         .form-section {
