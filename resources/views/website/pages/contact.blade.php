@@ -61,15 +61,15 @@
             <div class="grid-rows">
                 {{-- @if (session('page') == 'thank-you') --}}
                 <div class="column">
-                    @if (session('page') == 'thank-you')
-                        <div class="thank-you-msg">
-                            <img src="{{ asset('website/images/thankyou.png') }}" alt="">
-                            <h3>Thanks for your Interest</h3>
-                            <p>
-                                We have received your message. We will get back to you shortly.
-                            </p>
-                        </div>
-                    @else
+                    {{-- @if (session('page') == 'thank-you') --}}
+                    <div class="thank-you-msg">
+                        <img src="{{ asset('website/images/thankyou.png') }}" alt="">
+                        <h3>Thanks for your Interest</h3>
+                        <p>
+                            We have received your message. We will get back to you shortly.
+                        </p>
+                    </div>
+                    {{-- @else
                         <h3>Make an Enquiry</h3>
                         <form action="{{ route('contact.submit') }}" method="POST">
                             @csrf
@@ -98,7 +98,7 @@
                             </div>
                             <button class="btn">Submit</button>
                         </form>
-                    @endif
+                    @endif --}}
                 </div>
                 <div class="column">
                     <div style="width: 100%"><iframe width="100%" height="500" frameborder="0" scrolling="no"

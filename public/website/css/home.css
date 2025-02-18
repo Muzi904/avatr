@@ -4,6 +4,8 @@
 }
 .body {
   overflow-x: hidden;
+  font-family: 'AVATRFont-Regular';
+  font-size: 14px;
 }
 .flex-col {
   flex-direction: column;

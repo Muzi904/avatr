@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="{{ asset('website/css/swiper.css') }}">
     <link rel="stylesheet" href="{{ asset('website/css/style1.css') }}">
     <link rel="stylesheet" href="{{ asset('website/css/responsive.css') }}">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet">
 
 
