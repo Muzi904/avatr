@@ -233,6 +233,8 @@
         .error-msg {
             top: 230px !important;
             display: none;
+            color: #fff;
+            text-decoration: none
         }
 
         .form-section {
