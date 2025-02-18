@@ -237,6 +237,11 @@
             text-decoration: none
         }
 
+        .error-msg a {
+            color: #fff;
+            text-decoration: none
+        }
+
         .form-section {
             color: #b4d719;
             display: none;
@@ -320,7 +325,8 @@
         <div class="content-one error-msg" id="error-msg">
             <span>We're sorry that you are unable to attend this once-in-a-lifetime opportunity. <br> If you change
                 your
-                mind, please feel free to contact us on our WhatsApp at <br> +974 50273024 </span>
+                mind, please feel free to contact us on our WhatsApp at <br> <a href="https://wa.me/97450273024"
+                    target="_blank">+974 50273024</a> </span>
         </div>
 
         @if (session('page') == 'thank-you-confirm')
