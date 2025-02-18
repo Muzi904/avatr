@@ -7,6 +7,9 @@
   font-family: 'AVATRFont-Regular';
   font-size: 14px;
 }
+p {
+  margin-bottom: 0;
+}
 .flex-col {
   flex-direction: column;
 }
