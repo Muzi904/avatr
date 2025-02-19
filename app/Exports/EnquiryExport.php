@@ -30,7 +30,9 @@ class EnquiryExport implements FromCollection, WithHeadings, WithStrictNullCompa
         if ($request->to_date) {
             $data = $data->whereDate('enquiries.created_at', '<=', $request->to_date);
         }
-
+        if ($request->type) {
+            $data = $data->where('type', 'LIKE', '%' . $request->type . '%');
+        }
         $data = $data->select('enquiries.*')->orderBy('enquiries.id', 'desc')->get();
 
         $output = [];

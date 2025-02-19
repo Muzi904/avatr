@@ -9,7 +9,7 @@
             <div class="card-header  d-flex">
                 <div class="justify-content-end">
                     <button type="button" class="btn btn-primary m-2" id="searchModal">Search </button>
-                    {{-- <button type="submit" class="btn btn-info m-2" form="export-form">Export</button> --}}
+                    <button type="submit" class="btn btn-info m-2" form="export-form">Export</button>
                 </div>
             </div>
             <div class="table-responsive text-nowrap">
@@ -56,19 +56,6 @@
                                 name="to_date" value="{{ session('to_date') }}">
                             {{--  --}}
                         </div>
-
-                        {{-- <div class="col-sm-6 mt-3">
-                            <label class="control-label ">Status</label>
-                            <select class="form-select" name="is_confirmed" id="is_confirmed">
-                                <option value="">All</option>
-                                <option value="Confirmed" {{ session('is_confirmed') == 'Confirmed' ? 'selected' : '' }}>
-                                    Confirmed</option>
-                                <option value="Not Confirmed"
-                                    {{ session('is_confirmed') == 'Not Confirmed' ? 'selected' : '' }}>Not Confirmed
-                                </option>
-                            </select>
-                        </div> --}}
-
                     </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-between">
@@ -83,13 +70,12 @@
 
     {{-- export --}}
 
-    {{-- <form action="{{ route('admin.enquiry.export') }}" method="post" id="export-form">
-        @csrf --}}
-
-    <input type="hidden" name="from_date" id="from_date_export">
-    <input type="hidden" name="to_date" id="to_date_export">
-    {{-- <input type="hidden" name="is_confirmed" id="is_confirmed_export"> --}}
-    {{-- </form> --}}
+    <form action="{{ route('admin.enquiry.export') }}" method="post" id="export-form">
+        @csrf
+        <input type="hidden" name="from_date" id="from_date_export">
+        <input type="hidden" name="to_date" id="to_date_export">
+        <input type="hidden" name="type" id="type_export" value="invitation">
+    </form>
 @endsection
 @push('scripts')
     @include('admin.scripts.invitation_js')
