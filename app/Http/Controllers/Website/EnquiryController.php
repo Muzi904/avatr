@@ -114,7 +114,7 @@ class EnquiryController extends Controller
         $enquiry->phone_number = ($request->country_code ? $request->country_code : '') . $request->phone;
         $enquiry->language = $request->language;
         $enquiry->nationality = $request->nationality;
-        $enquiry->date = $request->date ? Carbon::parse($request->date)->format('Y-m-d') : '';
+        // $enquiry->date = $request->date ? Carbon::parse($request->date)->format('Y-m-d') : '';
         $enquiry->message = $request->message;
         $enquiry->save();
 
