@@ -6,6 +6,14 @@
             margin-bottom: 25px
         }
 
+        #thumbnail-slider .splide__list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 15px;
+            transform: translateX(0) !important;
+        }
+
         .models-designs-varients #main-slider .splide__list {
             /* height: 60vh !important; */
         }
@@ -21,9 +29,19 @@
 
         }
 
+        .models-designs-varients #thumbnail-slider .splide__list .splide__slide .body {
+            position: relative;
+            top: -30%;
+        }
+
+        .models-designs-varients #main-slider .splide__list .splide__slide .body {
+            position: relative;
+            top: -27%;
+        }
+
         .models-designs-varients #thumbnail-slider .splide__list .splide__slide .wheel {
             position: absolute;
-            bottom: -13%;
+            bottom: -39%;
         }
 
         .models-designs-varients #main-slider .splide__list .splide__slide .wheel {
@@ -36,7 +54,10 @@
             flex-direction: column;
             gap: 35px;
             /* position: sticky;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                top: 0; */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <<<<<<< HEAD
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        top: 0; */
+            =======top: 0;
+            */>>>>>>>999b73da23518dee5c5564df90976179acd2e7f2
         }
 
         .models-designs-varients .right-section img {
@@ -148,7 +169,9 @@
             margin-bottom: 10px;
         }
 
-        .models-designs-varients .right-section .accordion-item-body-content .interior-colors .varient-btn.active {
+        .models-designs-varients .right-section .accordion-item-body-content .interior-colors .wheel-set.active .varient-btn,
+        .models-designs-varients .right-section .accordion-item-body-content .interior-colors .interior-variant.active .varient-btn,
+        .models-designs-varients .right-section .accordion-item-body-content .interior-colors .body-color.active .varient-btn {
             border: 5px solid #e5e5e5;
         }
 
@@ -168,7 +191,9 @@
             opacity: 0;
         }
 
-        .models-designs-varients .right-section .accordion-item-body-content .interior-colors .varient-btn.active::before {
+        .models-designs-varients .right-section .accordion-item-body-content .interior-colors .wheel-set.active .varient-btn::before,
+        .models-designs-varients .right-section .accordion-item-body-content .interior-colors .interior-variant.active .varient-btn::before,
+        .models-designs-varients .right-section .accordion-item-body-content .interior-colors .body-color.active .varient-btn::before {
             opacity: 1;
         }
 
@@ -187,15 +212,15 @@
                     <div id="main-slider" class="splide" aria-label="Main Slider">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide" id="main-li">
+                                <li class="splide__slide">
                                     <img class="w-100 body" id="main-main-body" src="" alt="Slide 1">
                                     <img class="w-100 wheel" id="main-alloy" src="" alt="Slide 1">
                                 </li>
-                                <li class="splide__slide" id="front-li">
+                                <li class="splide__slide">
                                     <img class="w-100 body" id="front-body" src="" alt="Slide 2">
                                     <img class="w-100 wheel" id="front-alloy" src="" alt="Slide 2">
                                 </li>
-                                <li class="splide__slide" id="back-li">
+                                <li class="splide__slide">
                                     <img class="w-100 body" id="back-body" src="" alt="Slide 3">
                                     <img class="w-100 wheel" id="back-alloy" src="" alt="Slide 3">
                                 </li>
@@ -212,15 +237,15 @@
                     <div id="thumbnail-slider" class="splide" aria-label="Thumbnail Slider">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide" id="main-thumb-li">
+                                <li class="splide__slide">
                                     <img class="w-100 body" id="main-thumb-body" src="" alt="thumbnail 1">
                                     <img class="w-100 wheel" id="main-thumb-alloy" src="" alt="thumbnail 1">
                                 </li>
-                                <li class="splide__slide" id="front-thumb-li">
+                                <li class="splide__slide">
                                     <img class="w-100 body" id="front-thumb-body" src="" alt="Thumbnail 2">
                                     <img class="w-100 wheel" id="front-thumb-alloy" src="" alt="Thumbnail 2">
                                 </li>
-                                <li class="splide__slide" id="back-thumb-li">
+                                <li class="splide__slide">
                                     <img class="w-100 body" id="back-thumb-body" src="" alt="Thumbnail 3">
                                     <img class="w-100 wheel" id="back-thumb-alloy" src="" alt="Thumbnail 3">
                                 </li>
@@ -267,8 +292,8 @@
                                 <div class="accordion-item-body">
                                     <div class="accordion-item-body-content">
                                         <div class="interior-colors">
-                                            <div onclick="exteriorChange('glossy-grey')">
-                                                <button class="varient-btn active">
+                                            <div class="body-color active" data-color="glossy-grey">
+                                                <button class="varient-btn ">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/color-img4.png') }}"
                                                         alt="">
                                                 </button>
@@ -276,7 +301,7 @@
                                                     <p>Glossy Grey</p>
                                                 </div>
                                             </div>
-                                            <div onclick="exteriorChange('glossy-black')">
+                                            <div class="body-color" data-color="glossy-black">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/color-img5.png') }}"
                                                         alt="">
@@ -285,7 +310,7 @@
                                                     <p>Glossy Black</p>
                                                 </div>
                                             </div>
-                                            <div onclick="exteriorChange('aqua')">
+                                            <div class="body-color" data-color="aqua">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/color-img2.png') }}"
                                                         alt="">
@@ -294,7 +319,7 @@
                                                     <p>Aqua</p>
                                                 </div>
                                             </div>
-                                            <div onclick="exteriorChange('liquid-caramel')">
+                                            <div class="body-color" data-color="liquid-caramel">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/color-img1.png') }}"
                                                         alt="">
@@ -304,7 +329,7 @@
                                                 </div>
                                             </div>
 
-                                            <div onclick="exteriorChange('matte-white')">
+                                            <div class="body-color" data-color="matte-white">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/color-img3.png') }}"
                                                         alt="">
@@ -313,7 +338,7 @@
                                                     <p>Matte White</p>
                                                 </div>
                                             </div>
-                                            <div onclick="exteriorChange('matte-grey')">
+                                            <div class="body-color" data-color="matte-grey">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/color-img6.png') }}"
                                                         alt="">
@@ -335,8 +360,8 @@
                                 <div class="accordion-item-body">
                                     <div class="accordion-item-body-content">
                                         <div class="interior-colors">
-                                            <div onclick="interiorChange('nappa-red')">
-                                                <button class="varient-btn active">
+                                            <div class="interior-variant active" data-interior="nappa-red">
+                                                <button class="varient-btn ">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/interior/color-img-1.svg') }}"
                                                         alt="">
                                                 </button>
@@ -344,7 +369,7 @@
                                                     <p>Nappa Red</p>
                                                 </div>
                                             </div>
-                                            <div onclick="interiorChange('misty-purple')">
+                                            <div class="interior-variant" data-interior="misty-purple">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/interior/color-img-2.svg') }}"
                                                         alt="">
@@ -353,7 +378,7 @@
                                                     <p>Misty Purple</p>
                                                 </div>
                                             </div>
-                                            <div onclick="interiorChange('nappa-black')">
+                                            <div class="interior-variant" data-interior="nappa-black">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/interior/color-img-3.svg') }}"
                                                         alt="">
@@ -362,7 +387,7 @@
                                                     <p>Nappa Black</p>
                                                 </div>
                                             </div>
-                                            <div onclick="interiorChange('nappa-grey')">
+                                            <div class="interior-variant" data-interior="nappa-grey">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/interior/color-img-4.svg') }}"
                                                         alt="">
@@ -384,7 +409,7 @@
                                 <div class="accordion-item-body">
                                     <div class="accordion-item-body-content">
                                         <div class="interior-colors">
-                                            <div onclick="alloyChange('set-A')">
+                                            <div class="wheel-set active" data-alloy="set-A">
                                                 <button class="varient-btn active">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/wheel/wheel-1.svg') }}"
                                                         alt="">
@@ -393,7 +418,7 @@
                                                     <p>Wheel Set A</p>
                                                 </div>
                                             </div>
-                                            <div onclick="alloyChange('set-B')">
+                                            <div class="wheel-set" data-alloy="set-B">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/wheel/wheel-2.svg') }}"
                                                         alt="">
@@ -402,7 +427,7 @@
                                                     <p>Wheel Set B</p>
                                                 </div>
                                             </div>
-                                            <div onclick="alloyChange('set-C')">
+                                            <div class="wheel-set" data-alloy="set-C">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/wheel/wheel-3.svg') }}"
                                                         alt="">
@@ -411,7 +436,7 @@
                                                     <p>Wheel Set C</p>
                                                 </div>
                                             </div>
-                                            <div onclick="alloyChange('set-D')">
+                                            <div class="wheel-set" data-alloy="set-D">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/wheel/wheel-4.svg') }}"
                                                         alt="">
@@ -449,13 +474,15 @@
                 rewind: true,
                 // fixedWidth: '25%',
                 // fixedHeight: 95,
+                arrows: false,
                 heightRatio: 0.15,
+                fixedWidth: '100%',
                 isNavigation: true,
                 gap: 7,
                 focus: 'center',
                 pagination: false,
                 cover: true,
-                perPage: 4,
+                perPage: 3,
                 dragMinThreshold: {
                     mouse: 4,
                     touch: 10,
@@ -480,14 +507,6 @@
 
         accordionItemHeaders.forEach(accordionItemHeader => {
             accordionItemHeader.addEventListener("click", event => {
-                // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
-                // const currentlyActiveAccordionItemHeader = document.querySelector(
-                //     ".accordion-item-header.active");
-                // if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !==
-                //     accordionItemHeader) {
-                //     currentlyActiveAccordionItemHeader.classList.toggle("active");
-                //     currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
-                // }
 
                 accordionItemHeader.classList.toggle("active");
                 const accordionItemBody = accordionItemHeader.nextElementSibling;
@@ -582,62 +601,124 @@
             ],
         };
 
+        document.querySelectorAll("[data-color]").forEach(element => {
+            element.addEventListener("click", function() {
+                const color = this.getAttribute("data-color");
+                exteriorChange(color);
+                document.querySelectorAll("[data-color]").forEach(btn => {
+                    btn.classList.remove("active");
+                });
+                this.classList.add("active");
+            });
+        });
+
         function exteriorChange(color) {
-            // console.log(colors[color][0]);
+            $("#thumbnail-slider-list li, #main-slider-list li").removeClass("is-active");
+            $('#main-slider-slide01, #thumbnail-slider-slide01').addClass('is-active');
+            $('#main-slider-slide02, #thumbnail-slider-slide02').addClass('is-next');
+            $('#main-slider-slide04, #thumbnail-slider-slide04').removeClass('is-active');
+            $('#thumbnail-slider-list').css('transform', 'translateX(0px)');
+
             var mainBody = colors[color][0];
             var frontBody = colors[color][1];
             var backBody = colors[color][2];
 
             // main  image
             $('#main-main-body').attr('src', mainBody);
+            $('#main-main-body').css('display', 'block');
             $('#main-thumb-body').attr('src', mainBody);
-            // $('#main-li').css('background', `url(${mainBody})`);
-            $('#main-slider-slide01').css('background', `url(${mainBody})`);
-            // thumb
-            $('#thumbnail-slider-slide01').css('background', `url(${mainBody})`);
+            $('#main-thumb-body').css('display', 'block');
 
             // frontside image
             $('#front-body').attr('src', frontBody);
+            $('#front-body').css('display', 'block');
             $('#front-thumb-body').attr('src', frontBody);
-            // $('#front-li').css('background', frontBody);
-            $('#main-slider-slide02').css('background', frontBody);
-            // thumb
-            $('#thumbnail-slider-slide02').css('background', `url(${frontBody})`);
+            $('#front-thumb-body').css('display', 'block');
 
             // backside image
             $('#back-body').attr('src', backBody);
+            $('#back-body').css('display', 'block');
             $('#back-thumb-body').attr('src', backBody);
-            // $('#back-li').css('background', backBody);
-            $('#main-slider-slide03').css('background', backBody);
-            // thumb
-            $('#thumbnail-slider-slide03').css('background', `url(${backBody})`);
+            $('#back-thumb-body').css('display', 'block');
         }
 
+        document.querySelectorAll("[data-interior]").forEach(element => {
+            element.addEventListener("click", function() {
+                const color = this.getAttribute("data-interior");
+                interiorChange(color);
+                document.querySelectorAll("[data-interior]").forEach(btn => {
+                    btn.classList.remove("active");
+                });
+                this.classList.add("active");
+            });
+        });
+
         function interiorChange(color) {
+            $("#main-slider").find("li").removeClass("is-active");
+            $("#main-slider").find("li").removeClass("is-visible");
+            $("#main-slider").find("li").removeClass("is-prev");
+            $("#main-slider").find("li").removeClass("is-next");
+
+            $("#thumbnail-slider-list").find("li").removeClass("is-active");
+            $("#thumbnail-slider-list").find("li").removeClass("is-prev");
+            $("#thumbnail-slider-list").find("li").removeClass("is-next");
+            $('#thumbnail-slider-list').css('transform', 'translateX(-185.625px)');
+
             var front = interiors[color][0];
             var side = interiors[color][1];
             var back = interiors[color][2];
-
             $('#interior-front').attr('src', front);
-            $('#main-slider-slide04').css('background', `url(${front})`);
+            $('#interior-front').css('display', 'block');
             // thumb
             $('#interior-thumb-front').attr('src', front);
-            $('#thumbnail-slider-slide04').css('background', `url(${front})`);
+            $('#interior-thumb-front').css('display', 'block');
 
             $('#interior-side').attr('src', side);
-            $('#main-slider-slide05').css('background', `url(${side})`);
+            $('#interior-side').css('display', 'block');
             // thumb
             $('#interior-thumb-side').attr('src', side);
-            $('#thumbnail-slider-slide05').css('background', `url(${side})`);
+            $('#interior-thumb-side').css('display', 'block');
 
             $('#interior-back').attr('src', back);
-            $('#main-slider-slide06').css('background', `url(${back})`);
+            $('#interior-back').css('display', 'block');
             // thumb
             $('#interior-thumb-back').attr('src', back);
-            $('#thumbnail-slider-slide06').css('background', `url(${back})`);
+            $('#interior-thumb-back').css('display', 'block');
+
+            // slider 
+            $('#main-slider-slide04').addClass('is-active');
+            $('#main-slider-slide04').addClass('is-visible');
+
+            $('#thumbnail-slider-slide03').addClass('is-prev');
+            $('#thumbnail-slider-slide03').addClass('is-visible');
+            $('#thumbnail-slider-slide04').addClass('is-active');
+            $('#thumbnail-slider-slide04').addClass('is-visible');
+            $('#thumbnail-slider-slide05').addClass('is-visible');
+            $('#thumbnail-slider-slide05').addClass('is-next');
         }
 
+
+        document.querySelectorAll("[data-alloy]").forEach(element => {
+            element.addEventListener("click", function() {
+                const type = this.getAttribute("data-alloy");
+                alloyChange(type);
+                document.querySelectorAll("[data-alloy]").forEach(btn => {
+                    btn.classList.remove("active");
+                });
+                this.classList.add("active");
+            });
+        });
+
+
         function alloyChange(type) {
+            $("#main-slider").find("li").removeClass("is-active");
+            $("#thumbnail-slider-list").find("li").removeClass("is-active");
+            $('#main-slider-slide01').addClass('is-active');
+            $('#thumbnail-slider-slide01').addClass('is-active');
+            $('#main-slider-slide04').removeClass('is-active');
+            $('#thumbnail-slider-slide04').removeClass('is-active');
+            $('#thumbnail-slider-list').css('transform', 'translateX(0)');
+
             // console.log(alloys[type][0]);
             var mainAlloy = alloys[type][0];
             var frontAlloy = alloys[type][1];

@@ -758,7 +758,7 @@
 
     </section>
 
-    <section class="section-one mt-100">Glossy White
+    <section class="section-one mt-100">
 
         <picture>
             <source srcset="{{ asset('website/images/avatr11/img19.jpg') }}" media="(max-width: 768px)"><img
