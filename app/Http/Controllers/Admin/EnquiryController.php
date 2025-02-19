@@ -189,11 +189,11 @@ class EnquiryController extends Controller
     {
         Session::forget('from_date');
         Session::forget('to_date');
-        Session::forget('is_confirmed');
+        Session::forget('type');
     }
 
     public function export(Request $request)
     {
-        return Excel::download(new EnquiryExport($request), date('Y_m_d_H_i_s') . '_enquiries.xlsx');
+        return Excel::download(new EnquiryExport($request),  $request->type ? date('Y_m_d_H_i_s') . '_' . $request->type . '_enquiries.xlsx' : date('Y_m_d_H_i_s') . '_enquiries.xlsx');
     }
 }
