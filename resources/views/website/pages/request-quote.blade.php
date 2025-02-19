@@ -66,10 +66,10 @@
                                 <div class="form-input">
                                     <select class="form-select " name="language">
                                         <option value="">Select Language</option>
-                                        <option value="Afrikaans">Afrikaans</option>
-                                        <option value="Albanian">Albanian</option>
+                                        {{-- <option value="Afrikaans">Afrikaans</option>
+                                        <option value="Albanian">Albanian</option> --}}
                                         <option value="Arabic">Arabic</option>
-                                        <option value="Armenian">Armenian</option>
+                                        {{-- <option value="Armenian">Armenian</option>
                                         <option value="Basque">Basque</option>
                                         <option value="Bengali">Bengali</option>
                                         <option value="Bulgarian">Bulgarian</option>
@@ -79,9 +79,9 @@
                                         <option value="Croatian">Croatian</option>
                                         <option value="Czech">Czech</option>
                                         <option value="Danish">Danish</option>
-                                        <option value="Dutch">Dutch</option>
+                                        <option value="Dutch">Dutch</option> --}}
                                         <option value="English">English</option>
-                                        <option value="Estonian">Estonian</option>
+                                        {{-- <option value="Estonian">Estonian</option>
                                         <option value="Fiji">Fiji</option>
                                         <option value="Finnish">Finnish</option>
                                         <option value="French">French</option>
@@ -137,12 +137,12 @@
                                         <option value="Uzbek">Uzbek</option>
                                         <option value="Vietnamese">Vietnamese</option>
                                         <option value="Welsh">Welsh</option>
-                                        <option value="Xhosa">Xhosa</option>
+                                        <option value="Xhosa">Xhosa</option> --}}
                                     </select>
                                 </div>
                             </div>
                             <div class="grid-rows">
-                                <div class="form-input">
+                                {{-- <div class="form-input">
                                     <select class="form-select" name="nationality">
                                         <option value="">Select Nationality</option>
                                         <option value="afghan">Afghan</option>
@@ -339,7 +339,7 @@
                                         <option value="zambian">Zambian</option>
                                         <option value="zimbabwean">Zimbabwean</option>
                                     </select>
-                                </div>
+                                </div> --}}
 
                                 <div class="form-input">
                                     <textarea name="message" id="" cols="30" rows="2" placeholder="Enter Message" name=""></textarea>

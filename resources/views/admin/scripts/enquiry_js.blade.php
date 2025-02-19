@@ -25,13 +25,13 @@
                         $('#to_date_export').val($('#to_date').val());
                     }
 
-                    if (filters['is_confirmed']) {
-                        d.is_confirmed = filters['is_confirmed'];
-                        $('#is_confirmed').val(filters['is_confirmed']);
-                        $('#is_confirmed_export').val(filters['is_confirmed']);
+                    if (filters['type']) {
+                        d.type = filters['type'];
+                        $('#type').val(filters['type']);
+                        $('#type_export').val(filters['type']);
                     } else {
-                        d.is_confirmed = $('#is_confirmed').val();
-                        $('#is_confirmed_export').val($('#is_confirmed').val());
+                        d.type = $('#type').val();
+                        $('#type_export').val($('#type').val());
                     }
                 },
             },

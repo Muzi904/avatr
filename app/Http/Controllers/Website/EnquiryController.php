@@ -62,7 +62,7 @@ class EnquiryController extends Controller
         $enquiry->type = 'invitation';
         $enquiry->enq_no = $this->get_next_refkey();
         $enquiry->name = $request->name;
-        $enquiry->phone_number = $request->country_code ? $request->country_code : '' . $request->phone;
+        $enquiry->phone_number = ($request->country_code ? $request->country_code : '') . $request->phone;
         $enquiry->is_confirmed = 'Confirmed';
         $enquiry->save();
 
@@ -78,7 +78,7 @@ class EnquiryController extends Controller
         $enquiry->name = $request->name;
         $enquiry->email = $request->email;
         $enquiry->model = $request->engine;
-        $enquiry->phone_number = $request->country_code ? $request->country_code : '' . $request->phone;
+        $enquiry->phone_number = ($request->country_code ? $request->country_code : '') . $request->phone;
         $enquiry->date = $request->date ? Carbon::parse($request->date)->format('Y-m-d') : '';
         // $enquiry->time = $request->time ? Carbon::parse($request->time)->format('H:i:s') : '';
         $enquiry->message = $request->message;
@@ -94,7 +94,7 @@ class EnquiryController extends Controller
         $enquiry->enq_no = $this->get_next_refkey();
         $enquiry->name = $request->name;
         $enquiry->email = $request->email;
-        $enquiry->phone_number = $request->country_code ? $request->country_code : '' . $request->phone;
+        $enquiry->phone_number = ($request->country_code ? $request->country_code : '') . $request->phone;
         $enquiry->subject = $request->subject;
         $enquiry->message = $request->message;
         $enquiry->save();
@@ -111,10 +111,10 @@ class EnquiryController extends Controller
         $enquiry->name = $request->name;
         $enquiry->email = $request->email;
         $enquiry->model = $request->engine;
-        $enquiry->phone_number = $request->country_code ? $request->country_code : '' . $request->phone;
+        $enquiry->phone_number = ($request->country_code ? $request->country_code : '') . $request->phone;
         $enquiry->language = $request->language;
-        $enquiry->nationality = $request->nationality;
-        $enquiry->date = $request->date ? Carbon::parse($request->date)->format('Y-m-d') : '';
+        // $enquiry->nationality = $request->nationality;
+        // $enquiry->date = $request->date ? Carbon::parse($request->date)->format('Y-m-d') : '';
         $enquiry->message = $request->message;
         $enquiry->save();
 
