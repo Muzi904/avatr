@@ -54,8 +54,8 @@
             flex-direction: column;
             gap: 35px;
             /* position: sticky;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <<<<<<< HEAD
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        top: 0; */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <<<<<<< HEAD
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                top: 0; */
             =======top: 0;
             */>>>>>>>999b73da23518dee5c5564df90976179acd2e7f2
         }
@@ -164,22 +164,25 @@
             padding: 0;
             background-color: transparent;
             position: relative;
-            border: 5px solid transparent;
+            /* border: 5px solid transparent; */
             border-radius: 50%;
+            background-color: #fff;
             margin-bottom: 10px;
+            padding: 5px;
         }
 
         .models-designs-varients .right-section .accordion-item-body-content .interior-colors .wheel-set.active .varient-btn,
         .models-designs-varients .right-section .accordion-item-body-content .interior-colors .interior-variant.active .varient-btn,
         .models-designs-varients .right-section .accordion-item-body-content .interior-colors .body-color.active .varient-btn {
-            border: 5px solid #e5e5e5;
+            /* border: 5px solid #e5e5e5; */
+            background-color: #e5e5e5;
         }
 
         .models-designs-varients .right-section .accordion-item-body-content .interior-colors .varient-btn::before {
             content: '';
             transform: rotate(52deg) translateX(-50%);
             position: absolute;
-            bottom: -15px;
+            bottom: -11px;
             left: 46%;
             z-index: 0;
             opacity: 1;
@@ -198,10 +201,9 @@
         }
 
         .models-designs-varients .right-section .accordion-item-body-content .interior-colors .varient-btn img {
-            width: 35px;
-            height: 35px;
+            width: 40px;
+            height: 40px;
             border-radius: 35px;
-            object-fit: none
         }
     </style>
 
@@ -697,12 +699,10 @@
             $('#main-slider-slide04').addClass('is-active');
             $('#main-slider-slide04').addClass('is-visible');
 
-            $('#thumbnail-slider-slide03').addClass('is-prev');
             $('#thumbnail-slider-slide03').addClass('is-visible');
             $('#thumbnail-slider-slide04').addClass('is-active');
             $('#thumbnail-slider-slide04').addClass('is-visible');
             $('#thumbnail-slider-slide05').addClass('is-visible');
-            $('#thumbnail-slider-slide05').addClass('is-next');
         }
 
 
