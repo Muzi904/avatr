@@ -65,10 +65,10 @@
                     data: 'language',
                     name: 'language'
                 },
-                {
-                    data: 'nationality',
-                    name: 'nationality'
-                },
+                // {
+                //     data: 'nationality',
+                //     name: 'nationality'
+                // },
                 {
                     data: 'created_at',
                     name: 'created_at'

@@ -139,15 +139,13 @@ class EnquiryController extends Controller
                 ->addColumn('language', function ($data) {
                     return  ucfirst($data->language);
                 })
-                ->addColumn('nationality', function ($data) {
-                    return  ucfirst($data->nationality);
-                })
+
 
                 ->addColumn('created_at', function ($data) {
                     return  Carbon::parse($data->created_at)->format('d-m-Y h:i A');
                 })
                 ->addColumn('action', null)
-                ->rawColumns(['model', 'language', 'nationality', 'created_at', 'action'])
+                ->rawColumns(['model', 'language',  'created_at', 'action'])
                 ->make(true);
         }
 

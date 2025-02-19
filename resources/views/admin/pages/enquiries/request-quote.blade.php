@@ -23,7 +23,7 @@
                             <th>Phone Number</th>
                             <th>Model</th>
                             <th>Language</th>
-                            <th>Nationality</th>
+                            {{-- <th>Nationality</th> --}}
                             <th>Enq. Date</th>
                         </tr>
                     </thead>
