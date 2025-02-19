@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Exports\EnquiryExport;
 use App\Http\Controllers\Controller;
 use App\Models\Enquiry;
 use Carbon\Carbon;
@@ -9,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Yajra\DataTables\DataTables;
 use Illuminate\Support\Str;
+use Maatwebsite\Excel\Facades\Excel;
 
 class EnquiryController extends Controller
 {
@@ -190,8 +192,8 @@ class EnquiryController extends Controller
         Session::forget('is_confirmed');
     }
 
-    // public function export(Request $request)
-    // {
-    //     return Excel::download(new EnquiryExport($request), date('Y_m_d_H_i_s') . '_enquiries.xlsx');
-    // }
+    public function export(Request $request)
+    {
+        return Excel::download(new EnquiryExport($request), date('Y_m_d_H_i_s') . '_enquiries.xlsx');
+    }
 }
