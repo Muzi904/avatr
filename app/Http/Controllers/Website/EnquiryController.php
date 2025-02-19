@@ -113,7 +113,7 @@ class EnquiryController extends Controller
         $enquiry->model = $request->engine;
         $enquiry->phone_number = ($request->country_code ? $request->country_code : '') . $request->phone;
         $enquiry->language = $request->language;
-        $enquiry->nationality = $request->nationality;
+        // $enquiry->nationality = $request->nationality;
         // $enquiry->date = $request->date ? Carbon::parse($request->date)->format('Y-m-d') : '';
         $enquiry->message = $request->message;
         $enquiry->save();

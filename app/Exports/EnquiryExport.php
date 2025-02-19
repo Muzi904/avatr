@@ -38,23 +38,92 @@ class EnquiryExport implements FromCollection, WithHeadings, WithStrictNullCompa
         $output = [];
 
         foreach ($data as $key => $value) {
+            if ($request->type == 'invitation') {
+                $output[] = [
+                    $key + 1,
+                    $value->enq_no,
+                    // $value->type ? ucfirst($value->type) : '',
+                    // $value->model ? ucfirst($value->model) : '',
+                    $value->name,
+                    // $value->email,
+                    $value->phone_number,
+                    // $value->language ? ucfirst($value->language) : '',
+                    // $value->nationality ? ucfirst($value->nationality) : '',
+                    // $value->subject,
+                    // $value->message,
+                    // $value->date ? Carbon::parse($value->date)->format('d/m/Y') : '',
+                    $value->created_at ? Carbon::parse($value->created_at)->format('d/m/Y h:i A') : '',
 
-            $output[] = [
-                $key + 1,
-                $value->enq_no,
-                $value->type ? ucfirst($value->type) : '',
-                $value->model ? ucfirst($value->model) : '',
-                $value->name,
-                $value->email,
-                $value->phone_number,
-                $value->language ? ucfirst($value->language) : '',
-                $value->nationality ? ucfirst($value->nationality) : '',
-                $value->subject,
-                $value->message,
-                $value->date ? Carbon::parse($value->date)->format('d/m/Y') : '',
-                $value->created_at ? Carbon::parse($value->created_at)->format('d/m/Y h:i A') : '',
+                ];
+            } elseif ($request->type == 'test-drive') {
+                $output[] = [
+                    $key + 1,
+                    $value->enq_no,
+                    // $value->type ? ucfirst($value->type) : '',
+                    $value->model ? ucfirst($value->model) : '',
+                    $value->name,
+                    $value->email,
+                    $value->phone_number,
+                    // $value->language ? ucfirst($value->language) : '',
+                    // $value->nationality ? ucfirst($value->nationality) : '',
+                    // $value->subject,
+                    $value->message,
+                    $value->date ? Carbon::parse($value->date)->format('d/m/Y') : '',
+                    $value->created_at ? Carbon::parse($value->created_at)->format('d/m/Y h:i A') : '',
 
-            ];
+                ];
+            } elseif ($request->type == 'contact') {
+                $output[] = [
+                    $key + 1,
+                    $value->enq_no,
+                    // $value->type ? ucfirst($value->type) : '',
+                    // $value->model ? ucfirst($value->model) : '',
+                    $value->name,
+                    $value->email,
+                    $value->phone_number,
+                    // $value->language ? ucfirst($value->language) : '',
+                    // $value->nationality ? ucfirst($value->nationality) : '',
+                    $value->subject,
+                    $value->message,
+                    // $value->date ? Carbon::parse($value->date)->format('d/m/Y') : '',
+                    $value->created_at ? Carbon::parse($value->created_at)->format('d/m/Y h:i A') : '',
+
+                ];
+            } elseif ($request->type == 'request-quote') {
+                $output[] = [
+                    $key + 1,
+                    $value->enq_no,
+                    // $value->type ? ucfirst($value->type) : '',
+                    $value->model ? ucfirst($value->model) : '',
+                    $value->name,
+                    $value->email,
+                    $value->phone_number,
+                    $value->language ? ucfirst($value->language) : '',
+                    // $value->nationality ? ucfirst($value->nationality) : '',
+                    // $value->subject,
+                    $value->message,
+                    // $value->date ? Carbon::parse($value->date)->format('d/m/Y') : '',
+                    $value->created_at ? Carbon::parse($value->created_at)->format('d/m/Y h:i A') : '',
+
+                ];
+            } else {
+                $output[] = [
+                    $key + 1,
+                    $value->enq_no,
+                    $value->type ? ucfirst($value->type) : '',
+                    $value->model ? ucfirst($value->model) : '',
+                    $value->name,
+                    $value->email,
+                    $value->phone_number,
+                    $value->language ? ucfirst($value->language) : '',
+                    // $value->nationality ? ucfirst($value->nationality) : '',
+                    $value->subject,
+                    $value->message,
+                    $value->date ? Carbon::parse($value->date)->format('d/m/Y') : '',
+                    $value->created_at ? Carbon::parse($value->created_at)->format('d/m/Y h:i A') : '',
+
+                ];
+            }
         }
 
         return collect($output);
@@ -62,21 +131,89 @@ class EnquiryExport implements FromCollection, WithHeadings, WithStrictNullCompa
 
     public function headings(): array
     {
-        return [
-            'SL.NO',
-            'ENQ. NO',
-            'TYPE',
-            'MODEL',
-            'NAME',
-            'EMAIL',
-            'PHONE NUMBER',
-            'LANGUAGE',
-            'NATIONALITY',
-            'SUBJECT',
-            'MESSAGE',
-            'TESTDRIVE DATE',
-            'CREATED ON'
-        ];
+        $request = $this->request;
+
+        if ($request->type == 'invitation') {
+            return [
+                'SL.NO',
+                'ENQ. NO',
+                // 'TYPE',
+                // 'MODEL',
+                'NAME',
+                // 'EMAIL',
+                'PHONE NUMBER',
+                // 'LANGUAGE',
+                // 'NATIONALITY',
+                // 'SUBJECT',
+                // 'MESSAGE',
+                // 'TESTDRIVE DATE',
+                'CREATED ON'
+            ];
+        } elseif ($request->type == 'test-drive') {
+            return [
+                'SL.NO',
+                'ENQ. NO',
+                // 'TYPE',
+                'MODEL',
+                'NAME',
+                'EMAIL',
+                'PHONE NUMBER',
+                // 'LANGUAGE',
+                // 'NATIONALITY',
+                // 'SUBJECT',
+                'MESSAGE',
+                'TESTDRIVE DATE',
+                'CREATED ON'
+            ];
+        } elseif ($request->type == 'contact') {
+            return [
+                'SL.NO',
+                'ENQ. NO',
+                // 'TYPE',
+                // 'MODEL',
+                'NAME',
+                'EMAIL',
+                'PHONE NUMBER',
+                // 'LANGUAGE',
+                // 'NATIONALITY',
+                'SUBJECT',
+                'MESSAGE',
+                // 'TESTDRIVE DATE',
+                'CREATED ON'
+            ];
+        } elseif ($request->type == 'request-quote') {
+            return [
+                'SL.NO',
+                'ENQ. NO',
+                // 'TYPE',
+                'MODEL',
+                'NAME',
+                'EMAIL',
+                'PHONE NUMBER',
+                'LANGUAGE',
+                // 'NATIONALITY',
+                // 'SUBJECT',
+                'MESSAGE',
+                // 'TESTDRIVE DATE',
+                'CREATED ON'
+            ];
+        } else {
+            return [
+                'SL.NO',
+                'ENQ. NO',
+                'TYPE',
+                'MODEL',
+                'NAME',
+                'EMAIL',
+                'PHONE NUMBER',
+                'LANGUAGE',
+                // 'NATIONALITY',
+                'SUBJECT',
+                'MESSAGE',
+                'TESTDRIVE DATE',
+                'CREATED ON'
+            ];
+        }
     }
 
     public function registerEvents(): array
