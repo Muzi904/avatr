@@ -9,7 +9,7 @@
             <div class="card-header  d-flex">
                 <div class="justify-content-end">
                     <button type="button" class="btn btn-primary m-2" id="searchModal">Search </button>
-                    {{-- <button type="submit" class="btn btn-info m-2" form="export-form">Export</button> --}}
+                    <button type="submit" class="btn btn-info m-2" form="export-form">Export</button>
                 </div>
             </div>
             <div class="table-responsive text-nowrap">
@@ -85,13 +85,13 @@
 
     {{-- export --}}
 
-    {{-- <form action="{{ route('admin.enquiry.export') }}" method="post" id="export-form">
-        @csrf --}}
+    <form action="{{ route('admin.enquiry.export') }}" method="post" id="export-form">
+        @csrf
 
-    <input type="hidden" name="from_date" id="from_date_export">
-    <input type="hidden" name="to_date" id="to_date_export">
-    <input type="hidden" name="is_confirmed" id="is_confirmed_export">
-    {{-- </form> --}}
+        <input type="hidden" name="from_date" id="from_date_export">
+        <input type="hidden" name="to_date" id="to_date_export">
+        {{-- <input type="hidden" name="is_confirmed" id="is_confirmed_export"> --}}
+    </form>
 @endsection
 @push('scripts')
     @include('admin.scripts.enquiry_js')
