@@ -54,8 +54,8 @@
             flex-direction: column;
             gap: 35px;
             /* position: sticky;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <<<<<<< HEAD
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        top: 0; */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <<<<<<< HEAD
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        top: 0; */
             =======top: 0;
             */>>>>>>>999b73da23518dee5c5564df90976179acd2e7f2
         }
@@ -278,9 +278,9 @@
                                 <div class="accordion-item-body">
                                     <div class="accordion-item-body-content">
                                         <div class="drivetrain-fields">
-                                            <button class="active">Luxury – RWD</button>
-                                            <button>Performance – AWD</button>
-                                            <button>Premium – AWD</button>
+                                            <button data-trim="trim1" class="active">Luxury – RWD</button>
+                                            <button data-trim="trim2">Performance – AWD</button>
+                                            <button data-trim="trim3">Premium – AWD</button>
                                         </div>
                                     </div>
                                 </div>
@@ -600,6 +600,14 @@
                 "{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-D/wheel3.webp') }}"
             ],
         };
+
+
+        document.querySelectorAll("[data-trim]").forEach(button => {
+            button.addEventListener("click", function() {
+                document.querySelectorAll("[data-trim]").forEach(btn => btn.classList.remove("active"));
+                this.classList.add("active");
+            });
+        });
 
         document.querySelectorAll("[data-color]").forEach(element => {
             element.addEventListener("click", function() {
