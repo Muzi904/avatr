@@ -6,6 +6,14 @@
             margin-bottom: 25px
         }
 
+        #thumbnail-slider .splide__list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 15px;
+            transform: translateX(0) !important;
+        }
+
         .models-designs-varients #main-slider .splide__list {
             /* height: 60vh !important; */
         }
@@ -21,9 +29,19 @@
 
         }
 
+        .models-designs-varients #thumbnail-slider .splide__list .splide__slide .body {
+            position: relative;
+            top: -30%;
+        }
+
+        .models-designs-varients #main-slider .splide__list .splide__slide .body {
+            position: relative;
+            top: -27%;
+        }
+
         .models-designs-varients #thumbnail-slider .splide__list .splide__slide .wheel {
             position: absolute;
-            bottom: -13%;
+            bottom: -39%;
         }
 
         .models-designs-varients #main-slider .splide__list .splide__slide .wheel {
@@ -36,7 +54,10 @@
             flex-direction: column;
             gap: 35px;
             /* position: sticky;
-                                                                                                                                                                                                                                                                                                                                                                                        top: 0; */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <<<<<<< HEAD
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        top: 0; */
+            =======top: 0;
+            */>>>>>>>999b73da23518dee5c5564df90976179acd2e7f2
         }
 
         .models-designs-varients .right-section img {
@@ -148,7 +169,9 @@
             margin-bottom: 10px;
         }
 
-        .models-designs-varients .right-section .accordion-item-body-content .interior-colors .varient-btn.active {
+        .models-designs-varients .right-section .accordion-item-body-content .interior-colors .wheel-set.active .varient-btn,
+        .models-designs-varients .right-section .accordion-item-body-content .interior-colors .interior-variant.active .varient-btn,
+        .models-designs-varients .right-section .accordion-item-body-content .interior-colors .body-color.active .varient-btn {
             border: 5px solid #e5e5e5;
         }
 
@@ -168,7 +191,9 @@
             opacity: 0;
         }
 
-        .models-designs-varients .right-section .accordion-item-body-content .interior-colors .varient-btn.active::before {
+        .models-designs-varients .right-section .accordion-item-body-content .interior-colors .wheel-set.active .varient-btn::before,
+        .models-designs-varients .right-section .accordion-item-body-content .interior-colors .interior-variant.active .varient-btn::before,
+        .models-designs-varients .right-section .accordion-item-body-content .interior-colors .body-color.active .varient-btn::before {
             opacity: 1;
         }
 
@@ -188,37 +213,22 @@
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide">
-                                    <img class="w-100 body"
-                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/glossy-grey/car1.webp') }}"
-                                        alt="Slide 1">
-                                    <img class="w-100 wheel"
-                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-A/wheel1.webp') }}"
-                                        alt="Slide 1">
+                                    <img class="w-100 body" id="main-main-body" src="" alt="Slide 1">
+                                    <img class="w-100 wheel" id="main-alloy" src="" alt="Slide 1">
                                 </li>
                                 <li class="splide__slide">
-                                    <img class="w-100 body"
-                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/glossy-grey/car2.webp') }}"
-                                        alt="Slide 2">
-                                    <img class="w-100 wheel"
-                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-A/wheel2.webp') }}"
-                                        alt="Slide 2">
+                                    <img class="w-100 body" id="front-body" src="" alt="Slide 2">
+                                    <img class="w-100 wheel" id="front-alloy" src="" alt="Slide 2">
                                 </li>
                                 <li class="splide__slide">
-                                    <img class="w-100 body"
-                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/glossy-grey/car3.webp') }}"
-                                        alt="Slide 3">
-                                    <img class="w-100 wheel"
-                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-A/wheel3.webp') }}"
-                                        alt="Slide 3">
+                                    <img class="w-100 body" id="back-body" src="" alt="Slide 3">
+                                    <img class="w-100 wheel" id="back-alloy" src="" alt="Slide 3">
                                 </li>
-                                <li class="splide__slide"><img class="w-100"
-                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/interior/red/interior1.webp') }}"
+                                <li class="splide__slide"><img class="w-100" id="interior-front" src=""
                                         alt="Slide 4"></li>
-                                <li class="splide__slide"><img class="w-100"
-                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/interior/red/interior2.webp') }}"
+                                <li class="splide__slide"><img class="w-100" id="interior-side" src=""
                                         alt="Slide 5"></li>
-                                <li class="splide__slide"><img class="w-100"
-                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/interior/red/interior3.webp') }}"
+                                <li class="splide__slide"><img class="w-100" id="interior-back" src=""
                                         alt="Slide 6"></li>
                             </ul>
                         </div>
@@ -228,37 +238,22 @@
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide">
-                                    <img class="w-100 body"
-                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/glossy-grey/car1.webp') }}"
-                                        alt="thumbnail 1">
-                                    <img class="w-100 wheel"
-                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-A/wheel1.webp') }}"
-                                        alt="thumbnail 1">
+                                    <img class="w-100 body" id="main-thumb-body" src="" alt="thumbnail 1">
+                                    <img class="w-100 wheel" id="main-thumb-alloy" src="" alt="thumbnail 1">
                                 </li>
                                 <li class="splide__slide">
-                                    <img class="w-100 body"
-                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/glossy-grey/car2.webp') }}"
-                                        alt="Thumbnail 2">
-                                    <img class="w-100 wheel"
-                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-A/wheel2.webp') }}"
-                                        alt="Thumbnail 2">
+                                    <img class="w-100 body" id="front-thumb-body" src="" alt="Thumbnail 2">
+                                    <img class="w-100 wheel" id="front-thumb-alloy" src="" alt="Thumbnail 2">
                                 </li>
                                 <li class="splide__slide">
-                                    <img class="w-100 body"
-                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/glossy-grey/car3.webp') }}"
-                                        alt="Thumbnail 3">
-                                    <img class="w-100 wheel"
-                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-A/wheel3.webp') }}"
-                                        alt="Thumbnail 3">
+                                    <img class="w-100 body" id="back-thumb-body" src="" alt="Thumbnail 3">
+                                    <img class="w-100 wheel" id="back-thumb-alloy" src="" alt="Thumbnail 3">
                                 </li>
-                                <li class="splide__slide"><img class="w-100"
-                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/interior/red/interior1.webp') }}"
+                                <li class="splide__slide"><img class="w-100" id="interior-thumb-front" src=""
                                         alt="Thumbnail 4"></li>
-                                <li class="splide__slide"><img class="w-100"
-                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/interior/red/interior2.webp') }}"
+                                <li class="splide__slide"><img class="w-100" id="interior-thumb-side" src=""
                                         alt="Thumbnail 4"></li>
-                                <li class="splide__slide"><img class="w-100"
-                                        src="{{ asset('website/images/home/color-variants/models-details/avatr11/interior/red/interior3.webp') }}"
+                                <li class="splide__slide"><img class="w-100" id="interior-thumb-back" src=""
                                         alt="Thumbnail 4"></li>
                             </ul>
                         </div>
@@ -297,8 +292,8 @@
                                 <div class="accordion-item-body">
                                     <div class="accordion-item-body-content">
                                         <div class="interior-colors">
-                                            <div>
-                                                <button class="varient-btn active">
+                                            <div class="body-color active" data-color="glossy-grey">
+                                                <button class="varient-btn ">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/color-img4.png') }}"
                                                         alt="">
                                                 </button>
@@ -306,7 +301,7 @@
                                                     <p>Glossy Grey</p>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div class="body-color" data-color="glossy-black">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/color-img5.png') }}"
                                                         alt="">
@@ -315,7 +310,7 @@
                                                     <p>Glossy Black</p>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div class="body-color" data-color="aqua">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/color-img2.png') }}"
                                                         alt="">
@@ -324,7 +319,7 @@
                                                     <p>Aqua</p>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div class="body-color" data-color="liquid-caramel">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/color-img1.png') }}"
                                                         alt="">
@@ -334,7 +329,7 @@
                                                 </div>
                                             </div>
 
-                                            <div>
+                                            <div class="body-color" data-color="matte-white">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/color-img3.png') }}"
                                                         alt="">
@@ -343,7 +338,7 @@
                                                     <p>Matte White</p>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div class="body-color" data-color="matte-grey">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/color-img6.png') }}"
                                                         alt="">
@@ -365,8 +360,8 @@
                                 <div class="accordion-item-body">
                                     <div class="accordion-item-body-content">
                                         <div class="interior-colors">
-                                            <div>
-                                                <button class="varient-btn active">
+                                            <div class="interior-variant active" data-interior="nappa-red">
+                                                <button class="varient-btn ">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/interior/color-img-1.svg') }}"
                                                         alt="">
                                                 </button>
@@ -374,7 +369,7 @@
                                                     <p>Nappa Red</p>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div class="interior-variant" data-interior="misty-purple">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/interior/color-img-2.svg') }}"
                                                         alt="">
@@ -383,7 +378,7 @@
                                                     <p>Misty Purple</p>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div class="interior-variant" data-interior="nappa-black">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/interior/color-img-3.svg') }}"
                                                         alt="">
@@ -392,7 +387,7 @@
                                                     <p>Nappa Black</p>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div class="interior-variant" data-interior="nappa-grey">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/interior/color-img-4.svg') }}"
                                                         alt="">
@@ -414,7 +409,7 @@
                                 <div class="accordion-item-body">
                                     <div class="accordion-item-body-content">
                                         <div class="interior-colors">
-                                            <div>
+                                            <div class="wheel-set active" data-alloy="set-A">
                                                 <button class="varient-btn active">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/wheel/wheel-1.svg') }}"
                                                         alt="">
@@ -423,7 +418,7 @@
                                                     <p>Wheel Set A</p>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div class="wheel-set" data-alloy="set-B">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/wheel/wheel-2.svg') }}"
                                                         alt="">
@@ -432,7 +427,7 @@
                                                     <p>Wheel Set B</p>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div class="wheel-set" data-alloy="set-C">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/wheel/wheel-3.svg') }}"
                                                         alt="">
@@ -441,7 +436,7 @@
                                                     <p>Wheel Set C</p>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div class="wheel-set" data-alloy="set-D">
                                                 <button class="varient-btn">
                                                     <img src="{{ asset('website/images/home/color-variants/avartr11/wheel/wheel-4.svg') }}"
                                                         alt="">
@@ -462,75 +457,291 @@
             </div>
         </div>
     </section>
-
-
-
-
-    @push('scripts')
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var main = new Splide('#main-slider', {
-                    type: 'fade',
-                    heightRatio: 0.5,
-                    pagination: false,
-                    arrows: false,
-                    cover: true,
-                });
-
-                var thumbnails = new Splide('#thumbnail-slider', {
-                    rewind: true,
-                    // fixedWidth: '25%',
-                    // fixedHeight: 95,
-                    heightRatio: 0.15,
-                    isNavigation: true,
-                    gap: 7,
-                    focus: 'center',
-                    pagination: false,
-                    cover: true,
-                    perPage: 4,
-                    dragMinThreshold: {
-                        mouse: 4,
-                        touch: 10,
-                    },
-                    breakpoints: {
-                        640: {
-                            fixedWidth: '25%',
-                            fixedHeight: 50,
-                            perPage: 4,
-                        },
-                    },
-                });
-
-                main.sync(thumbnails);
-                main.mount();
-                thumbnails.mount();
-            });
-        </script>
-
-        <script>
-            const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
-
-            accordionItemHeaders.forEach(accordionItemHeader => {
-                accordionItemHeader.addEventListener("click", event => {
-                    // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
-                    // const currentlyActiveAccordionItemHeader = document.querySelector(
-                    //     ".accordion-item-header.active");
-                    // if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !==
-                    //     accordionItemHeader) {
-                    //     currentlyActiveAccordionItemHeader.classList.toggle("active");
-                    //     currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
-                    // }
-
-                    accordionItemHeader.classList.toggle("active");
-                    const accordionItemBody = accordionItemHeader.nextElementSibling;
-                    if (accordionItemHeader.classList.contains("active")) {
-                        accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
-                    } else {
-                        accordionItemBody.style.maxHeight = 0;
-                    }
-
-                });
-            });
-        </script>
-    @endpush
 @endsection
+
+@push('scripts')
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var main = new Splide('#main-slider', {
+                type: 'fade',
+                heightRatio: 0.5,
+                pagination: false,
+                arrows: false,
+                cover: true,
+            });
+
+            var thumbnails = new Splide('#thumbnail-slider', {
+                rewind: true,
+                // fixedWidth: '25%',
+                // fixedHeight: 95,
+                arrows: false,
+                heightRatio: 0.15,
+                fixedWidth: '100%',
+                isNavigation: true,
+                gap: 7,
+                focus: 'center',
+                pagination: false,
+                cover: true,
+                perPage: 3,
+                dragMinThreshold: {
+                    mouse: 4,
+                    touch: 10,
+                },
+                breakpoints: {
+                    640: {
+                        fixedWidth: '25%',
+                        fixedHeight: 50,
+                        perPage: 4,
+                    },
+                },
+            });
+
+            main.sync(thumbnails);
+            main.mount();
+            thumbnails.mount();
+        });
+    </script>
+
+    <script>
+        const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+        accordionItemHeaders.forEach(accordionItemHeader => {
+            accordionItemHeader.addEventListener("click", event => {
+
+                accordionItemHeader.classList.toggle("active");
+                const accordionItemBody = accordionItemHeader.nextElementSibling;
+                if (accordionItemHeader.classList.contains("active")) {
+                    accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+                } else {
+                    accordionItemBody.style.maxHeight = 0;
+                }
+
+            });
+        });
+    </script>
+
+    <script>
+        let colors = {
+            'glossy-grey': [
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/glossy-grey/car1.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/glossy-grey/car2.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/glossy-grey/car3.webp') }}"
+            ],
+            'glossy-black': [
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/glossy-black/car1.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/glossy-black/car2.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/glossy-black/car3.webp') }}"
+            ],
+            'aqua': [
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/aqua/car1.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/aqua/car2.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/aqua/car3.webp') }}"
+            ],
+            'liquid-caramel': [
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/liquid-caramel/car1.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/liquid-caramel/car2.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/liquid-caramel/car3.webp') }}"
+            ],
+            'matte-white': [
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/matte-white/car1.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/matte-white/car2.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/matte-white/car3.webp') }}"
+            ],
+            'matte-grey': [
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/matte-grey/car1.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/matte-grey/car2.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/exterior/matte-grey/car3.webp') }}"
+            ],
+        };
+
+        let interiors = {
+            'nappa-red': [
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/interior/red/interior1.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/interior/red/interior2.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/interior/red/interior3.webp') }}",
+            ],
+            'misty-purple': [
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/interior/purple/interior1.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/interior/purple/interior2.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/interior/purple/interior3.webp') }}",
+            ],
+            'nappa-black': [
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/interior/black/interior1.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/interior/black/interior2.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/interior/black/interior3.webp') }}",
+            ],
+            'nappa-grey': [
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/interior/grey/interior1.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/interior/grey/interior2.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/interior/grey/interior3.webp') }}",
+            ],
+
+        };
+
+        let alloys = {
+            'set-A': [
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-A/wheel1.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-A/wheel2.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-A/wheel3.webp') }}"
+            ],
+            'set-B': [
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-B/wheel1.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-B/wheel2.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-B/wheel3.webp') }}"
+            ],
+            'set-C': [
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-C/wheel1.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-C/wheel2.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-C/wheel3.webp') }}"
+            ],
+            'set-D': [
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-D/wheel1.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-D/wheel2.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/wheels/set-D/wheel3.webp') }}"
+            ],
+        };
+
+        document.querySelectorAll("[data-color]").forEach(element => {
+            element.addEventListener("click", function() {
+                const color = this.getAttribute("data-color");
+                exteriorChange(color);
+                document.querySelectorAll("[data-color]").forEach(btn => {
+                    btn.classList.remove("active");
+                });
+                this.classList.add("active");
+            });
+        });
+
+        function exteriorChange(color) {
+            $("#thumbnail-slider-list li, #main-slider-list li").removeClass("is-active");
+            $('#main-slider-slide01, #thumbnail-slider-slide01').addClass('is-active');
+            $('#main-slider-slide02, #thumbnail-slider-slide02').addClass('is-next');
+            $('#main-slider-slide04, #thumbnail-slider-slide04').removeClass('is-active');
+            $('#thumbnail-slider-list').css('transform', 'translateX(0px)');
+
+            var mainBody = colors[color][0];
+            var frontBody = colors[color][1];
+            var backBody = colors[color][2];
+
+            // main  image
+            $('#main-main-body').attr('src', mainBody);
+            $('#main-main-body').css('display', 'block');
+            $('#main-thumb-body').attr('src', mainBody);
+            $('#main-thumb-body').css('display', 'block');
+
+            // frontside image
+            $('#front-body').attr('src', frontBody);
+            $('#front-body').css('display', 'block');
+            $('#front-thumb-body').attr('src', frontBody);
+            $('#front-thumb-body').css('display', 'block');
+
+            // backside image
+            $('#back-body').attr('src', backBody);
+            $('#back-body').css('display', 'block');
+            $('#back-thumb-body').attr('src', backBody);
+            $('#back-thumb-body').css('display', 'block');
+        }
+
+        document.querySelectorAll("[data-interior]").forEach(element => {
+            element.addEventListener("click", function() {
+                const color = this.getAttribute("data-interior");
+                interiorChange(color);
+                document.querySelectorAll("[data-interior]").forEach(btn => {
+                    btn.classList.remove("active");
+                });
+                this.classList.add("active");
+            });
+        });
+
+        function interiorChange(color) {
+            $("#main-slider").find("li").removeClass("is-active");
+            $("#main-slider").find("li").removeClass("is-visible");
+            $("#main-slider").find("li").removeClass("is-prev");
+            $("#main-slider").find("li").removeClass("is-next");
+
+            $("#thumbnail-slider-list").find("li").removeClass("is-active");
+            $("#thumbnail-slider-list").find("li").removeClass("is-prev");
+            $("#thumbnail-slider-list").find("li").removeClass("is-next");
+            $('#thumbnail-slider-list').css('transform', 'translateX(-185.625px)');
+
+            var front = interiors[color][0];
+            var side = interiors[color][1];
+            var back = interiors[color][2];
+            $('#interior-front').attr('src', front);
+            $('#interior-front').css('display', 'block');
+            // thumb
+            $('#interior-thumb-front').attr('src', front);
+            $('#interior-thumb-front').css('display', 'block');
+
+            $('#interior-side').attr('src', side);
+            $('#interior-side').css('display', 'block');
+            // thumb
+            $('#interior-thumb-side').attr('src', side);
+            $('#interior-thumb-side').css('display', 'block');
+
+            $('#interior-back').attr('src', back);
+            $('#interior-back').css('display', 'block');
+            // thumb
+            $('#interior-thumb-back').attr('src', back);
+            $('#interior-thumb-back').css('display', 'block');
+
+            // slider 
+            $('#main-slider-slide04').addClass('is-active');
+            $('#main-slider-slide04').addClass('is-visible');
+
+            $('#thumbnail-slider-slide03').addClass('is-prev');
+            $('#thumbnail-slider-slide03').addClass('is-visible');
+            $('#thumbnail-slider-slide04').addClass('is-active');
+            $('#thumbnail-slider-slide04').addClass('is-visible');
+            $('#thumbnail-slider-slide05').addClass('is-visible');
+            $('#thumbnail-slider-slide05').addClass('is-next');
+        }
+
+
+        document.querySelectorAll("[data-alloy]").forEach(element => {
+            element.addEventListener("click", function() {
+                const type = this.getAttribute("data-alloy");
+                alloyChange(type);
+                document.querySelectorAll("[data-alloy]").forEach(btn => {
+                    btn.classList.remove("active");
+                });
+                this.classList.add("active");
+            });
+        });
+
+
+        function alloyChange(type) {
+            $("#main-slider").find("li").removeClass("is-active");
+            $("#thumbnail-slider-list").find("li").removeClass("is-active");
+            $('#main-slider-slide01').addClass('is-active');
+            $('#thumbnail-slider-slide01').addClass('is-active');
+            $('#main-slider-slide04').removeClass('is-active');
+            $('#thumbnail-slider-slide04').removeClass('is-active');
+            $('#thumbnail-slider-list').css('transform', 'translateX(0)');
+
+            // console.log(alloys[type][0]);
+            var mainAlloy = alloys[type][0];
+            var frontAlloy = alloys[type][1];
+            var backAlloy = alloys[type][2];
+
+            $('#main-alloy').attr('src', mainAlloy);
+            // thumb
+            $('#main-thumb-alloy').attr('src', mainAlloy);
+
+            $('#front-alloy').attr('src', frontAlloy);
+            // thumb
+            $('#front-thumb-alloy').attr('src', frontAlloy);
+
+            $('#back-alloy').attr('src', backAlloy);
+            // thumb
+            $('#back-thumb-alloy').attr('src', backAlloy);
+
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            exteriorChange('glossy-grey');
+            interiorChange('nappa-red');
+            alloyChange('set-A');
+        });
+    </script>
+@endpush
