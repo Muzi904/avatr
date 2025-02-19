@@ -27,9 +27,9 @@ class EnquiryController extends Controller
                 $data = $data->whereDate('enquiries.created_at', '<=', $request->to_date);
                 Session::put('to_date', $request->to_date);
             }
-            if ($request->is_confirmed) {
-                $data = $data->where('is_confirmed', 'LIKE', '%' . $request->is_confirmed . '%');
-                Session::put('is_confirmed', $request->is_confirmed);
+            if ($request->type) {
+                $data = $data->where('type', 'LIKE', '%' . $request->type . '%');
+                Session::put('type', $request->type);
             }
             $data = $data->orderBy('id', 'desc');
             return DataTables::of($data)
