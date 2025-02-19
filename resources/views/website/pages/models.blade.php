@@ -36,7 +36,7 @@
             flex-direction: column;
             gap: 35px;
             /* position: sticky;
-                                                                                                                                                                                                                                                                                                                                                                                top: 0; */
+                                                                                                                                                                                                                                                                                                                                                                                        top: 0; */
         }
 
         .models-designs-varients .right-section img {
