@@ -5,7 +5,7 @@
         $slug = last(request()->segments());
     @endphp
 
-    @if (!isset($slug))
+    @if (!$slug)
         <title>AVATR Qatar - Al Attiya Motors | Luxury Electric Vehicles</title>
         <meta name="title" content="AVATR Qatar - Al Attiya Motors" />
         <meta name="description"
@@ -76,5 +76,16 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LL0JQQ81P3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LL0JQQ81P3');
+    </script>
 </head>
