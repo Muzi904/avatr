@@ -20,6 +20,7 @@ Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/test-drive', [PageController::class, 'testDrive'])->name('test.drive');
 Route::get('/car-details', [PageController::class, 'models'])->name(name: 'models');
+Route::get('/car-details2', [PageController::class, 'models2'])->name(name: 'models2');
 Route::get('/showrooms', action: [PageController::class, 'showrooms'])->name(name: 'showrooms');
 Route::get('/request-a-quote', [PageController::class, 'requestQuote'])->name('request.quote');
 
