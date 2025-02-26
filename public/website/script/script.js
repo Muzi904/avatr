@@ -79,7 +79,7 @@ $(document).ready(function () {
 
 // tabs
 document.querySelectorAll(".tab-btn").forEach((tabBtn) => {
-    tabBtn.addEventListener("mouseover", () => {
+    tabBtn.addEventListener("click", () => {
         const tabId = tabBtn.getAttribute("data-tab"); // Get the tab panel ID
         const tabImageId = tabBtn.getAttribute("data-image"); // Get the corresponding image ID
 
@@ -197,21 +197,21 @@ const swiperQuiz = new Swiper(".animeslide", {
 });
 
 // iamge scroll fulll width
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-const container = document.querySelector(".next-section");
+// const container = document.querySelector(".next-section");
 
-gsap.timeline({
-    scrollTrigger: {
-        trigger: container,
-        start: "top 60%", // Trigger when the top of the container reaches 60% of the viewport height
-        end: "bottom 20%", // End when the bottom reaches 20% of the viewport height
-        toggleActions: "restart none none reverse", // Adjust behavior when scrolling
-        scrub: true, // Syncs the animation with the scroll
-        // markers: true, // Show markers for debugging
-    },
-}).to(container, {
-    scale: 1.3,
-});
+// gsap.timeline({
+//     scrollTrigger: {
+//         trigger: container,
+//         start: "top 60%", // Trigger when the top of the container reaches 60% of the viewport height
+//         end: "bottom 20%", // End when the bottom reaches 20% of the viewport height
+//         toggleActions: "restart none none reverse", // Adjust behavior when scrolling
+//         scrub: true, // Syncs the animation with the scroll
+//         // markers: true, // Show markers for debugging
+//     },
+// }).to(container, {
+//     scale: 1.3,
+// });
 
 // overflow tabs
