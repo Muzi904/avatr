@@ -6,8 +6,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
-<script src="{{ asset('website/script/swiper.js') }}"></script>
 
+
+<script src="{{ asset('website/script/swiper.js') }}"></script>
 <script src="{{ asset('website/script/script.js') }}"></script>
 <script src="{{ asset('website/script/navbar.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
@@ -272,4 +273,156 @@
 
     // Call the function when the page loads
     window.onload = cleanUpUrl;
+</script>
+
+{{-- autoplay text  --}}
+<script>
+    let SwiperTop = new Swiper('.swiper--top', {
+        spaceBetween: 0,
+        centeredSlides: true,
+        speed: 30000,
+        loopedSlides: 1,
+        autoplay: {
+            delay: 1,
+        },
+        loop: true,
+        slidesPerView: 'auto',
+        allowTouchMove: false,
+        disableOnInteraction: true
+    });
+
+    let SwiperBottom = new Swiper('.swiper--bottom', {
+        spaceBetween: 0,
+        centeredSlides: true,
+        speed: 30000,
+        autoplay: {
+            delay: 1,
+            reverseDirection: true
+        },
+        loop: true,
+        loopedSlides: 1,
+        slidesPerView: 'auto',
+        allowTouchMove: false,
+        disableOnInteraction: true
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var swiper = new Swiper(".car-models", {
+            loop: true, // Enables infinite loop
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            speed: 800, // Transition speed
+        });
+    });
+</script>
+
+<script>
+    gsap.registerPlugin(TimelineMax);
+
+    const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+    const tabImages = document.querySelectorAll("[id^='tab-img']"); // Select all images
+    let currentIndex = 0;
+    const duration = 3; // Time each accordion stays open
+
+    tabImages.forEach((img, index) => {
+        img.style.display = index === 0 ? "block" : "none";
+    });
+
+    function toggleAccordion(index) {
+        const accordionItemHeader = accordionItemHeaders[index];
+        const accordionItemBody = accordionItemHeader.nextElementSibling;
+        const progressBar = accordionItemBody.querySelector(".service-line");
+        const targetImageId = accordionItemHeader.getAttribute("data-target");
+
+        // Close all other accordions and reset progress bars
+        accordionItemHeaders.forEach((header, i) => {
+            const body = header.nextElementSibling;
+            const bar = body.querySelector(".service-line");
+            if (i !== index) {
+                header.classList.remove("active");
+                body.style.maxHeight = 0;
+                gsap.set(bar, {
+                    width: "0%"
+                });
+            }
+        });
+
+        // Open the selected accordion
+        accordionItemHeader.classList.add("active");
+        accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+
+        // Reset and animate the progress bar
+        gsap.set(progressBar, {
+            width: "0%"
+        });
+        gsap.to(progressBar, {
+            width: "100%",
+            duration: duration,
+            ease: "linear"
+        });
+
+        // Change the displayed image
+        tabImages.forEach(img => img.style.display = "none"); // Hide all images
+        document.querySelector(targetImageId).style.display = "block"; // Show targeted image
+    }
+
+    // Autoplay function
+    function autoplayAccordion() {
+        gsap.to({}, {
+            duration: duration,
+            onComplete: () => {
+                toggleAccordion(currentIndex);
+                currentIndex = (currentIndex + 1) % accordionItemHeaders.length; // Loop back to first
+                autoplayAccordion();
+            }
+        });
+    }
+
+    // Initialize the first accordion and progress bar immediately
+    setTimeout(autoplayAccordion, 100);
+
+
+    // Allow manual click while keeping autoplay
+    accordionItemHeaders.forEach((header, index) => {
+        header.addEventListener("click", () => {
+            toggleAccordion(index);
+            currentIndex = index; // Update index in case user manually selects
+        });
+    });
+</script>
+
+
+<script>
+    $(function() {
+        // (Optional) Active an item if it has the class "is-active"	
+        $(".accordion > .accordion-item.is-active").children(".accordion-panel").slideDown();
+
+        $(".accordion > .accordion-item").click(function() {
+            // Cancel the siblings
+            $(this).siblings(".accordion-item").removeClass("is-active").children(".accordion-panel")
+                .slideUp();
+            // Toggle the item
+            $(this).toggleClass("is-active").children(".accordion-panel").slideToggle("ease-out");
+        });
+    });
+</script>
+
+<script>
+    document.getElementById('play_button').addEventListener('click', function() {
+        var video = document.getElementById('video');
+        video.play();
+        document.getElementById('play_button').classList.add('d-none')
+    })
+    document.getElementById('video').addEventListener('click', function() {
+        video.pause();
+        document.getElementById('play_button').classList.remove('d-none')
+    })
 </script>

@@ -1,102 +1,90 @@
 @extends('website.layouts.app')
 
 @section('content')
-    <section class="creative-fullpage--slider">
-        <div class="banner-horizental">
-            <div class="swiper swiper-container-h">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="slider-inner" data-swiper-parallax="100">
-                            <picture>
-                                <source srcset="{{ asset('website/images/avatr11/hero1.jpg') }}" media="(max-width: 768px)">
-                                <img src="{{ asset('website/images/avatr11/hero1.jpg') }}" alt="" loading="lazy">
-                            </picture>
-                            <div class="container">
-                                <div class="swiper-content" data-swiper-parallax="2000">
-                                    <div class="title-area">
-                                        <picture>
-                                            <source
-                                                srcset="https://static.avatr.com/pc-website/images/home3.0/mobile/logo-e11_en.png"
-                                                media="(max-width: 768px)"><img
-                                                src="https://static.avatr.com/pc-website/images/home3.0/pc/logo-e11_en.png"
-                                                alt="" class="w-100" loading="lazy">
-                                        </picture>
-                                    </div>
+    <section class="hero-car-details">
+        <picture>
+            <source srcset="{{ asset('website/images/avatr11/hero.webp') }}" media="(max-width: 768px)">
+            <img src="{{ asset('website/images/avatr11/hero.webp') }}" alt="" class="w-100" loading="lazy">
+        </picture>
+        <div class="container">
+            <div class="content">
+                <img src="{{ asset('website/images/avatr11/avatr11.svg') }}" alt="">
+                <p>The Futuristic Electric Luxury SUV
+                </p>
+                <a href="#" class="btn">Build and Buy</a>
+            </div>
+        </div>
 
-                                    <div class="creative-btn--wrap">
-                                        <a class="creative-slide--btn" role="button" href="#0">
-                                            <div class="creative-btn--label">
-                                                <div class="creative-btn__text">Get a Quote</div>
+    </section>
 
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="slider-inner" data-swiper-parallax="100">
-                            <picture>
-                                <source srcset="https://static.avatr.com/pc-website/images/svp11/v1/h5/KV-SVP11.jpg?v=2"
-                                    media="(max-width: 768px)"><img
-                                    src="https://static.avatr.com/pc-website/images/svp11/v1/pc/KV-SVP11.jpg?v=2"
-                                    alt="" class="BannerRc_head-image__327K8" loading="lazy">
-                            </picture>
-                            <div class="container">
-                                <div class="swiper-content" data-swiper-parallax="2000">
-                                    <div class="title-area">
-                                        <picture>
-                                            <source
-                                                srcset="https://static.avatr.com/pc-website/images/home3.0/mobile/logo-car12_en.png"
-                                                media="(max-width: 768px)"><img
-                                                src="https://static.avatr.com/pc-website/images/home3.0/pc/logo-car12_en.png"
-                                                alt="" class="HomeBanner_logo-car__1Hxv8" loading="lazy">
-                                        </picture>
-                                    </div>
-
-                                    <div class="creative-btn--wrap">
-                                        <a class="creative-slide--btn" role="button" href="#0">
-                                            <div class="creative-btn--label">
-                                                <div class="creative-btn__text">Get a Quote</div>
-
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
+    <section class="section-padding section-two">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-4">
+                    <h3>Futuristic Design
+                        with Pure Luxury </h3>
                 </div>
-                <div class="swiper-button-wrapper creative-button--wrapper">
-                    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide">
-                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            viewBox="0 0 24 24">
-                            <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="1.5" d="m10 17l5-5l-5-5" />
-                        </svg>
-                    </div>
-                    <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide">
+                <div class="col-md-8">
+                    <p class="mb-4">
+                        The AVATR 11 (“One One”) embodies future-forward design that seamlessly blends emotion with
+                        cutting-edge technology. From its flowing lines and nature-inspired colors to its intelligent
+                        driving systems and intuitive AVATR OS, every detail contributes to a smart electric vehicle that
+                        feels as luxurious as it looks. Designed to elevate the future of electric mobility, the AVATR 11
+                        sets a new standard in smart electric vehicles with advanced technology and stunning aesthetics,
+                        making it the perfect choice for electric vehicle enthusiasts in the UAE.
 
-                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            viewBox="0 0 24 24">
-                            <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="1.5" d="m14 7l-5 5l5 5" />
-                        </svg>
+                    </p>
+                </div>
+            </div>
+            <div class="tabs-container scrolltabs">
+                <!-- Tabs Content (Images) -->
+                <figure>
+                    <img class="w-100" src="{{ asset('website/images/avatr11/car1.webp') }}" alt="">
+                </figure>
+                <!-- Tabs (Text) -->
+                <div class="tabs justify-content-start">
+                    <button class="tab active" data-text-target="#tab1-text">Space Inspired</button>
+                    <button class="tab" data-text-target="#tab2-text">All Terrain Comfort</button>
+                    <button class="tab" data-text-target="#tab3-text">Intelligent Driving</button>
+                    <button class="tab" data-text-target="#tab4-text">Fast Charging</button>
+                </div>
+
+                <!-- Tabs Text Content -->
+                <div class="tab-content">
+                    <div id="tab1-text" class="content content-text active">
+                        With a space-inspired front design, stunning LED star-trail tail lights, and seats based on
+                        astronauts’ zero-gravity posture, the AVATR 11 SUV sets a new benchmark in electric vehicle design
+                        and smart mobility. Each detail reflects precision and elegance, creating a vehicle that is both
+                        futuristic and luxurious. The AVATR 11 combines cutting-edge technology with high-performance
+                        features, redefining the future of electric vehicles and smart electric mobility for a new era of
+                        driving.
+                    </div>
+                    <div id="tab2-text" class="content content-text">
+                        The AVATR 11’s refined chassis, featuring front double wishbone and rear five-link suspension,
+                        offers superior comfort across urban and suburban environments. With DriveONE iTRACK technology, the
+                        vehicle ensures millimeter-level torque adjustments, providing precise handling on even the most
+                        complex terrains. Advanced engineering and meticulous tuning deliver an incredibly smooth ride,
+                        whether you’re driving through Downtown Dubai or conquering the rugged landscapes of Jebel Jais. The
+                        AVATR 11 is designed to excel in both urban mobility and off-road performance, making it the perfect
+                        choice for electric vehicle enthusiasts in the UAE.
+                    </div>
+                    <div id="tab3-text" class="content content-text">
+                        Equipped with 34 sensors, including high-performance radar and 3D laser fusion detection, the AVATR
+                        11 delivers exceptional obstacle detection in any lighting condition. The intelligent driving
+                        assistance system provides partial self-driving capabilities, ensuring a seamless and stress-free
+                        driving experience across the UAE. Designed for smart mobility, the AVATR 11 offers cutting-edge
+                        technology for a safer and more intuitive driving experience, making it the perfect choice for those
+                        seeking advanced electric vehicles in the UAE.
+                    </div>
+                    <div id="tab4-text" class="content content-text">
+                        The AVATR 11 SUV offers an impressive range of up to 680 km, combined with high performance.
+                        Featuring built-in supercharging technology, the battery can reach 80% charge in just 35 minutes,
+                        ensuring quick recharges for extended journeys. With its remarkable driving range, the AVATR 11
+                        makes long-distance travel convenient and stress-free, redefining the future of electric mobility
+                        and smart electric vehicles for drivers in the UAE.
                     </div>
                 </div>
-                <div class="slider-pagination-area">
-                    <h5 class="slide-range one">01</h5>
-                    <!-- Swiper Progressbar Pagination -->
-                    <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal">
-                        <span class="swiper-pagination-progressbar-fill"></span>
-                    </div>
-                    <h5 class="slide-range three">02</h5>
-                </div>
+
             </div>
         </div>
     </section>
@@ -107,738 +95,308 @@
                 class="w-100" src="{{ asset('website/images/avatr11/img1.jpg') }}" alt=""
                 class="FirstTitle_section-bgm__2JYhD" loading="lazy">
         </picture>
-        <h2>
-            Across space and time
-        </h2>
-    </section>
-
-    <section class="section-two">
-        <div class="text mb-5">
-            <h2>Innovative design with future aesthetics
+        <div class="overlay">
+            <h2>
+                Luxury Redesigned: AVATR’s Next-Gen Electric Vehicle Excellence
             </h2>
-            <h6>Driving into a new future with unique innovative Inn design
-            </h6>
-        </div>
-        <div class="container">
-            <div class="tabs-container scrolltabs">
-                <!-- Tabs Content (Images) -->
-                <div class="tab-content">
-                    <div id="tab1-img" class="content active">
-                        <img class="w-100" src="{{ asset('website/images/avatr11/img2.jpg') }}" alt="">
-                    </div>
-                    <div id="tab2-img" class="content">
-                        <img class="w-100" src="{{ asset('website/images/avatr11/img3.jpg') }}" alt="">
-                    </div>
-                    <!--<div id="tab3-img" class="content">-->
-                    <!--    <img class="w-100" src="{{ asset('website/images/avatr11/img41.jpg') }}" alt="">-->
-                    <!--</div>-->
-                    <div id="tab4-img" class="content">
-                        <img class="w-100" src="{{ asset('website/images/avatr11/img5.jpg') }}" alt="">
-                    </div>
-                    <div id="tab5-img" class="content">
-                        <img class="w-100" src="{{ asset('website/images/avatr11/img6.jpg') }}" alt="">
-                    </div>
-                </div>
-
-                <!-- Tabs (Text) -->
-                <div class="tabs">
-                    <button class="tab active" data-target="#tab1-img" data-text-target="#tab1-text">Disc-wing front
-                        fascia</button>
-                    <button class="tab" data-target="#tab2-img" data-text-target="#tab2-text">Body with the golden
-                        ratio</button>
-                    <!--<button class="tab" data-target="#tab3-img" data-text-target="#tab3-text">The interactive HALO-->
-                    <!--    Screen</button> -->
-                    <button class="tab" data-target="#tab4-img" data-text-target="#tab4-text">Vertical fluid-type rear
-                        quarter win</button>
-                    <button class="tab" data-target="#tab5-img" data-text-target="#tab5-text">22-inch large
-                        wheels</button>
-                </div>
-
-                <!-- Tabs Text Content -->
-                <div class="tab-content">
-                    <div id="tab1-text" class="content content-text active">Inspired by spacecraft, it looks like a space
-                        traveler
-                        wandering around in a parallel world. The futuristic headlight design makes it look unique and
-                        confident.</div>
-                    <div id="tab2-text" class="content content-text">The seamlessly integrated body contour achieves an
-                        exceptionally
-                        pure athletic form.</div>
-                    <!--<div id="tab3-text" class="content content-text">More flexible scene expressions, allowing you to play-->
-                    <!--    with-->
-                    <!--    creativity and showcase your personality.</div> -->
-                    <div id="tab4-text" class="content content-text">The highly dynamic rear lines and fluidly sculpted
-                        rear quarter
-                        window design create a distinct sense of layering and unique identity. The sail-style active rear
-                        spoiler adjusts with speed, delivering an experience akin to “flying close to the ground.”</div>
-                    <div id="tab5-text" class="content content-text">A purer athletic stance, bold yet elegant, delivers a
-                        striking and
-                        sharp visual impression.</div>
-                </div>
-            </div>
-
+            <p class="text-center">Created to the golden ratio, the AVATR 11 SUV represents perfection at its finest,
+                combining futuristic
+                design
+                with cutting-edge electric vehicle technology. This smart electric vehicle is a testament to precision and
+                elegance, offering a truly luxurious driving experience with advanced features and exceptional performance,
+                setting a new standard in electric mobility and solidifying the AVATR 11 SUV as a leader in the world of
+                electric vehicles.</p>
         </div>
 
     </section>
 
-    <section class="section-three">
+    @include('website.pages/models')
+
+    <section class="section-two-avatr11">
+        <figure>
+            <img class="" src="{{ asset('website/images/avatr11/img2.webp') }}" alt="">
+        </figure>
         <div class="container">
-            <div class="heading">
-                <h2>Draw inspiration from nature and evoke inner resonance</h2>
-                <ul>
-                    <li>
-                        <span>Length</span>
-                        <h3>4895mm</h3>
+            <div class="column">
+                <div class="d-flex align-items-center gap-2 text-white mb-4">
+                    <img src="{{ asset('website/images/avatr11/avatr11-black.svg') }}" alt="">
+                    SPECS
+                </div>
+
+                <ul class="accordion">
+                    <li class="accordion-item">
+                        <h3 class="accordion-thumb">Overall Specs</h3>
+                        <div class="accordion-panel">
+                            <div class="container d-block">
+                                <div class="row py-2">
+                                    <p class="col-6"><span>Drive Type</span> <br>
+                                        Full Electric
+                                    </p>
+                                    <p class="col-6"><span>Torque in Nm</span> <br>
+                                        370 Rear / 280 Front
+                                    </p>
+                                </div>
+                                <div class="row py-2 my-1" style="background: rgba(255, 255, 255, .1)">
+                                    <p class="col-6"><span>Power in kW</span> <br>
+                                        230 Rear / 195 Front
+                                    </p>
+                                    <p class="col-6"><span>Power hp</span> <br>
+                                        370 Rear / 280 Front
+                                    </p>
+                                </div>
+                                <div class="row py-2">
+                                    <p class="col-6"><span>Drivetrain</span> <br>
+                                        All Wheel Drive
+                                    </p>
+                                    <p class="col-6"><span>Battery Capacity in kWh</span> <br>
+                                        116
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
                     </li>
-                    <li>
-                        <span>Width</span>
-                        <h3>1970mm</h3>
+
+                    <li class="accordion-item">
+                        <h3 class="accordion-thumb">Dimensions</h3>
+                        <div class="accordion-panel">
+                            <div class="container d-block">
+                                <div class="row py-2">
+                                    <p class="col-6"><span>L x W x H in mm</span> <br>
+                                        4880 x 1970 x 1601
+                                    </p>
+                                    <p class="col-6"><span>Wheelbase in mm</span> <br>
+                                        2975
+                                    </p>
+                                </div>
+                                <div class="row py-2 my-1" style="background: rgba(255, 255, 255, .1)">
+                                    <p class="col-6"><span>Vehicle Weight in kg</span> <br>
+                                        2425
+                                    </p>
+                                    <p class="col-6"><span>Number of Seats</span> <br>
+                                        5
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li>
-                        <span>Height</span>
-                        <h3>1601mm</h3>
+
+                    <li class="accordion-item">
+                        <h3 class="accordion-thumb">Powertrain</h3>
+                        <div class="accordion-panel">
+                            <div class="container d-block">
+                                <div class="row py-2">
+                                    <p class="col-6"><span>Power in kW</span> <br>
+                                        230 Rear / 195 Front
+                                    </p>
+                                    <p class="col-6"><span>Torque in Nm</span> <br>
+                                        370 Rear / 280 Front
+                                    </p>
+                                </div>
+                                <div class="row py-2 my-1" style="background: rgba(255, 255, 255, .1)">
+                                    <p class="col-6"><span>Maximum Output Power in kW</span> <br>
+                                        425
+                                    </p>
+                                    <p class="col-6"><span>Maximum Output Torque in Nm</span> <br>
+                                        650
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li>
-                        <span>Wheelbase</span>
-                        <h3>2975mm</h3>
+                    <li class="accordion-item">
+                        <h3 class="accordion-thumb">Battery</h3>
+                        <div class="accordion-panel">
+                            <div class="container d-block">
+                                <div class="row py-2">
+                                    <p class="col-6"><span>Battery Type</span> <br>
+                                        NCM Battery
+                                    </p>
+                                    <p class="col-6"><span>NEDC E-Range in km</span> <br>
+                                        625
+                                    </p>
+                                </div>
+                                <div class="row py-2 my-1" style="background: rgba(255, 255, 255, .1)">
+                                    <p class="col-6"><span>Battery Capacity in kWh</span> <br>
+                                        116
+                                    </p>
+                                    <p class="col-6"><span>0-80% with a Super Charger</span> <br>
+                                        35 minutes
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </li>
+                    <li class="accordion-item">
+                        <h3 class="accordion-thumb">Safety</h3>
+                        <div class="accordion-panel">
+                            <div class="container d-block">
+                                <div class="row py-2">
+                                    <p class="col-6"><span>Anti-Lock Brake System</span> <br>
+                                        Included
+                                    </p>
+                                    <p class="col-6"><span>Electronic Stability Program</span> <br>
+                                        Included
+                                    </p>
+                                </div>
+                                <div class="row py-2 my-1" style="background: rgba(255, 255, 255, .1)">
+                                    <p class="col-6"><span>Traction Control System</span> <br>
+                                        Included
+                                    </p>
+                                    <p class="col-6"><span>Tire Pressure Monitoring System</span> <br>
+                                        Included
+                                    </p>
+                                </div>
+                                <div class="row py-2">
+                                    <p class="col-6"><span>Hill Hold and Descent Control</span> <br>
+                                        Included
+                                    </p>
+                                    <p class="col-6"><span>Front Airbag</span> <br>
+                                        2
+                                    </p>
+                                </div>
+                                <div class="row py-2 my-1" style="background: rgba(255, 255, 255, .1)">
+                                    <p class="col-6"><span>Front Side Airbag</span> <br>
+                                        2
+                                    </p>
+                                    <p class="col-6"><span>Front and Rear Integrated Airbag</span> <br>
+                                        2
+                                    </p>
+                                </div>
+                                <div class="row py-2">
+                                    <p class="col-6"><span>Rear Electronic Child Safety Lock</span> <br>
+                                        Included
+                                    </p>
+                                    <p class="col-6"><span>Anti-Theft Alarm System</span> <br>
+                                        Included
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
                 </ul>
-            </div>
-            <div class="interiror-variants">
-                <div class="avatr11">
-                    <div class="images pt-0">
-                        <figure id="varient1">
-                            <img class="w-100 my-50"
-                                src="{{ asset('website/images/home/color-variants/avartr11/img1.jpg') }}" alt="">
-                        </figure>
-                        <figure id="varient2" class="d-none">
-                            <img class="w-100 my-50"
-                                src="{{ asset('website/images/home/color-variants/avartr11/img2.jpg') }}" alt="">
-                        </figure>
-                        <figure id="varient3" class="d-none">
-                            <img class="w-100 my-50"
-                                src="{{ asset('website/images/home/color-variants/avartr11/img3.jpg') }}" alt="">
-                        </figure>
-                        <figure id="varient4" class="d-none">
-                            <img class="w-100 my-50"
-                                src="{{ asset('website/images/home/color-variants/avartr11/img4.jpg') }}" alt="">
-                        </figure>
-                        <figure id="varient5" class="d-none">
-                            <img class="w-100 my-50"
-                                src="{{ asset('website/images/home/color-variants/avartr11/img5.jpg') }}" alt="">
-                        </figure>
-                        <figure id="varient6" class="d-none">
-                            <img class="w-100 my-50"
-                                src="{{ asset('website/images/home/color-variants/avartr11/img6.jpg') }}" alt="">
-                        </figure>
-                        {{-- <figure id="varient7" class="d-none">
-                            <img class="w-100 my-50"
-                                src="{{ asset('website/images/home/color-variants/avartr11/img7.jpg') }}" alt="">
-                        </figure> --}}
-                    </div>
-                    <div class="colors mt-5">
-                        <div>
-                            <button class="varient-btn active" data-target="varient1"></button>
-                            <div id="varient1-text" class="text-start">
-                                <p>Liquid caramel</p>
-                            </div>
-                        </div>
-                        <div>
-                            <button class="varient-btn" data-target="varient2"></button>
-                            <div id="varient2-text" class="text-start d-none">
-                                <p>Aqua</p>
-                            </div>
-                        </div>
-                        <div>
-                            <button class="varient-btn" data-target="varient3"></button>
-                            <div id="varient3-text" class="text-start d-none">
-                                <p>Mate White</p>
-                            </div>
-                        </div>
-                        <div>
-                            <button class="varient-btn" data-target="varient4"></button>
-                            <div id="varient4-text" class="text-start d-none">
-                                <p>Glossy gray</p>
-                            </div>
-                        </div>
-                        <div>
-                            <button class="varient-btn" data-target="varient5"></button>
-                            <div id="varient5-text" class="text-start d-none">
-                                <p>Glossy Black</p>
-                            </div>
-                        </div>
 
-                        <div>
-                            <button class="varient-btn" data-target="varient6"></button>
-                            <div id="varient6-text" class="text-start d-none">
-                                <p>Matte Grey</p>
-                            </div>
-                        </div>
-                        {{-- <div>
-                            <button class="varient-btn" data-target="varient7"></button>
-                            <div id="varient7-text" class="text-start d-none">
-                                <p>Dual - Tone(AVATR grey/black)</p>
-                            </div>
-                        </div> --}}
-
-
-                    </div>
-                </div>
+                <a href="#" class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                        <g fill="currentColor" fill-rule="evenodd">
+                            <path
+                                d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                            <path
+                                d="M12 2v6.5a1.5 1.5 0 0 0 1.5 1.5H20v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 9a1 1 0 0 0-1 1v2.708l-.414-.414a1 1 0 0 0-1.414 1.414l2.12 2.122a1 1 0 0 0 1.415 0l2.121-2.122a1 1 0 1 0-1.414-1.414l-.414.414V12a1 1 0 0 0-1-1m2-8.957a2 2 0 0 1 1 .543L19.414 7a2 2 0 0 1 .543 1H14Z" />
+                        </g>
+                    </svg>
+                    Download Specs
+                </a>
 
             </div>
         </div>
-
     </section>
 
-    {{-- <section class="section-one mt-100">
-        <picture>
-            <source srcset="{{ asset('website/images/avatr11/mob-img7.jpg') }}" media="(max-width: 768px)"><img
-                class="w-100" src="{{ asset('website/images/avatr11/img7.jpg') }}" alt=""
-                class="FirstTitle_section-bgm__2JYhD" loading="lazy">
-        </picture>
-        <h2>
-            A strong run into the wind
-        </h2>
-        <div class="container">
-            <div class="text">
-                <h1>Kunlun Intelligent Range Extender/Full-stack 800V SiC EV platform</h1>
-                <h6>Two powertrain options. A new era led by AVATR. </h6>
-                <h4>Kunlun Intelligent Range Extender, creates a new generation.
-                </h4>
-            </div>
-        </div>
-
-    </section> --}}
-
-    <section>
-        <div class="container">
-            <div class="swiper car-page">
-                <!-- Swiper Wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide animeslide-slide">
-                        <picture>
-                            <source srcset="{{ asset('website/images/avatr11/img8.jpg') }}" media="(max-width: 768px)">
-                            <img src="{{ asset('website/images/avatr11/img8.jpg') }}"
-                                alt="Unmatched speed and efficiency" class="w-100" loading="lazy">
-                        </picture>
-                        <div class="heading">
-                            <h1>Quick charging and long driving range</h1>
-                            <ul>
-                                <li>
-                                    <h2>3c</h2>
-                                    <span>3C Peak charging rate</span>
-                                </li>
-                                <li>
-                                    <h2>225 <span>km</span></h2>
-                                    <span>CLTC pure electric range of 225 km</span>
-                                </li>
-                                <li>
-                                    <h2>1065 <span>km</span></h2>
-                                    <span>CLTC comprehensive range of 1065 km </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide animeslide-slide">
-                        <picture>
-                            <source srcset="{{ asset('website/images/avatr11/img9.jpg') }}" media="(max-width: 768px)">
-                            <img src="{{ asset('website/images/avatr11/img9.jpg') }}"
-                                alt="Exceptional safety and durability" class="w-100" loading="lazy">
-                        </picture>
-                        <div class="heading">
-                            <h1>Low fuel consumption, fuel-flexible, and powerful performance</h1>
-                            <ul>
-                                <li>
-                                    <h2>6.2/100 <span>km</span></h2>
-                                    <span>6.2L/100km WLTC Fuel consumption in low charge</span>
-                                </li>
-                                <li>
-                                    <h2>92#</h2>
-                                    <span>#92 Gasoline needed only</span>
-                                </li>
-                                <li>
-                                    <h2> ＜0.6</h2>
-                                    <span>Only＜0.6s Zero hundred acceleration on full power feed </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide animeslide-slide">
-                        <picture>
-                            <source srcset="{{ asset('website/images/avatr11/img10.jpg') }}" media="(max-width: 768px)">
-                            <img src="{{ asset('website/images/avatr11/img10.jpg') }}"
-                                alt="Premium comfort and innovation" class="w-100" loading="lazy">
-                        </picture>
-                        <div class="heading">
-                            <h1>Luxury-class noise reduction standards.</h1>
-                            <ul>
-                                <li>
-                                    <h2>64 <span>db</span></h2>
-                                    <span>120km/h, ＜064.2dB </span>
-                                </li>
-                                <li>
-                                    <h2>30</h2>
-                                    <span>More than 30 active and passive noise reduction technologies</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Swiper Navigation -->
-                <div class="animeslide-bottom flex">
-                    <div class="cell small">
-                        <div class="swiper-button-prev animeslide-button-prev" aria-label="Previous slide"></div>
-                        <div class="swiper-button-next animeslide-button-next" aria-label="Next slide"></div>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </div>
-
-    </section>
-
-    <section class="swiper-without-arrow">
-        <h1>Full-stack 800V SiC EV platform
+    <section class="section-three-avatr11 section-padding">
+        <h1>Always in Range
         </h1>
         <div class="container">
-            <div class="swiper-container imgaewthtextbox">
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div class="imagewithtextcontainer">
-                            <div>
-                                <img class="w-100 d-flex" src="{{ asset('website/images/avatr11/img11.jpg') }}"
-                                    alt="">
-                            </div>
-                            <div class="text">
-                                <h3>HUAWEI DriveONE 800V SiC Electric Drive</h3>
-                                <p>CLTC pure electric range of the rear-wheel drive version is 815 km</p>
-                                <p>0-100 km/h acceleration time of the four-wheel drive version is 3.9 seconds</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="imagewithtextcontainer">
-                            <div>
-                                <video class="w-100 d-flex" mute autoplay loop
-                                    src="{{ asset('website/images/avatr11/video1.mp4') }}" autoplay loop></video>
-                            </div>
-                            <div class="text">
-                                <h3>HUAWEI DriveONE iTRACK</h3>
-                                <p>Utilizing microsecond ultra-fine real-time road condition sensing technology</p>
-                                <p>The system achieves millimeter-level torque adjustments</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="imagewithtextcontainer">
-                            <div>
-                                <img class="w-100 d-flex" src="{{ asset('website/images/avatr11/img12.jpg') }}"
-                                    alt="">
-                            </div>
-                            <div class="text">
-                                <h3>CATL ternary lithium battery</h3>
-                                <p>Standardized battery pack size, CATL CTP high-efficiency grouping technology</p>
-                                <p>Energy density of up to 190 Wh/kg in 116 kWh battery pack</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class=" tabs-container scrolltabs">
+                <!-- Tabs (Text) -->
+                <div class="tabs">
+                    <button class="tab active" data-target="#tab5-img" data-text-target="#tab5-text">
+                        <h4>26 Trips
+                        </h4>
+                        <p>Palm Jumeirah to Downtown Dubai</p>
+                    </button>
+                    <button class="tab " data-target="#tab6-img" data-text-target="#tab6-text">
+                        <h4>5 Trips
+                        </h4>
+                        <p>Louvre Museum to Museum of the Future</p>
+                    </button>
+                    <button class="tab" data-target="#tab7-img" data-text-target="#tab7-text">
+                        <h4>9 Trips</h4>
+                        <p>Noor Island to Marjan Island</p>
+                    </button>
                 </div>
-                <!-- Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="section-one mt-100">
-        <picture>
-            <source srcset="{{ asset('website/images/avatr11/img13.jpg') }}" media="(max-width: 768px)">
-            <img class="w-100" src="{{ asset('website/images/avatr11/img13.jpg') }}" alt="" loading="lazy">
-        </picture>
-        <h2>
-            New chapter of future and luxury
-        </h2>
-        <div class="container">
-            <div class="text">
-                <h1>Emotional Intelligent Cockpit
-                </h1>
-                <h6 class="mb-5">Every seat is VIP seat
-
-                </h6>
-            </div>
-        </div>
-        <picture>
-            <source srcset="{{ asset('website/images/avatr11/img14.jpg') }}" media="(max-width: 768px)">
-            <img class="w-100" src="{{ asset('website/images/avatr11/img14.jpg') }}" alt="" loading="lazy">
-        </picture>
-    </section>
-
-    <section class="section-two tab-section2">
-        <div class="container">
-            <div class="tabs-container scrolltabs">
                 <!-- Tabs Content (Images) -->
                 <div class="tab-content">
                     <div id="tab5-img" class="content active">
-                        <video class="w-100" autoplay loop muted playsinline>
-                            <source src="{{ asset('website/images/avatr11/video2.mp4') }}" type="video/mp4">
+                        <video class="w-100" autoplay="" loop="" muted="" playsinline="">
+                            <source src="{{ asset('website/images/avatr11/avatr-video-1.mp4') }}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <div id="tab6-img" class="content">
-                        <img class="w-100" src="{{ asset('website/images/avatr11/img15.jpg') }}" alt="">
+                    <div id="tab6-img" class="content ">
+                        <video class="w-100" autoplay="" loop="" muted="" playsinline="">
+                            <source src="{{ asset('website/images/avatr11/avatr-video-2.mp4') }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                     <div id="tab7-img" class="content">
-                        <img class="w-100" src="{{ asset('website/images/avatr11/img16.jpg') }}" alt="">
-                    </div>
-
-                </div>
-
-                <!-- Tabs (Text) -->
-                <div class="tabs">
-                    <button class="tab active" data-target="#tab5-img" data-text-target="#tab5-text">Emotional Vortex +
-                        256 Colors Ambient Lamp Lights</button>
-                    <button class="tab" data-target="#tab6-img" data-text-target="#tab6-text">Full-grain
-                        semi-aniline</button>
-                    <button class="tab" data-target="#tab7-img" data-text-target="#tab7-text">Dinamica<sup>®</sup>
-                        microfiber suede roof lining</button>
-                </div>
-
-                <!-- Tabs Text Content -->
-                <div class="tab-content">
-                    <div id="tab5-text" class="content content-text active">Ambient Lamp Light changes by your heart flow,
-                        unique atmosphere gives you exclusive sensations.</div>
-                    <div id="tab6-text" class="content content-text">Selected full-grain semi-aniline leather, crafted
-                        from premium hides and fine finishing techniques, preserving the natural texture and breathability
-                        of the leather. A luxurious touch that skillfully restores the ecological beauty of top-grade
-                        leather.</div>
-                    <div id="tab7-text" class="content content-text">The delicate and soft texture fills the interior of
-                        the car with a warm and comfortable atmosphere, making luxury within reach.</div>
-
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="sectioncarpage">
-        <div class="swiper animeslide swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide animeslide-slide">
-                    <a href="#">
-                        <picture>
-                            <source srcset="{{ asset('website/images/avatr11/img23.jpg') }}" media="(max-width: 768px)">
-                            <img src="{{ asset('website/images/avatr11/img23.jpg') }}" alt="" class="w-100"
-                                loading="lazy">
-                        </picture>
-                        <div class="container">
-
-                            <h1 data-animate="bottom" class="animeslide-heading ">
-                                Front Row Dual Zero-Gravity Seats
-                            </h1>
-
-                            <p data-animate="bottom" class="animeslide-desc mb-5 ">
-                                Indulge in a personalized experience with a high level of comfort. Featuring three levels of
-                                ventilation, three levels of heating, and a massage function with adjustable intensity and
-                                five
-                                modes to cater to every journey’s needs.
-                            </p>
-                        </div>
-                    </a>
-
-                </div>
-                <div class="swiper-slide animeslide-slide">
-                    <a href="#">
-                        <picture>
-                            <source srcset="{{ asset('website/images/avatr11/img25.jpg') }}" media="(max-width: 768px)">
-                            <img src="{{ asset('website/images/avatr11/img25.jpg') }}" alt="" class="w-100"
-                                loading="lazy">
-                        </picture>
-                        <div class="container">
-                            <h1 data-animate="bottom" class="animeslide-heading ">
-                                Large sofa with full functionality
-                            </h1>
-
-                            <p data-animate="bottom" class="animeslide-desc mb-5 ">
-                                The newly added rear seat backrest and cushion ventilation and massage functions allow rear
-                                passengers to enjoy meticulous care. The pure electric model can be selected as a 4-seater
-                                version. The rear VIP seat adopts a comfortable embrace design and has an electrically
-                                adjustable seat back. It can be adjusted forward 28 degrees and backward 12 degrees based on
-                                the preset position. The cumulative adjustment range is up to 40 degrees, providing maximum
-                                riding comfort.
-                            </p>
-
-                        </div>
-                    </a>
-                </div>
-                <div class="swiper-slide animeslide-slide">
-                    <a href="#">
-                        <picture>
-                            <source srcset="{{ asset('website/images/avatr11/img24.jpg') }}" media="(max-width: 768px)">
-                            <img src="{{ asset('website/images/avatr11/img24.jpg') }}" alt="" class="w-100"
-                                loading="lazy">
-                        </picture>
-                        <div class="container">
-                            <h1 data-animate="bottom" class="animeslide-heading 2">
-                                Large central armrest in the rear
-                            </h1>
-
-                            <p data-animate="bottom" class="animeslide-desc mb-5 ">
-                                The extended central armrest enhances comfort, creating a luxurious seating experience.
-                            </p>
-                        </div>
-                    </a>
-
-                </div>
-
-            </div>
-            <div class="flex animeslide-bottom">
-
-                <div class="cell small">
-                    <div class="animeslide-button-prev swiper-button-prev"></div>
-                    <div class="animeslide-button-next swiper-button-next"></div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <section class="section-three dark-section-three">
-        <div class="container">
-            <video class="w-100" autoplay loop muted playsinline>
-                <source src="{{ asset('website/images/avatr11/video3.mp4') }}" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="heading">
-                <div style="flex: 0.7">
-                    <h2>Meridian<sup>™</sup> High-end Sound System</h2>
-                    <p>Experience High-level sound quality with precision acoustic tuning, delivering the most intricate
-                        emotions and expressions. Immerse yourself in an exquisite auditory feast that elevates every
-                        moment.</p>
-                </div>
-
-                <ul>
-                    <li>
-                        <h3>25</h3>
-                        <span>Loudspeakers</span>
-                    </li>
-                    <li>
-                        <h3>7.14</h3>
-                        <span>Sound System</span>
-                    </li>
-                    <li>
-                        <h3>216 <span>w</span></h3>
-                        <span>Power Output</span>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="section-four">
-        <picture>
-            <source srcset="{{ asset('website/images/avatr11/img17.jpg') }}" media="(max-width: 768px)">
-            <img class="w-100" src="{{ asset('website/images/avatr11/img17.jpg') }}" alt="" loading="lazy">
-        </picture>
-        <div class="icon-main-container container">
-            <h3 class="mb-4">
-                Exclusive 6 sound effect algorithms
-            </h3>
-            <div class="icon-text-container row">
-                <div class="col-md-4 d-flex align-items-center gap-3 mb-3">
-                    <img src="{{ asset('website/images/avatr11/icon1.png') }}" alt="">
-                    <h5>RE-Q
-                    </h5>
-                </div>
-                <div class="col-md-4 d-flex align-items-center gap-3 mb-3">
-                    <img src="{{ asset('website/images/avatr11/icon2.png') }}" alt="">
-                    <h5>Digital Precision
-                    </h5>
-                </div>
-                <div class="col-md-4 d-flex align-items-center gap-3 mb-3">
-                    <img src="{{ asset('website/images/avatr11/icon3.png') }}" alt="">
-                    <h5>Horizon
-                    </h5>
-                </div>
-                <div class="col-md-4 d-flex align-items-center gap-3 mb-3 mb-md-0">
-                    <img src="{{ asset('website/images/avatr11/icon4.png') }}" alt="">
-                    <h5>Perfect Balance
-                    </h5>
-                </div>
-                <div class="col-md-4 d-flex align-items-center gap-3 mb-3 mb-md-0">
-                    <img src="{{ asset('website/images/avatr11/icon5.png') }}" alt="">
-                    <h5>True time
-                    </h5>
-                </div>
-                <div class="col-md-4 d-flex align-items-center gap-3 mb-3 mb-md-0">
-                    <img src="{{ asset('website/images/avatr11/icon6.png') }}" alt="">
-                    <h5>Intelli-Q
-                    </h5>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-four" style="background-color: #000">
-        <div class="container">
-            <picture>
-                <source srcset="{{ asset('website/images/avatr11/img18.jpg') }}" media="(max-width: 768px)">
-                <img class="SoundAlgorithms_HarmonyOS-bgm__2-5eY w-100"
-                    src="{{ asset('website/images/avatr11/img18.jpg') }}" alt="" loading="lazy">
-            </picture>
-            <div class="container icon-main-container">
-                <h3 class="mb-4 text-center">
-                    Intuitive AVATR Operating System Smart Cabin
-                </h3>
-                <p class="text-center text-white">The zero-layer design achieves minimal interaction, making it visible at
-                    a glance and reachable with a touch. It has many frequently used and updated apps and a super desktop
-                    that is always available. It supports intelligent voice and enables quick response to multiple commands,
-                    seamless flow of cellphone touch transmission, and car and home interconnection that can be controlled
-                    at any time.
-                </p>
-
-            </div>
-        </div>
-
-    </section>
-
-    <section class="section-two tab-section2 " style="background-color:#000">
-        <div class="container">
-            <div class="tabs-container scrolltabs">
-                <!-- Tabs Content (Images) -->
-                <div class="tab-content">
-                    <div id="tab11-img" class="content active">
-                        <video class="w-100" autoplay loop muted playsinline>
-                            <source src="{{ asset('website/images/avatr11/video4.mp4') }}" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div id="tab12-img" class="content">
-                        <video class="w-100" autoplay loop muted playsinline>
-                            <source src="{{ asset('website/images/avatr11/video5.mp4') }}" type="video/mp4">
+                        <video class="w-100" autoplay="" loop="" muted="" playsinline="">
+                            <source src="{{ asset('website/images/avatr11/avatr-video-3.mp4') }}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
 
                 </div>
-
-                <!-- Tabs (Text) -->
-                <div class="tabs justify-content-center">
-                    <button class="tab active" data-target="#tab11-img" data-text-target="#tab11-text">Super
-                        Desktop</button>
-                    <button class="tab" data-target="#tab12-img" data-text-target="#tab12-text">Massive
-                        ecology</button>
-                </div>
-
-                <!-- Tabs Text Content -->
-                <div class="tab-content">
-                    <div id="tab11-text" class="content content-text active">Supports seamless casting and mirroring, with
-                        mobile apps easily shared on a large screen. It also offers a rich ecosystem of applications,
-                        providing a smooth and unified experience</div>
-                    <div id="tab12-text" class="content content-text">It provides a large number of intelligent services,
-                        covering news, travel, finance, securities, and roadside assistance, all accessible with one click.
-                    </div>
-
-                </div>
             </div>
-
         </div>
 
     </section>
 
-    <section class="section-one mt-100">
-
-        <picture>
-            <source srcset="{{ asset('website/images/avatr11/img19.jpg') }}" media="(max-width: 768px)"><img
-                class="w-100" src="{{ asset('website/images/avatr11/img19.jpg') }}" alt=""
-                class="FirstTitle_section-bgm__2JYhD" loading="lazy">
-        </picture>
-        <h2>
-            Smart driving, worry-free Journey.
-        </h2>
-        {{-- <div class="container">
-            <div class="text">
-                <h1>HUAWEI QianKun Intelligent Driving ADS 3.0 </h1>
-                <h6>The special/only one with HUAWEI 3 laser Radar.
-                </h6>
-            </div>
-        </div> --}}
-
-    </section>
-
-
-    {{-- <section>
+    <section class="section-one-avatr11">
         <div class="container">
-            <div class="swiper car-page">
-                <!-- Swiper Wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide animeslide-slide">
-                        <picture>
-                            <source srcset="{{ asset('website/images/avatr11/img20.jpg') }}" media="(max-width: 768px)">
-                            <img src="{{ asset('website/images/avatr11/img20.jpg') }}"
-                                alt="Unmatched speed and efficiency" class="w-100" loading="lazy">
-                        </picture>
-                        <div class="heading d-block">
-                            <h1>From Parking Space to Parking Space</h1>
-                            <p>All scenarios are connected, from public road parking spaces to park roads, from parking lot
-                                to underground parking space.</p>
-                        </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide animeslide-slide">
-                        <picture>
-                            <source srcset="{{ asset('website/images/avatr11/img21.jpg') }}" media="(max-width: 768px)">
-                            <img src="{{ asset('website/images/avatr11/img21.jpg') }}"
-                                alt="Exceptional safety and durability" class="w-100" loading="lazy">
-                        </picture>
-                        <div class="heading d-block">
-                            <h1>CAS 3.0 360° Collision Avoidance System</h1>
-                            <p>Advanced perception, ultra-fast response, super safe. </p>
-
-                        </div>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide animeslide-slide">
-                        <picture>
-                            <source srcset="{{ asset('website/images/avatr11/img22.jpg') }}" media="(max-width: 768px)">
-                            <img src="{{ asset('website/images/avatr11/img22.jpg') }}"
-                                alt="Premium comfort and innovation" class="w-100" loading="lazy">
-                        </picture>
-                        <div class="heading d-block">
-                            <h1>Parking Assistance Self-Drive, Self-Park</h1>
-                            <p>Within the monitored field of vision of the parking lot, the "unmanned driving" in the
-                                underground garage can be realized at will, and can cruise autonomously to find a parking
-                                space.</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Swiper Navigation -->
-                <div class="animeslide-bottom flex">
-                    <div class="cell small">
-                        <div class="swiper-button-prev animeslide-button-prev" aria-label="Previous slide"></div>
-                        <div class="swiper-button-next animeslide-button-next" aria-label="Next slide"></div>
+            <div class="row">
+                <div class="col-md-12 position-relative">
+                    <video id="video" class="w-100" muted>
+                        <source src="{{ asset('website/images/avatr11/avatr-video-4.mp4') }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div id="play_button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 48 48">
+                            <defs>
+                                <mask id="ipSPlay0">
+                                    <g fill="none" stroke-linejoin="round" stroke-width="4">
+                                        <path fill="#fff" stroke="#fff"
+                                            d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z" />
+                                        <path fill="#181818" stroke="#181818"
+                                            d="M20 24v-6.928l6 3.464L32 24l-6 3.464l-6 3.464z" />
+                                    </g>
+                                </mask>
+                            </defs>
+                            <path fill="#fff" d="M0 0h48v48H0z" mask="url(#ipSPlay0)" />
+                        </svg>
                     </div>
                 </div>
             </div>
-
-
-
         </div>
 
-    </section> --}}
+
+    </section>
+
+    <section>
+        <div class="section-grid">
+            <div class="a">
+                <img class="w-100" src="{{ asset('website/images/avatr11/avatr-img1.webp') }}" alt="">
+                <div class="content">
+                    <h6>Experience Zero Gravity Seating in AVATR 11</h6>
+                    <p>Ultimate Comfort for Long Journeys: Inspired by Astronaut Posture in AVATR Electric SUV</p>
+                </div>
+            </div>
+            <div class="b">
+                <img class="w-100" src="{{ asset('website/images/avatr11/avatr-img2.jpg') }}" alt="">
+                <div class="content">
+                    <h6>Superb Sound in AVATR 11</h6>
+                    <p>25 Speakers with Meridian Excellence for an Unmatched Audio Experience</p>
+                </div>
+            </div>
+            <div class="c">
+                <img class="w-100" src="{{ asset('website/images/avatr11/avatr-img3.jpg') }}" alt="">
+                <div class="content">
+                    <h6>Ventilated and AC-Cooled Seats in AVATR 11
+                    </h6>
+                    <p>Stay Cool and Comfortable on Every Drive
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection

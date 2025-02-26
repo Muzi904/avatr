@@ -154,3 +154,22 @@ h3 {
 .thank-you-msg p {
   text-align: center;
 }
+
+.models-designs-varients {
+  padding-bottom: 100px;
+}
+.models-designs-varients .grid-rows {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  position: relative;
+}
+.models-designs-varients .grid-rows .column:nth-child(1) {
+  flex: 0.6;
+  position: sticky;
+  top: 75px;
+  height: 100%;
+}
+.models-designs-varients .grid-rows .column:nth-child(2) {
+  flex: 0.4;
+}

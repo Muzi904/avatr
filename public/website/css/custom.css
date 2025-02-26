@@ -266,22 +266,3 @@
   margin: auto;
   font-family: 'AVATRFont-Regular';
 }
-
-.models-designs-varients {
-  padding-block: 100px;
-}
-.models-designs-varients .grid-rows {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  position: relative;
-}
-.models-designs-varients .grid-rows .column:nth-child(1) {
-  flex: 0.6;
-  position: sticky;
-  top: 100px;
-  height: 100%;
-}
-.models-designs-varients .grid-rows .column:nth-child(2) {
-  flex: 0.4;
-}
