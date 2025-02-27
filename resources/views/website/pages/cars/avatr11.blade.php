@@ -6,8 +6,8 @@
             <source srcset="{{ asset('website/images/avatr11/hero.webp') }}" media="(max-width: 768px)">
             <img src="{{ asset('website/images/avatr11/hero.webp') }}" alt="" class="w-100" loading="lazy">
         </picture>
-        <div class="container">
-            <div class="content">
+        <div class="container-md">
+            <div class="content hero-animated">
                 <img src="{{ asset('website/images/avatr11/avatr11.svg') }}" alt="">
                 <p>The Futuristic Electric Luxury SUV
                 </p>
@@ -18,13 +18,13 @@
     </section>
 
     <section class="section-padding section-two">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-md-4">
+        <div class="container-md">
+            <div class="row mb-3 mb-md-5">
+                <div class="col-md-4 animate-text">
                     <h3>Futuristic Design
                         with Pure Luxury </h3>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 animate-text">
                     <p class="mb-4">
                         The AVATR 11 (“One One”) embodies future-forward design that seamlessly blends emotion with
                         cutting-edge technology. From its flowing lines and nature-inspired colors to its intelligent
@@ -36,7 +36,7 @@
                     </p>
                 </div>
             </div>
-            <div class="tabs-container scrolltabs">
+            <div class="tabs-container scrolltabs animate-text">
                 <!-- Tabs Content (Images) -->
                 <figure>
                     <img class="w-100" src="{{ asset('website/images/avatr11/car1.webp') }}" alt="">
@@ -91,15 +91,16 @@
 
     <section class="section-one">
         <picture>
-            <source srcset="{{ asset('website/images/avatr11/mob-img1.jpg') }}" media="(max-width: 768px)"><img
-                class="w-100" src="{{ asset('website/images/avatr11/img1.jpg') }}" alt=""
-                class="FirstTitle_section-bgm__2JYhD" loading="lazy">
+            <source srcset="{{ asset('website/images/avatr11/img1.jpg') }}" media="(max-width: 768px)"><img class="w-100"
+                src="{{ asset('website/images/avatr11/img1.jpg') }}" alt="" class="FirstTitle_section-bgm__2JYhD"
+                loading="lazy">
         </picture>
         <div class="overlay">
-            <h2>
+            <h2 class="animate-text">
                 Luxury Redesigned: AVATR’s Next-Gen Electric Vehicle Excellence
             </h2>
-            <p class="text-center">Created to the golden ratio, the AVATR 11 SUV represents perfection at its finest,
+            <p class="text-center animate-text">Created to the golden ratio, the AVATR 11 SUV represents perfection at its
+                finest,
                 combining futuristic
                 design
                 with cutting-edge electric vehicle technology. This smart electric vehicle is a testament to precision and
@@ -117,38 +118,38 @@
             <img class="" src="{{ asset('website/images/avatr11/img2.webp') }}" alt="">
         </figure>
         <div class="container">
-            <div class="column">
+            <div class="column ">
                 <div class="d-flex align-items-center gap-2 text-white mb-4">
                     <img src="{{ asset('website/images/avatr11/avatr11-black.svg') }}" alt="">
                     SPECS
                 </div>
 
                 <ul class="accordion">
-                    <li class="accordion-item">
+                    <li class="accordion-item animate-text">
                         <h3 class="accordion-thumb">Overall Specs</h3>
                         <div class="accordion-panel">
                             <div class="container d-block">
                                 <div class="row py-2">
-                                    <p class="col-6"><span>Drive Type</span> <br>
+                                    <p class="col-md-6"><span>Drive Type</span> <br>
                                         Full Electric
                                     </p>
-                                    <p class="col-6"><span>Torque in Nm</span> <br>
+                                    <p class="col-md-6"><span>Torque in Nm</span> <br>
                                         370 Rear / 280 Front
                                     </p>
                                 </div>
                                 <div class="row py-2 my-1" style="background: rgba(255, 255, 255, .1)">
-                                    <p class="col-6"><span>Power in kW</span> <br>
+                                    <p class="col-md-6"><span>Power in kW</span> <br>
                                         230 Rear / 195 Front
                                     </p>
-                                    <p class="col-6"><span>Power hp</span> <br>
+                                    <p class="col-md-6"><span>Power hp</span> <br>
                                         370 Rear / 280 Front
                                     </p>
                                 </div>
                                 <div class="row py-2">
-                                    <p class="col-6"><span>Drivetrain</span> <br>
+                                    <p class="col-md-6"><span>Drivetrain</span> <br>
                                         All Wheel Drive
                                     </p>
-                                    <p class="col-6"><span>Battery Capacity in kWh</span> <br>
+                                    <p class="col-md-6"><span>Battery Capacity in kWh</span> <br>
                                         116
                                     </p>
                                 </div>
@@ -157,23 +158,23 @@
                         </div>
                     </li>
 
-                    <li class="accordion-item">
+                    <li class="accordion-item animate-text">
                         <h3 class="accordion-thumb">Dimensions</h3>
                         <div class="accordion-panel">
                             <div class="container d-block">
                                 <div class="row py-2">
-                                    <p class="col-6"><span>L x W x H in mm</span> <br>
+                                    <p class="col-md-6"><span>L x W x H in mm</span> <br>
                                         4880 x 1970 x 1601
                                     </p>
-                                    <p class="col-6"><span>Wheelbase in mm</span> <br>
+                                    <p class="col-md-6"><span>Wheelbase in mm</span> <br>
                                         2975
                                     </p>
                                 </div>
                                 <div class="row py-2 my-1" style="background: rgba(255, 255, 255, .1)">
-                                    <p class="col-6"><span>Vehicle Weight in kg</span> <br>
+                                    <p class="col-md-6"><span>Vehicle Weight in kg</span> <br>
                                         2425
                                     </p>
-                                    <p class="col-6"><span>Number of Seats</span> <br>
+                                    <p class="col-md-6"><span>Number of Seats</span> <br>
                                         5
                                     </p>
                                 </div>
@@ -181,93 +182,93 @@
                         </div>
                     </li>
 
-                    <li class="accordion-item">
+                    <li class="accordion-item animate-text">
                         <h3 class="accordion-thumb">Powertrain</h3>
                         <div class="accordion-panel">
                             <div class="container d-block">
                                 <div class="row py-2">
-                                    <p class="col-6"><span>Power in kW</span> <br>
+                                    <p class="col-md-6"><span>Power in kW</span> <br>
                                         230 Rear / 195 Front
                                     </p>
-                                    <p class="col-6"><span>Torque in Nm</span> <br>
+                                    <p class="col-md-6"><span>Torque in Nm</span> <br>
                                         370 Rear / 280 Front
                                     </p>
                                 </div>
                                 <div class="row py-2 my-1" style="background: rgba(255, 255, 255, .1)">
-                                    <p class="col-6"><span>Maximum Output Power in kW</span> <br>
+                                    <p class="col-md-6"><span>Maximum Output Power in kW</span> <br>
                                         425
                                     </p>
-                                    <p class="col-6"><span>Maximum Output Torque in Nm</span> <br>
+                                    <p class="col-md-6"><span>Maximum Output Torque in Nm</span> <br>
                                         650
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="accordion-item">
+                    <li class="accordion-item animate-text">
                         <h3 class="accordion-thumb">Battery</h3>
                         <div class="accordion-panel">
                             <div class="container d-block">
                                 <div class="row py-2">
-                                    <p class="col-6"><span>Battery Type</span> <br>
+                                    <p class="col-md-6"><span>Battery Type</span> <br>
                                         NCM Battery
                                     </p>
-                                    <p class="col-6"><span>NEDC E-Range in km</span> <br>
+                                    <p class="col-md-6"><span>NEDC E-Range in km</span> <br>
                                         625
                                     </p>
                                 </div>
                                 <div class="row py-2 my-1" style="background: rgba(255, 255, 255, .1)">
-                                    <p class="col-6"><span>Battery Capacity in kWh</span> <br>
+                                    <p class="col-md-6"><span>Battery Capacity in kWh</span> <br>
                                         116
                                     </p>
-                                    <p class="col-6"><span>0-80% with a Super Charger</span> <br>
+                                    <p class="col-md-6"><span>0-80% with a Super Charger</span> <br>
                                         35 minutes
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="accordion-item">
+                    <li class="accordion-item animate-text">
                         <h3 class="accordion-thumb">Safety</h3>
                         <div class="accordion-panel">
                             <div class="container d-block">
                                 <div class="row py-2">
-                                    <p class="col-6"><span>Anti-Lock Brake System</span> <br>
+                                    <p class="col-md-6"><span>Anti-Lock Brake System</span> <br>
                                         Included
                                     </p>
-                                    <p class="col-6"><span>Electronic Stability Program</span> <br>
+                                    <p class="col-md-6"><span>Electronic Stability Program</span> <br>
                                         Included
                                     </p>
                                 </div>
                                 <div class="row py-2 my-1" style="background: rgba(255, 255, 255, .1)">
-                                    <p class="col-6"><span>Traction Control System</span> <br>
+                                    <p class="col-md-6"><span>Traction Control System</span> <br>
                                         Included
                                     </p>
-                                    <p class="col-6"><span>Tire Pressure Monitoring System</span> <br>
+                                    <p class="col-md-6"><span>Tire Pressure Monitoring System</span> <br>
                                         Included
                                     </p>
                                 </div>
                                 <div class="row py-2">
-                                    <p class="col-6"><span>Hill Hold and Descent Control</span> <br>
+                                    <p class="col-md-6"><span>Hill Hold and Descent Control</span> <br>
                                         Included
                                     </p>
-                                    <p class="col-6"><span>Front Airbag</span> <br>
+                                    <p class="col-md-6"><span>Front Airbag</span> <br>
                                         2
                                     </p>
                                 </div>
                                 <div class="row py-2 my-1" style="background: rgba(255, 255, 255, .1)">
-                                    <p class="col-6"><span>Front Side Airbag</span> <br>
+                                    <p class="col-md-6"><span>Front Side Airbag</span> <br>
                                         2
                                     </p>
-                                    <p class="col-6"><span>Front and Rear Integrated Airbag</span> <br>
+                                    <p class="col-md-6"><span>Front and Rear Integrated Airbag</span> <br>
                                         2
                                     </p>
                                 </div>
                                 <div class="row py-2">
-                                    <p class="col-6"><span>Rear Electronic Child Safety Lock</span> <br>
+                                    <p class="col-md-6"><span>Rear Electronic Child Safety Lock</span> <br>
                                         Included
                                     </p>
-                                    <p class="col-6"><span>Anti-Theft Alarm System</span> <br>
+                                    <p class="col-md-6"><span>Anti-Theft Alarm System</span> <br>
                                         Included
                                     </p>
                                 </div>
@@ -277,7 +278,7 @@
 
                 </ul>
 
-                <a href="#" class="btn">
+                <a href="#" class="btn animate-text">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                         <g fill="currentColor" fill-rule="evenodd">
                             <path
@@ -294,42 +295,42 @@
     </section>
 
     <section class="section-three-avatr11 section-padding">
-        <h1>Always in Range
+        <h1 class="animate-text">Always in Range
         </h1>
-        <div class="container">
+        <div class="container-md">
             <div class=" tabs-container scrolltabs">
                 <!-- Tabs (Text) -->
                 <div class="tabs">
-                    <button class="tab active" data-target="#tab5-img" data-text-target="#tab5-text">
+                    <button class="tab active animate-text" data-target="#tab5-img" data-text-target="#tab5-text">
                         <h4>26 Trips
                         </h4>
                         <p>Palm Jumeirah to Downtown Dubai</p>
                     </button>
-                    <button class="tab " data-target="#tab6-img" data-text-target="#tab6-text">
+                    <button class="tab animate-text " data-target="#tab6-img" data-text-target="#tab6-text">
                         <h4>5 Trips
                         </h4>
                         <p>Louvre Museum to Museum of the Future</p>
                     </button>
-                    <button class="tab" data-target="#tab7-img" data-text-target="#tab7-text">
+                    <button class="tab animate-text" data-target="#tab7-img" data-text-target="#tab7-text">
                         <h4>9 Trips</h4>
                         <p>Noor Island to Marjan Island</p>
                     </button>
                 </div>
                 <!-- Tabs Content (Images) -->
                 <div class="tab-content">
-                    <div id="tab5-img" class="content active">
+                    <div id="tab5-img" class="content animate-text active">
                         <video class="w-100" autoplay="" loop="" muted="" playsinline="">
                             <source src="{{ asset('website/images/avatr11/avatr-video-1.mp4') }}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <div id="tab6-img" class="content ">
+                    <div id="tab6-img" class="content animate-text ">
                         <video class="w-100" autoplay="" loop="" muted="" playsinline="">
                             <source src="{{ asset('website/images/avatr11/avatr-video-2.mp4') }}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <div id="tab7-img" class="content">
+                    <div id="tab7-img" class="content animate-text">
                         <video class="w-100" autoplay="" loop="" muted="" playsinline="">
                             <source src="{{ asset('website/images/avatr11/avatr-video-3.mp4') }}" type="video/mp4">
                             Your browser does not support the video tag.
@@ -343,9 +344,9 @@
     </section>
 
     <section class="section-one-avatr11">
-        <div class="container">
+        <div class="container-md">
             <div class="row">
-                <div class="col-md-12 position-relative">
+                <div class="col-md-12 position-relative animate-text">
                     <video id="video" class="w-100" muted>
                         <source src="{{ asset('website/images/avatr11/avatr-video-4.mp4') }}" type="video/mp4">
                         Your browser does not support the video tag.
@@ -376,21 +377,21 @@
         <div class="section-grid">
             <div class="a">
                 <img class="w-100" src="{{ asset('website/images/avatr11/avatr-img1.webp') }}" alt="">
-                <div class="content">
+                <div class="content animate-text">
                     <h6>Experience Zero Gravity Seating in AVATR 11</h6>
                     <p>Ultimate Comfort for Long Journeys: Inspired by Astronaut Posture in AVATR Electric SUV</p>
                 </div>
             </div>
             <div class="b">
                 <img class="w-100" src="{{ asset('website/images/avatr11/avatr-img2.jpg') }}" alt="">
-                <div class="content">
+                <div class="content animate-text">
                     <h6>Superb Sound in AVATR 11</h6>
                     <p>25 Speakers with Meridian Excellence for an Unmatched Audio Experience</p>
                 </div>
             </div>
             <div class="c">
                 <img class="w-100" src="{{ asset('website/images/avatr11/avatr-img3.jpg') }}" alt="">
-                <div class="content">
+                <div class="content animate-text">
                     <h6>Ventilated and AC-Cooled Seats in AVATR 11
                     </h6>
                     <p>Stay Cool and Comfortable on Every Drive

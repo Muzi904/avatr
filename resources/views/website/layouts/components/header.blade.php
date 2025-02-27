@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="{{ asset('website/css/header.css') }}">
 
 <header id="header">
-    <div class="container">
+    <div class="container-md">
         <div class="humburger" id="burger">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
                 <path fill="#fff"
@@ -11,10 +11,10 @@
 
         <ul>
             <li>
-                <a href="{{ route('avatr11') }}">Avatr 11</a>
+                <a class="navlink" href="{{ route('avatr11') }}">Avatr 11</a>
             </li>
             <li>
-                <a href="{{ route('avatr12') }}">Avatr 12</a>
+                <a class="navlink" href="{{ route('avatr12') }}">Avatr 12</a>
             </li>
         </ul>
         <div class="logo">
@@ -44,14 +44,14 @@
         </div>
         <ul>
             <li>
-                <a href="{{ route('about') }}">About us</a>
+                <a class="navlink" href="{{ route('about') }}">About us</a>
             </li>
             <!--<li><a href="{{ route('models') }}">Models</a></li>-->
             {{-- <li><a href="{{ route('models') }}">Models</a></li> --}}
             <!--<li><a href="{{ route('showrooms') }}">Showrooms</a></li>-->
-            <li><a href="{{ route('test.drive') }}">Test drive</a></li>
-            <li><a href="{{ route('request.quote') }}">Request A Quote</a></li>
-            <li><a href="{{ route('contact') }}">Contact</a></li>
+            <li><a class="navlink" href="{{ route('test.drive') }}">Test drive</a></li>
+            <li><a class="navlink" href="{{ route('request.quote') }}">Request A Quote</a></li>
+            <li><a class="navlink" href="{{ route('contact') }}">Contact</a></li>
         </ul>
 
         <ul class="mobile-menu">

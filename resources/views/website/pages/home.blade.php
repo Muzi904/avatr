@@ -6,18 +6,18 @@
             <source srcset="{{ asset('website/images/home/hero.png') }}" media="(max-width: 768px)">
             <img src="{{ asset('website/images/home/hero.png') }}" alt="" class="w-100" loading="lazy">
         </picture>
-        <div class="content">
-            <h1>Luxury Redesigned
+        <div class="content hero-animated">
+            <h1 class="">Luxury Redesigned
             </h1>
-            <p>The AVATR experience starts from <br>
+            <p class="">The AVATR experience starts from <br>
                 AED 245,000 with best in class features and unmatched advantages.
             </p>
-            <a href="#Car_models" class="btn mx-auto">View Models</a>
+            <a href="#Car_models" class="btn mx-auto ">View Models</a>
         </div>
     </section>
 
     <section class="section-padding section-two">
-        <div class="running-text">
+        <div class="running-text animate-text">
             <div class="swiper-container swiper--top ">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">AVATR 11 / The Future of Smart EVs / AVATR 12 / Revolutionizing Mobility/
@@ -44,13 +44,13 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container-md">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 animate-text">
                     <h3>AVATR – Shaping the Future of Electric Vehicles</h3>
                 </div>
-                <div class="col-md-8">
-                    <p class="mb-4">
+                <div class="col-md-8 animate-text">
+                    <p class="mb-md-4">
                         AVATR invites you to explore the next generation of humanized mobility and technology at your AVATR
                         car
                         dealer in UAE.</p>
@@ -62,7 +62,7 @@
     </section>
 
     <section class="about-section ">
-        <div class="overlay-container d-lg-none">
+        <div class="overlay-container d-lg-none animate-text">
             <div class="text">
                 <h1>AVATR: Emotional Intelligence, Motion in Delight </h1>
                 <p>AVATR redefines the driving experience with Emotional Intelligence, delivering a seamless blend of
@@ -74,7 +74,7 @@
 
 
         </div>
-        <div class="bg-image-section">
+        <div class="bg-image-section ">
             <div class="tab-image active" data-image="tab1">
                 <picture>
                     <source srcset="{{ asset('website/images/home/img1.jpg') }}" media="(max-width: 768px)"><img
@@ -95,17 +95,18 @@
             </div>
         </div>
 
-        <div class="overlay-container">
+        <div class="overlay-container ">
             <div class="text d-none d-lg-block">
-                <h1>AVATR: Emotional Intelligence, Motion in Delight </h1>
-                <p>AVATR redefines the driving experience with Emotional Intelligence, delivering a seamless blend of
+                <h1 class="animate-text">AVATR: Emotional Intelligence, Motion in Delight </h1>
+                <p class="animate-text">AVATR redefines the driving experience with Emotional Intelligence, delivering a
+                    seamless blend of
                     performance, luxury, and smart technology. With Motion in Delight, each drive is an immersive
                     experience, offering exceptional comfort, intuitive controls, and a responsive, high-performance ride.
                     Experience the future of mobility with AVATR’s emotionally intelligent, cutting-edge electric vehicles
                     at your trusted AVATR car dealer in UAE.</p>
             </div>
 
-            <div class="tabs">
+            <div class="tabs animate-text">
                 <div class="tab-buttons">
                     <button class="tab-btn active" data-tab="tab3" data-image="tab1">
                         History
@@ -117,7 +118,7 @@
                         Vision
                     </button>
                 </div>
-                <div class="tab-content">
+                <div class="tab-content ">
                     <div id="tab3" class="tab-panel active">
                         <p>Founded in 2018, AVATR is committed to reshaping the future of intelligent, humanized mobility
                             with innovative electric vehicles. As a trusted car dealer in the UAE, we prioritize both
@@ -147,16 +148,16 @@
 
     <section id="Car_models" class="section-padding vehicle-motors">
         <div class="main-container">
-            <h1>Meet The Models
+            <h1 class="animate-text">Meet The Models
             </h1>
-            <div class="tabs">
-                <div class="tab-buttons">
+            <div class="tabs ">
+                <div class="tab-buttons animate-text">
                     <button class="tab-btn-color active" data-target="tab1">AVATAR 11</button>
                     <button class="tab-btn-color" data-target="tab2">AVATAR 12</button>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents ">
                     <div id="tab1" class="tab-panel-color active">
-                        <div class="swiper-container swiper car-models">
+                        <div class="swiper-container swiper car-models animate-text">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <img class="w-100 my-50"
@@ -194,15 +195,16 @@
                             <div class="swiper-button-next"></div>
 
                         </div>
-                        <div class="d-flex align-items-center gap-5 mt-5 justify-content-center">
-                            <a href="{{ route(name: 'avatr11') }}" class="link">View AVATR 11</a>
-                            <a href="{{ route(name: 'avatr11') }}" class="btn">Customize</a>
+                        <div class="d-flex align-items-center gap-5 mt-5 justify-content-center animate-text">
+                            <a href="{{ route(name: 'avatr11') }}" class="link ">View
+                                AVATR 11</a>
+                            <a href="{{ route(name: 'avatr11') }}" class="btn ">Customize</a>
 
                         </div>
 
                     </div>
                     <div id="tab2" class="tab-panel-color">
-                        <div class="swiper-container swiper car-models">
+                        <div class="swiper-container swiper car-models animate-text">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <img class="w-100 my-50"
@@ -240,9 +242,9 @@
                             <div class="swiper-button-next"></div>
 
                         </div>
-                        <div class="d-flex align-items-center gap-5 mt-5 justify-content-center">
-                            <a href="{{ route(name: 'avatr12') }}" class="link">View AVATR 12</a>
-                            <a href="{{ route(name: 'avatr12') }}" class="btn">Customize</a>
+                        <div class="d-flex align-items-center gap-5 mt-5 justify-content-center animate-text">
+                            <a href="{{ route(name: 'avatr12') }}" class="link ">View AVATR 12</a>
+                            <a href="{{ route(name: 'avatr12') }}" class="btn ">Customize</a>
 
                         </div>
 
@@ -254,7 +256,7 @@
     </section>
 
 
-    <section class="design-center position-relative">
+    <section class="design-center position-relative py-5 py-lg-0">
         <div class="next-section animated-section">
             <div class="tab-img" id="tab-img1">
                 <picture>
@@ -282,9 +284,9 @@
             </di>
 
             <div class="container">
-                <div class="design-overlay-text">
+                <div class="design-overlay-text ">
                     <div class="accordion">
-                        <div class="accordion-item">
+                        <div class="accordion-item animate-text">
                             <div class="accordion-item-header" data-target="#tab-img1">
                                 <img class="me-2" src="{{ asset('website/images/home/accordion-icon-1.svg') }}"
                                     alt=""> All
@@ -303,7 +305,7 @@
 
 
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item animate-text">
                             <div class="accordion-item-header" data-target="#tab-img2">
                                 <img class="me-2" src="{{ asset('website/images/home/accordion-icon-2.svg') }}"
                                     alt=""> Safe
@@ -319,7 +321,7 @@
                                 <div class="service-line"></div>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item animate-text">
                             <div class="accordion-item-header" data-target="#tab-img3">
                                 <img class="me-2" src="{{ asset('website/images/home/accordion-icon-3.svg') }}"
                                     alt=""> Long
@@ -336,7 +338,7 @@
                                 <div class="service-line"></div>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item animate-text">
                             <div class="accordion-item-header" data-target="#tab-img4">
                                 <img class="me-2" src="{{ asset('website/images/home/accordion-icon-4.svg') }}"
                                     alt=""> High

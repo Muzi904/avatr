@@ -31,6 +31,7 @@
     .models-designs-varients #main-slider .splide__list .splide__slide {
         /* margin: auto !important; */
         position: relative;
+        width: 100% !important;
 
     }
 
@@ -46,7 +47,7 @@
 
     .models-designs-varients #thumbnail-slider .splide__list .splide__slide .wheel {
         position: absolute;
-        bottom: -39%;
+        bottom: -37%;
     }
 
     .models-designs-varients #main-slider .splide__list .splide__slide .wheel {
@@ -211,9 +212,9 @@
 </style>
 
 <section class="models-designs-varients">
-    <div class="container">
+    <div class="container-md">
         <div class="grid-rows">
-            <div class="column">
+            <div class="column animate-text">
                 <div id="main-slider" class="splide" aria-label="Main Slider">
                     <div class="splide__track">
                         <ul class="splide__list">
@@ -265,7 +266,7 @@
                 </div>
             </div>
 
-            <div class="column">
+            <div class="column animate-text">
                 <div class="right-section">
                     <img src="{{ asset('website/images/avatr11.svg') }}" alt="">
                     <p>Start your configuration journey with an inspired specification and make your smart electric

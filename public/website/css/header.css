@@ -13,7 +13,7 @@ header {
   transition: background-color 0.3s, padding 0.3s;
 }
 
-header .container {
+header .container-md {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -99,6 +99,7 @@ header ul li a:hover {
   color: #fff;
 }
 
+header ul li a.active::before,
 header ul li a:hover::before {
   width: 100%;
 }
