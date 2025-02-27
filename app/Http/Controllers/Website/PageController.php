@@ -51,4 +51,8 @@ class PageController extends Controller
     {
         return view('website.pages.request-quote');
     }
+    public function experienceAvatr()
+    {
+        return view('website.pages.experience-avatr');
+    }
 }
