@@ -30,7 +30,7 @@
     .models-designs-varients #main-slider .splide__list .splide__slide {
         /* margin: auto !important; */
         position: relative;
-
+        width: 100% !important;
     }
 
     .models-designs-varients #thumbnail-slider .splide__list .splide__slide .body {
@@ -212,7 +212,7 @@
 
 
 <section class="models-designs-varients">
-    <div class="container">
+    <div class="container-md">
         <div class="grid-rows">
             <div class="column">
                 <div id="main-slider" class="splide" aria-label="Main Slider">

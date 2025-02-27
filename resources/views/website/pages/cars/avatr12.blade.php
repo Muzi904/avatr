@@ -6,7 +6,7 @@
             <source srcset="{{ asset('website/images/avatr12/hero.webp') }}" media="(max-width: 768px)">
             <img src="{{ asset('website/images/avatr12/hero.webp') }}" alt="" class="w-100" loading="lazy">
         </picture>
-        <div class="container">
+        <div class="container-md">
             <div class="content">
                 <img class="h-100" src="{{ asset('website/images/avatr12/avatr12.svg') }}" alt="">
                 <p class="text-white">The futuristic luxury gran coupe
@@ -18,7 +18,7 @@
     </section>
 
     <section class="section-padding section-two">
-        <div class="container">
+        <div class="container-md">
             <div class="row mb-5">
                 <div class="col-md-4">
                     <h3>Introducing The Halo
@@ -281,7 +281,7 @@
     <section class="section-three-avatr11 section-padding">
         <h1>Always in Range
         </h1>
-        <div class="container">
+        <div class="container-md">
             <div class=" tabs-container scrolltabs">
                 <!-- Tabs (Text) -->
                 <div class="tabs">
@@ -328,7 +328,7 @@
     </section>
 
     <section class="section-one-avatr11">
-        <div class="container">
+        <div class="container-md">
             <div class="row">
                 <div class="col-md-12 position-relative">
                     <video id="video" class="w-100" muted>

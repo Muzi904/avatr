@@ -15,6 +15,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 
+
+
 <script>
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -425,4 +427,49 @@
         video.pause();
         document.getElementById('play_button').classList.remove('d-none')
     })
+</script>
+
+
+<script>
+    const tl1 = gsap.timeline();
+
+    // Set initial opacity and position for all .hero-animated elements
+    gsap.set(".hero-animated", {
+        opacity: 0,
+        y: 100
+    });
+
+    tl1.to(".hero-animated", {
+        duration: 1.5, // Reduced for a smoother feel
+        opacity: 1,
+        y: 0,
+        ease: "power4.out",
+        delay: 0.5,
+        stagger: 0.2
+    });
+</script>
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    document.querySelectorAll(".animate-text").forEach((element) => {
+        gsap.set(element, {
+            opacity: 0,
+            y: 100
+        }); // Set initial state
+
+        gsap.to(element, {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            stagger: 1,
+            ease: "power4.out",
+            scrollTrigger: {
+                trigger: element, // Each element triggers its own animation
+                start: "top 80%", // Adjust when animation starts
+                toggleActions: "play none none none", // Runs only once
+                markers: true,
+            },
+        });
+    });
 </script>
