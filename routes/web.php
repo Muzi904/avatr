@@ -23,6 +23,7 @@ Route::get('/car-details', [PageController::class, 'models'])->name(name: 'model
 Route::get('/car-details2', [PageController::class, 'models2'])->name(name: 'models2');
 Route::get('/showrooms', action: [PageController::class, 'showrooms'])->name(name: 'showrooms');
 Route::get('/request-a-quote', [PageController::class, 'requestQuote'])->name('request.quote');
+Route::get('/experience-avatr', [PageController::class, 'experienceAvatr'])->name(name: 'experience.avatr');
 
 
 Route::post('/submit-invitations', [EnquiryController::class, 'submitInvitations'])->name('submit-invitation');

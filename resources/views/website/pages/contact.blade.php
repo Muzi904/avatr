@@ -104,10 +104,12 @@
                     @endif
                 </div>
                 <div class="column">
-                    <div style="width: 100%"><iframe width="100%" height="500" frameborder="0" scrolling="no"
-                            marginheight="0" marginwidth="0"
-                            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                                href="https://www.gps.ie/">gps handsets</a></iframe></div>
+                    <div style="width: 100%">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.4002573404005!2d51.50108497516679!3d25.290752977650772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45dba5e574e87f%3A0xef9ebcc0221f59e1!2sAl%20Attiya%20Motors%20and%20Trading%20Co.!5e0!3m2!1sen!2sae!4v1740644963152!5m2!1sen!2sae"
+                            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </div>

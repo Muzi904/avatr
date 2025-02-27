@@ -468,7 +468,7 @@
                 trigger: element, // Each element triggers its own animation
                 start: "top 80%", // Adjust when animation starts
                 toggleActions: "play none none none", // Runs only once
-                markers: true,
+                // markers: true,
             },
         });
     });

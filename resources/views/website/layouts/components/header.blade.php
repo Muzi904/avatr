@@ -16,6 +16,9 @@
             <li>
                 <a class="navlink" href="{{ route('avatr12') }}">Avatr 12</a>
             </li>
+            {{-- <li>
+                <a class="navlink" href="{{ route('experience.avatr') }}">Experience Avatr</a>
+            </li> --}}
         </ul>
         <div class="logo">
             <a href="{{ route('home') }}"><svg xmlns="http://www.w3.org/2000/svg"
