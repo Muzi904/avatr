@@ -16,9 +16,9 @@
             <li>
                 <a class="navlink" href="{{ route('avatr12') }}">Avatr 12</a>
             </li>
-            {{-- <li>
+            <li>
                 <a class="navlink" href="{{ route('experience.avatr') }}">Experience Avatr</a>
-            </li> --}}
+            </li>
         </ul>
         <div class="logo">
             <a href="{{ route('home') }}"><svg xmlns="http://www.w3.org/2000/svg"
@@ -46,26 +46,33 @@
                 </svg></a>
         </div>
         <ul>
-            <li>
+            <li><a class="navlink" href="{{ route('ownership') }}">Ownership</a></li>
+            <li><a class="navlink" href="{{ route('discover') }}">Discover</a></li>
+            <li><a class="navlink" href="{{ route('news') }}">News</a></li>
+
+            {{-- <li>
                 <a class="navlink" href="{{ route('about') }}">About us</a>
-            </li>
+            </li> --}}
             <!--<li><a href="{{ route('models') }}">Models</a></li>-->
             {{-- <li><a href="{{ route('models') }}">Models</a></li> --}}
             <!--<li><a href="{{ route('showrooms') }}">Showrooms</a></li>-->
-            <li><a class="navlink" href="{{ route('test.drive') }}">Test drive</a></li>
-            <li><a class="navlink" href="{{ route('request.quote') }}">Request A Quote</a></li>
+            {{-- <li><a class="navlink" href="{{ route('test.drive') }}">Test drive</a></li> --}}
+            {{-- <li><a class="navlink" href="{{ route('request.quote') }}">Request A Quote</a></li> --}}
             <li><a class="navlink" href="{{ route('contact') }}">Contact</a></li>
         </ul>
 
         <ul class="mobile-menu">
             <li><a class="navlink" href="{{ route('avatr11') }}">Avatr 11</a></li>
             <li><a class="navlink" href="{{ route('avatr12') }}">Avatr 12</a></li>
-            <li><a class="navlink" href="{{ route('about') }}">About us</a></li>
+            <li><a class="navlink" href="{{ route('ownership') }}">Ownership</a></li>
+            <li><a class="navlink" href="{{ route('discover') }}">Discover</a></li>
+            <li><a class="navlink" href="{{ route('news') }}">News</a></li>
+            <li><a class="navlink" href="{{ route('contact') }}">Contact</a></li>
+            {{-- <li><a class="navlink" href="{{ route('about') }}">About us</a></li> --}}
             <!--<li><a class="navlink" href="{{ route('models') }}">Models</a></li>-->
             <!--<li><a class="navlink" href="{{ route('showrooms') }}">Showrooms</a></li>-->
-            <li><a class="navlink" href="{{ route('test.drive') }}">Test drive</a></li>
-            <li><a class="navlink" href="{{ route('request.quote') }}">Request A Quote</a></li>
-            <li><a class="navlink" href="{{ route('contact') }}">Contact</a></li>
+            {{-- <li><a class="navlink" href="{{ route('test.drive') }}">Test drive</a></li> --}}
+            {{-- <li><a class="navlink" href="{{ route('request.quote') }}">Request A Quote</a></li> --}}
         </ul>
     </div>
 </header>

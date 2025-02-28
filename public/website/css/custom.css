@@ -21,13 +21,13 @@
 .swiper-grid .content-section .content p {
   font-family: 'AVATRFont-Regular';
 }
-.swiper-grid .content-section .swiper-button-next,
+/* .swiper-grid .content-section .swiper-button-next,
 .swiper-button-prev {
   top: 95%;
   width: 35px;
   height: 35px;
   border: 1.8px solid #ffffff;
-}
+} */
 .swiper-grid .swiper-button-next:after,
 .swiper-grid .swiper-button-prev:after {
   font-size: 20px !important;
@@ -265,4 +265,26 @@
   width: 250px;
   margin: auto;
   font-family: 'AVATRFont-Regular';
+}
+
+.photo-gallery {
+  position: initial;
+}
+.photo-gallery .swiper-button-next,
+.photo-gallery .swiper-button-prev {
+  position: absolute;
+  top: 125px;
+  right: 112px;
+}
+.photo-gallery .swiper-button-prev {
+  right: 177px;
+  left: auto;
+}
+.photo-gallery .swiper-button-next:after,
+.photo-gallery .swiper-button-prev:after {
+  font-size: 28px;
+  color: #212529;
+}
+#photogallery {
+  position: relative;
 }

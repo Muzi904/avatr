@@ -104,11 +104,19 @@ li {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  max-width: 900px;
+  width: 100%;
+  padding: 0 15px;
 }
 .hero .content h1 {
   font-size: clamp(1rem, calc(1.5rem + 3.952 * (1vw - 0.2rem)), 5rem);
   font-family: 'AVATRFont-Light';
   margin-bottom: 15px;
+}
+.hero .content h2 {
+  font-size: clamp(1rem, calc(1rem + 3 * (1vw - 0.2rem)), 5rem);
+  font-family: 'AVATRFont-Regular';
+  margin-bottom: 25px;
 }
 .hero .content p {
   font-size: 20px;
@@ -151,10 +159,10 @@ li {
 .section-two h3 {
   font-size: clamp(1.85rem, 1.85rem + ((1vw - 0.2rem) * 1.083), 2.5rem);
   font-weight: 500;
-  max-width: 400px;
+  max-width: 450px;
 }
 .section-two {
-  font-size: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.625), 20px);
+  font-size: clamp(14px, 0.75rem + ((1vw - 3.2px) * 0.625), 20px);
   font-weight: 500;
 }
 .section-padding {
@@ -1389,6 +1397,8 @@ html {
   flex: 0.2;
   flex-direction: column;
   margin: 0;
+  position: sticky;
+  top: 80px;
 }
 .section-three-avatr11 .tabs-container .tab {
   width: 100%;
@@ -1416,10 +1426,10 @@ html {
 .section-one-avatr11 {
   padding-bottom: 100px;
 }
-.section-one-avatr11 video {
+.video-container video {
   cursor: pointer;
 }
-.section-one-avatr11 #play_button {
+.video-container #play_button {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1468,4 +1478,122 @@ html {
   color: var(--white-color);
   background: linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, #181818 100%);
   width: 100%;
+}
+
+.hero-car-details .experience-form {
+  width: 50%;
+}
+.hero-car-details .experience-form .contact-form .grid-rows {
+  background-color: rgba(24, 24, 24, 0.6) !important;
+}
+.hero-car-details .experience-form .contact-form form .grid-rows {
+  background-color: transparent !important;
+}
+.hero-car-details .experience-form .contact-form form .grid-rows select {
+  background: rgb(70 70 70 / 27%) !important;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+.hero-car-details .experience-form .contact-form form .grid-rows input {
+  color: #fff;
+}
+.hero-car-details
+  .experience-form
+  .iti--separate-dial-code
+  .iti__selected-dial-code,
+.hero-car-details .experience-form form .grid-rows input::placeholder,
+.hero-car-details .experience-form form .grid-rows select::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+.hero-car-details .experience-form .iti__country-list {
+  width: 270px;
+}
+
+.corresponding-tabs {
+  background-color: #fff;
+  z-index: 99;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.corresponding-tabs .sticky-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  /* margin-bottom: 50px; */
+  border-bottom: 1px solid var(--text-color);
+  margin: 0;
+  max-width: 100%;
+  overflow-y: hidden;
+  justify-content: start;
+}
+.corresponding-tabs .sticky-section a {
+  padding-block: 20px;
+  display: block;
+  color: var(--text-color);
+  text-decoration: none;
+  position: relative;
+  font-size: calc(0.6rem + 0.6vw) !important;
+  padding-inline: 0;
+}
+.corresponding-tabs .sticky-section a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #b4d719;
+  transition: width 0.3s;
+  z-index: 99;
+}
+.corresponding-tabs .sticky-section a:hover::before,
+.corresponding-tabs .sticky-section a.active::before {
+  width: 100%;
+}
+.main-section .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.main-section .tags span {
+  padding: 5px;
+  border: 1px solid #181818d1;
+  color: #181818d1;
+  font-size: calc(0.5rem + 0.6vw);
+  border-radius: 5px;
+}
+.section-dark .tags span {
+  border: 1px solid #ffffffce;
+  color: #ffffffce;
+}
+
+.section-dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.app-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.main-section h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+.main-section p {
+  font-size: calc(0.6rem + 0.6vw);
+}
+
+.corresponding-tabs.scrolled {
+  position: sticky;
+  top: -33px;
+  transition: all 0.3s ease-in-out;
+}
+.corresponding-tabs.scrolled .sticky-section {
+  /* margin-bottom: 0; */
+}
+.margin-top-sccrolled {
+  margin-top: 300px;
 }

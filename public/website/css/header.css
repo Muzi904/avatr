@@ -9,7 +9,7 @@ header {
   height: 64px;
   display: flex;
   align-items: center;
-  z-index: 9;
+  z-index: 9999;
   transition: background-color 0.3s, padding 0.3s;
 }
 

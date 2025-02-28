@@ -55,4 +55,16 @@ class PageController extends Controller
     {
         return view('website.pages.experience-avatr');
     }
+    public function ownership()
+    {
+        return view('website.pages.ownership');
+    }
+    public function discover()
+    {
+        return view('website.pages.discover');
+    }
+    public function news()
+    {
+        return view('website.pages.news');
+    }
 }

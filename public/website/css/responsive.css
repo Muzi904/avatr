@@ -364,8 +364,41 @@
   .section-one-avatr11 {
     padding-bottom: 70px;
   }
+  .corresponding-tabs.scrolled {
+    top: 0;
+    padding-top: 64px;
+  }
+  .corresponding-tabs .sticky-section a {
+    padding-block: 15px;
+  }
+  .padding-corresponding {
+    padding-top: 100px !important;
+  }
 }
 @media screen and (max-width: 768px) {
+  .highlight {
+    padding-top: 100px !important;
+  }
+  .hero .content h2 {
+    font-size: 32px;
+  }
+
+  .hero .content {
+    width: 100%;
+    padding: 0 15px;
+    max-width: 700px;
+  }
+  .contact-form .grid-rows h3 {
+    font-size: 24px;
+  }
+  .hero-car-details .experience-form {
+    width: 100%;
+    top: 57%;
+    left: 0;
+  }
+  .hero-car-details .content p {
+    margin-bottom: 10px;
+  }
   .hero img,
   .hero-car-details img {
     object-position: center;
@@ -621,6 +654,12 @@
   }
   .showroom-list .card {
     gap: 15px;
+  }
+  .experience-page {
+    height: 110vh;
+  }
+  .experience-page img {
+    height: 110vh;
   }
 }
 

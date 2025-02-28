@@ -246,3 +246,81 @@
         });
     });
 </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const targetDiv = document.querySelector(".corresponding-tabs");
+        const offsetTop = targetDiv.offsetTop;
+
+        window.addEventListener("scroll", function() {
+            if (window.scrollY >= offsetTop) {
+                targetDiv.classList.add("scrolled");
+            } else {
+                targetDiv.classList.remove("scrolled");
+            }
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const navLinks = document.querySelectorAll(".sticky-section a");
+        const sections = document.querySelectorAll("section[id]");
+
+        function changeActiveSection() {
+            let scrollPosition = window.scrollY + 100; // Offset for better accuracy
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute("id");
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelector(".sticky-section a.active")?.classList.remove("active");
+                    document.querySelector(`.sticky-section a[href="#${sectionId}"]`)?.classList.add(
+                        "active");
+                }
+            });
+        }
+
+        function smoothScroll(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop - 50, // Adjust to match fixed header height if needed
+                    behavior: "smooth"
+                });
+
+                // Manually update active class since scroll event may take time
+                document.querySelector(".sticky-section a.active")?.classList.remove("active");
+                this.classList.add("active");
+            }
+        }
+
+        // Add event listeners
+        window.addEventListener("scroll", changeActiveSection);
+        navLinks.forEach(link => link.addEventListener("click", smoothScroll));
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var swiper = new Swiper(".photo-gallery", {
+            loop: true,
+            spaceBetween: 30,
+            slidesPerView: 2,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            speed: 800, // Transition speed
+        });
+    });
+</script>
