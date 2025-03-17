@@ -89,6 +89,23 @@ class EnquiryExport implements FromCollection, WithHeadings, WithStrictNullCompa
                     $value->created_at ? Carbon::parse($value->created_at)->format('d/m/Y h:i A') : '',
 
                 ];
+            } elseif ($request->type == 'experience') {
+                $output[] = [
+                    $key + 1,
+                    $value->enq_no,
+                    // $value->type ? ucfirst($value->type) : '',
+                    $value->model ? ucfirst($value->model) : '',
+                    $value->name,
+                    $value->email,
+                    $value->phone_number,
+                    // $value->language ? ucfirst($value->language) : '',
+                    // $value->nationality ? ucfirst($value->nationality) : '',
+                    // $value->subject,
+                    // $value->message,
+                    // $value->date ? Carbon::parse($value->date)->format('d/m/Y') : '',
+                    $value->created_at ? Carbon::parse($value->created_at)->format('d/m/Y h:i A') : '',
+
+                ];
             } elseif ($request->type == 'request-quote') {
                 $output[] = [
                     $key + 1,
@@ -178,6 +195,22 @@ class EnquiryExport implements FromCollection, WithHeadings, WithStrictNullCompa
                 // 'NATIONALITY',
                 'SUBJECT',
                 'MESSAGE',
+                // 'TESTDRIVE DATE',
+                'CREATED ON'
+            ];
+        } elseif ($request->type == 'experience') {
+            return [
+                'SL.NO',
+                'ENQ. NO',
+                // 'TYPE',
+                'MODEL',
+                'NAME',
+                'EMAIL',
+                'PHONE NUMBER',
+                // 'LANGUAGE',
+                // 'NATIONALITY',
+                // 'SUBJECT',
+                // 'MESSAGE',
                 // 'TESTDRIVE DATE',
                 'CREATED ON'
             ];

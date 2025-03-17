@@ -44,6 +44,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/test-drive', [EnquiryController::class, 'testDrive'])->name('admin.test-drive.index');
     Route::get('/request-quote', [EnquiryController::class, 'requestQuote'])->name('admin.request.quote.index');
     Route::get('/contact', [EnquiryController::class, 'contact'])->name('admin.contact.index');
+    Route::get('/experience', [EnquiryController::class, 'experience'])->name('admin.experience.index');
 
     Route::get('/enquiry/clear-session', [EnquiryController::class, 'clearSession'])->name('admin.enquiry.clear.session');
 
