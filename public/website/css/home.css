@@ -1427,7 +1427,8 @@ html {
   padding-bottom: 100px;
 }
 .video-container video {
-  cursor: pointer;
+  /* cursor: pointer; */
+  border-radius: 25px;
 }
 .video-container #play_button {
   position: absolute;

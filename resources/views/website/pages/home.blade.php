@@ -3,21 +3,22 @@
 @section('content')
     <section class="hero">
         <picture>
-            <source srcset="{{ asset('website/images/home/hero.png') }}" media="(max-width: 768px)">
-            <img src="{{ asset('website/images/home/hero.png') }}" alt="" class="w-100" loading="lazy">
+            <source srcset="{{ asset('website/images/home/Banner142-mob.jpg') }}" media="(max-width: 768px)">
+            <img src="{{ asset('website/images/home/Banner142.jpg') }}" alt="" class="w-100" loading="lazy">
         </picture>
         <div class="content hero-animated">
-            <h1 class="">Luxury Redesigned
+            <h1 class="">ENVISIONING NEXT
             </h1>
-            <p class="">The AVATR experience starts from <br>
-                AED 245,000 with best in class features and unmatched advantages.
+            <p class="">The future of luxury Electric Vehicles has arrived. <br>
+                Experience the sublime sensation of absolute luxury with <br>
+                best-in-class features and unparalleled benefits
             </p>
             <a href="#Car_models" class="btn mx-auto ">View Models</a>
         </div>
     </section>
 
     <section class="section-padding section-two">
-        <div class="running-text animate-text">
+        <div class="running-text animate-text" style="display:none;">
             <div class="swiper-container swiper--top ">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">AVATR 11 / The Future of Smart EVs / AVATR 12 / Revolutionizing Mobility/
@@ -51,11 +52,9 @@
                 </div>
                 <div class="col-md-8 animate-text">
                     <p class="mb-md-4">
-                        AVATR invites you to explore the next generation of humanized mobility and technology at your AVATR
-                        car
-                        dealer in UAE.</p>
-                    <p>Experience the future of luxury with beautifully designed, emotionally intelligent, high-performance
-                        vehicles. AVATR UAE is committed to building a global Smart Electric Vehicle brand.</p>
+                        AVATR invites you to explore the next generation of humanised mobility and technology.</p>
+                    <p>Experience the future of luxury with beautifully designed, emotionally intelligent, high-
+                        performance vehicles.</p>
                 </div>
             </div>
         </div>
@@ -77,20 +76,20 @@
         <div class="bg-image-section ">
             <div class="tab-image active" data-image="tab1">
                 <picture>
-                    <source srcset="{{ asset('website/images/home/img1.jpg') }}" media="(max-width: 768px)"><img
-                        src="{{ asset('website/images/home/img1.jpg') }}" alt="" class="w-100">
+                    <source srcset="{{ asset('website/images/home/luxury-zero-gravity-1.jpg') }}" media="(max-width: 768px)">
+                    <img src="{{ asset('website/images/home/luxury-zero-gravity-1.jpg') }}" alt="" class="w-100">
                 </picture>
             </div>
             <div class="tab-image" data-image="tab2">
                 <picture>
-                    <source srcset="{{ asset('website/images/home/img1.jpg') }}" media="(max-width: 768px)"><img
-                        src="{{ asset('website/images/home/img1.jpg') }}" alt="" class="w-100">
+                    <source srcset="{{ asset('website/images/home/luxury-zero-gravity-1.jpg') }}" media="(max-width: 768px)">
+                    <img src="{{ asset('website/images/home/luxury-zero-gravity-1.jpg') }}" alt="" class="w-100">
                 </picture>
             </div>
             <div class="tab-image" data-image="tab3">
                 <picture>
-                    <source srcset="{{ asset('website/images/home/img1.jpg') }}" media="(max-width: 768px)"><img
-                        src="{{ asset('website/images/home/img1.jpg') }}" alt="" class="w-100">
+                    <source srcset="{{ asset('website/images/home/luxury-zero-gravity-1.jpg') }}" media="(max-width: 768px)">
+                    <img src="{{ asset('website/images/home/luxury-zero-gravity-1.jpg') }}" alt="" class="w-100">
                 </picture>
             </div>
         </div>
@@ -99,11 +98,10 @@
             <div class="text d-none d-lg-block">
                 <h1 class="animate-text">AVATR: Emotional Intelligence, Motion in Delight </h1>
                 <p class="animate-text">AVATR redefines the driving experience with Emotional Intelligence, delivering a
-                    seamless blend of
-                    performance, luxury, and smart technology. With Motion in Delight, each drive is an immersive
-                    experience, offering exceptional comfort, intuitive controls, and a responsive, high-performance ride.
-                    Experience the future of mobility with AVATR’s emotionally intelligent, cutting-edge electric vehicles
-                    at your trusted AVATR car dealer in UAE.</p>
+                    seamless blend of performance, luxury, and smart technology. With Motion in Delight,
+                    each drive is an immersive experience, offering exceptional comfort, intuitive controls,
+                    and a responsive, high-performance ride. Experience the future of mobility with AVATR’s
+                    emotionally intelligent, cutting-edge electric vehicles. </p>
             </div>
 
             <div class="tabs animate-text">
@@ -120,25 +118,30 @@
                 </div>
                 <div class="tab-content ">
                     <div id="tab3" class="tab-panel active">
-                        <p>Founded in 2018, AVATR is committed to reshaping the future of intelligent, humanized mobility
-                            with innovative electric vehicles. As a trusted car dealer in the UAE, we prioritize both
-                            performance and sustainability in every vehicle.The mission of AVATR is to provide unique smart
-                            mobility experiences through advanced electric vehicles that seamlessly integrate into and
-                            enhance the lifestyle of our users. As a leading car dealer in the UAE, we offer cutting-edge
-                            smart electric vehicles that redefine convenience and performance.Driven by cutting-edge design
-                            and emotionally intelligent technologies, AVATR’s vision is to lead the high-end Smart El</p>
+                        <p>Elaf Motors, the sole distributor of Changan vehicles in Qatar, is expanding its
+                            footprint in the Electric Vehicle industry with the launch of AVATR. AVATR
+                            Technology, a premium, high-end, smart Electric Vehicle brand, is supported by
+                            industry leaders CHANGAN Automobile, Huawei, and CATL. With a commitment
+                            to pioneering future-oriented mobility solutions, AVATR is set to redefine the EV
+                            landscape in Qatar. <br><br>
+
+                            Elaf Motors brings years of expertise in the automotive sector, ensuring a
+                            seamless introduction of AVATR vehicles to the local market. With a strong focus
+                            on customer service, business efficiency, and innovation, we aim to make AVATR
+                            a leading name in Qatar’s growing EV industry. </p>
                     </div>
                     <div id="tab4" class="tab-panel">
-                        <p> The mission of AVATR is to provide unique smart mobility experiences through advanced electric
-                            vehicles that seamlessly integrate into and enhance the lifestyle of our users. As a leading
+                        <p> Offering unique and futuristic mobility experiences and lifestyles, AVATR Qatar is
+                            dedicated to revolutionising smart electric mobility. We strive to enhance your
+                            driving experience through cutting-edge technology, intelligent solutions, and
+                            sustainable energy practices.
                         </p>
                     </div>
                     <div id="tab5" class="tab-panel">
-                        <p> Driven by cutting-edge design and emotionally intelligent technologies, AVATR’s vision is to
-                            lead the high-end Smart Electric Vehicle (SEV) market globally by 2030, establishing AVATR UAE
-                            as a key player in the industry. Visit our AVATR showroom to explore the future of electric
-                            mobility and experience the luxury and performance of our innovative vehicles.
-                        </p>
+                        <p> We envision becoming the last word in luxury EVs, combining futuristic design
+                            with warm and intelligent technology. Our vision is to empower individuals to
+                            enhance and expand the life they pursue, creating a seamless and connected
+                            driving experience. </p>
                     </div>
                 </div>
             </div>
@@ -158,97 +161,220 @@
                 <div class="tab-contents ">
                     <div id="tab1" class="tab-panel-color active">
                         <div class="swiper-container swiper car-models animate-text">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
+                            <div class="swiper-wrapper" id="slider-wrapper">
+                                <!-- Red image -->
+                                <div class="swiper-slide" id="red-slide">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avartr11/img1.jpg') }}"
-                                        alt="">
+                                        src="{{ asset('website/images/home/color-variants/avartr11/Liquid-Caramel.jpg') }}"
+                                        alt="Liquid-Caramel">
                                 </div>
-                                <div class="swiper-slide">
+                                <!-- Blue image -->
+                                <div class="swiper-slide" id="blue-slide" style="display: none;">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avartr11/img2.jpg') }}"
-                                        alt="">
+                                        src="{{ asset('website/images/home/color-variants/avartr11/Aqua-Green.jpg') }}"
+                                        alt="Aqua-Green">
                                 </div>
-                                <div class="swiper-slide">
+                                <!-- Green image -->
+                                <div class="swiper-slide" id="green-slide" style="display: none;">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avartr11/img3.jpg') }}"
-                                        alt="">
+                                        src="{{ asset('website/images/home/color-variants/avartr11/Matte-White.jpg') }}"
+                                        alt="Matte-White">
                                 </div>
-                                <div class="swiper-slide">
+                                <!-- Black image -->
+                                <div class="swiper-slide" id="black-slide" style="display: none;">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avartr11/img4.jpg') }}"
-                                        alt="">
+                                        src="{{ asset('website/images/home/color-variants/avartr11/Glossy-Grey.jpg') }}"
+                                        alt="Glossy-Grey">
                                 </div>
-                                <div class="swiper-slide">
+                                <!-- Yellow image -->
+                                <div class="swiper-slide" id="yellow-slide" style="display: none;">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avartr11/img5.jpg') }}"
-                                        alt="">
+                                        src="{{ asset('website/images/home/color-variants/avartr11/Matte-Grey.jpg') }}"
+                                        alt="Matte-Grey">
                                 </div>
-                                <div class="swiper-slide">
+                                <!-- White image -->
+                                <div class="swiper-slide" id="white-slide" style="display: none;">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avartr11/img6.jpg') }}"
-                                        alt="">
+                                        src="{{ asset('website/images/home/color-variants/avartr11/Glossy-Black.jpg') }}"
+                                        alt="Glossy-Black">
                                 </div>
 
                             </div>
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
+                        </div>
+
+                        <!-- Color Icons Section -->
+                        <div class="d-flex align-items-center gap-3 mt-3 justify-content-center flex-wrap">
+                            <button class="varient-btn active" data-color="red">
+                                <img src="{{ asset('website/images/home/color-variants/avartr11/color-img1.png') }}"
+                                    title="Liquid-Caramel" alt="Red">
+                            </button>
+                            <!-- Button for Blue -->
+                            <button class="varient-btn" data-color="blue">
+                                <img src="{{ asset('website/images/home/color-variants/avartr11/color-img2.png') }}"
+                                    title="Aqua-Green" alt="Blue">
+                            </button>
+                            <!-- Button for Green -->
+                            <button class="varient-btn" data-color="green">
+                                <img src="{{ asset('website/images/home/color-variants/avartr11/color-img3.png') }}"
+                                    title="Matte-White" alt="Green">
+                            </button>
+                            <!-- Button for Black -->
+                            <button class="varient-btn" data-color="black">
+                                <img src="{{ asset('website/images/home/color-variants/avartr11/color-img4.png') }}"
+                                    title="Glossy-Grey" alt="Black">
+                            </button>
+                            <!-- Button for Yellow -->
+                            <button class="varient-btn" data-color="yellow">
+                                <img src="{{ asset('website/images/home/color-variants/avartr11/color-img6.png') }}"
+                                    title="Matte-Grey" alt="Yellow">
+                            </button>
+                            <!-- Button for White -->
+                            <button class="varient-btn" data-color="white">
+                                <img src="{{ asset('website/images/home/color-variants/avartr11/color-img5.png') }}"
+                                    title="Glossy-Black" alt="White">
+                            </button>
 
                         </div>
+
                         <div class="d-flex align-items-center gap-5 mt-5 justify-content-center animate-text">
-                            <a href="{{ route(name: 'avatr11') }}" class="link ">View
-                                AVATR 11</a>
+                            <a href="{{ route(name: 'avatr11') }}" class="link ">View AVATR 11</a>
                             <a href="{{ route(name: 'avatr11') }}" class="btn ">Customize</a>
-
                         </div>
-
                     </div>
+
+                    <style>
+                        /* Styling for color variant buttons */
+                        .varient-btn {
+                            background-color: transparent;
+                            border: none;
+                            padding: 10px;
+                            cursor: pointer;
+                            transition: transform 0.3s ease, border 0.3s ease;
+                            margin: 0 10px;
+                        }
+
+                        /* Image inside the color variant button */
+                        .varient-btn img {
+                            width: 40px;
+                            height: 40px;
+                            object-fit: cover;
+                        }
+
+                        /* Hover effect for buttons */
+                        .varient-btn:hover {
+                            transform: scale(1.1);
+                        }
+
+                        /* Active button styling */
+                        .varient-btn.active {
+                            border: 2px solid #000;
+                            /* Border around active button */
+                            background-color: rgba(0, 0, 0, 0.1);
+                            /* Slight background highlight */
+                        }
+
+                        /* Optional: Adjust size of active button (optional) */
+                        .varient-btn.active img {
+                            transform: scale(1.1);
+                            /* Slightly increase image size when active */
+                        }
+                    </style>
+
                     <div id="tab2" class="tab-panel-color">
                         <div class="swiper-container swiper car-models animate-text">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
+                            <div class="swiper-wrapper" id="slider-wrapper-2">
+                                <!-- Red image -->
+                                <div class="swiper-slide" id="red-slide-2">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avatr12/img1.jpg') }}"
-                                        alt="">
+                                        src="{{ asset('website/images/home/color-variants/avatr12/Matte-Purple.png') }}"
+                                        alt="Matte-Purple">
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide" id="purple-slide-2">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avatr12/img2.jpg') }}"
-                                        alt="">
+                                        src="{{ asset('website/images/home/color-variants/avatr12/Misty-Purple.png') }}"
+                                        alt="Misty-Purple">
                                 </div>
-                                <div class="swiper-slide">
+                                <!-- Blue image -->
+                                <div class="swiper-slide" id="blue-slide-2" style="display: none;">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avatr12/img3.jpg') }}"
-                                        alt="">
+                                        src="{{ asset('website/images/home/color-variants/avatr12/Glossy-White.png') }}"
+                                        alt="Glossy-White">
                                 </div>
-                                <div class="swiper-slide">
+                                <!-- Green image -->
+                                <div class="swiper-slide" id="green-slide-2" style="display: none;">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avatr12/img4.jpg') }}"
-                                        alt="">
+                                        src="{{ asset('website/images/home/color-variants/avatr12/Glossy-Grey.png') }}"
+                                        alt="Glossy-Grey">
                                 </div>
-                                <div class="swiper-slide">
+                                <!-- Black image -->
+                                <div class="swiper-slide" id="black-slide-2" style="display: none;">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avatr12/img5.jpg') }}"
-                                        alt="">
+                                        src="{{ asset('website/images/home/color-variants/avatr12/Glossy-Black.png') }}"
+                                        alt="Glossy-Black">
                                 </div>
-                                <div class="swiper-slide">
+                                <!-- White image -->
+                                <div class="swiper-slide" id="white-slide-2" style="display: none;">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avatr12/img6.jpg') }}"
-                                        alt="">
+                                        src="{{ asset('website/images/home/color-variants/avatr12/Slate-Blue.png') }}"
+                                        alt="Slate-Blue">
                                 </div>
-
+                                <!-- Yellow image -->
+                                <div class="swiper-slide" id="yellow-slide-2" style="display: none;">
+                                    <img class="w-100 my-50"
+                                        src="{{ asset('website/images/home/color-variants/avatr12/LC.png') }}"
+                                        alt="Liquid-Caramel">
+                                </div>
                             </div>
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
-
                         </div>
+
+                        <!-- Color Icons Section -->
+                        <div class="d-flex align-items-center gap-3 mt-3 justify-content-center flex-wrap">
+                            <button class="varient-btn active" data-color="red">
+                                <img src="{{ asset('website/images/home/color-variants/avatr12/color-img1.png') }}"
+                                    title="Matte-Purple" alt="Matte-Purple">
+                            </button>
+                            <button class="varient-btn" data-color="purple">
+                                <img src="{{ asset('website/images/home/color-variants/avatr12/color-img1.png') }}"
+                                    title="Misty-Purple" alt="Misty-Purple">
+                            </button>
+                            <!-- Button for Blue -->
+                            <button class="varient-btn" data-color="blue">
+                                <img src="{{ asset('website/images/home/color-variants/avatr12/color-img2.png') }}"
+                                    title="Glossy-White" alt="Glossy-White">
+                            </button>
+                            <!-- Button for Green -->
+                            <button class="varient-btn" data-color="green">
+                                <img src="{{ asset('website/images/home/color-variants/avatr12/color-img3.png') }}"
+                                    title="Glossy-Grey" alt="Glossy-Grey">
+                            </button>
+                            <!-- Button for Black -->
+                            <button class="varient-btn" data-color="black">
+                                <img src="{{ asset('website/images/home/color-variants/avatr12/color-img4.png') }}"
+                                    title="Glossy-Black" alt="Glossy-Black">
+                            </button>
+                            <!-- Button for White -->
+                            <button class="varient-btn" data-color="white">
+                                <img src="{{ asset('website/images/home/color-variants/avatr12/color-img5.png') }}"
+                                    title="Slate-Blue" alt="Slate-Blue">
+                            </button>
+                            <!-- Button for Yellow -->
+                            <button class="varient-btn" data-color="yellow">
+                                <img src="{{ asset('website/images/home/color-variants/avatr12/color-img6.png') }}"
+                                    title="Liquid-Caramel" alt="Liquid-Caramel">
+                            </button>
+                        </div>
+
                         <div class="d-flex align-items-center gap-5 mt-5 justify-content-center animate-text">
-                            <a href="{{ route(name: 'avatr12') }}" class="link ">View AVATR 12</a>
-                            <a href="{{ route(name: 'avatr12') }}" class="btn ">Customize</a>
-
+                            <a href="{{ route(name: 'avatr12') }}" class="link">View AVATR 12</a>
+                            <a href="{{ route(name: 'avatr12') }}" class="btn">Customize</a>
                         </div>
-
                     </div>
+
+
                 </div>
             </div>
 
@@ -264,7 +390,7 @@
                     <img src="{{ asset('website/images/home/accordion-img1.webp') }}" alt="" class="w-100" />
                 </picture>
             </div>
-            <di class="tab-img"v id="tab-img2">
+            <di class="tab-img" v id="tab-img2">
                 <picture>
                     <source srcset="{{ asset('website/images/home/accordion-img2.webp') }}" media="(max-width: 768px)" />
                     <img src="{{ asset('website/images/home/accordion-img2.webp') }}" alt="" class="w-100" />
@@ -361,4 +487,91 @@
 
         </div>
     </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const colorButtons = document.querySelectorAll(".varient-btn");
+            const sliderWrapper = document.getElementById("slider-wrapper");
+
+            // Initialize Swiper for tab1
+            let swiper = new Swiper(".swiper-container", {
+                loop: false, // Disable loop
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+
+            // Function to switch images based on selected color
+            function switchColorImages(color) {
+                // Hide all images initially
+                const allSlides = sliderWrapper.querySelectorAll(".swiper-slide");
+                allSlides.forEach(slide => slide.style.display = "none");
+
+                // Show the selected color's image
+                const selectedSlide = document.getElementById(color + "-slide");
+                if (selectedSlide) {
+                    selectedSlide.style.display = "block";
+                }
+            }
+
+            // Add event listener to each color button
+            colorButtons.forEach(button => {
+                button.addEventListener("click", function() {
+                    // Remove active class from all color buttons and add to the clicked button
+                    colorButtons.forEach(btn => btn.classList.remove("active"));
+                    this.classList.add("active");
+
+                    // Get the color data attribute and switch images
+                    const selectedColor = this.getAttribute("data-color");
+                    switchColorImages(selectedColor);
+                });
+            });
+
+            // Set initial active color to red
+            switchColorImages("red");
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const colorButtons = document.querySelectorAll(".varient-btn");
+            const sliderWrapper2 = document.getElementById("slider-wrapper-2");
+
+            let swiper2 = new Swiper(".swiper-container", {
+                loop: false, // Ensure no looping
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+
+            // Function to switch images based on selected color
+            function switchColorImages(color) {
+                // Hide all images
+                const allSlides = sliderWrapper2.querySelectorAll(".swiper-slide");
+                allSlides.forEach(slide => slide.style.display = "none");
+
+                // Show the selected color's image
+                const selectedSlide = document.getElementById(color + "-slide-2");
+                if (selectedSlide) {
+                    selectedSlide.style.display = "block";
+                }
+            }
+
+            // Add event listener to each color button
+            colorButtons.forEach(button => {
+                button.addEventListener("click", function() {
+                    // Remove active class from all and add to the clicked color button
+                    colorButtons.forEach(btn => btn.classList.remove("active"));
+                    this.classList.add("active");
+
+                    // Get the color data and switch images
+                    const selectedColor = this.getAttribute("data-color");
+                    switchColorImages(selectedColor);
+                });
+            });
+
+            // Set initial active color to red
+            switchColorImages("red");
+        });
+    </script>
 @endsection

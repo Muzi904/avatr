@@ -64,6 +64,7 @@
         <ul class="mobile-menu">
             <li><a class="navlink" href="{{ route('avatr11') }}">Avatr 11</a></li>
             <li><a class="navlink" href="{{ route('avatr12') }}">Avatr 12</a></li>
+             <li><a class="navlink" href="{{ route('experience.avatr') }}">Experience Avatr</a></li>
             <li><a class="navlink" href="{{ route('ownership') }}">Ownership</a></li>
             <li><a class="navlink" href="{{ route('discover') }}">Discover</a></li>
             <li><a class="navlink" href="{{ route('news') }}">News</a></li>

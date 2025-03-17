@@ -22,19 +22,20 @@
                                         </p>
                                     </div>
                                 @else
-                                    <h3 class="text-white">Experience the Future of Electric Mobility Now with AVATR</h3>
-                                    <p class="text-white">AVATR invites you to experience what luxury electric mobility can
-                                        offer. Book your
-                                        demo drive today with an AVATR car dealer in UAE and explore the future of driving
-                                        in Dubai!</p>
-                                    <form action="{{ route('contact.submit') }}" method="POST">
+                                    <h3 class="text-white">Experience the future of electric driving. <br>Prepare for a
+                                        paradigm shift. </h3>
+                                    <p class="text-white">AVATR is prepared to completely change how you view cars. Are you
+                                        ready?
+                                        Book your test drive today and prepare yourself for an experience that cannot be
+                                        described. </p>
+                                    <form action="{{ route('experience.submit') }}" method="POST">
                                         @csrf
                                         <div class="grid-rows bg-transparent">
                                             <div class="form-input">
-                                                <input type="text" name="name" placeholder="First Name" required>
+                                                <input type="text" name="f_name" placeholder="First Name" required>
                                             </div>
                                             <div class="form-input">
-                                                <input type="email" name="email" placeholder="Last Name" required>
+                                                <input type="text" name="l_name" placeholder="Last Name" required>
                                             </div>
                                         </div>
                                         <div class="grid-rows bg-transparent">
@@ -50,11 +51,11 @@
                                         </div>
                                         <div class="grid-rows bg-transparent">
                                             <div class="form-input">
-                                                <Select>
-                                                    <option value=""> Interest Model</option>
-                                                    <option value=""> avatr 11</option>
-                                                    <option value=""> avatr 12</option>
-                                                </Select>
+                                                <select name="model">
+
+                                                    <option value="AVATR 11"> AVATR 11</option>
+                                                    <option value="AVATR 12"> AVATR 12</option>
+                                                </select>
                                             </div>
                                         </div>
 

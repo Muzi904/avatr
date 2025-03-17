@@ -34,3 +34,4 @@ Route::post('/submit-invitations', [EnquiryController::class, 'submitInvitations
 Route::post('/test-drive-submit', [EnquiryController::class, 'testDrive'])->name('test.drive.submit');
 Route::post('/request-a-quote-submit', [EnquiryController::class, 'requestQuoteDrive'])->name('request.quote.submit');
 Route::post('/contact-submit', [EnquiryController::class, 'contact'])->name('contact.submit');
+Route::post('/experience-submit', [EnquiryController::class, 'experience'])->name('experience.submit');
