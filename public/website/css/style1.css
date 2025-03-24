@@ -156,10 +156,10 @@ h3 {
   text-align: center;
 }
 .thank-you-msg img {
-  width: 100px;
-  height: 100px;
+  width: 100px !important;
+  height: 100px !important;
   object-fit: contain;
-  margin-bottom: 15px;
+  margin-bottom: 15px !important;
 }
 
 .models-designs-varients {
