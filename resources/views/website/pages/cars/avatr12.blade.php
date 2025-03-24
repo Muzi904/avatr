@@ -3,8 +3,8 @@
 @section('content')
     <section class="hero-car-details">
         <picture>
-            <source srcset="{{ asset('website/images/avatr12/hero.webp') }}" media="(max-width: 768px)">
-            <img src="{{ asset('website/images/avatr12/hero.webp') }}" alt="" class="w-100" loading="lazy">
+            <source srcset="{{ asset('website/images/avatr12/avatar12-mob.jpg') }}" media="(max-width: 768px)">
+            <img src="{{ asset('website/images/avatr12/avatr12.jpg') }}" alt="" class="w-100" loading="lazy">
         </picture>
         <div class="container-md">
             <div class="content">
@@ -21,17 +21,16 @@
         <div class="container-md">
             <div class="row mb-5">
                 <div class="col-md-4">
-                    <h3>Introducing The Halo
-                        of Modern Luxury</h3>
+                    <h3>A Gran Coupe
+                        Like No Other </h3>
                 </div>
                 <div class="col-md-8">
                     <p class="mb-4">
-                        AVATR 12 (“One Two”) is bold, vibrant, and modern from every angle. This luxury SEV (Sport Electric
-                        Vehicle) and AVATR SUV adapts effortlessly to suit your individual needs with a variety of driving
-                        modes. From the moment you open the door, the intuitive AVATR OS welcomes you, ensuring seamless
-                        interaction and enhancing your journey. With cutting-edge technology and high-performance features,
-                        the AVATR 12 SUV offers a dynamic and luxurious driving experience, redefining the future of
-                        electric mobility.
+                        The AVATR 12 (One Two) is unlike any other luxury Gran Coupe you have ever seen.
+                        Graceful flowing lines along the body merge to create what can only be described as Art.
+                        The interior embodies the true meaning of luxury where intelligent, cutting-edge
+                        technology meets absolute comfort. A driving experience like no other awaits anyone
+                        who enters the One Two.
 
                     </p>
                 </div>
@@ -39,37 +38,36 @@
             <div class="tabs-container scrolltabs">
                 <!-- Tabs Content (Images) -->
                 <figure>
-                    <img class="w-100" src="{{ asset('website/images/avatr12/avatr12-img1.webp') }}" alt="">
+                    <img class="w-100" src="{{ asset('website/images/avatr12/home_int_1.jpg') }}" alt="">
                 </figure>
                 <!-- Tabs (Text) -->
                 <div class="tabs justify-content-start">
-                    <button class="tab active" data-text-target="#tab1-text">Effortless Style</button>
-                    <button class="tab" data-text-target="#tab2-text">An Intelligent Companion</button>
-                    <button class="tab" data-text-target="#tab3-text">AVATRUST</button>
+                    <button class="tab active" data-text-target="#tab1-text">Unmatched Grace </button>
+                    <button class="tab" data-text-target="#tab2-text">Unmatched Comfort </button>
+                    <button class="tab" data-text-target="#tab3-text">Unmatched Safety </button>
                 </div>
 
                 <!-- Tabs Text Content -->
                 <div class="tab-content">
                     <div id="tab1-text" class="content content-text active">
-                        An iconic butterfly-shaped front combined with unique style, the AVATR 12 SUV showcases a futuristic
-                        design aesthetic that exudes elegance. With its active air intake grille, which opens and closes
-                        automatically, the AVATR 12 Gran Coupe effortlessly maneuvers through the wind. This sleek,
-                        high-performance AVATR 12 SUV is the perfect blend of cutting-edge technology and luxurious design,
-                        offering an unparalleled driving experience in the world of electric mobility.
+                        Graceful yet futuristic, the 12 features the AVATR family butterfly wing design language,
+                        giving a whole new meaning to the word aesthetics. Striking E-shaped LED curvature
+                        headlights, an active air intake grill and an ultra-low drag coefficient of 0.21 cd make the
+                        12 a whirlwind on the road. Experience absolute performance and unmatched grace
+                        with the AVATR 12 Gran Coupe.
                     </div>
                     <div id="tab2-text" class="content content-text">
-                        Powered by HarmonyOS 4 and HUAWEI ADS 2.0, the AVATR 12 SUV provides unlimited interaction with
-                        user-friendly applications catered to your every need. Natural dialogue commands are responsive and
-                        effortless, making the AVATR 12 Gran Coupe an intuitive and seamless driving experience. With
-                        cutting-edge technology, this electric SUV offers a futuristic and personalized journey, taking
-                        smart electric mobility to new heights.
+                        A meticulously designed cabin perfectly balances your need for cutting-edge technology
+                        with the creature comforts that you deserve. The AVATR 12 does away with the clutter
+                        of a traditional dashboard and replaces it with a clean, minimalist and luxurious look
+                        that leaves you with the feeling of expansive space. Powered by the robust yet graceful
+                        AVATR OS, the 12 offers you ultimate control and interaction designed to pamper you.
 
                     </div>
                     <div id="tab3-text" class="content content-text">
-                        Equipped with 29 sensors covering all scenarios, including 3 high-performance, high-resolution LiDAR
-                        units, the AVATR 12 SUV enables beyond-the-eye sight, making you aware of hidden dangers. This smart
-                        electric vehicle (SEV) ensures a safer driving experience with advanced autonomous driving
-                        technology, offering superior detection and enhanced awareness on the road.
+                        You are secure; from the moment you enter the 12 to the moment you step out, your safety is
+                        paramount. Multiple airbags, Millimetre Wave Radar 5, Remote Parking Assist, and many other
+                        cutting-edge safety systems, all work together to create a net of safety like no other.
                     </div>
                 </div>
 
@@ -262,7 +260,7 @@
 
                 </ul>
 
-                <a href="#" class="btn">
+                <a href="{{ asset('website/spec/Avatr12-Specs.pdf') }}" class="btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                         <g fill="currentColor" fill-rule="evenodd">
                             <path
@@ -278,64 +276,16 @@
         </div>
     </section>
 
-    <section class="section-three-avatr11 section-padding">
-        <h1>Always in Range
-        </h1>
-        <div class="container-md">
-            <div class=" tabs-container scrolltabs">
-                <!-- Tabs (Text) -->
-                <div class="tabs">
-                    <button class="tab active" data-target="#tab5-img" data-text-target="#tab5-text">
-                        <h4>26 Trips
-                        </h4>
-                        <p>Palm Jumeirah to Downtown Dubai</p>
-                    </button>
-                    <button class="tab " data-target="#tab6-img" data-text-target="#tab6-text">
-                        <h4>5 Trips
-                        </h4>
-                        <p>Louvre Museum to Museum of the Future</p>
-                    </button>
-                    <button class="tab" data-target="#tab7-img" data-text-target="#tab7-text">
-                        <h4>9 Trips</h4>
-                        <p>Noor Island to Marjan Island</p>
-                    </button>
-                </div>
-                <!-- Tabs Content (Images) -->
-                <div class="tab-content">
-                    <div id="tab5-img" class="content active">
-                        <video class="w-100" autoplay="" loop="" muted="" playsinline="">
-                            <source src="{{ asset('website/images/avatr11/avatr-video-1.mp4') }}" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div id="tab6-img" class="content ">
-                        <video class="w-100" autoplay="" loop="" muted="" playsinline="">
-                            <source src="{{ asset('website/images/avatr11/avatr-video-2.mp4') }}" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div id="tab7-img" class="content">
-                        <video class="w-100" autoplay="" loop="" muted="" playsinline="">
-                            <source src="{{ asset('website/images/avatr11/avatr-video-3.mp4') }}" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
 
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="section-one-avatr11">
+    <section class="section-one-avatr11 section-padding">
         <div class="container-md">
             <div class="row">
-                <div class="col-md-12 position-relative">
-                    <video id="video" class="w-100" muted>
+                <div class="col-md-12 position-relative video-container">
+                    <video id="video" class="w-100" autoplay loop playsinline muted>
                         <source src="{{ asset('website/images/avatr12/video-avatr-12.mp4') }}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <div id="play_button">
+                    {{-- <div id="play_button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 48 48">
                             <defs>
                                 <mask id="ipSPlay0">
@@ -349,7 +299,7 @@
                             </defs>
                             <path fill="#fff" d="M0 0h48v48H0z" mask="url(#ipSPlay0)" />
                         </svg>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

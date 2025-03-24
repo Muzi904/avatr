@@ -11,7 +11,7 @@ class EnquiryController extends Controller
 {
     static function get_next_refkey()
     {
-        $lastRefNo = Enquiry::select('enq_no')->where('enq_no', 'like', 'AE-%')->orderBy('id', 'desc')->latest()->first();
+        $lastRefNo = Enquiry::select('enq_no')->orderBy('id', 'desc')->latest()->first();
         if (!empty($lastRefNo)) {
             $refNo = explode('-', $lastRefNo->enq_no);
             $lastElement = array_slice($refNo, -1);
@@ -91,7 +91,7 @@ class EnquiryController extends Controller
     {
         $enquiry = new Enquiry();
         $enquiry->type = 'contact';
-        $enquiry->enq_no = $this->get_next_refkey();
+        // $enquiry->enq_no = $this->get_next_refkey();
         $enquiry->name = $request->name;
         $enquiry->email = $request->email;
         $enquiry->phone_number = ($request->country_code ? $request->country_code : '') . $request->phone;
@@ -119,5 +119,19 @@ class EnquiryController extends Controller
         $enquiry->save();
 
         return back()->with('page', 'thank-you');
+    }
+
+    public function experience(Request $request)
+    {
+        $enquiry = new Enquiry();
+        $enquiry->type = 'experience';
+        $enquiry->enq_no = $this->get_next_refkey();
+        $enquiry->name = $request->f_name . ' ' . $request->l_name;
+        $enquiry->email = $request->email;
+        $enquiry->phone_number = ($request->country_code ? $request->country_code : '') . $request->phone;
+        $enquiry->model = $request->model;
+        $enquiry->save();
+
+        return redirect()->route('experience.avatr', '#form-section')->with('page', 'thank-you');
     }
 }

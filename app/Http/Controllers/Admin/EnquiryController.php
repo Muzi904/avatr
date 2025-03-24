@@ -182,6 +182,36 @@ class EnquiryController extends Controller
 
         return view('admin.pages.enquiries.contact', compact('filters'));
     }
+    public function experience(Request $request)
+    {
+        $filters = $request->all();
+        if ($request->ajax()) {
+            $data = Enquiry::where('type', 'experience');
+            if ($request->from_date) {
+                $data = $data->whereDate('enquiries.created_at', '>=', $request->from_date);
+                Session::put('from_date', $request->from_date);
+            }
+            if ($request->to_date) {
+                $data = $data->whereDate('enquiries.created_at', '<=', $request->to_date);
+                Session::put('to_date', $request->to_date);
+            }
+            // if ($request->is_confirmed) {
+            //     $data = $data->where('is_confirmed', 'LIKE', '%' . $request->is_confirmed . '%');
+            //     Session::put('is_confirmed', $request->is_confirmed);
+            // }
+            $data = $data->orderBy('id', 'desc');
+            return DataTables::of($data)
+                ->addIndexColumn()
+                ->addColumn('created_at', function ($data) {
+                    return  Carbon::parse($data->created_at)->format('d-m-Y h:i A');
+                })
+                ->addColumn('action', null)
+                ->rawColumns(['created_at', 'action'])
+                ->make(true);
+        }
+
+        return view('admin.pages.enquiries.experience', compact('filters'));
+    }
 
     public function clearSession()
     {

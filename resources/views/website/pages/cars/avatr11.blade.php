@@ -3,15 +3,15 @@
 @section('content')
     <section class="hero-car-details">
         <picture>
-            <source srcset="{{ asset('website/images/avatr11/hero.webp') }}" media="(max-width: 768px)">
-            <img src="{{ asset('website/images/avatr11/hero.webp') }}" alt="" class="w-100" loading="lazy">
+            <source srcset="{{ asset('website/images/avatr11/A11.jpg') }}" media="(max-width: 768px)">
+            <img src="{{ asset('website/images/avatr11/a03.jpg') }}" alt="" class="w-100" loading="lazy">
         </picture>
         <div class="container-md">
             <div class="content hero-animated">
                 <img src="{{ asset('website/images/avatr11/avatr11.svg') }}" alt="">
                 <p>The Futuristic Electric Luxury SUV
                 </p>
-                <a href="#" class="btn">Build and Buy</a>
+                <a href="#" class="btn">Personalise</a>
             </div>
         </div>
 
@@ -21,17 +21,17 @@
         <div class="container-md">
             <div class="row mb-3 mb-md-5">
                 <div class="col-md-4 animate-text">
-                    <h3>Futuristic Design
-                        with Pure Luxury </h3>
+                    <h3>Ultramodern Design
+
+                        Quintessential Luxury</h3>
                 </div>
                 <div class="col-md-8 animate-text">
                     <p class="mb-4">
-                        The AVATR 11 (“One One”) embodies future-forward design that seamlessly blends emotion with
-                        cutting-edge technology. From its flowing lines and nature-inspired colors to its intelligent
-                        driving systems and intuitive AVATR OS, every detail contributes to a smart electric vehicle that
-                        feels as luxurious as it looks. Designed to elevate the future of electric mobility, the AVATR 11
-                        sets a new standard in smart electric vehicles with advanced technology and stunning aesthetics,
-                        making it the perfect choice for electric vehicle enthusiasts in the UAE.
+                        The AVATR 11 ("One One") is a delightful testament to a futuristic design blended
+                        seamlessly with human emotions and ultramodern technology. Gracefully flowing lines
+                        and warm colours inspired by nature merged with innovative driving technology and our
+                        cutting-edge AVATR OS, come together to create a car that can only be described as a
+                        work of art.
 
                     </p>
                 </div>
@@ -39,7 +39,7 @@
             <div class="tabs-container scrolltabs animate-text">
                 <!-- Tabs Content (Images) -->
                 <figure>
-                    <img class="w-100" src="{{ asset('website/images/avatr11/car1.webp') }}" alt="">
+                    <img class="w-100" src="{{ asset('website/images/avatr11/J19.jpg') }}" alt="">
                 </figure>
                 <!-- Tabs (Text) -->
                 <div class="tabs justify-content-start">
@@ -53,35 +53,35 @@
                 <div class="tab-content">
                     <div id="tab1-text" class="content content-text active">
                         With a space-inspired front design, stunning LED star-trail tail lights, and seats based on
-                        astronauts’ zero-gravity posture, the AVATR 11 SUV sets a new benchmark in electric vehicle design
-                        and smart mobility. Each detail reflects precision and elegance, creating a vehicle that is both
-                        futuristic and luxurious. The AVATR 11 combines cutting-edge technology with high-performance
-                        features, redefining the future of electric vehicles and smart electric mobility for a new era of
-                        driving.
+                        astronauts’ zero-gravity posture, the AVATR 11 SUV sets a new benchmark in electric
+                        vehicle design and smart mobility. Each detail reflects precision and elegance, creating a
+                        vehicle that is both unbelievably futuristic and abundantly luxurious. The AVATR 11
+                        combines cutting-edge technology with high-performance features, redefining the
+                        future of electric vehicles and smart electric mobility for a new era of driving.
                     </div>
                     <div id="tab2-text" class="content content-text">
-                        The AVATR 11’s refined chassis, featuring front double wishbone and rear five-link suspension,
-                        offers superior comfort across urban and suburban environments. With DriveONE iTRACK technology, the
-                        vehicle ensures millimeter-level torque adjustments, providing precise handling on even the most
-                        complex terrains. Advanced engineering and meticulous tuning deliver an incredibly smooth ride,
-                        whether you’re driving through Downtown Dubai or conquering the rugged landscapes of Jebel Jais. The
-                        AVATR 11 is designed to excel in both urban mobility and off-road performance, making it the perfect
-                        choice for electric vehicle enthusiasts in the UAE.
+                        The AVATR 11's sophisticated chassis, which includes a front double wishbone and a rear
+                        five-link suspension, provides outstanding comfort in urban and suburban situations.
+                        The vehicle's DriveONE iTRACK technology allows for millimetre-level torque
+                        adjustments, resulting in precise handling on even the most complex terrains. Advanced
+                        engineering and rigorous tuning ensure an extraordinarily smooth ride. The AVATR 11 is
+                        intended to excel at both urban mobility and off-road performance, making it an ideal
+                        choice for electric vehicle enthusiasts.
                     </div>
                     <div id="tab3-text" class="content content-text">
-                        Equipped with 34 sensors, including high-performance radar and 3D laser fusion detection, the AVATR
-                        11 delivers exceptional obstacle detection in any lighting condition. The intelligent driving
-                        assistance system provides partial self-driving capabilities, ensuring a seamless and stress-free
-                        driving experience across the UAE. Designed for smart mobility, the AVATR 11 offers cutting-edge
-                        technology for a safer and more intuitive driving experience, making it the perfect choice for those
-                        seeking advanced electric vehicles in the UAE.
+                        The AVATR 11 boasts a plethora of sensors to provide superior obstacle identification in any light
+                        conditions. The intelligent driving aid technology enables partial self-driving, resulting in a
+                        smooth and hassle-free driving experience. Designed for smart mobility, the AVATR 11 incorporates
+                        cutting-edge technology for a safer and more intuitive driving experience, making it an excellent
+                        alternative for individuals looking for sophisticated electric vehicles.
+
                     </div>
                     <div id="tab4-text" class="content content-text">
                         The AVATR 11 SUV offers an impressive range of up to 680 km, combined with high performance.
                         Featuring built-in supercharging technology, the battery can reach 80% charge in just 35 minutes,
-                        ensuring quick recharges for extended journeys. With its remarkable driving range, the AVATR 11
-                        makes long-distance travel convenient and stress-free, redefining the future of electric mobility
-                        and smart electric vehicles for drivers in the UAE.
+                        and 30% to 80% in only 25 minutes, ensuring quick recharges for extended journeys. With its
+                        remarkable driving range, the AVATR 11 makes long-distance travel convenient and stress-free,
+                        redefining the future of electric mobility and smart electric vehicles.
                     </div>
                 </div>
 
@@ -174,9 +174,9 @@
                                     <p class="col-md-6"><span>Vehicle Weight in kg</span> <br>
                                         2425
                                     </p>
-                                    <p class="col-md-6"><span>Number of Seats</span> <br>
+                                    {{-- <p class="col-md-6"><span>Number of Seats</span> <br>
                                         5
-                                    </p>
+                                    </p> --}}
                                 </div>
                             </div>
                         </div>
@@ -278,7 +278,7 @@
 
                 </ul>
 
-                <a href="#" class="btn animate-text">
+                <a href="{{ asset('website/spec/Avatr11-Specs.pdf') }}" class="btn animate-text">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                         <g fill="currentColor" fill-rule="evenodd">
                             <path
@@ -294,64 +294,16 @@
         </div>
     </section>
 
-    <section class="section-three-avatr11 section-padding">
-        <h1 class="animate-text">Always in Range
-        </h1>
-        <div class="container-md">
-            <div class=" tabs-container scrolltabs">
-                <!-- Tabs (Text) -->
-                <div class="tabs">
-                    <button class="tab active animate-text" data-target="#tab5-img" data-text-target="#tab5-text">
-                        <h4>26 Trips
-                        </h4>
-                        <p>Palm Jumeirah to Downtown Dubai</p>
-                    </button>
-                    <button class="tab animate-text " data-target="#tab6-img" data-text-target="#tab6-text">
-                        <h4>5 Trips
-                        </h4>
-                        <p>Louvre Museum to Museum of the Future</p>
-                    </button>
-                    <button class="tab animate-text" data-target="#tab7-img" data-text-target="#tab7-text">
-                        <h4>9 Trips</h4>
-                        <p>Noor Island to Marjan Island</p>
-                    </button>
-                </div>
-                <!-- Tabs Content (Images) -->
-                <div class="tab-content">
-                    <div id="tab5-img" class="content animate-text active">
-                        <video class="w-100" autoplay="" loop="" muted="" playsinline="">
-                            <source src="{{ asset('website/images/avatr11/avatr-video-1.mp4') }}" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div id="tab6-img" class="content animate-text ">
-                        <video class="w-100" autoplay="" loop="" muted="" playsinline="">
-                            <source src="{{ asset('website/images/avatr11/avatr-video-2.mp4') }}" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div id="tab7-img" class="content animate-text">
-                        <video class="w-100" autoplay="" loop="" muted="" playsinline="">
-                            <source src="{{ asset('website/images/avatr11/avatr-video-3.mp4') }}" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
 
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="section-one-avatr11">
+    <section class="section-one-avatr11 section-padding">
         <div class="container-md">
             <div class="row">
-                <div class="col-md-12 position-relative animate-text">
-                    <video id="video" class="w-100" muted>
+                <div class="col-md-12 position-relative animate-text video-container">
+                    <video id="video" class="w-100" autoplay loop playsinline muted>
                         <source src="{{ asset('website/images/avatr11/avatr-video-4.mp4') }}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <div id="play_button">
+                    {{-- <div id="play_button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 48 48">
                             <defs>
                                 <mask id="ipSPlay0">
@@ -365,7 +317,7 @@
                             </defs>
                             <path fill="#fff" d="M0 0h48v48H0z" mask="url(#ipSPlay0)" />
                         </svg>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
@@ -376,7 +328,7 @@
     <section>
         <div class="section-grid">
             <div class="a">
-                <img class="w-100" src="{{ asset('website/images/avatr11/avatr-img1.webp') }}" alt="">
+                <img class="w-100" src="{{ asset('website/images/avatr11/avatr-img1.jpg') }}" alt="">
                 <div class="content animate-text">
                     <h6>Experience Zero Gravity Seating in AVATR 11</h6>
                     <p>Ultimate Comfort for Long Journeys: Inspired by Astronaut Posture in AVATR Electric SUV</p>
