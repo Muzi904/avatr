@@ -76,19 +76,22 @@
         <div class="bg-image-section ">
             <div class="tab-image active" data-image="tab1">
                 <picture>
-                    <source srcset="{{ asset('website/images/home/luxury-zero-gravity-1.jpg') }}" media="(max-width: 768px)">
+                    <source srcset="{{ asset('website/images/home/luxury-zero-gravity-1.jpg') }}"
+                        media="(max-width: 768px)">
                     <img src="{{ asset('website/images/home/luxury-zero-gravity-1.jpg') }}" alt="" class="w-100">
                 </picture>
             </div>
             <div class="tab-image" data-image="tab2">
                 <picture>
-                    <source srcset="{{ asset('website/images/home/luxury-zero-gravity-1.jpg') }}" media="(max-width: 768px)">
+                    <source srcset="{{ asset('website/images/home/luxury-zero-gravity-1.jpg') }}"
+                        media="(max-width: 768px)">
                     <img src="{{ asset('website/images/home/luxury-zero-gravity-1.jpg') }}" alt="" class="w-100">
                 </picture>
             </div>
             <div class="tab-image" data-image="tab3">
                 <picture>
-                    <source srcset="{{ asset('website/images/home/luxury-zero-gravity-1.jpg') }}" media="(max-width: 768px)">
+                    <source srcset="{{ asset('website/images/home/luxury-zero-gravity-1.jpg') }}"
+                        media="(max-width: 768px)">
                     <img src="{{ asset('website/images/home/luxury-zero-gravity-1.jpg') }}" alt="" class="w-100">
                 </picture>
             </div>

@@ -208,53 +208,61 @@
         height: 40px;
         border-radius: 35px;
     }
-    
-      
-    @media (min-width: 320px) and (max-width: 360px) {
-       .models-designs-varients #thumbnail-slider .splide__list .splide__slide .wheel {
-                bottom: 5%;
-        }
-    #thumbnail-slider-slide03{
-        height: 57px !important;
-    }
-    #thumbnail-slider-slide02{
-        height: 57px !important;
-    }
-    #thumbnail-slider-slide01{
-        height: 57px !important;
-    }
-}
-    
-    @media (min-width: 361px) and (max-width: 385px) {
-       .models-designs-varients #thumbnail-slider .splide__list .splide__slide .wheel {
-                bottom: -16%;
-        }
-    #thumbnail-slider-slide03{
-        height: 59px !important;
-    }
-    #thumbnail-slider-slide02{
-        height: 59px !important;
-    }
-    #thumbnail-slider-slide01{
-        height: 59px !important;
-    }
-}
 
- @media (min-width: 386px) and (max-width: 465px) {
-       .models-designs-varients #thumbnail-slider .splide__list .splide__slide .wheel {
-                bottom: -22%;
+
+    @media (min-width: 320px) and (max-width: 360px) {
+        .models-designs-varients #thumbnail-slider .splide__list .splide__slide .wheel {
+            bottom: 5%;
         }
-    #thumbnail-slider-slide03{
-        height: 68px !important;
+
+        #thumbnail-slider-slide03 {
+            height: 57px !important;
+        }
+
+        #thumbnail-slider-slide02 {
+            height: 57px !important;
+        }
+
+        #thumbnail-slider-slide01 {
+            height: 57px !important;
+        }
     }
-    #thumbnail-slider-slide02{
-        height: 68px !important;
+
+    @media (min-width: 361px) and (max-width: 385px) {
+        .models-designs-varients #thumbnail-slider .splide__list .splide__slide .wheel {
+            bottom: -16%;
+        }
+
+        #thumbnail-slider-slide03 {
+            height: 59px !important;
+        }
+
+        #thumbnail-slider-slide02 {
+            height: 59px !important;
+        }
+
+        #thumbnail-slider-slide01 {
+            height: 59px !important;
+        }
     }
-    #thumbnail-slider-slide01{
-        height: 68px !important;
+
+    @media (min-width: 386px) and (max-width: 465px) {
+        .models-designs-varients #thumbnail-slider .splide__list .splide__slide .wheel {
+            bottom: -22%;
+        }
+
+        #thumbnail-slider-slide03 {
+            height: 68px !important;
+        }
+
+        #thumbnail-slider-slide02 {
+            height: 68px !important;
+        }
+
+        #thumbnail-slider-slide01 {
+            height: 68px !important;
+        }
     }
-}
-    
 </style>
 
 
@@ -311,17 +319,18 @@
                         </ul>
                     </div>
                 </div>
+                <p class="mt-3">The images shown are for illustration purposes only and may not accurately represent
+                    the product. GCC
+                    configuration may vary, please check with your dealer.</p>
             </div>
 
             <div class="column">
                 <div class="right-section">
-                    <img src="{{ asset('website/images/avatr11.svg') }}" alt="">
+                    <img src="{{ asset('website/images/avatr12/avatr12-black.svg') }}" alt="">
                     <p>Start your configuration journey with an inspired specification and make your smart electric
-                        vehicle
-                        experience truly your own. Customize every detail of your AVATR 11 to reflect your style and
-                        preferences, and embrace the future of electric mobility with cutting-edge features and
-                        exceptional
-                        performance.</p>
+                        vehicle experience truly your own. Customise every detail of your AVATR 12 to reflect your style
+                        and preferences, and embrace the future of electric mobility with cutting-edge features and
+                        exceptional performance.</p>
 
                     <div class="accordion">
                         <div class="accordion-item">

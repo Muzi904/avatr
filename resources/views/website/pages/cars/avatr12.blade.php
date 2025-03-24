@@ -65,9 +65,9 @@
 
                     </div>
                     <div id="tab3-text" class="content content-text">
-                        You are secure; from the moment you enter the 12 to the moment you step out, your
-                        safety is paramount. 29 sensors, 3 LiDAR systems, 11 HD cameras, and other cutting-
-                        edge safety systems, all working together to create a net of safety like no other.
+                        You are secure; from the moment you enter the 12 to the moment you step out, your safety is
+                        paramount. Multiple airbags, Millimetre Wave Radar 5, Remote Parking Assist, and many other
+                        cutting-edge safety systems, all work together to create a net of safety like no other.
                     </div>
                 </div>
 

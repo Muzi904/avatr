@@ -11,7 +11,7 @@
                 <img src="{{ asset('website/images/avatr11/avatr11.svg') }}" alt="">
                 <p>The Futuristic Electric Luxury SUV
                 </p>
-                <a href="#" class="btn">Build and Buy</a>
+                <a href="#" class="btn">Personalise</a>
             </div>
         </div>
 
@@ -69,20 +69,19 @@
                         choice for electric vehicle enthusiasts.
                     </div>
                     <div id="tab3-text" class="content content-text">
-                        The AVATR 11 boasts 34 sensors, including high-performance radar and 3D laser fusion
-                        detection, to provide superior obstacle identification in any light conditions. The
-                        intelligent driving aid technology enables partial self-driving, resulting in a smooth and
-                        hassle-free driving experience. Designed for smart mobility, the AVATR 11 incorporates
-                        cutting-edge technology for a safer and more intuitive driving experience, making it an
-                        excellent alternative for individuals looking for sophisticated electric vehicles.
+                        The AVATR 11 boasts a plethora of sensors to provide superior obstacle identification in any light
+                        conditions. The intelligent driving aid technology enables partial self-driving, resulting in a
+                        smooth and hassle-free driving experience. Designed for smart mobility, the AVATR 11 incorporates
+                        cutting-edge technology for a safer and more intuitive driving experience, making it an excellent
+                        alternative for individuals looking for sophisticated electric vehicles.
 
                     </div>
                     <div id="tab4-text" class="content content-text">
                         The AVATR 11 SUV offers an impressive range of up to 680 km, combined with high performance.
                         Featuring built-in supercharging technology, the battery can reach 80% charge in just 35 minutes,
-                        ensuring quick recharges for extended journeys. With its remarkable driving range, the AVATR 11
-                        makes long-distance travel convenient and stress-free, redefining the future of electric mobility
-                        and smart electric vehicles for drivers in the UAE.
+                        and 30% to 80% in only 25 minutes, ensuring quick recharges for extended journeys. With its
+                        remarkable driving range, the AVATR 11 makes long-distance travel convenient and stress-free,
+                        redefining the future of electric mobility and smart electric vehicles.
                     </div>
                 </div>
 
@@ -175,9 +174,9 @@
                                     <p class="col-md-6"><span>Vehicle Weight in kg</span> <br>
                                         2425
                                     </p>
-                                    <p class="col-md-6"><span>Number of Seats</span> <br>
+                                    {{-- <p class="col-md-6"><span>Number of Seats</span> <br>
                                         5
-                                    </p>
+                                    </p> --}}
                                 </div>
                             </div>
                         </div>
@@ -329,7 +328,7 @@
     <section>
         <div class="section-grid">
             <div class="a">
-                <img class="w-100" src="{{ asset('website/images/avatr11/avatr-img1.webp') }}" alt="">
+                <img class="w-100" src="{{ asset('website/images/avatr11/avatr-img1.jpg') }}" alt="">
                 <div class="content animate-text">
                     <h6>Experience Zero Gravity Seating in AVATR 11</h6>
                     <p>Ultimate Comfort for Long Journeys: Inspired by Astronaut Posture in AVATR Electric SUV</p>

@@ -100,7 +100,7 @@ li {
 }
 .hero .content {
   position: absolute;
-  top: 110px;
+  top: 200px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -122,9 +122,13 @@ li {
   font-size: 20px;
   margin-bottom: 45px;
 }
+.hero .content a {
+  font-family: 'AVATRFont-Regular';
+  font-weight: 700;
+}
 .hero-car-details .content {
   position: absolute;
-  top: 50%;
+  top: 53%;
   transform: translateY(-50%);
 }
 .hero-car-details .content img {
@@ -146,7 +150,7 @@ li {
 }
 .swiper--top .swiper-slide,
 .swiper--bottom .swiper-slide {
-  font-size: 3.5rem;
+  font-size: clamp(2.366rem, 1.6946rem + 3.357vw, 4.38rem);
   display: flex;
   width: auto;
   text-transform: uppercase;
@@ -1482,10 +1486,11 @@ html {
 }
 
 .hero-car-details .experience-form {
-  width: 50%;
+  /* width: 80%; */
 }
 .hero-car-details .experience-form .contact-form .grid-rows {
   background-color: rgba(24, 24, 24, 0.6) !important;
+  max-width: 800px;
 }
 .hero-car-details .experience-form .contact-form form .grid-rows {
   background-color: transparent !important;
@@ -1509,6 +1514,10 @@ html {
 }
 .hero-car-details .experience-form .iti__country-list {
   width: 270px;
+}
+.iti__arrow,
+.iti__country-list {
+  display: none;
 }
 
 .corresponding-tabs {

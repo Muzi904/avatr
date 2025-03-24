@@ -47,7 +47,7 @@
                 </svg></a>
         </div>
         <ul>
-            <li><a class="navlink" href="{{ route('ownership') }}">Ownership</a></li>
+            {{-- <li><a class="navlink" href="{{ route('ownership') }}">Ownership</a></li> --}}
             <li><a class="navlink" href="{{ route('discover') }}">Discover</a></li>
             <li><a class="navlink" href="{{ route('news') }}">News</a></li>
 

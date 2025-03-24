@@ -393,7 +393,7 @@
   }
   .hero-car-details .experience-form {
     width: 100%;
-    top: 57%;
+    top: 60%;
     left: 0;
   }
   .hero-car-details .content p {
@@ -514,6 +514,7 @@
   }
   .contact-form .grid-rows {
     /* gap: 0 !important; */
+    padding: 15px;
   }
   .contact-form {
     padding-bottom: 35px;
