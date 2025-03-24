@@ -7,43 +7,18 @@
             <img src="{{ asset('website/images/home/hero.png') }}" alt="" class="w-100" loading="lazy">
         </picture>
         <div class="content hero-animated">
-            <h1 class="">Luxury Redesigned
+            <h1 class="">ENVISIONING NEXT
             </h1>
-            <p class="">The AVATR experience starts from <br>
-                AED 245,000 with best in class features and unmatched advantages.
+            <p class="">The future of luxury Electric Vehicles has arrived.
+                Experience the sublime sensation of absolute luxury with
+                best-in-class features and unparalleled benefits
             </p>
             <a href="#Car_models" class="btn mx-auto ">View Models</a>
         </div>
     </section>
 
     <section class="section-padding section-two">
-        <div class="running-text animate-text">
-            <div class="swiper-container swiper--top ">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">AVATR 11 / The Future of Smart EVs / AVATR 12 / Revolutionizing Mobility/
-                    </div>
-                    <div class="swiper-slide">AVATR 11 / The Future of Smart EVs / AVATR 12 / Revolutionizing Mobility/
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-container swiper--bottom">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">Smart Mobility / The Future is Here / AVATR/ Smart Mobility / The Future is
-                        Here / AVATR/
-                    </div>
-                    <div class="swiper-slide">Smart Mobility / The Future is Here / AVATR/ Smart Mobility / The Future is
-                        Here / AVATR/
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-container swiper--top ">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">Electric Mobility / Future. Now/ Electric Mobility / Future. Now/ </div>
-                    <div class="swiper-slide">Electric Mobility / Future. Now/ Electric Mobility / Future. Now/ </div>
-                    <div class="swiper-slide">Electric Mobility / Future. Now/ Electric Mobility / Future. Now/ </div>
-                </div>
-            </div>
-        </div>
+
         <div class="container-md">
             <div class="row">
                 <div class="col-md-4 animate-text">
