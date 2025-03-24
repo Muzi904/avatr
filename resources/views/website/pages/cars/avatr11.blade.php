@@ -39,7 +39,7 @@
             <div class="tabs-container scrolltabs animate-text">
                 <!-- Tabs Content (Images) -->
                 <figure>
-                    <img class="w-100" src="{{ asset('website/images/avatr11/J19.jpg') }}" alt="">
+                    <img class="w-100" src="{{ asset('website/images/avatr11/J19.png') }}" alt="">
                 </figure>
                 <!-- Tabs (Text) -->
                 <div class="tabs justify-content-start">
