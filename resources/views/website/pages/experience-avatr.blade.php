@@ -15,7 +15,7 @@
                             <div class="column">
                                 @if (session('page') == 'thank-you')
                                     <div class="thank-you-msg">
-                                        <img src="{{ asset('website/images/thank-you-2.png') }}" alt="">
+                                        <img src="{{ asset('website/images/thank-you.png') }}" alt="">
                                         <h3 class="text-white">Thanks for your Interest</h3>
                                         <p class="text-white">
                                             We have received your message. We will get back to you shortly.
