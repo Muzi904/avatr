@@ -70,14 +70,12 @@
                 content="AVATR Showrooms, Al Attiya Motors, AVATR Qatar Dealership, Find AVATR in Qatar">
         @elseif ($slug == 'ownership')
             <title>Ownership Avatr- Al Attiya Motors</title>
-            <meta name="description"
-                content="Experience the Future of Ownership with AVATR" />
+            <meta name="description" content="Experience the Future of Ownership with AVATR" />
             <meta name="keywords"
                 content="AVATR Showrooms, Al Attiya Motors, AVATR Qatar Dealership, Find AVATR in Qatar">
         @elseif ($slug == 'news')
             <title>News Avatr- Al Attiya Motors</title>
-            <meta name="description"
-                content="Latest news about Avatr" />
+            <meta name="description" content="Latest news about Avatr" />
             <meta name="keywords"
                 content="AVATR Showrooms, Al Attiya Motors, AVATR Qatar Dealership, Find AVATR in Qatar">
         @elseif ($slug == 'invitation')
