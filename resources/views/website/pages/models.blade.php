@@ -266,7 +266,7 @@
     }
 </style>
 
-<section class="models-designs-varients">
+<section class="models-designs-varients" id="carsection">
     <div class="container-md">
         <div class="grid-rows">
             <div class="column animate-text">
