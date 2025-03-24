@@ -155,6 +155,12 @@ h3 {
 .thank-you-msg p {
   text-align: center;
 }
+.thank-you-msg img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
 
 .models-designs-varients {
   padding-bottom: 100px;
