@@ -1515,6 +1515,10 @@ html {
 .hero-car-details .experience-form .iti__country-list {
   width: 270px;
 }
+.iti__arrow,
+.iti__country-list {
+  display: none;
+}
 
 .corresponding-tabs {
   background-color: #fff;
