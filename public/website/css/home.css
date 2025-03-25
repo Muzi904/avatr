@@ -1519,6 +1519,9 @@ html {
 .iti__country-list {
   display: none;
 }
+.iti {
+  width: 100% !important;
+}
 
 .corresponding-tabs {
   background-color: #fff;
