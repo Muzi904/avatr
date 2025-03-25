@@ -5,6 +5,21 @@
         .corresponding-tabs.scrolled {
             top: 63px
         }
+
+        #photogallery .swiper-button-next,
+        #photogallery .swiper-button-prev {
+            top: 13px !important;
+        }
+
+        #photogallery .swiper-button-next:after,
+        #photogallery .swiper-button-prev:after {
+            font-size: 28px;
+            color: #212529;
+        }
+
+        #photogallery {
+            position: relative;
+        }
     </style>
 
     <div class="main-section">
