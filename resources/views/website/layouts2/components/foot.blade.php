@@ -197,6 +197,7 @@
         if (currentUrl !== updatedUrl) {
             window.history.replaceState(null, '', updatedUrl);
         }
+
         $(window).scrollTop($('#form-section').offset().top - 600);
     }
 

@@ -380,6 +380,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .mt-70 {
+    margin-top: 100px;
+  }
   .photo-gallery .swiper-button-next,
   .photo-gallery .swiper-button-prev {
     top: 59px !important;
