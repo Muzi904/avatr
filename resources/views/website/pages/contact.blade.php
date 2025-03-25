@@ -61,13 +61,13 @@
         </div>
     </section>
 
-    <section class="contact-form" id="form-section">
+    <section class="contact-form">
         <div class="container">
             <div class="grid-rows">
                 {{-- @if (session('page') == 'thank-you') --}}
                 <div class="column">
                     @if (session('page') == 'thank-you')
-                        <div class="thank-you-msg">
+                        <div class="thank-you-msg" id="form-section">
                             <img src="{{ asset('website/images/thankyou.png') }}" alt="">
                             <h3>Thanks for your Interest</h3>
                             <p>

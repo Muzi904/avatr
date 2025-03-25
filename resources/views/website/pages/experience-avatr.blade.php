@@ -14,13 +14,13 @@
         </picture>
         <div class="container-md">
             <div class="content experience-form ">
-                <div class="contact-form  p-0" id="form-section">
+                <div class="contact-form  p-0">
                     <div class="container">
                         <div class="grid-rows">
                             {{-- @if (session('page') == 'thank-you') --}}
                             <div class="column">
                                 @if (session('page') == 'thank-you')
-                                    <div class="thank-you-msg">
+                                    <div class="thank-you-msg" id="form-section">
                                         {{-- <img src="{{ asset('website/images/thank-you.png') }}" alt=""> --}}
                                         <h3 class="text-white">Thanks for your Interest</h3>
                                         <p class="text-white">
