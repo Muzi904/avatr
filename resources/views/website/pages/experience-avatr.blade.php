@@ -1,6 +1,12 @@
 @extends('website.layouts.app')
 
 @section('content')
+    <style>
+        .iti {
+            width: 100% !important;
+        }
+    </style>
+
     <section class="hero-car-details experience-page ">
         <picture>
             <source srcset="{{ asset('website/images/avatr11/hero.webp') }}" media="(max-width: 768px)">
