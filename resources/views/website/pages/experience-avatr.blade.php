@@ -42,7 +42,7 @@
                                             <div class="form-input">
                                                 <input type="email" name="email" placeholder="Email" required>
                                             </div>
-                                            <div class="form-input">
+                                            <div class="form-input mb-3">
                                                 <input type="hidden" name="country_code" id="country_code">
 
                                                 <input type="text" id="country" name="phone"
