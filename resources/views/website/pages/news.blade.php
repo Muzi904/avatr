@@ -45,9 +45,14 @@
 
         <section id="photogallery" class=" section-padding ">
             <div class="container-md">
-                <div class="col-md-12">
-                    <h1 class="animate-text mb-3 mb-md-5">Photo Gallery
+                <div class="col-md-12 d-flex justify-content-between mb-3 mb-md-5">
+                    <h1 class="animate-text ">Photo Gallery
                     </h1>
+                    <div class="d-flex align-items-center gap-5">
+                        <div class="swiper-button-prev position-relative"></div>
+                        <div class="swiper-button-next position-relative"></div>
+                    </div>
+
                 </div>
                 <div class="swiper-container swiper photo-gallery animate-text">
                     <div class="swiper-wrapper">
@@ -64,8 +69,7 @@
                             <img class="w-100 my-50" src="{{ asset('website/images/news/photo4.webp') }}" alt="">
                         </div>
                     </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+
 
                 </div>
             </div>

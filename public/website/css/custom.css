@@ -267,21 +267,12 @@
   font-family: 'AVATRFont-Regular';
 }
 
-.photo-gallery {
-  position: initial;
+#photogallery .swiper-button-next,
+#photogallery .swiper-button-prev {
+  top: 13px !important ;
 }
-.photo-gallery .swiper-button-next,
-.photo-gallery .swiper-button-prev {
-  position: absolute;
-  top: 125px;
-  right: 112px;
-}
-.photo-gallery .swiper-button-prev {
-  right: 177px;
-  left: auto;
-}
-.photo-gallery .swiper-button-next:after,
-.photo-gallery .swiper-button-prev:after {
+#photogallery .swiper-button-next:after,
+#photogallery .swiper-button-prev:after {
   font-size: 28px;
   color: #212529;
 }
