@@ -4,10 +4,11 @@
     <style>
         .iti {
             width: 100% !important;
+            margin-bottom: 20px !important
         }
     </style>
 
-    <section class="hero-car-details experience-page ">
+    <section class="hero-car-details experience-page " id="top-section">
         <picture>
             <source srcset="{{ asset('website/images/avatr11/hero.webp') }}" media="(max-width: 768px)">
             <img src="{{ asset('website/images/avatr11/hero.webp') }}" alt="" class="w-100" loading="lazy">
@@ -48,10 +49,10 @@
                                             <div class="form-input">
                                                 <input type="email" name="email" placeholder="Email" required>
                                             </div>
-                                            <div class="form-input mb-3">
+                                            <div class="form-input">
                                                 <input type="hidden" name="country_code" id="country_code">
 
-                                                <input type="text" id="country" name="phone"
+                                                <input class="mb-3" type="text" id="country" name="phone"
                                                     placeholder="Enter your phone" required>
                                             </div>
                                         </div>
