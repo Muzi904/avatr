@@ -180,3 +180,6 @@ h3 {
 .models-designs-varients .grid-rows .column:nth-child(2) {
   flex: 0.4;
 }
+.iti {
+  width: 100% !important;
+}
