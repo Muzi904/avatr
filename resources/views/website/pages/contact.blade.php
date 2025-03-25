@@ -1,6 +1,11 @@
 @extends('website.layouts.app')
 
 @section('content')
+    <style>
+        .iti {
+            width: 100% !important;
+        }
+    </style>
     <section class="home-Banner-hero">
         <picture>
             <source srcset="{{ asset('website/images/home/img1.jpg') }}" media="(max-width: 768px)">
