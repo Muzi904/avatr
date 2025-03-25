@@ -266,16 +266,3 @@
   margin: auto;
   font-family: 'AVATRFont-Regular';
 }
-
-#photogallery .swiper-button-next,
-#photogallery .swiper-button-prev {
-  top: 13px !important ;
-}
-#photogallery .swiper-button-next:after,
-#photogallery .swiper-button-prev:after {
-  font-size: 28px;
-  color: #212529;
-}
-#photogallery {
-  position: relative;
-}
