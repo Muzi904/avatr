@@ -1625,9 +1625,11 @@ html {
 .margin-top-sccrolled {
   margin-top: 300px;
 }
+.avatr12-slider-thumbnail .swiper-slide,
 .suv-slider-thumbnail .swiper-slide {
   width: 80px !important;
 }
+.avatr12-slider-thumbnail .swiper-wrapper,
 .suv-slider-thumbnail .swiper-wrapper {
   justify-content: center;
 }
