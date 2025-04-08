@@ -243,7 +243,8 @@
 
                         <div class="d-flex align-items-center gap-5 mt-5 justify-content-center animate-text">
                             <a href="{{ route(name: 'avatr11') }}" class="link ">View AVATR 11</a>
-                            <a href="{{ route(name: 'avatr11') }}?scroll=customise" class="btn ">Customise</a>
+                            <!-- <a href="{{ route(name: 'avatr11') }}?scroll=customise" class="btn ">Customise</a> -->
+                            <a href="{{ route(name: 'avatr11') }}#customise" class="btn ">Customise</a>
                         </div>
                     </div>
 
@@ -373,7 +374,9 @@
 
                         <div class="d-flex align-items-center gap-5 mt-5 justify-content-center animate-text">
                             <a href="{{ route(name: 'avatr12') }}" class="link">View AVATR 12</a>
-                            <a href="{{ route(name: 'avatr12') }}?scroll=customise" class="btn">Customise</a>
+                            <!-- <a href="{{ route(name: 'avatr12') }}?scroll=customise" class="btn">Customise</a> -->
+                            <a href="{{ route(name: 'avatr12') }}#customise" class="btn ">Customise</a>
+
                         </div>
                     </div>
 
