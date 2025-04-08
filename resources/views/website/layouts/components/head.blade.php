@@ -100,7 +100,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LL0JQQ81P3"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-LL0JQQ81P3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -110,5 +110,5 @@
         gtag('js', new Date());
 
         gtag('config', 'G-LL0JQQ81P3');
-    </script>
+    </script> -->
 </head>
