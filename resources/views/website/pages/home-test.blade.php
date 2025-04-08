@@ -165,83 +165,85 @@
                 </div>
                 <div class="tab-contents ">
                     <div id="tab1" class="tab-panel-color active">
-                        <div class="swiper-container swiper car-models animate-text">
-                            <div class="swiper-wrapper" id="slider-wrapper">
-                                <!-- Red image -->
-                                <div class="swiper-slide" id="red-slide">
+                        <div class="swiper-container car-models suv-slider animate-text">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
                                     <img class="w-100 my-50"
                                         src="{{ asset('website/images/home/color-variants/avartr11/Liquid-Caramel.jpg') }}"
                                         alt="Liquid-Caramel">
                                 </div>
-                                <!-- Blue image -->
-                                <div class="swiper-slide" id="blue-slide" style="display: none;">
+                                <div class="swiper-slide">
                                     <img class="w-100 my-50"
                                         src="{{ asset('website/images/home/color-variants/avartr11/Aqua-Green.jpg') }}"
                                         alt="Aqua-Green">
                                 </div>
-                                <!-- Green image -->
-                                <div class="swiper-slide" id="green-slide" style="display: none;">
+                                <div class="swiper-slide">
                                     <img class="w-100 my-50"
                                         src="{{ asset('website/images/home/color-variants/avartr11/Matte-White.jpg') }}"
                                         alt="Matte-White">
                                 </div>
-                                <!-- Black image -->
-                                <div class="swiper-slide" id="black-slide" style="display: none;">
+                                <div class="swiper-slide">
                                     <img class="w-100 my-50"
                                         src="{{ asset('website/images/home/color-variants/avartr11/Glossy-Grey.jpg') }}"
                                         alt="Glossy-Grey">
                                 </div>
-                                <!-- Yellow image -->
-                                <div class="swiper-slide" id="yellow-slide" style="display: none;">
+                                <div class="swiper-slide">
                                     <img class="w-100 my-50"
                                         src="{{ asset('website/images/home/color-variants/avartr11/Matte-Grey.jpg') }}"
                                         alt="Matte-Grey">
                                 </div>
-                                <!-- White image -->
-                                <div class="swiper-slide" id="white-slide" style="display: none;">
+                                <div class="swiper-slide">
                                     <img class="w-100 my-50"
                                         src="{{ asset('website/images/home/color-variants/avartr11/Glossy-Black.jpg') }}"
                                         alt="Glossy-Black">
                                 </div>
-
                             </div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev swiper-prev-1"></div>
+                            <div class="swiper-button-next swiper-next-1"></div>
                         </div>
 
-                        <!-- Color Icons Section -->
-                        <div class="d-flex align-items-center gap-3 mt-3 justify-content-center flex-wrap">
-                            <button class="varient-btn active" data-color="red">
-                                <img src="{{ asset('website/images/home/color-variants/avartr11/color-img1.png') }}"
-                                    title="Liquid-Caramel" alt="Red">
-                            </button>
-                            <!-- Button for Blue -->
-                            <button class="varient-btn" data-color="blue">
-                                <img src="{{ asset('website/images/home/color-variants/avartr11/color-img2.png') }}"
-                                    title="Aqua-Green" alt="Blue">
-                            </button>
-                            <!-- Button for Green -->
-                            <button class="varient-btn" data-color="green">
-                                <img src="{{ asset('website/images/home/color-variants/avartr11/color-img3.png') }}"
-                                    title="Matte-White" alt="Green">
-                            </button>
-                            <!-- Button for Black -->
-                            <button class="varient-btn" data-color="black">
-                                <img src="{{ asset('website/images/home/color-variants/avartr11/color-img4.png') }}"
-                                    title="Glossy-Grey" alt="Black">
-                            </button>
-                            <!-- Button for Yellow -->
-                            <button class="varient-btn" data-color="yellow">
-                                <img src="{{ asset('website/images/home/color-variants/avartr11/color-img6.png') }}"
-                                    title="Matte-Grey" alt="Yellow">
-                            </button>
-                            <!-- Button for White -->
-                            <button class="varient-btn" data-color="white">
-                                <img src="{{ asset('website/images/home/color-variants/avartr11/color-img5.png') }}"
-                                    title="Glossy-Black" alt="White">
-                            </button>
-
+                        <!-- THUMBNAIL SLIDER -->
+                        <div class="swiper-container slider-thumbnail suv-slider-thumbnail">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <button class="varient-btn color-btn-1 " data-color="red">
+                                        <img src="{{ asset('website/images/home/color-variants/avartr11/color-img1.png') }}"
+                                            title="Liquid-Caramel" alt="Red">
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="varient-btn color-btn-1" data-color="blue">
+                                        <img src="{{ asset('website/images/home/color-variants/avartr11/color-img2.png') }}"
+                                            title="Aqua-Green" alt="Blue">
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="varient-btn color-btn-1" data-color="green">
+                                        <img src="{{ asset('website/images/home/color-variants/avartr11/color-img3.png') }}"
+                                            title="Matte-White" alt="Green">
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="varient-btn color-btn-1" data-color="black">
+                                        <img src="{{ asset('website/images/home/color-variants/avartr11/color-img4.png') }}"
+                                            title="Glossy-Grey" alt="Black">
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="varient-btn color-btn-1" data-color="yellow">
+                                        <img src="{{ asset('website/images/home/color-variants/avartr11/color-img6.png') }}"
+                                            title="Matte-Grey" alt="Yellow">
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="varient-btn color-btn-1" data-color="white">
+                                        <img src="{{ asset('website/images/home/color-variants/avartr11/color-img5.png') }}"
+                                            title="Glossy-Black" alt="White">
+                                    </button>
+                                </div>
+                            </div>
                         </div>
+
 
                         <div class="d-flex align-items-center gap-5 mt-5 justify-content-center animate-text">
                             <a href="{{ route(name: 'avatr11') }}" class="link ">View AVATR 11</a>
@@ -274,7 +276,7 @@
                         }
 
                         /* Active button styling */
-                        .varient-btn.active {
+                        .swiper-slide-thumb-active .varient-btn {
                             border: 2px solid #000;
                             /* Border around active button */
                             background-color: rgba(0, 0, 0, 0.1);
@@ -289,90 +291,95 @@
                     </style>
 
                     <div id="tab2" class="tab-panel-color">
-                        <div class="swiper-container swiper car-models animate-text">
-                            <div class="swiper-wrapper" id="slider-wrapper-2">
-                                <!-- Red image -->
-                                <div class="swiper-slide" id="red-slide-2">
+                        <div class="swiper-container swiper car-models avatr12-slider animate-text">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
                                     <img class="w-100 my-50"
                                         src="{{ asset('website/images/home/color-variants/avatr12/Matte-Purple-1.jpg') }}"
                                         alt="Matte-Purple">
                                 </div>
-                                <div class="swiper-slide" id="purple-slide-2">
+                                <div class="swiper-slide">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avatr12/Misty-Purple-1.jpg') }}"
-                                        alt="Misty-Purple">
+                                        src="{{ asset('website/images/home/color-variants/avatr12/Matte-Purple-1.jpg') }}"
+                                        alt="Matte-Purple">
                                 </div>
-                                <!-- Blue image -->
-                                <div class="swiper-slide" id="blue-slide-2" style="display: none;">
+                                <div class="swiper-slide">
                                     <img class="w-100 my-50"
                                         src="{{ asset('website/images/home/color-variants/avatr12/Glossy-White-1.jpg') }}"
-                                        alt="Glossy-White">
+                                        alt="Matte-Purple">
                                 </div>
-                                <!-- Green image -->
-                                <div class="swiper-slide" id="green-slide-2" style="display: none;">
+                                <div class="swiper-slide">
                                     <img class="w-100 my-50"
                                         src="{{ asset('website/images/home/color-variants/avatr12/Glossy-Grey-1.jpg') }}"
-                                        alt="Glossy-Grey">
+                                        alt="Matte-Purple">
                                 </div>
-                                <!-- Black image -->
-                                <div class="swiper-slide" id="black-slide-2" style="display: none;">
+                                <div class="swiper-slide">
                                     <img class="w-100 my-50"
                                         src="{{ asset('website/images/home/color-variants/avatr12/Glossy-Black-1.jpg') }}"
-                                        alt="Glossy-Black">
+                                        alt="Matte-Purple">
                                 </div>
-                                <!-- White image -->
-                                <div class="swiper-slide" id="white-slide-2" style="display: none;">
+                                <div class="swiper-slide">
                                     <img class="w-100 my-50"
                                         src="{{ asset('website/images/home/color-variants/avatr12/Slate-Blue-1.jpg') }}"
-                                        alt="Slate-Blue">
+                                        alt="Matte-Purple">
                                 </div>
-                                <!-- Yellow image -->
-                                <div class="swiper-slide" id="yellow-slide-2" style="display: none;">
+                                <div class="swiper-slide">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avatr12/LC-1.jpg') }}"
-                                        alt="Liquid-Caramel">
+                                        src="{{ asset('website/images/home/color-variants/avatr12/avatr12/LC-1.jpg') }}"
+                                        alt="Matte-Purple">
                                 </div>
                             </div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev swiper-prev-2"></div>
+                            <div class="swiper-button-next swiper-next-2"></div>
                         </div>
 
-                        <!-- Color Icons Section -->
-                        <div class="d-flex align-items-center gap-3 mt-3 justify-content-center flex-wrap">
-                            <button class="varient-btn active" data-color="red">
-                                <img src="{{ asset('website/images/home/color-variants/avatr12/color-img1.png') }}"
-                                    title="Matte-Purple" alt="Matte-Purple">
-                            </button>
-                            <button class="varient-btn" data-color="purple">
-                                <img src="{{ asset('website/images/home/color-variants/avatr12/color-img1.png') }}"
-                                    title="Misty-Purple" alt="Misty-Purple">
-                            </button>
-                            <!-- Button for Blue -->
-                            <button class="varient-btn" data-color="blue">
-                                <img src="{{ asset('website/images/home/color-variants/avatr12/color-img2.png') }}"
-                                    title="Glossy-White" alt="Glossy-White">
-                            </button>
-                            <!-- Button for Green -->
-                            <button class="varient-btn" data-color="green">
-                                <img src="{{ asset('website/images/home/color-variants/avatr12/color-img3.png') }}"
-                                    title="Glossy-Grey" alt="Glossy-Grey">
-                            </button>
-                            <!-- Button for Black -->
-                            <button class="varient-btn" data-color="black">
-                                <img src="{{ asset('website/images/home/color-variants/avatr12/color-img4.png') }}"
-                                    title="Glossy-Black" alt="Glossy-Black">
-                            </button>
-                            <!-- Button for White -->
-                            <button class="varient-btn" data-color="white">
-                                <img src="{{ asset('website/images/home/color-variants/avatr12/color-img5.png') }}"
-                                    title="Slate-Blue" alt="Slate-Blue">
-                            </button>
-                            <!-- Button for Yellow -->
-                            <button class="varient-btn" data-color="yellow">
-                                <img src="{{ asset('website/images/home/color-variants/avatr12/color-img6.png') }}"
-                                    title="Liquid-Caramel" alt="Liquid-Caramel">
-                            </button>
+                        <div class="swiper-container slider-thumbnail avatr12-slider-thumbnail">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <button class="varient-btn color-btn-2 active" data-color="red">
+                                        <img src="{{ asset('website/images/home/color-variants/avatr12/color-img1.png') }}"
+                                            title="Matte-Purple" alt="Matte-Purple">
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="varient-btn color-btn-2" data-color="purple">
+                                        <img src="{{ asset('website/images/home/color-variants/avatr12/color-img1.png') }}"
+                                            title="Misty-Purple" alt="Misty-Purple">
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="varient-btn color-btn-2" data-color="blue">
+                                        <img src="{{ asset('website/images/home/color-variants/avatr12/color-img2.png') }}"
+                                            title="Glossy-White" alt="Glossy-White">
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="varient-btn color-btn-2" data-color="green">
+                                        <img src="{{ asset('website/images/home/color-variants/avatr12/color-img3.png') }}"
+                                            title="Glossy-Grey" alt="Glossy-Grey">
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="varient-btn color-btn-2" data-color="black">
+                                        <img src="{{ asset('website/images/home/color-variants/avatr12/color-img4.png') }}"
+                                            title="Glossy-Black" alt="Glossy-Black">
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="varient-btn color-btn-2" data-color="white">
+                                        <img src="{{ asset('website/images/home/color-variants/avatr12/color-img5.png') }}"
+                                            title="Slate-Blue" alt="Slate-Blue">
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="varient-btn color-btn-2" data-color="yellow">
+                                        <img src="{{ asset('website/images/home/color-variants/avatr12/color-img6.png') }}"
+                                            title="Liquid-Caramel" alt="Liquid-Caramel">
+                                    </button>
+                                </div>
+                            </div>
                         </div>
+
 
                         <div class="d-flex align-items-center gap-5 mt-5 justify-content-center animate-text">
                             <a href="{{ route(name: 'avatr12') }}" class="link">View AVATR 12</a>
@@ -496,55 +503,54 @@
         </div>
     </section>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const colorButtons = document.querySelectorAll(".varient-btn");
-            const sliderWrapper = document.getElementById("slider-wrapper");
 
-            // Initialize Swiper for tab1
-            let swiper = new Swiper(".swiper-container", {
-                loop: false, // Disable loop
+
+    {{-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Swiper
+            const swiper = new Swiper('.swiper-container.car-models', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: false,
                 navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+                    nextEl: '.right-arrow',
+                    prevEl: '.left-arrow',
                 },
             });
 
-            // Function to switch images based on selected color
-            function switchColorImages(color) {
-                // Hide all images initially
-                const allSlides = sliderWrapper.querySelectorAll(".swiper-slide");
-                allSlides.forEach(slide => slide.style.display = "none");
-
-                // Show the selected color's image
-                const selectedSlide = document.getElementById(color + "-slide");
-                if (selectedSlide) {
-                    selectedSlide.style.display = "block";
+            // Map colors to swiper slide index
+            const colorToIndex = {};
+            document.querySelectorAll('.swiper-slide').forEach((slide, index) => {
+                const color = slide.dataset.color;
+                if (color) {
+                    colorToIndex[color] = index;
                 }
-            }
-
-            // Add event listener to each color button
-            colorButtons.forEach(button => {
-                button.addEventListener("click", function() {
-                    // Remove active class from all color buttons and add to the clicked button
-                    colorButtons.forEach(btn => btn.classList.remove("active"));
-                    this.classList.add("active");
-
-                    // Get the color data attribute and switch images
-                    const selectedColor = this.getAttribute("data-color");
-                    switchColorImages(selectedColor);
-                });
             });
 
-            // Set initial active color to red
-            switchColorImages("red");
+            // Handle color button clicks
+            const colorButtons = document.querySelectorAll('.varient-btn.color-btn-1');
+            colorButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const selectedColor = this.dataset.color;
+
+                    // Update active class on buttons
+                    colorButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Slide to corresponding slide
+                    const targetIndex = colorToIndex[selectedColor];
+                    if (targetIndex !== undefined) {
+                        swiper.slideTo(targetIndex);
+                    }
+                });
+            });
         });
 
         document.addEventListener("DOMContentLoaded", function() {
-            const colorButtons = document.querySelectorAll(".varient-btn");
+            const colorButtons2 = document.querySelectorAll(".color-btn-2");
             const sliderWrapper2 = document.getElementById("slider-wrapper-2");
 
-            let swiper2 = new Swiper(".swiper-container", {
+            let swiper2 = new Swiper(".model-2", {
                 loop: false, // Ensure no looping
                 navigation: {
                     nextEl: ".swiper-button-next",
@@ -555,7 +561,7 @@
             // Function to switch images based on selected color
             function switchColorImages(color) {
                 // Hide all images
-                const allSlides = sliderWrapper2.querySelectorAll(".swiper-slide");
+                const allSlides = sliderWrapper2.querySelectorAll(".slide-2");
                 allSlides.forEach(slide => slide.style.display = "none");
 
                 // Show the selected color's image
@@ -566,10 +572,10 @@
             }
 
             // Add event listener to each color button
-            colorButtons.forEach(button => {
+            colorButtons2.forEach(button => {
                 button.addEventListener("click", function() {
                     // Remove active class from all and add to the clicked color button
-                    colorButtons.forEach(btn => btn.classList.remove("active"));
+                    colorButtons2.forEach(btn => btn.classList.remove("active"));
                     this.classList.add("active");
 
                     // Get the color data and switch images
@@ -581,5 +587,55 @@
             // Set initial active color to red
             switchColorImages("red");
         });
-    </script>
+    </script> --}}
 @endsection
+
+@push('scripts')
+    <script>
+        const thumbnail = new Swiper(".suv-slider-thumbnail", {
+            slidesPerView: 6,
+            spaceBetween: 0,
+            watchSlidesProgress: true,
+            watchSlidesVisibility: true,
+        });
+
+        const main = new Swiper(".suv-slider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            speed: 800,
+            thumbs: {
+                swiper: thumbnail,
+            },
+            navigation: {
+                nextEl: ".suv-slider .swiper-next-1",
+                prevEl: ".suv-slider .swiper-prev-1",
+            },
+            allowTouchMove: true,
+            grabCursor: true,
+            effect: "fade", // Optional
+        });
+
+        const thumbnail2 = new Swiper(".avatr12-slider-thumbnail", {
+            slidesPerView: 6,
+            spaceBetween: 0,
+            watchSlidesProgress: true,
+            watchSlidesVisibility: true,
+        });
+
+        const main2 = new Swiper(".avatr12-slider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            speed: 800,
+            grabCursor: true,
+            allowTouchMove: true,
+            effect: "fade", // Optional
+            thumbs: {
+                swiper: thumbnail2,
+            },
+            navigation: {
+                nextEl: ".avatr12-slider .swiper-next-2",
+                prevEl: ".avatr12-slider .swiper-prev-2",
+            },
+        });
+    </script>
+@endpush
