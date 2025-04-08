@@ -1,10 +1,9 @@
 @extends('website.layouts.app')
 
-@section('content')
     <section class="hero">
         <picture>
-            <source srcset="{{ asset('website/images/home/Banner142-mob.jpg') }}" media="(max-width: 768px)">
-            <img src="{{ asset('website/images/home/Banner142.jpg') }}" alt="" class="w-100" loading="lazy">
+            <source srcset="{{ asset('website/images/home/Banner142-mob1.png') }}" media="(max-width: 768px)">
+            <img src="{{ asset('website/images/home/Banner1427.webp') }}" alt="" class="w-100" loading="lazy">
         </picture>
         <div class="content hero-animated">
             <h1 class="">ENVISIONING NEXT
@@ -12,8 +11,11 @@
             <p class="">The future of luxury Electric Vehicles has arrived. <br>
                 Experience the sublime sensation of absolute luxury with <br>
                 best-in-class features and unparalleled benefits
+
             </p>
-            <a href="#Car_models" class="btn mx-auto ">View Models</a>
+            
+             <h2 class="">Coming Soon!!</h2>
+         
         </div>
     </section>
 
@@ -243,7 +245,7 @@
 
                         <div class="d-flex align-items-center gap-5 mt-5 justify-content-center animate-text">
                             <a href="{{ route(name: 'avatr11') }}" class="link ">View AVATR 11</a>
-                            <a href="{{ route(name: 'avatr11') }}" class="btn ">Customize</a>
+                            <a href="{{ route(name: 'avatr11') }}?scroll=customise" class="btn ">Customise</a>
                         </div>
                     </div>
 
@@ -291,42 +293,42 @@
                                 <!-- Red image -->
                                 <div class="swiper-slide" id="red-slide-2">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avatr12/Matte-Purple.png') }}"
+                                        src="{{ asset('website/images/home/color-variants/avatr12/Matte-Purple-1.jpg') }}"
                                         alt="Matte-Purple">
                                 </div>
                                 <div class="swiper-slide" id="purple-slide-2">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avatr12/Misty-Purple.png') }}"
+                                        src="{{ asset('website/images/home/color-variants/avatr12/Misty-Purple-1.jpg') }}"
                                         alt="Misty-Purple">
                                 </div>
                                 <!-- Blue image -->
                                 <div class="swiper-slide" id="blue-slide-2" style="display: none;">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avatr12/Glossy-White.png') }}"
+                                        src="{{ asset('website/images/home/color-variants/avatr12/Glossy-White-1.jpg') }}"
                                         alt="Glossy-White">
                                 </div>
                                 <!-- Green image -->
                                 <div class="swiper-slide" id="green-slide-2" style="display: none;">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avatr12/Glossy-Grey.png') }}"
+                                        src="{{ asset('website/images/home/color-variants/avatr12/Glossy-Grey-1.jpg') }}"
                                         alt="Glossy-Grey">
                                 </div>
                                 <!-- Black image -->
                                 <div class="swiper-slide" id="black-slide-2" style="display: none;">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avatr12/Glossy-Black.png') }}"
+                                        src="{{ asset('website/images/home/color-variants/avatr12/Glossy-Black-1.jpg') }}"
                                         alt="Glossy-Black">
                                 </div>
                                 <!-- White image -->
                                 <div class="swiper-slide" id="white-slide-2" style="display: none;">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avatr12/Slate-Blue.png') }}"
+                                        src="{{ asset('website/images/home/color-variants/avatr12/Slate-Blue-1.jpg') }}"
                                         alt="Slate-Blue">
                                 </div>
                                 <!-- Yellow image -->
                                 <div class="swiper-slide" id="yellow-slide-2" style="display: none;">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avatr12/LC.png') }}"
+                                        src="{{ asset('website/images/home/color-variants/avatr12/LC-1.jpg') }}"
                                         alt="Liquid-Caramel">
                                 </div>
                             </div>
@@ -373,7 +375,7 @@
 
                         <div class="d-flex align-items-center gap-5 mt-5 justify-content-center animate-text">
                             <a href="{{ route(name: 'avatr12') }}" class="link">View AVATR 12</a>
-                            <a href="{{ route(name: 'avatr12') }}" class="btn">Customize</a>
+                            <a href="{{ route(name: 'avatr12') }}?scroll=customise" class="btn">Customise</a>
                         </div>
                     </div>
 
@@ -578,3 +580,4 @@
         });
     </script>
 @endsection
+

@@ -344,7 +344,7 @@
                             <div class="accordion-item-body">
                                 <div class="accordion-item-body-content">
                                     <div class="drivetrain-fields">
-                                        <button data-trim="trim1" class="active">Luxury – RWD</button>
+                                        <button data-trim="trim1" >Luxury – RWD</button>
                                         <button data-trim="trim2">Performance – AWD</button>
                                         <button data-trim="trim3">Premium – AWD</button>
                                     </div>
@@ -404,16 +404,16 @@
                                             </div>
                                         </div>
 
-                                        <div class="body-color" data-color="matte-white">
+                                        <div class="body-color" data-color="matte-white" id="mattewhite">
                                             <button class="varient-btn">
                                                 <img src="{{ asset('website/images/home/color-variants/avartr11/color-img3.png') }}"
                                                     alt="">
                                             </button>
-                                            <div id="varient15-text" class="text-center">
+                                            <div id="varient15-text"  class="text-center">
                                                 <p>Matte White</p>
                                             </div>
                                         </div>
-                                        <div class="body-color" data-color="matte-grey">
+                                        <div class="body-color" id="mattegrey" data-color="matte-grey" >
                                             <button class="varient-btn">
                                                 <img src="{{ asset('website/images/home/color-variants/avartr11/color-img6.png') }}"
                                                     alt="">
@@ -511,7 +511,7 @@
                                                 <p>Wheel Set C</p>
                                             </div>
                                         </div>
-                                        <div class="wheel-set" data-alloy="set-D">
+                                        <div class="wheel-set" data-alloy="set-D" style="display: none;">
                                             <button class="varient-btn">
                                                 <img src="{{ asset('website/images/home/color-variants/avartr11/wheel/wheel-4.svg') }}"
                                                     alt="">
@@ -688,10 +688,27 @@
                 this.classList.add("active");
 
                 const alloyElement = document.querySelector('[data-alloy="set-D"]');
+                const alloyElement1 = document.querySelector('[data-alloy="set-A"]');
+                const alloyElement2 = document.querySelector('[data-alloy="set-B"]');
+                const alloyElement3 = document.querySelector('[data-alloy="set-C"]');
+                const matteGrey = document.getElementById("mattegrey");
+                const matteWhite = document.getElementById("mattewhite");
                 if (this.getAttribute('data-trim') === 'trim1') {
-                    alloyElement.style.display = 'block';
+                    alloyElement.style.display = 'none';
+                    alloyElement1.style.display = 'none';
+                    alloyElement2.style.display = 'none';
+                    alloyElement3.style.display = 'block';
+                    if (matteGrey) matteGrey.style.display = 'none';
+                    if (matteWhite) matteWhite.style.display = 'none';
+                    
                 } else {
                     alloyElement.style.display = 'none';
+                    alloyElement3.style.display = 'none';
+                    alloyElement1.style.display = 'block';
+                    alloyElement2.style.display = 'block';
+                    if (matteGrey) matteGrey.style.display = 'block';
+                    if (matteWhite) matteWhite.style.display = 'block';
+
                 }
             });
         });

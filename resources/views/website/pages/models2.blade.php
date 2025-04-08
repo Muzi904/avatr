@@ -266,7 +266,7 @@
 </style>
 
 
-<section class="models-designs-varients">
+<section class="models-designs-varients" id="carsection">
     <div class="container-md">
         <div class="grid-rows">
             <div class="column">
@@ -340,7 +340,7 @@
                             <div class="accordion-item-body">
                                 <div class="accordion-item-body-content">
                                     <div class="drivetrain-fields">
-                                        <button data-trim="trim1" class="active">Luxury – RWD</button>
+                                        <button data-trim="trim1">Luxury – RWD</button>
                                         <button data-trim="trim2">Performance – AWD</button>
                                         <button data-trim="trim3">Premium – AWD</button>
                                     </div>
@@ -415,7 +415,7 @@
                                                     alt="">
                                             </button>
                                             <div id="varient14-text" class="text-center">
-                                                <p>Matt Purple</p>
+                                                <p>Matte Purple</p>
                                             </div>
                                         </div>
                                         <!--<div class="body-color" data-color="matte-grey">-->
@@ -696,6 +696,23 @@
             button.addEventListener("click", function() {
                 document.querySelectorAll("[data-trim]").forEach(btn => btn.classList.remove("active"));
                 this.classList.add("active");
+
+                const alloyElement = document.querySelector('[data-alloy="set-D"]');
+                const alloyElement1 = document.querySelector('[data-alloy="set-A"]');
+                const alloyElement2 = document.querySelector('[data-alloy="set-B"]');
+                const alloyElement3 = document.querySelector('[data-alloy="set-C"]');
+                if (this.getAttribute('data-trim') === 'trim1') {
+                    alloyElement.style.display = 'none';
+                    alloyElement1.style.display = 'block';
+                    alloyElement2.style.display = 'block';
+                    alloyElement3.style.display = 'none';
+                } else {
+                    alloyElement.style.display = 'block';
+                    alloyElement3.style.display = 'block';
+                    alloyElement1.style.display = 'none';
+                    alloyElement2.style.display = 'none';
+
+                }
             });
         });
 

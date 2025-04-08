@@ -1,4 +1,11 @@
 @media screen and (max-width: 400px) {
+
+}
+
+@media screen and (max-width: 500px) {
+.hero .content {
+    top: 118px;
+  }
 }
 @media screen and (max-width: 1400px) {
   .footer-bottom {
