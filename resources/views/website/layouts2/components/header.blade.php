@@ -12,13 +12,13 @@
 
         <ul>
             <li>
-                <a class="navlink" href="{{ route('avatr11') }}">Avatr 11</a>
+                <a class="navlink" href="{{ route('avatr11') }}">AVATR 11</a>
             </li>
             <li>
-                <a class="navlink" href="{{ route('avatr12') }}">Avatr 12</a>
+                <a class="navlink" href="{{ route('avatr12') }}">AVATR 12</a>
             </li>
             <li>
-                <a class="navlink" href="{{ route('experience.avatr') }}">Experience Avatr</a>
+                <a class="navlink" href="{{ route('experience.avatr') }}">Experience AVATR</a>
             </li>
         </ul>
         <div class="logo">

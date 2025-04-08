@@ -98,9 +98,12 @@ li {
   object-fit: cover;
   object-position: left bottom;
 }
+
+
+
 .hero .content {
   position: absolute;
-  top: 200px;
+  top: 135px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -108,10 +111,26 @@ li {
   width: 100%;
   padding: 0 15px;
 }
+
+@media (max-width: 1200px) {
+  .hero .content {
+    top: 120px; /* example adjustment */
+    }
+}
 .hero .content h1 {
   font-size: clamp(1rem, calc(1.5rem + 3.952 * (1vw - 0.2rem)), 5rem);
   font-family: 'AVATRFont-Light';
   margin-bottom: 15px;
+}
+
+@media (max-width: 1400px) {
+ .hero .content h1 {
+  font-size: clamp(1rem, calc(0.5rem + 3.952 * (1vw - 0.2rem)), 5rem);
+    }
+
+   .hero .content {
+    top: 110px; /* example adjustment */
+    }
 }
 .hero .content h2 {
   font-size: clamp(1rem, calc(1rem + 3 * (1vw - 0.2rem)), 5rem);

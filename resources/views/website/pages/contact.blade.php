@@ -68,7 +68,7 @@
                 <div class="column">
                     @if (session('page') == 'thank-you')
                         <div class="thank-you-msg" id="form-section">
-                            <img src="{{ asset('website/images/thankyou.png') }}" alt="">
+                            {{-- <img src="{{ asset('website/images/thankyou.png') }}" alt=""> --}}
                             <h3>Thanks for your Interest</h3>
                             <p>
                                 We have received your message. We will get back to you shortly.
