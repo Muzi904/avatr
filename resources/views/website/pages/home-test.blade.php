@@ -325,7 +325,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avatr12/avatr12/LC-1.jpg') }}"
+                                        src="{{ asset('website/images/home/color-variants/avatr12/LC-1.jpg') }}"
                                         alt="Matte-Purple">
                                 </div>
                             </div>
@@ -638,4 +638,35 @@
             },
         });
     </script>
+
+    <script>
+    // Show tab 1 by default
+    document.querySelector('.suv-slider').style.display = 'block';
+    document.querySelector('.avatr12-slider').style.display = 'none';
+
+    const tabButtons = document.querySelectorAll('.tab-btn-color');
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            // Remove active class from all buttons
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+
+            const target = this.getAttribute('data-target');
+
+            if (target === 'tab1') {
+                document.querySelector('.suv-slider').style.display = 'block';
+                document.querySelector('.avatr12-slider').style.display = 'none';
+                main.update();        // Refresh Swiper 1
+                thumbnail.update();   // Refresh thumbnails
+            } else if (target === 'tab2') {
+                document.querySelector('.suv-slider').style.display = 'none';
+                document.querySelector('.avatr12-slider').style.display = 'block';
+                main2.update();        // 🔥 THIS is where you call it
+                thumbnail2.update();   // 🔥 Also here
+            }
+        });
+    });
+</script>
+
 @endpush
