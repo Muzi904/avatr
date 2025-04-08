@@ -1,5 +1,5 @@
 @extends('website.layouts.app')
-
+@section('content')
     <section class="hero">
         <picture>
             <source srcset="{{ asset('website/images/home/Banner142-mob1.png') }}" media="(max-width: 768px)">
@@ -13,9 +13,9 @@
                 best-in-class features and unparalleled benefits
 
             </p>
-            
-             <h2 class="">Coming Soon!!</h2>
-         
+
+            <a href="#Car_models" class="btn mx-auto ">View Models</a>
+
         </div>
     </section>
 
@@ -583,4 +583,3 @@
         });
     </script>
 @endsection
-
