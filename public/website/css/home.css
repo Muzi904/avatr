@@ -99,8 +99,6 @@ li {
   object-position: left bottom;
 }
 
-
-
 .hero .content {
   position: absolute;
   top: 135px;
@@ -115,7 +113,7 @@ li {
 @media (max-width: 1200px) {
   .hero .content {
     top: 120px; /* example adjustment */
-    }
+  }
 }
 .hero .content h1 {
   font-size: clamp(1rem, calc(1.5rem + 3.952 * (1vw - 0.2rem)), 5rem);
@@ -124,13 +122,13 @@ li {
 }
 
 @media (max-width: 1400px) {
- .hero .content h1 {
-  font-size: clamp(1rem, calc(0.5rem + 3.952 * (1vw - 0.2rem)), 5rem);
-    }
+  .hero .content h1 {
+    font-size: clamp(1rem, calc(0.5rem + 3.952 * (1vw - 0.2rem)), 5rem);
+  }
 
-   .hero .content {
+  .hero .content {
     top: 110px; /* example adjustment */
-    }
+  }
 }
 .hero .content h2 {
   font-size: clamp(1rem, calc(1rem + 3 * (1vw - 0.2rem)), 5rem);
@@ -194,6 +192,7 @@ li {
 .car-models {
   padding-top: 50px !important;
 }
+
 .car-models .swiper-button-next,
 .car-models .swiper-button-prev {
   color: var(--text-color) !important; /* Change to your preferred color */
@@ -615,7 +614,7 @@ footer ul li a {
 }
 .section-one .overlay {
   position: absolute;
-  top: 50px;
+  top: 30px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -625,7 +624,7 @@ footer ul li a {
   font-size: 56px;
   color: #181818;
   text-align: center;
-  line-height: 84px;
+  line-height: 68px;
   font-family: 'AVATRFont-Regular';
 }
 .section-two .text {
@@ -683,13 +682,13 @@ footer ul li a {
   cursor: pointer;
   width: 33.3%;
   font-family: 'AVATRFont-Light';
+  font-weight: 600;
 }
 
 .scrolltabs .tab.active {
   background-color: #fff;
   border-bottom: 2px solid #181818;
   color: #181818;
-  font-weight: 600;
 }
 
 .scrolltabs .tab-content {
@@ -1625,4 +1624,10 @@ html {
 }
 .margin-top-sccrolled {
   margin-top: 300px;
+}
+.suv-slider-thumbnail .swiper-slide {
+  width: 80px !important;
+}
+.suv-slider-thumbnail .swiper-wrapper {
+  justify-content: center;
 }

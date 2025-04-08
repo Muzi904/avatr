@@ -311,20 +311,20 @@
 </script>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var swiper = new Swiper(".car-models", {
-            loop: true, // Enables infinite loop
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            speed: 800, // Transition speed
-        });
-    });
+    // document.addEventListener("DOMContentLoaded", function() {
+    //     var swiper = new Swiper(".car-models", {
+    //         loop: true, // Enables infinite loop
+    //         navigation: {
+    //             nextEl: ".swiper-button-next",
+    //             prevEl: ".swiper-button-prev",
+    //         },
+    //         pagination: {
+    //             el: ".swiper-pagination",
+    //             clickable: true,
+    //         },
+    //         speed: 800, // Transition speed
+    //     });
+    // });
 </script>
 
 <script>
