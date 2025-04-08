@@ -291,7 +291,7 @@
                     </style>
 
                     <div id="tab2" class="tab-panel-color">
-                        {{-- <div class="swiper-container swiper car-models avatr12-slider animate-text">
+                        <div class="swiper-container swiper car-models avatr12-slider animate-text">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <img class="w-100 my-50"
@@ -331,9 +331,9 @@
                             </div>
                             <div class="swiper-button-prev swiper-prev-2"></div>
                             <div class="swiper-button-next swiper-next-2"></div>
-                        </div> --}}
+                        </div>
 
-                        {{-- <div class="swiper-container slider-thumbnail avatr12-slider-thumbnail">
+                        <div class="swiper-container slider-thumbnail avatr12-slider-thumbnail">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <button class="varient-btn color-btn-2 active" data-color="red">
@@ -375,85 +375,6 @@
                                     <button class="varient-btn color-btn-2" data-color="yellow">
                                         <img src="{{ asset('website/images/home/color-variants/avatr12/color-img6.png') }}"
                                             title="Liquid-Caramel" alt="Liquid-Caramel">
-                                    </button>
-                                </div>
-                            </div>
-                        </div> --}}
-
-                        <div class="swiper-container car-models suv-slider animate-text">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avartr11/Liquid-Caramel.jpg') }}"
-                                        alt="Liquid-Caramel">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avartr11/Aqua-Green.jpg') }}"
-                                        alt="Aqua-Green">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avartr11/Matte-White.jpg') }}"
-                                        alt="Matte-White">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avartr11/Glossy-Grey.jpg') }}"
-                                        alt="Glossy-Grey">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avartr11/Matte-Grey.jpg') }}"
-                                        alt="Matte-Grey">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="w-100 my-50"
-                                        src="{{ asset('website/images/home/color-variants/avartr11/Glossy-Black.jpg') }}"
-                                        alt="Glossy-Black">
-                                </div>
-                            </div>
-                            <div class="swiper-button-prev swiper-prev-2"></div>
-                            <div class="swiper-button-next swiper-next-2"></div>
-                        </div>
-
-                        <!-- THUMBNAIL SLIDER -->
-                        <div class="swiper-container slider-thumbnail avatr12-slider-thumbnail">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <button class="varient-btn color-btn-1 " data-color="red">
-                                        <img src="{{ asset('website/images/home/color-variants/avartr11/color-img1.png') }}"
-                                            title="Liquid-Caramel" alt="Red">
-                                    </button>
-                                </div>
-                                <div class="swiper-slide">
-                                    <button class="varient-btn color-btn-1" data-color="blue">
-                                        <img src="{{ asset('website/images/home/color-variants/avartr11/color-img2.png') }}"
-                                            title="Aqua-Green" alt="Blue">
-                                    </button>
-                                </div>
-                                <div class="swiper-slide">
-                                    <button class="varient-btn color-btn-1" data-color="green">
-                                        <img src="{{ asset('website/images/home/color-variants/avartr11/color-img3.png') }}"
-                                            title="Matte-White" alt="Green">
-                                    </button>
-                                </div>
-                                <div class="swiper-slide">
-                                    <button class="varient-btn color-btn-1" data-color="black">
-                                        <img src="{{ asset('website/images/home/color-variants/avartr11/color-img4.png') }}"
-                                            title="Glossy-Grey" alt="Black">
-                                    </button>
-                                </div>
-                                <div class="swiper-slide">
-                                    <button class="varient-btn color-btn-1" data-color="yellow">
-                                        <img src="{{ asset('website/images/home/color-variants/avartr11/color-img6.png') }}"
-                                            title="Matte-Grey" alt="Yellow">
-                                    </button>
-                                </div>
-                                <div class="swiper-slide">
-                                    <button class="varient-btn color-btn-1" data-color="white">
-                                        <img src="{{ asset('website/images/home/color-variants/avartr11/color-img5.png') }}"
-                                            title="Glossy-Black" alt="White">
                                     </button>
                                 </div>
                             </div>
