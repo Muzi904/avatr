@@ -1,6 +1,5 @@
 @extends('website.layouts.app')
 
-@section('content')
     <section class="hero">
         <picture>
             <source srcset="{{ asset('website/images/home/Banner142-mob1.png') }}" media="(max-width: 768px)">
@@ -12,8 +11,11 @@
             <p class="">The future of luxury Electric Vehicles has arrived. <br>
                 Experience the sublime sensation of absolute luxury with <br>
                 best-in-class features and unparalleled benefits
+
             </p>
-            <a href="#Car_models" class="btn mx-auto ">View Models</a>
+            
+             <h2 class="">Coming Soon!!</h2>
+         
         </div>
     </section>
 
@@ -578,3 +580,4 @@
         });
     </script>
 @endsection
+
