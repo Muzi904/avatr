@@ -50,6 +50,11 @@
                     </a>
                 </li>
                 <li class="menu-item">
+                    <a href="{{ route('admin.experience.index') }}" class="menu-link">
+                        <div class="text-truncate">Experiences</div>
+                    </a>
+                </li>
+                <li class="menu-item">
                     <a href="{{ route('admin.enquiry.index') }}" class="menu-link">
                         <div class="text-truncate">All Enquiries</div>
                     </a>

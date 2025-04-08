@@ -245,7 +245,7 @@
         var input = document.querySelector("#country");
         var iti = window.intlTelInput(input, {
             initialCountry: "qa",
-            preferredCountries: ["qa", "ae", "in", "us", "gb"],
+            preferredCountries: ["qa"],
             separateDialCode: true,
             utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
         });
@@ -271,6 +271,7 @@
         if (currentUrl !== updatedUrl) {
             window.history.replaceState(null, '', updatedUrl);
         }
+        $(window).scrollTop($('#form-section').offset().top - 600);
     }
 
     // Call the function when the page loads
@@ -471,5 +472,75 @@
                 // markers: true,
             },
         });
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const targetDiv = document.querySelector(".corresponding-tabs");
+        const offsetTop = targetDiv.offsetTop; // Store the original position
+
+        window.addEventListener("scroll", function() {
+            if (window.scrollY >= offsetTop) {
+                targetDiv.classList.add("scrolled"); // Add class when it reaches the top
+            } else {
+                targetDiv.classList.remove("scrolled"); // Remove class when scrolling back
+            }
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const navLinks = document.querySelectorAll(".sticky-section a");
+        const sections = document.querySelectorAll("section[id]");
+        let isScrollingManually = false;
+
+        function changeActiveSection() {
+            if (isScrollingManually) return;
+
+            let scrollPosition = window.scrollY + 100;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute("id");
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelector(".sticky-section a.active")?.classList.remove("active");
+                    document.querySelector(`.sticky-section a[href="#${sectionId}"]`)?.classList.add(
+                        "active");
+                }
+            });
+        }
+
+        function smoothScroll(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                isScrollingManually = true;
+
+                // Detect screen width and adjust offset accordingly
+                const offset = window.innerWidth <= 768 ? 100 : 50; // Mobile: 100px, Desktop: 50px
+
+                window.scrollTo({
+                    top: targetSection.offsetTop - offset,
+                    behavior: "smooth"
+                });
+
+                document.querySelector(".sticky-section a.active")?.classList.remove("active");
+                this.classList.add("active");
+
+                setTimeout(() => {
+                    isScrollingManually = false;
+                    changeActiveSection();
+                }, 600);
+            }
+        }
+
+        window.addEventListener("scroll", changeActiveSection);
+        navLinks.forEach(link => link.addEventListener("click", smoothScroll));
     });
 </script>

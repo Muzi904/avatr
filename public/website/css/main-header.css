@@ -1,5 +1,5 @@
 header {
-  background-color: #000000d9;
+  background-color: #000000d9 !important;
 }
 header:hover {
   background-color: #000000d9;
@@ -14,4 +14,8 @@ header.scrolled .HeaderForPC_letter-logo__1cvY3 {
 header:hover .logo,
 header.scrolled .logo {
   top: -10px;
+}
+header:hover .HeaderForPC_graphic-logo__3C7QW,
+header.scrolled .HeaderForPC_graphic-logo__3C7QW {
+  opacity: 1;
 }

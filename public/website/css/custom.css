@@ -21,13 +21,13 @@
 .swiper-grid .content-section .content p {
   font-family: 'AVATRFont-Regular';
 }
-.swiper-grid .content-section .swiper-button-next,
+/* .swiper-grid .content-section .swiper-button-next,
 .swiper-button-prev {
   top: 95%;
   width: 35px;
   height: 35px;
   border: 1.8px solid #ffffff;
-}
+} */
 .swiper-grid .swiper-button-next:after,
 .swiper-grid .swiper-button-prev:after {
   font-size: 20px !important;
