@@ -1616,7 +1616,7 @@ html {
 
 .corresponding-tabs.scrolled {
   position: sticky;
-  top: -33px;
+  top: 64px;
   transition: all 0.3s ease-in-out;
 }
 .corresponding-tabs.scrolled .sticky-section {
