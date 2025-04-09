@@ -310,7 +310,7 @@
     </style>
     <section class="hero-car-details">
         <picture>
-            <source srcset="{{ asset('website/images/avatr11/A11.jpg') }}" media="(max-width: 768px)">
+            <source srcset="{{ asset('website/images/avatr11/Banner-Avatr-11-02.jpg') }}" media="(max-width: 768px)">
             <img src="{{ asset('website/images/avatr11/a03.jpg') }}" alt="" class="w-100" >
         </picture>
         <div class="container-md">
@@ -347,7 +347,7 @@
             <div class="tabs-container scrolltabs animate-text">
                 <!-- Tabs Content (Images) -->
                 <figure>
-                    <img class="w-100" src="{{ asset('website/images/avatr11/J19.png') }}" alt="">
+                    <img class="w-100" src="{{ asset('website/images/avatr11/J191.webp') }}" alt="">
                 </figure>
                 <!-- Tabs (Text) -->
                 <div class="tabs justify-content-start">

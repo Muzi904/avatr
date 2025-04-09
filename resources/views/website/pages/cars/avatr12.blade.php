@@ -310,7 +310,7 @@
 
     <section class="hero-car-details">
         <picture>
-            <source srcset="{{ asset('website/images/avatr12/avatar12-mob1.png') }}" media="(max-width: 768px)">
+            <source srcset="{{ asset('website/images/avatr12/avatar12-mob1.webp') }}" media="(max-width: 768px)">
             <img src="{{ asset('website/images/avatr12/avatr12-1.png') }}" alt="" class="w-100" >
         </picture>
         <div class="container-md">
@@ -347,7 +347,7 @@
             <div class="tabs-container scrolltabs">
                 <!-- Tabs Content (Images) -->
                 <figure>
-                    <img class="w-100" src="{{ asset('website/images/avatr12/home_int_1.jpg') }}" alt="">
+                    <img class="w-100" src="{{ asset('website/images/avatr12/Interior-Avatr -2-01.webp') }}" alt="">
                 </figure>
                 <!-- Tabs (Text) -->
                 <div class="tabs justify-content-start">

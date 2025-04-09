@@ -2,8 +2,8 @@
 @section('content')
     <section class="hero">
         <picture>
-            <source srcset="{{ asset('website/images/home/Banner142-mob1.png') }}" media="(max-width: 768px)">
-            <img src="{{ asset('website/images/home/Banner1427.webp') }}" alt="" class="w-100" loading="lazy">
+            <source srcset="{{ asset('website/images/home/Banner142-mob1-min.png') }}" media="(max-width: 768px)">
+            <img src="{{ asset('website/images/home/Banner1428.webp') }}" alt="" class="w-100" loading="lazy">
         </picture>
         <div class="content hero-animated">
             <h1 class="">ENVISIONING NEXT
