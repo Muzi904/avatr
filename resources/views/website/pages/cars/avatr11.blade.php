@@ -311,7 +311,7 @@
     <section class="hero-car-details">
         <picture>
             <source srcset="{{ asset('website/images/avatr11/A11.jpg') }}" media="(max-width: 768px)">
-            <img src="{{ asset('website/images/avatr11/a03.jpg') }}" alt="" class="w-100" loading="lazy">
+            <img src="{{ asset('website/images/avatr11/a03.jpg') }}" alt="" class="w-100" >
         </picture>
         <div class="container-md">
             <div class="content hero-animated">
