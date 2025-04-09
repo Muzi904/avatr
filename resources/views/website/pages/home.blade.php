@@ -593,7 +593,7 @@
 @push('scripts')
     <script>
         const thumbnail = new Swiper(".suv-slider-thumbnail", {
-            slidesPerView: 6,
+            slidesPerView: 1, // default for mobile
             spaceBetween: 0,
             watchSlidesProgress: true,
             watchSlidesVisibility: true,
@@ -613,6 +613,7 @@
             allowTouchMove: true,
             grabCursor: true,
             effect: "fade", // Optional
+
         });
 
         const thumbnail2 = new Swiper(".avatr12-slider-thumbnail", {
@@ -640,33 +641,32 @@
     </script>
 
     <script>
-    // Show tab 1 by default
-    document.querySelector('.suv-slider').style.display = 'block';
-    document.querySelector('.avatr12-slider').style.display = 'none';
+        // Show tab 1 by default
+        document.querySelector('.suv-slider').style.display = 'block';
+        document.querySelector('.avatr12-slider').style.display = 'none';
 
-    const tabButtons = document.querySelectorAll('.tab-btn-color');
+        const tabButtons = document.querySelectorAll('.tab-btn-color');
 
-    tabButtons.forEach(button => {
-        button.addEventListener('click', function () {
-            // Remove active class from all buttons
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
 
-            const target = this.getAttribute('data-target');
+                const target = this.getAttribute('data-target');
 
-            if (target === 'tab1') {
-                document.querySelector('.suv-slider').style.display = 'block';
-                document.querySelector('.avatr12-slider').style.display = 'none';
-                main.update();        // Refresh Swiper 1
-                thumbnail.update();   // Refresh thumbnails
-            } else if (target === 'tab2') {
-                document.querySelector('.suv-slider').style.display = 'none';
-                document.querySelector('.avatr12-slider').style.display = 'block';
-                main2.update();        // 🔥 THIS is where you call it
-                thumbnail2.update();   // 🔥 Also here
-            }
+                if (target === 'tab1') {
+                    document.querySelector('.suv-slider').style.display = 'block';
+                    document.querySelector('.avatr12-slider').style.display = 'none';
+                    main.update(); // Refresh Swiper 1
+                    thumbnail.update(); // Refresh thumbnails
+                } else if (target === 'tab2') {
+                    document.querySelector('.suv-slider').style.display = 'none';
+                    document.querySelector('.avatr12-slider').style.display = 'block';
+                    main2.update(); // 🔥 THIS is where you call it
+                    thumbnail2.update(); // 🔥 Also here
+                }
+            });
         });
-    });
-</script>
-
+    </script>
 @endpush
