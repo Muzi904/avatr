@@ -1632,4 +1632,6 @@ html {
 .avatr12-slider-thumbnail .swiper-wrapper,
 .suv-slider-thumbnail .swiper-wrapper {
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
 }
