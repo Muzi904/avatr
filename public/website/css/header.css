@@ -65,7 +65,7 @@ header ul li a {
 /* Styles when the header is scrolled */
 header:hover,
 header.scrolled {
-  background-color: #181818;
+  background-color: #000000d9;
 }
 
 header:hover .logo,
