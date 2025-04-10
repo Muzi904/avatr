@@ -91,7 +91,7 @@ class EnquiryController extends Controller
     {
         $enquiry = new Enquiry();
         $enquiry->type = 'contact';
-        // $enquiry->enq_no = $this->get_next_refkey();
+        $enquiry->enq_no = $this->get_next_refkey();
         $enquiry->name = $request->name;
         $enquiry->email = $request->email;
         $enquiry->phone_number = ($request->country_code ? $request->country_code : '') . $request->phone;

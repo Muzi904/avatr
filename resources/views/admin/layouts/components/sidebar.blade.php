@@ -29,21 +29,21 @@
             </a>
 
             <ul class="menu-sub">
-                <li class="menu-item">
+                {{-- <li class="menu-item">
                     <a href="{{ route('admin.invitation.index') }}" class="menu-link">
                         <div class="text-truncate">Invitation</div>
                     </a>
-                </li>
-                <li class="menu-item">
+                </li> --}}
+                {{-- <li class="menu-item">
                     <a href="{{ route('admin.test-drive.index') }}" class="menu-link">
                         <div class="text-truncate">Test Drive</div>
                     </a>
-                </li>
-                <li class="menu-item">
+                </li> --}}
+                {{-- <li class="menu-item">
                     <a href="{{ route('admin.request.quote.index') }}" class="menu-link">
                         <div class="text-truncate">Request A Quote</div>
                     </a>
-                </li>
+                </li> --}}
                 <li class="menu-item">
                     <a href="{{ route('admin.contact.index') }}" class="menu-link">
                         <div class="text-truncate">Contacts</div>
