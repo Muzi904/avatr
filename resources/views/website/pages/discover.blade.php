@@ -24,7 +24,7 @@
 
         </section>
 
-        <section class="corresponding-tabs pb-0 section-padding">
+        <section class="corresponding-tabs pb-0 ">
             <div class="container-md">
                 <div class="sticky-section">
                     <a href="#future" class="active">
