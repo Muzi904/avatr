@@ -1,23 +1,21 @@
 <script>
     $(document).ready(function() {
-        var fromDate = $('#from_date').val();
-        var toDate = $('#to_date').val();
 
-        getDashCounts(fromDate, toDate);
-        getPieChart(fromDate, toDate);
-        getWeeklyChart(fromDate, toDate);
-        getSalesEnquiryChart(fromDate, toDate);
+        getDashCounts();
+
+        $('#dash_filter').click(function() {
+            clearCountData();
+            getDashCounts();
+        });
     });
 
     function interval(val) {
         var fromDate = $('#from_date').val();
         var toDate = $('#to_date').val();
 
-        clearCountData(fromDate, toDate);
-        getDashCounts(fromDate, toDate, val);
-        getPieChart(fromDate, toDate, val);
-        getWeeklyChart(fromDate, toDate, val);
-        getSalesEnquiryChart(fromDate, toDate, val);
+        clearCountData();
+        getDashCounts(val);
+
     }
 
     function applyFiler(val) {
@@ -25,24 +23,32 @@
         var toDate = $('#to_date').val();
 
         clearCountData();
-        getDashCounts(fromDate, toDate, val);
-        getPieChart(fromDate, toDate, val);
-        getWeeklyChart(fromDate, toDate, val);
-        getSalesEnquiryChart(fromDate, toDate, val);
+        getDashCounts();
+
     }
 
     function clearCountData() {
-        $('#sales_count').html(0);
-        $('#support_count').html(0);
-        $('#feedback_count').html(0);
-        $('#request_count').html(0);
-        $('#webinar_count').html(0);
-        $('#total_count').html(0);
+        $('#totalEnquiryCount').html(0);
+        $('#contactEnquiryCount').html(0);
+        $('#experienceEnquiryCount').html(0);
+
     }
 
-    function getDashCounts(fromDate, toDate, interval = null) {
-        // clearCountData();
+    function assignValue(fromDate, toDate) {
+        $('#from_date_total').val(fromDate);
+        $('#to_date_total').val(toDate);
+        $('#from_date_contact').val(fromDate);
+        $('#to_date_contact').val(toDate);
+        $('#from_date_experience').val(fromDate);
+        $('#to_date_experience').val(toDate);
 
+    }
+
+    function getDashCounts(interval = null) {
+        clearCountData();
+
+        var fromDate = $('#from_date').val();
+        var toDate = $('#to_date').val();
 
         $.ajax({
             url: "{{ route('admin.dashboard.counts') }}",
@@ -56,75 +62,30 @@
                 interval: interval,
             },
             success: function(data) {
+                assignValue(data.startDate, data.endDate);
 
-                $('#sales_count').html(data.salesCount);
-                $('#support_count').html(data.customerCount);
-                $('#feedback_count').html(data.feedbackCount);
-                $('#request_count').html(data.requestCount);
-                $('#webinar_count').html(data.webinarCount);
-                $('#total_count').html(data.enquiriesCount);
+                $('#totalEnquiryCount').html(data.totalEnquiryCount);
+                $('#contactEnquiryCount').html(data.contactEnquiryCount);
+                $('#experienceEnquiryCount').html(data.experienceEnquiryCount);
+
+                totalEnqGraphTitle = data.dayWiseTotalEnquiryCounts.date;
+                totalEnqGraphCount = data.dayWiseTotalEnquiryCounts.count;
+                totalCountGraph(totalEnqGraphTitle, totalEnqGraphCount);
+                console.log(totalEnqGraphTitle, totalEnqGraphCount);
+
+                contactEnqGraphTitle = data.dayWiseContactEnquiryCount.date;
+                contactEnqGraphCount = data.dayWiseContactEnquiryCount.count;
+                contactCountGraph(contactEnqGraphTitle, contactEnqGraphCount);
+
+                experienceEnqGraphTitle = data.dayWiseExperienceEnquiryCount.date;
+                experienceEnqGraphCount = data.dayWiseExperienceEnquiryCount.count;
+                experienceCountGraph(experienceEnqGraphTitle, experienceEnqGraphCount);
+
             }
         });
     }
 
-    function getPieChart(fromDate, toDate, interval = null) {
 
-        $.ajax({
-            url: "{{ route('admin.dashboard.pie') }}",
-            method: "get",
-            headers: {
-                'X-CSRF-TOKEN': '{{ csrf_token() }}'
-            },
-            data: {
-                from_date: fromDate,
-                to_date: toDate,
-                interval: interval,
-            },
-            success: function(data) {
-                // console.log(data);
-                pieChart(data);
-            }
-        });
-    }
-
-    function getWeeklyChart(fromDate, toDate, interval = null) {
-
-        $.ajax({
-            url: "{{ route('admin.dashboard.weekly') }}",
-            method: "get",
-            headers: {
-                'X-CSRF-TOKEN': '{{ csrf_token() }}'
-            },
-            data: {
-                from_date: fromDate,
-                to_date: toDate,
-                interval: interval,
-            },
-            success: function(data) {
-                // console.log(data);
-                weeklyChart(data);
-            }
-        });
-    }
-
-    function getSalesEnquiryChart(fromDate, toDate, interval = null) {
-
-        $.ajax({
-            url: "{{ route('admin.dashboard.sales') }}",
-            method: "get",
-            headers: {
-                'X-CSRF-TOKEN': '{{ csrf_token() }}'
-            },
-            data: {
-                from_date: fromDate,
-                to_date: toDate,
-                interval: interval,
-            },
-            success: function(data) {
-                salesEnquiryChart(data);
-            }
-        });
-    }
 
     $('#searchModal').click(function() {
         $('#filterModal').modal('show');
@@ -139,70 +100,22 @@
         applyFiler();
         $('#filterModal').modal('hide');
     });
-</script>
-<script>
-    function pieChart(data) {
-        // document.addEventListener("DOMContentLoaded", function() {
-        window.ApexCharts && (new ApexCharts(document.getElementById('chart-pie'), {
+
+
+
+
+    function totalCountGraph(title, count) {
+        window.ApexCharts && (new ApexCharts(document.getElementById('total-enquiry-count'), {
             chart: {
-                type: "donut",
+                type: "area",
                 fontFamily: 'inherit',
-                height: 240,
+                height: 40.0,
                 sparkline: {
                     enabled: true
                 },
                 animations: {
                     enabled: false
                 },
-            },
-            fill: {
-                opacity: 1,
-            },
-            series: data.count,
-            labels: data.title,
-            tooltip: {
-                theme: 'dark'
-            },
-            grid: {
-                strokeDashArray: 4,
-            },
-            colors: [tabler.getColor("primary"), tabler.getColor("primary", 0.8), tabler.getColor(
-                "primary", 0.6), tabler.getColor("gray-300")],
-            legend: {
-                show: true,
-                position: 'bottom',
-                offsetY: 12,
-                markers: {
-                    width: 10,
-                    height: 10,
-                    radius: 100,
-                },
-                itemMargin: {
-                    horizontal: 8,
-                    vertical: 8
-                },
-            },
-            tooltip: {
-                fillSeriesColor: false
-            },
-        })).render();
-        // });
-    }
-
-    function weeklyChart(value) {
-        window.ApexCharts && (new ApexCharts(document.getElementById('weekly-chart'), {
-            chart: {
-                type: "area",
-                fontFamily: 'inherit',
-                height: 240,
-                parentHeightOffset: 0,
-                toolbar: {
-                    show: false,
-                },
-                animations: {
-                    enabled: false
-                },
-                stacked: true,
             },
             dataLabels: {
                 enabled: false,
@@ -217,34 +130,13 @@
                 curve: "smooth",
             },
             series: [{
-                    name: "Sales",
-                    data: value.sales
-                },
-                {
-                    name: "Support",
-                    data: value.customer
-                },
-                {
-                    name: "Feedback",
-                    data: value.feedback
-                }, {
-                    name: "Request",
-                    data: value.request
-                }, {
-                    name: "Webinar",
-                    data: value.webinar
-                }
-            ],
+                name: "counts",
+                data: count
+            }],
             tooltip: {
                 theme: 'dark'
             },
             grid: {
-                padding: {
-                    top: -20,
-                    right: 0,
-                    left: -4,
-                    bottom: -4
-                },
                 strokeDashArray: 4,
             },
             xaxis: {
@@ -261,33 +153,39 @@
             },
             yaxis: {
                 labels: {
-                    padding: 4
+                    padding: 4,
+                    formatter: (value) => {
+                        return value.toFixed(0)
+                    },
                 },
             },
-            labels: value.date,
-            colors: [tabler.getColor("primary"), tabler.getColor("red")],
+            labels: title,
+            colors: ['#333CFF'],
             legend: {
                 show: false,
             },
         })).render();
     }
 
-    function salesEnquiryChart(value) {
-        window.ApexCharts && (new ApexCharts(document.getElementById('chart-social-referrals'), {
+    function contactCountGraph(title, count) {
+        window.ApexCharts && (new ApexCharts(document.getElementById('contact-enquiry-count'), {
             chart: {
-                type: "line",
+                type: "area",
                 fontFamily: 'inherit',
-                height: 288,
-                parentHeightOffset: 0,
-                toolbar: {
-                    show: false,
+                height: 40.0,
+                sparkline: {
+                    enabled: true
                 },
                 animations: {
                     enabled: false
                 },
             },
+            dataLabels: {
+                enabled: false,
+            },
             fill: {
-                opacity: 1,
+                opacity: .16,
+                type: 'solid'
             },
             stroke: {
                 width: 2,
@@ -295,58 +193,14 @@
                 curve: "smooth",
             },
             series: [{
-                    name: "Sign Up",
-                    data: value.signup
-                },
-                {
-                    name: "Contact US",
-                    data: value.contact_us
-                },
-                {
-                    name: "MasterCard BNPL",
-                    data: value.master_card_bnpl
-                },
-                {
-                    name: "Master Card",
-                    data: value.master_card
-                },
-                {
-                    name: "MasterCard B2B",
-                    data: value.master_card_b2b
-                },
-                {
-                    name: "Beehive",
-                    data: value.beehive
-                },
-                {
-                    name: "Enbd BBG UAE",
-                    data: value.enbd_bbg_uae
-                },
-                {
-                    name: "Enbd BBG",
-                    data: value.enbd_bbg
-                },
-                {
-                    name: "Floating Button",
-                    data: value.floating
-                },
-            ],
+                name: "counts",
+                data: count
+            }],
             tooltip: {
                 theme: 'dark'
             },
             grid: {
-                padding: {
-                    top: -20,
-                    right: 0,
-                    left: -4,
-                    bottom: -4
-                },
                 strokeDashArray: 4,
-                xaxis: {
-                    lines: {
-                        show: true
-                    }
-                },
             },
             xaxis: {
                 labels: {
@@ -355,36 +209,86 @@
                 tooltip: {
                     enabled: false
                 },
+                axisBorder: {
+                    show: false,
+                },
                 type: 'datetime',
             },
             yaxis: {
-                tickAmount: 1,
                 labels: {
                     padding: 4,
-                    formatter: function(val) {
-                        return Math.floor(val); // Rounds values to remove decimals
-                    }
+                    formatter: (value) => {
+                        return value.toFixed(0)
+                    },
                 },
             },
-            labels: value.date,
-            colors: [tabler.getColor("facebook"), tabler.getColor("primary", 0.6), tabler.getColor(
-                    "twitter"), tabler.getColor("gray-300"), tabler.getColor("dribbble"), tabler
-                .getColor("primary"), tabler.getColor("red"), tabler.getColor("lime"), tabler.getColor(
-                    "green")
-            ],
+            labels: title,
+            colors: ['#0099ff'],
             legend: {
-                show: true,
-                position: 'bottom',
-                offsetY: 12,
-                markers: {
-                    width: 10,
-                    height: 10,
-                    radius: 100,
+                show: false,
+            },
+        })).render();
+    }
+
+    function experienceCountGraph(title, count) {
+        window.ApexCharts && (new ApexCharts(document.getElementById('experience-enquiry-count'), {
+            chart: {
+                type: "area",
+                fontFamily: 'inherit',
+                height: 40.0,
+                sparkline: {
+                    enabled: true
                 },
-                itemMargin: {
-                    horizontal: 8,
-                    vertical: 8
+                animations: {
+                    enabled: false
                 },
+            },
+            dataLabels: {
+                enabled: false,
+            },
+            fill: {
+                opacity: .16,
+                type: 'solid'
+            },
+            stroke: {
+                width: 2,
+                lineCap: "round",
+                curve: "smooth",
+            },
+            series: [{
+                name: "counts",
+                data: count
+            }],
+            tooltip: {
+                theme: 'dark'
+            },
+            grid: {
+                strokeDashArray: 4,
+            },
+            xaxis: {
+                labels: {
+                    padding: 0,
+                },
+                tooltip: {
+                    enabled: false
+                },
+                axisBorder: {
+                    show: false,
+                },
+                type: 'datetime',
+            },
+            yaxis: {
+                labels: {
+                    padding: 4,
+                    formatter: (value) => {
+                        return value.toFixed(0)
+                    },
+                },
+            },
+            labels: title,
+            colors: ['#ff0066'],
+            legend: {
+                show: false,
             },
         })).render();
     }
