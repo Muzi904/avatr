@@ -311,7 +311,7 @@
     <section class="hero-car-details">
         <picture>
             <source srcset="{{ asset('website/images/avatr11/Banner-Avatr-11-02.jpg') }}" media="(max-width: 768px)">
-            <img src="{{ asset('website/images/avatr11/a03.jpg') }}" alt="" class="w-100" >
+            <img src="{{ asset('website/images/avatr11/Banner-Avatr-11-1.webp') }}" alt="" class="w-100" >
         </picture>
         <div class="container-md">
             <div class="content hero-animated">
@@ -399,8 +399,8 @@
 
     <section class="section-one">
         <picture>
-            <source srcset="{{ asset('website/images/avatr11/img1.jpg') }}" media="(max-width: 768px)"><img class="w-100"
-                src="{{ asset('website/images/avatr11/img1.jpg') }}" alt="" class="FirstTitle_section-bgm__2JYhD">
+            <source srcset="{{ asset('website/images/avatr11/Banner-Avatr-11-2.webp') }}" media="(max-width: 768px)"><img class="w-100"
+                src="{{ asset('website/images/avatr11/Banner-Avatr-11-2.webp') }}" alt="" class="FirstTitle_section-bgm__2JYhD">
         </picture>
         <div class="overlay">
             <h2 class="animate-text">
