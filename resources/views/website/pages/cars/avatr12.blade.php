@@ -347,7 +347,7 @@
             <div class="tabs-container scrolltabs">
                 <!-- Tabs Content (Images) -->
                 <figure>
-                    <img class="w-100" src="{{ asset('website/images/avatr12/Interior-Avatr -2-01.webp') }}" alt="">
+                    <img class="w-100" src="{{ asset('website/images/avatr12/Interior-Avatr-2-06.webp') }}" alt="">
                 </figure>
                 <!-- Tabs (Text) -->
                 <div class="tabs justify-content-start">
