@@ -56,5 +56,5 @@ Route::middleware(['auth'])->group(function () {
 
     Route::post('/enquiry/export', [EnquiryController::class, 'export'])->name('admin.enquiry.export');
 
-    Route::get('/check-mail', [EnquiryController::class, 'checkMail']);
+    Route::get('/check-mail/{mail}', [EnquiryController::class, 'checkMail']);
 });
