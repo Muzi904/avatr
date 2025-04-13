@@ -44,7 +44,7 @@
             <meta name="description"
                 content="Get a personalized quote for your AVATR electric vehicle. Explore pricing options and find the perfect smart EV for you in Qatar." />
             <meta name="keywords"
-                content="Request Quote AVATR, AVATR Qatar Pricing, Buy AVATR Car, Electric Vehicle Price Qatar">
+                content="Request Quote AVATR, AVATR Qatar Pricing, Buy AVATR Car, Electric Vehicle Price Qatar">
         @elseif ($slug == 'models')
             <title>AVATR Models - Explore Our Smart EV Lineup</title>
             <meta name="description"
@@ -54,6 +54,28 @@
             <title>AVATR Showrooms in Qatar - Al Attiya Motors</title>
             <meta name="description"
                 content="Visit AVATR showrooms in Qatar and explore our range of smart electric vehicles. Find your nearest Al Attiya Motors dealership." />
+            <meta name="keywords"
+                content="AVATR Showrooms, Al Attiya Motors, AVATR Qatar Dealership, Find AVATR in Qatar">
+        @elseif ($slug == 'experience-avatr')
+            <title>Experience the future of electric driving - AVATR - Al Attiya Motors</title>
+            <meta name="description"
+                content="Experience the future of electric driving. Prepare for a paradigm shift." />
+            <meta name="keywords"
+                content="AVATR Showrooms, Al Attiya Motors, AVATR Qatar Dealership, Find AVATR in Qatar, Experience AVATR">
+        @elseif ($slug == 'discover')
+            <title>Discover AVATR - Al Attiya Motors</title>
+            <meta name="description"
+                content="AVATR is redefining humanized mobility with futuristic designs, accessible technology, user-centric features, and best-in-class proportions." />
+            <meta name="keywords"
+                content="AVATR Showrooms, Al Attiya Motors, AVATR Qatar Dealership, Find AVATR in Qatar,Discover AVATR">
+        @elseif ($slug == 'ownership')
+            <title>Ownership AVATR - Al Attiya Motors</title>
+            <meta name="description" content="Experience the Future of Ownership with AVATR" />
+            <meta name="keywords"
+                content="AVATR Showrooms, Al Attiya Motors, AVATR Qatar Dealership, Find AVATR in Qatar">
+        @elseif ($slug == 'news')
+            <title>Latest News - AVATR - Al Attiya Motors</title>
+            <meta name="description" content="Latest news about AVATR" />
             <meta name="keywords"
                 content="AVATR Showrooms, Al Attiya Motors, AVATR Qatar Dealership, Find AVATR in Qatar">
         @elseif ($slug == 'invitation')

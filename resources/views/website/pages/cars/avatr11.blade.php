@@ -1,9 +1,9 @@
 @extends('website.layouts.app')
 
 @section('content')
-    <div id="loader-wrapper">
+     <!--  <div id="loader-wrapper">
         <div class="loader"></div>
-    </div>
+    </div> -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
@@ -82,12 +82,12 @@
 
         .models-designs-varients #thumbnail-slider .splide__list .splide__slide .wheel {
             position: absolute;
-            bottom: -37%;
+            bottom: -38%;
         }
 
         .models-designs-varients #main-slider .splide__list .splide__slide .wheel {
             position: absolute;
-            bottom: -28%;
+            bottom: -27%;
         }
 
         .models-designs-varients .right-section {
@@ -311,7 +311,7 @@
     <section class="hero-car-details">
         <picture>
             <source srcset="{{ asset('website/images/avatr11/Banner-Avatr-11-02.jpg') }}" media="(max-width: 768px)">
-            <img src="{{ asset('website/images/avatr11/Banner-Avatr-11-1.webp') }}" alt="" class="w-100" >
+            <img src="{{ asset('website/images/avatr11/Banner-Avatr-11-0131.webp') }}" alt="" class="w-100" >
         </picture>
         <div class="container-md">
             <div class="content hero-animated">
@@ -937,14 +937,7 @@
 
 
 
-    <script>
-        window.addEventListener("load", function() {
-            const loader = document.getElementById("loader-wrapper");
-            loader.style.opacity = "0";
-            loader.style.pointerEvents = "none";
-            setTimeout(() => loader.remove(), 500);
-        });
-    </script>
+    
 @endsection
 
 

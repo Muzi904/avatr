@@ -111,9 +111,9 @@
                 "{{ asset('website/images/home/color-variants/models-details/avatr11/interior/black/interior3.webp') }}",
             ],
             'nappa-grey': [
-                "{{ asset('website/images/home/color-variants/models-details/avatr11/interior/grey/interior2.jpg') }}",
-                "{{ asset('website/images/home/color-variants/models-details/avatr11/interior/grey/interior2.jpg') }}",
-                "{{ asset('website/images/home/color-variants/models-details/avatr11/interior/grey/interior2.jpg') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/interior/grey/interior1.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/interior/grey/interior2.webp') }}",
+                "{{ asset('website/images/home/color-variants/models-details/avatr11/interior/grey/interior3.webp') }}",
             ],
 
         };
