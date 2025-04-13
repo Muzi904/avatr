@@ -55,4 +55,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/enquiry/clear-session', [EnquiryController::class, 'clearSession'])->name('admin.enquiry.clear.session');
 
     Route::post('/enquiry/export', [EnquiryController::class, 'export'])->name('admin.enquiry.export');
+
+    Route::get('/check-mail', [EnquiryController::class, 'checkMail']);
 });
