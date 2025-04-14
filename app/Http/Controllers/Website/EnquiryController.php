@@ -153,13 +153,50 @@ class EnquiryController extends Controller
     public function mailToCustomer($enquiry)
     {
         try {
+            $html = '<!DOCTYPE html
+                PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+            <html xmlns="http://www.w3.org/1999/xhtml">
+
+            <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                <title>Untitled Document</title>
+            </head>
+
+            <body>
+                <table width="600" border="0" cellspacing="1" cellpadding="6"
+                    style="font-family:Arial, Helvetica, sans-serif; font-size:12px;">
+                    <tr>
+                       <td colspan="2" style="padding-bottom:10px; padding-top:10px;"><img style="height: 30px;"
+                    src="' . asset('website/AVATR-Logo.svg') . '" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" bgcolor="#FFFFFF" style="padding-bottom: 20px;"><strong>New enquiry received : ' . $enquiry->enq_no . '</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                           <td colspan="2" bgcolor="#FFFFFF" style="padding-bottom: 20px;"><strong>Thank you for reaching out to AVATR. Your request has been received, and a member of our team will be in touch with you shortly.</strong></td>
+                    </tr>
+                    <tr>
+                        <td height="50" colspan="2" align="center" bgcolor="#002D5C" style="color:#fff;">
+                            <strong>&copy;Copyright
+                                ' . \Carbon\Carbon::now()->format('Y') . ' Avatr Qatar. All Rights Reserved.</strong>
+                        </td>
+                    </tr>
+                </table>
+            </body>
+
+            </html>
+
+            ';
+
             $ch = curl_init("https://api.postmarkapp.com/email");
 
             $data = [
                 "From" => "no-reply@avatrqa.com",
                 "To" => $enquiry->email,
                 "Subject" => "Enquiry has been recorded - " . $enquiry->enq_no,
-                "HtmlBody" => "Thank you for reaching out to AVATR. Your request has been received, and a member of our team will be in touch with you shortly.",
+                "HtmlBody" => $html,
                 "MessageStream" => "outbound"
             ];
 
@@ -229,53 +266,56 @@ class EnquiryController extends Controller
                     <tr>
                         <td bgcolor="#f1f4f7">
                             <table cellspacing="10" cellpadding="10"
-                                style="font-family:Arial, Helvetica, sans-serif; font-size:12px;" width="100%">
-                        
-                                @if (isset(' . $enquiry->type . '))
-                                    <tr>
-                                        <td bgcolor="#ffffff"><strong>Type</strong></td>
-                                        <td bgcolor="#FFFFFF">' . ucfirst($enquiry->type) . '</td>
-                                    </tr>
-                                @endif
+                                style="font-family:Arial, Helvetica, sans-serif; font-size:12px;" width="100%">';
 
-                                @if (isset(' . $enquiry->name . '))
-                                    <tr>
-                                        <td bgcolor="#ffffff"><strong>Name</strong></td>
-                                        <td bgcolor="#FFFFFF">' . $enquiry->name . '</td>
-                                    </tr>
-                                @endif
-                                @if (isset(' . $enquiry->email . '))
-                                    <tr>
-                                        <td bgcolor="#ffffff"><strong>Email</strong></td>
-                                        <td bgcolor="#FFFFFF">' . $enquiry->email . '</td>
-                                    </tr>
-                                @endif
-                                @if (isset(' . $enquiry->phone_number . '))
-                                    <tr>
-                                        <td bgcolor="#ffffff">Phone Number</strong></td>
-                                        <td bgcolor="#FFFFFF">' . $enquiry->phone_number . '</td>
-                                    </tr>
-                                @endif
-                                @if (isset(' . $enquiry->model . '))
-                                    <tr>
-                                        <td bgcolor="#ffffff"><strong>Model</strong></td>
-                                        <td bgcolor="#FFFFFF">' . $enquiry->model . '</td>
-                                    </tr>
-                                @endif
-                                @if (isset(' . $enquiry->language . '))
-                                    <tr>
-                                        <td bgcolor="#ffffff"><strong>Language</strong></td>
-                                        <td bgcolor="#FFFFFF">' . $enquiry->language . '</td>
-                                    </tr>
-                                @endif
-                                @if (isset(' . $enquiry->message . '))
-                                    <tr>
-                                        <td bgcolor="#ffffff"><strong>Message</strong></td>
-                                        <td bgcolor="#FFFFFF">' . $enquiry->message . '</td>
-                                    </tr>
-                                @endif
-                                
-                            </table>
+            if (isset($enquiry->type)) {
+                $html += '<tr>
+                            <td bgcolor="#ffffff"><strong>Type</strong></td>
+                            <td bgcolor="#FFFFFF">' . ucfirst($enquiry->type) . '</td>
+                        </tr>';
+            }
+
+            if (isset($enquiry->name)) {
+                $html += '<tr>
+                        <td bgcolor="#ffffff"><strong>Name</strong></td>
+                        <td bgcolor="#FFFFFF">' . $enquiry->name . '</td>
+                    </tr>';
+            }
+            if (isset($enquiry->email)) {
+                $html += '<tr>
+                        <td bgcolor="#ffffff"><strong>Email</strong></td>
+                        <td bgcolor="#FFFFFF">' . $enquiry->email . '</td>
+                    </tr>';
+            }
+
+            if (isset($enquiry->phone_number)) {
+                $html += '<tr>
+                        <td bgcolor="#ffffff">Phone Number</strong></td>
+                        <td bgcolor="#FFFFFF">' . $enquiry->phone_number . '</td>
+                    </tr>';
+            }
+
+            if (isset($enquiry->model)) {
+                $html += '<tr>
+                            <td bgcolor="#ffffff"><strong>Model</strong></td>
+                            <td bgcolor="#FFFFFF">' . $enquiry->model . '</td>
+                        </tr>';
+            }
+            if (isset($enquiry->language)) {
+                $html += '<tr>
+                            <td bgcolor="#ffffff"><strong>Language</strong></td>
+                            <td bgcolor="#FFFFFF">' . $enquiry->language . '</td>
+                        </tr>';
+            }
+
+            if (isset($enquiry->message)) {
+                $html += '<tr>
+                            <td bgcolor="#ffffff"><strong>Message</strong></td>
+                            <td bgcolor="#FFFFFF">' . $enquiry->message . '</td>
+                        </tr>';
+            }
+
+            $html += '</table>
                         </td>
                     </tr>
                     <tr>
@@ -288,7 +328,6 @@ class EnquiryController extends Controller
             </body>
 
             </html>
-
             ';
 
             $ch = curl_init("https://api.postmarkapp.com/email");
