@@ -86,5 +86,8 @@
     <div class="container">
         <p>Avatr Qatar© All rights reserved
         </p>
+        <div class="seperator"></div>
+        <a href="{{ route('Privacy_Policy') }}">Privacy Policy
+        </a>
     </div>
 </div>

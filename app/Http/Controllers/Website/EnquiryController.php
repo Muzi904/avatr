@@ -332,7 +332,7 @@ class EnquiryController extends Controller
 
             $data = [
                 "From" => "no-reply@avatrqa.com",
-                "To" => 'no-reply@avatrqa.com',
+                "To" => 'crm@avatrqa.com',
                 "Subject" => "New Enquiry - " . $enquiry->enq_no,
                 "HtmlBody" => $html,
                 "MessageStream" => "outbound"
