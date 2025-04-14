@@ -28,6 +28,7 @@ Route::get('/experience-avatr', [PageController::class, 'experienceAvatr'])->nam
 Route::get('/ownership', [PageController::class, 'ownership'])->name(name: 'ownership');
 Route::get('/discover', [PageController::class, 'discover'])->name(name: 'discover');
 Route::get('/news', [PageController::class, 'news'])->name(name: 'news');
+Route::get('/privacy-policy', [PageController::class, 'PrivacyPolicy'])->name(name: 'Privacy_Policy');
 
 
 Route::post('/submit-invitations', [EnquiryController::class, 'submitInvitations'])->name('submit-invitation');
