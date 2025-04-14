@@ -269,53 +269,53 @@ class EnquiryController extends Controller
                                 style="font-family:Arial, Helvetica, sans-serif; font-size:12px;" width="100%">';
 
             if (isset($enquiry->type)) {
-                $html += '<tr>
+                $html .= '<tr>
                             <td bgcolor="#ffffff"><strong>Type</strong></td>
                             <td bgcolor="#FFFFFF">' . ucfirst($enquiry->type) . '</td>
                         </tr>';
             }
 
             if (isset($enquiry->name)) {
-                $html += '<tr>
+                $html .= '<tr>
                         <td bgcolor="#ffffff"><strong>Name</strong></td>
                         <td bgcolor="#FFFFFF">' . $enquiry->name . '</td>
                     </tr>';
             }
             if (isset($enquiry->email)) {
-                $html += '<tr>
+                $html .= '<tr>
                         <td bgcolor="#ffffff"><strong>Email</strong></td>
                         <td bgcolor="#FFFFFF">' . $enquiry->email . '</td>
                     </tr>';
             }
 
             if (isset($enquiry->phone_number)) {
-                $html += '<tr>
+                $html .= '<tr>
                         <td bgcolor="#ffffff">Phone Number</strong></td>
                         <td bgcolor="#FFFFFF">' . $enquiry->phone_number . '</td>
                     </tr>';
             }
 
             if (isset($enquiry->model)) {
-                $html += '<tr>
+                $html .= '<tr>
                             <td bgcolor="#ffffff"><strong>Model</strong></td>
                             <td bgcolor="#FFFFFF">' . $enquiry->model . '</td>
                         </tr>';
             }
             if (isset($enquiry->language)) {
-                $html += '<tr>
+                $html .= '<tr>
                             <td bgcolor="#ffffff"><strong>Language</strong></td>
                             <td bgcolor="#FFFFFF">' . $enquiry->language . '</td>
                         </tr>';
             }
 
             if (isset($enquiry->message)) {
-                $html += '<tr>
+                $html .= '<tr>
                             <td bgcolor="#ffffff"><strong>Message</strong></td>
                             <td bgcolor="#FFFFFF">' . $enquiry->message . '</td>
                         </tr>';
             }
 
-            $html += '</table>
+            $html .= '</table>
                         </td>
                     </tr>
                     <tr>
