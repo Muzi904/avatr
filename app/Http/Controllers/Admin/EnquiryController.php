@@ -224,49 +224,4 @@ class EnquiryController extends Controller
     {
         return Excel::download(new EnquiryExport($request),  $request->type ? date('Y_m_d_H_i_s') . '_' . $request->type . '_enquiries.xlsx' : date('Y_m_d_H_i_s') . '_enquiries.xlsx');
     }
-
-    public function checkMail($mail)
-    {
-        $ch = curl_init();
-
-        $data = [
-            "From" => "no-reply@avatrqa.com",
-            "To" => $mail,
-            "Subject" => "Hello from Postmark",
-            "HtmlBody" => "<strong>Hello</strong> dear Postmark user.",
-            "MessageStream" => "outbound"
-        ];
-
-        curl_setopt($ch, CURLOPT_URL, "https://api.postmarkapp.com/email");
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_POST, true);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, [
-            "Accept: application/json",
-            "Content-Type: application/json",
-            "X-Postmark-Server-Token: 6c52ed31-742e-45f7-9dee-08feab0097ce"
-        ]);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
-
-        $response = curl_exec($ch);
-
-        if (curl_errno($ch)) {
-            $error_msg = curl_error($ch);
-            // Handle error
-            dd("Curl error: " . $error_msg);
-        }
-
-        $http_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        curl_close($ch);
-
-        // You can decode and check the response if needed
-        $responseData = json_decode($response, true);
-
-        if ($http_status === 200) {
-            // Success
-            dd("Email sent successfully!", $responseData);
-        } else {
-            // Failure
-            dd("Failed to send email", $responseData);
-        }
-    }
 }
