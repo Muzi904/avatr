@@ -259,6 +259,12 @@
     });
 </script>
 
+@php
+        $slug = last(request()->segments());
+    @endphp
+
+ 
+        @if ($slug == 'experience-avatr')   
 <script>
     // Function to remove '?#form-section' from the URL
     function cleanUpUrl() {
@@ -277,6 +283,8 @@
     // Call the function when the page loads
     window.onload = cleanUpUrl;
 </script>
+        @endif
+
 
 {{-- autoplay text  --}}
 <script>

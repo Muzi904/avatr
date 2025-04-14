@@ -2,13 +2,13 @@
 @section('content')
     <section class="hero">
         <picture>
-            <source srcset="{{ asset('website/images/home/Banner142-mob1.png') }}" media="(max-width: 768px)">
-            <img src="{{ asset('website/images/home/Banner1427.webp') }}" alt="" class="w-100" loading="lazy">
+            <source srcset="{{ asset('website/images/home/Banner142-mob1-min.png') }}" media="(max-width: 768px)">
+            <img src="{{ asset('website/images/home/Banner1428.webp') }}" alt="" class="w-100" loading="lazy">
         </picture>
         <div class="content hero-animated">
-            <h1 class="">ENVISIONING NEXT
+            <h1 class="white">ENVISIONING NEXT
             </h1>
-            <p class="">The future of luxury Electric Vehicles has arrived. <br>
+            <p class="white">The future of luxury electric vehicle has arrived. <br>
                 Experience the sublime sensation of absolute luxury with <br>
                 best-in-class features and unparalleled benefits
 
@@ -663,8 +663,16 @@
                 } else if (target === 'tab2') {
                     document.querySelector('.suv-slider').style.display = 'none';
                     document.querySelector('.avatr12-slider').style.display = 'block';
-                    main2.update(); // 🔥 THIS is where you call it
-                    thumbnail2.update(); // 🔥 Also here
+                
+                    // Give browser a tiny moment to render the block
+                    setTimeout(() => {
+                        main2.update();
+                        main2.updateSize();
+                        main2.slideTo(0, 0); // Reset to first slide if needed
+                
+                        thumbnail2.update();
+                        thumbnail2.updateSize();
+                    }, 50); // Small delay (50ms) ensures Swiper sees the visible element
                 }
             });
         });

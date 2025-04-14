@@ -78,7 +78,7 @@
                             <img class="w-100 my-50" src="{{ asset('website/images/news/photo2.webp') }}" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img class="w-100 my-50" src="{{ asset('website/images/news/photo3.webp') }}" alt="">
+                            <img class="w-100 my-50" src="{{ asset('website/images/news/photo31.webp') }}" alt="">
                         </div>
                         <div class="swiper-slide">
                             <img class="w-100 my-50" src="{{ asset('website/images/news/photo4.webp') }}" alt="">

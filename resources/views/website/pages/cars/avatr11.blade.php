@@ -1,9 +1,9 @@
 @extends('website.layouts.app')
 
 @section('content')
-    <div id="loader-wrapper">
+     <!--  <div id="loader-wrapper">
         <div class="loader"></div>
-    </div>
+    </div> -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
@@ -82,12 +82,12 @@
 
         .models-designs-varients #thumbnail-slider .splide__list .splide__slide .wheel {
             position: absolute;
-            bottom: -37%;
+            bottom: -38%;
         }
 
         .models-designs-varients #main-slider .splide__list .splide__slide .wheel {
             position: absolute;
-            bottom: -28%;
+            bottom: -27%;
         }
 
         .models-designs-varients .right-section {
@@ -310,8 +310,8 @@
     </style>
     <section class="hero-car-details">
         <picture>
-            <source srcset="{{ asset('website/images/avatr11/A11.jpg') }}" media="(max-width: 768px)">
-            <img src="{{ asset('website/images/avatr11/a03.jpg') }}" alt="" class="w-100" >
+            <source srcset="{{ asset('website/images/avatr11/Banner-Avatr-11-02.jpg') }}" media="(max-width: 768px)">
+            <img src="{{ asset('website/images/avatr11/Banner-Avatr-11-0131.webp') }}" alt="" class="w-100" >
         </picture>
         <div class="container-md">
             <div class="content hero-animated">
@@ -347,7 +347,7 @@
             <div class="tabs-container scrolltabs animate-text">
                 <!-- Tabs Content (Images) -->
                 <figure>
-                    <img class="w-100" src="{{ asset('website/images/avatr11/J19.png') }}" alt="">
+                    <img class="w-100" src="{{ asset('website/images/avatr11/J191.webp') }}" alt="">
                 </figure>
                 <!-- Tabs (Text) -->
                 <div class="tabs justify-content-start">
@@ -399,8 +399,8 @@
 
     <section class="section-one">
         <picture>
-            <source srcset="{{ asset('website/images/avatr11/img1.jpg') }}" media="(max-width: 768px)"><img class="w-100"
-                src="{{ asset('website/images/avatr11/img1.jpg') }}" alt="" class="FirstTitle_section-bgm__2JYhD">
+            <source srcset="{{ asset('website/images/avatr11/Banner-Avatr-11-2.webp') }}" media="(max-width: 768px)"><img class="w-100"
+                src="{{ asset('website/images/avatr11/Banner-Avatr-11-2.webp') }}" alt="" class="FirstTitle_section-bgm__2JYhD">
         </picture>
         <div class="overlay">
             <h2 class="animate-text">
@@ -937,14 +937,7 @@
 
 
 
-    <script>
-        window.addEventListener("load", function() {
-            const loader = document.getElementById("loader-wrapper");
-            loader.style.opacity = "0";
-            loader.style.pointerEvents = "none";
-            setTimeout(() => loader.remove(), 500);
-        });
-    </script>
+    
 @endsection
 
 

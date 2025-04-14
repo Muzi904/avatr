@@ -84,7 +84,7 @@
 </footer>
 <div class="copyright">
     <div class="container">
-        <p>© {{ date('Y') }} AVATR Co., Ltd.
+        <p>Avatr Qatar© All rights reserved
         </p>
     </div>
 </div>
