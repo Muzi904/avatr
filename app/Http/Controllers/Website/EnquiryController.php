@@ -290,7 +290,7 @@ class EnquiryController extends Controller
 
             if (isset($enquiry->phone_number)) {
                 $html .= '<tr>
-                        <td bgcolor="#ffffff">Phone Number</strong></td>
+                        <td bgcolor="#ffffff"><strong>Phone Number</strong></td>
                         <td bgcolor="#FFFFFF">' . $enquiry->phone_number . '</td>
                     </tr>';
             }
