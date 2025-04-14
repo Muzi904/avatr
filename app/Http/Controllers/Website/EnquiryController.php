@@ -159,7 +159,7 @@ class EnquiryController extends Controller
                 "From" => "no-reply@avatrqa.com",
                 "To" => $enquiry->mail,
                 "Subject" => "Enquiry has been recorded - " . $enquiry->enq_no,
-                "HtmlBody" => "Thank you for reaching out to AVATR. Your request has been received, and a member of our team will be in touch with you shortly.",
+                "HtmlBody" => "Thank you for reaching out to AVATR. Your request has been received, and a member of our team will be in touch with you shortly.",
                 "MessageStream" => "outbound"
             ];
 
@@ -178,8 +178,8 @@ class EnquiryController extends Controller
             if (curl_errno($ch)) {
                 $error_msg = curl_error($ch);
                 // Handle error
-                info("Customer Mail error " . now());
-                info("error 1 " . $error_msg);
+                info("Customer Mail error " . now() . ", error 1 " . $error_msg);
+
                 return ['status' => 400, 'msg' => 'Failed to send email', 'errorMsg' => $error_msg];
             }
 
@@ -194,8 +194,7 @@ class EnquiryController extends Controller
                 return ['status' => 200, 'msg' => 'Email send Successfully'];
             } else {
                 // Failure
-                info("Customer Mail error " . now());
-                info("error 2 " . '-' . $http_status . "-" . $responseData);
+                info("Customer Mail error " . now() . "error 2 " . '-' . $http_status . "-" . $responseData);
                 return ['status' => $http_status, 'msg' => 'Failed to send email', 'errorMsg' => $responseData];
                 // dd("Failed to send email", $responseData);
             }
@@ -297,7 +296,7 @@ class EnquiryController extends Controller
 
             $data = [
                 "From" => "no-reply@avatrqa.com",
-                "To" => $enquiry->mail,
+                "To" => 'no-reply@avatrqa.com',
                 "Subject" => "New Enquiry - " . $enquiry->enq_no,
                 "HtmlBody" => $html,
                 "MessageStream" => "outbound"
@@ -318,8 +317,7 @@ class EnquiryController extends Controller
             if (curl_errno($ch)) {
                 $error_msg = curl_error($ch);
                 // Handle error
-                info("Admin Mail error " . now());
-                info("error 1 " . $error_msg);
+                info("Admin Mail error " . now() . "error 1 " . $error_msg);
                 return ['status' => 400, 'msg' => 'Failed to send email', 'errorMsg' => $error_msg];
                 // dd("Curl error: " . $error_msg);
             }
@@ -335,8 +333,7 @@ class EnquiryController extends Controller
                 return ['status' => 200, 'msg' => 'Email send Successfully'];
             } else {
                 // Failure
-                info("Admin Mail error " . now());
-                info("error 2 " . '-' . $http_status . "-" . $responseData);
+                info("Admin Mail error " . now() . "error 2 " . '-' . $http_status . "-" . $responseData);
                 return ['status' => $http_status, 'msg' => 'Failed to send email', 'errorMsg' => $responseData];
                 // dd("Failed to send email", $responseData);
             }
