@@ -199,7 +199,7 @@ class EnquiryController extends Controller
                 // dd("Failed to send email", $responseData);
             }
         } catch (\Throwable $th) {
-            return false;
+            info('Error -' . $th);
         }
     }
     public function mailToAdmin($enquiry)
@@ -338,7 +338,8 @@ class EnquiryController extends Controller
                 // dd("Failed to send email", $responseData);
             }
         } catch (\Throwable $th) {
-            return false;
+            info('Error -' . $th);
+            // return false;
         }
     }
 }
