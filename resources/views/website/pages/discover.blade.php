@@ -5,8 +5,8 @@
 
         <section class="hero">
             <picture>
-                <source srcset="{{ asset('website/images/discover/img1.webp') }}" media="(max-width: 768px)">
-                <img src="{{ asset('website/images/discover/img1.webp') }}" alt="" class="w-100 h-100" loading="lazy">
+                <source srcset="{{ asset('website/images/discover-bg.jpg') }}" media="(max-width: 768px)">
+                <img src="{{ asset('website/images/discover-bg.jpg') }}" alt="" class="w-100 h-100" loading="lazy">
             </picture>
             <div class="container-md">
                 <div class="content hero-animated pt-5">
