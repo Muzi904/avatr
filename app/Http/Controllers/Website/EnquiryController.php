@@ -178,7 +178,7 @@ class EnquiryController extends Controller
             if (curl_errno($ch)) {
                 $error_msg = curl_error($ch);
                 // Handle error
-                info("Customer Mail error " . now() . ", error 1 " . $error_msg);
+                info("Customer Mail error 1 " . $error_msg);
 
                 return ['status' => 400, 'msg' => 'Failed to send email', 'errorMsg' => $error_msg];
             }
@@ -194,7 +194,7 @@ class EnquiryController extends Controller
                 return ['status' => 200, 'msg' => 'Email send Successfully'];
             } else {
                 // Failure
-                info("Customer Mail error " . now() . "error 2 " . '-' . $http_status . "-" . $responseData);
+                info("Customer Mail error 2 " . $responseData);
                 return ['status' => $http_status, 'msg' => 'Failed to send email', 'errorMsg' => $responseData];
                 // dd("Failed to send email", $responseData);
             }
@@ -206,7 +206,7 @@ class EnquiryController extends Controller
     {
 
         try {
-            $html = `
+            $html = '
             <!DOCTYPE html
                 PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
             <html xmlns="http://www.w3.org/1999/xhtml">
@@ -221,10 +221,10 @@ class EnquiryController extends Controller
                     style="font-family:Arial, Helvetica, sans-serif; font-size:12px;">
                     <tr>
                        <td colspan="2" style="padding-bottom:10px; padding-top:10px;"><img style="height: 30px;"
-                    src="{{ asset('website/AVATR-Logo.svg') }}" alt=""></td>
+                    src="' . asset('website/AVATR-Logo.svg') . '" alt=""></td>
                     </tr>
                     <tr>
-                        <td colspan="2" bgcolor="#FFFFFF" style="padding-bottom: 20px;"><strong>New enquiry received : {{$enquiry->enq_no}}</strong>
+                        <td colspan="2" bgcolor="#FFFFFF" style="padding-bottom: 20px;"><strong>New enquiry received : ' . $enquiry->enq_no . '</strong>
                         </td>
                     </tr>
                     <tr>
@@ -232,47 +232,47 @@ class EnquiryController extends Controller
                             <table cellspacing="10" cellpadding="10"
                                 style="font-family:Arial, Helvetica, sans-serif; font-size:12px;" width="100%">
                         
-                                @if (isset({{ $enquiry->type }}))
+                                @if (isset(' . $enquiry->type . '))
                                     <tr>
                                         <td bgcolor="#ffffff"><strong>Type</strong></td>
-                                        <td bgcolor="#FFFFFF">{{ ucfirst($enquiry->type] }}</td>
+                                        <td bgcolor="#FFFFFF">' . ucfirst($enquiry->type) . '</td>
                                     </tr>
                                 @endif
 
-                                @if (isset({{ $enquiry->name }}))
+                                @if (isset(' . $enquiry->name . '))
                                     <tr>
                                         <td bgcolor="#ffffff"><strong>Name</strong></td>
-                                        <td bgcolor="#FFFFFF">{{ $enquiry->name }}</td>
+                                        <td bgcolor="#FFFFFF">' . $enquiry->name . '</td>
                                     </tr>
                                 @endif
-                                @if (isset({{ $enquiry->email }}))
+                                @if (isset(' . $enquiry->email . '))
                                     <tr>
                                         <td bgcolor="#ffffff"><strong>Email</strong></td>
-                                        <td bgcolor="#FFFFFF">{{ $enquiry->email }}</td>
+                                        <td bgcolor="#FFFFFF">' . $enquiry->email . '</td>
                                     </tr>
                                 @endif
-                                @if (isset({{  $enquiry->phone_number }}))
+                                @if (isset(' . $enquiry->phone_number . '))
                                     <tr>
                                         <td bgcolor="#ffffff">Phone Number</strong></td>
-                                        <td bgcolor="#FFFFFF">{{  $enquiry->phone_number }}</td>
+                                        <td bgcolor="#FFFFFF">' . $enquiry->phone_number . '</td>
                                     </tr>
                                 @endif
-                                @if (isset({{ $enquiry->model }}))
+                                @if (isset(' . $enquiry->model . '))
                                     <tr>
                                         <td bgcolor="#ffffff"><strong>Model</strong></td>
-                                        <td bgcolor="#FFFFFF">{{$enquiry->model}}</td>
+                                        <td bgcolor="#FFFFFF">' . $enquiry->model . '</td>
                                     </tr>
                                 @endif
-                                @if (isset({{ $enquiry->language }}))
+                                @if (isset(' . $enquiry->language . '))
                                     <tr>
                                         <td bgcolor="#ffffff"><strong>Language</strong></td>
-                                        <td bgcolor="#FFFFFF">{{$enquiry->language}}</td>
+                                        <td bgcolor="#FFFFFF">' . $enquiry->language . '</td>
                                     </tr>
                                 @endif
-                                @if (isset({{ $enquiry->message }}))
+                                @if (isset(' . $enquiry->message . '))
                                     <tr>
                                         <td bgcolor="#ffffff"><strong>Message</strong></td>
-                                        <td bgcolor="#FFFFFF">{{$enquiry->message}}</td>
+                                        <td bgcolor="#FFFFFF">' . $enquiry->message . '</td>
                                     </tr>
                                 @endif
                                 
@@ -282,7 +282,7 @@ class EnquiryController extends Controller
                     <tr>
                         <td height="50" colspan="2" align="center" bgcolor="#002D5C" style="color:#fff;">
                             <strong>&copy;Copyright
-                                {{ \Carbon\Carbon::now()->format('Y') }} Avatr Qatar. All Rights Reserved.</strong>
+                                ' . \Carbon\Carbon::now()->format('Y') . ' Avatr Qatar. All Rights Reserved.</strong>
                         </td>
                     </tr>
                 </table>
@@ -290,7 +290,7 @@ class EnquiryController extends Controller
 
             </html>
 
-            `;
+            ';
 
             $ch = curl_init();
 
