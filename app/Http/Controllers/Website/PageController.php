@@ -71,4 +71,8 @@ class PageController extends Controller
     {
         return view('website.pages.news');
     }
+    public function PrivacyPolicy()
+    {
+        return view('website.pages.privacy-policy');
+    }
 }
