@@ -153,17 +153,17 @@ class EnquiryController extends Controller
     public function mailToCustomer($enquiry)
     {
         try {
-            $ch = curl_init();
+            $ch = curl_init("https://api.postmarkapp.com/email");
 
             $data = [
                 "From" => "no-reply@avatrqa.com",
-                "To" => $enquiry->mail,
+                "To" => $enquiry->email,
                 "Subject" => "Enquiry has been recorded - " . $enquiry->enq_no,
                 "HtmlBody" => "Thank you for reaching out to AVATR. Your request has been received, and a member of our team will be in touch with you shortly.",
                 "MessageStream" => "outbound"
             ];
 
-            curl_setopt($ch, CURLOPT_URL, "https://api.postmarkapp.com/email");
+            // curl_setopt($ch, CURLOPT_URL, );
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_POST, true);
             curl_setopt($ch, CURLOPT_HTTPHEADER, [
@@ -206,8 +206,7 @@ class EnquiryController extends Controller
     {
 
         try {
-            $html = '
-            <!DOCTYPE html
+            $html = '<!DOCTYPE html
                 PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
             <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -292,7 +291,7 @@ class EnquiryController extends Controller
 
             ';
 
-            $ch = curl_init();
+            $ch = curl_init("https://api.postmarkapp.com/email");
 
             $data = [
                 "From" => "no-reply@avatrqa.com",
@@ -302,7 +301,6 @@ class EnquiryController extends Controller
                 "MessageStream" => "outbound"
             ];
 
-            curl_setopt($ch, CURLOPT_URL, "https://api.postmarkapp.com/email");
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_POST, true);
             curl_setopt($ch, CURLOPT_HTTPHEADER, [
