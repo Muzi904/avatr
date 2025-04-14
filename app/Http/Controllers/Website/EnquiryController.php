@@ -179,8 +179,7 @@ class EnquiryController extends Controller
                     </tr>
                     <tr>
                         <td height="50" colspan="2" align="center" bgcolor="#002D5C" style="color:#fff;">
-                            <strong>&copy;Copyright
-                                ' . \Carbon\Carbon::now()->format('Y') . ' Avatr Qatar. All Rights Reserved.</strong>
+                            <strong>AVATR Qatar© All rights reserved</strong>
                         </td>
                     </tr>
                 </table>
@@ -320,8 +319,7 @@ class EnquiryController extends Controller
                     </tr>
                     <tr>
                         <td height="50" colspan="2" align="center" bgcolor="#002D5C" style="color:#fff;">
-                            <strong>&copy;Copyright
-                                ' . \Carbon\Carbon::now()->format('Y') . ' Avatr Qatar. All Rights Reserved.</strong>
+                            <strong>AVATR Qatar© All rights reserved</strong>
                         </td>
                     </tr>
                 </table>
